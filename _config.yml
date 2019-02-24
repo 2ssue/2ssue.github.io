@@ -29,9 +29,9 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "2ssue" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "2ssue"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/20190102_100308_339.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Beginner Web developer"
   location         : "Republic of Korea, Suwon"
   email            : "e2ssue@gmail.com"
@@ -279,7 +279,6 @@ compress_html:
   ignore:
     envs: development
 
-
 # Defaults
 defaults:
   # _posts
@@ -289,7 +288,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: #true
+      read_time: false #true
       comments: true
       share: true
       related: true
