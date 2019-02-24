@@ -1,17 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-24T16:11:33+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">잔디밭 만들기 프로젝트</title><subtitle>This is a practice version blog!</subtitle><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><entry><title type="html">Git 명령어</title><link href="http://localhost:4000/git/git-command/" rel="alternate" type="text/html" title="Git 명령어" /><published>2019-02-24T14:12:24+09:00</published><updated>2019-02-24T14:12:24+09:00</updated><id>http://localhost:4000/git/git-command</id><content type="html" xml:base="http://localhost:4000/git/git-command/">&lt;p&gt;git 명령어 참고&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-24T16:42:17+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">잔디밭 만들기 프로젝트</title><subtitle>This is a practice version blog!</subtitle><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><entry><title type="html">Git 명령어</title><link href="http://localhost:4000/git/git-command/" rel="alternate" type="text/html" title="Git 명령어" /><published>2019-02-24T14:12:24+09:00</published><updated>2019-02-24T14:12:24+09:00</updated><id>http://localhost:4000/git/git-command</id><content type="html" xml:base="http://localhost:4000/git/git-command/">&lt;h2 id=&quot;git-명령어&quot;&gt;git 명령어&lt;/h2&gt;
 
-&lt;h3 id=&quot;git-remote-add-name&quot;&gt;git remote add {name}&lt;/h3&gt;
+&lt;h3 id=&quot;git-init&quot;&gt;git init&lt;/h3&gt;
+&lt;p&gt;디렉토리에 git 저장소를 생성&lt;/p&gt;
 
-&lt;p&gt;{name} 이름을 가진 remote 저장소를 추가한다.&lt;/p&gt;
+&lt;h3 id=&quot;git-clone&quot;&gt;git clone&lt;/h3&gt;
 
-&lt;h3 id=&quot;git-add-&quot;&gt;git add .&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone {url}&lt;/code&gt; 저장소를 디렉토리에 복사&lt;/p&gt;
 
-&lt;p&gt;수정된 전부(.)를 현재 remote에 추가한다.&lt;/p&gt;
+&lt;h3 id=&quot;git-pull&quot;&gt;git pull&lt;/h3&gt;
 
-&lt;h3 id=&quot;git-commit--m-message&quot;&gt;git commit -m “message”&lt;/h3&gt;
+&lt;p&gt;원격 저장소의 변경 사항을 확인해 현재 브랜치에 불러오기&lt;/p&gt;
 
-&lt;p&gt;message를 add된 목록들에 commit 한다.&lt;/p&gt;
+&lt;h3 id=&quot;git-remote&quot;&gt;git remote&lt;/h3&gt;
 
-&lt;h3 id=&quot;git-push--u-origin-master&quot;&gt;git push -u origin master&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git remote&lt;/code&gt; 프로젝트에 등록된 저장소 확인 &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;git remote -v&lt;/code&gt; 저장소의 이름과 URL 확인 &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;git remote add {name} {url}&lt;/code&gt; {name} 저장소{url} 추가 &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;git remote rm {name}&lt;/code&gt; {name} 저장소 삭제 &lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;origin에 추가된 내용을 master에 push한다.&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><summary type="html">git 명령어 참고</summary></entry><entry><title type="html">Welcome to 2ssue Blog!</title><link href="http://localhost:4000/first_update/welcome-to-2ssue-Blog!/" rel="alternate" type="text/html" title="Welcome to 2ssue Blog!" /><published>2019-02-24T02:48:24+09:00</published><updated>2019-02-24T02:48:24+09:00</updated><id>http://localhost:4000/first_update/welcome-to-2ssue-Blog!</id><content type="html" xml:base="http://localhost:4000/first_update/welcome-to-2ssue-Blog!/">&lt;p&gt;블로그 첫 게시글 :P&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><summary type="html">블로그 첫 게시글 :P</summary></entry></feed>
+&lt;h3 id=&quot;git-add&quot;&gt;git add&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git add .&lt;/code&gt; 수정된 전부(.)를 현재 remote에 추가&lt;/p&gt;
+
+&lt;h3 id=&quot;git-commit&quot;&gt;git commit&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git commit -m &quot;message&quot;&lt;/code&gt; add된 파일들을 “message”를 붙여 commit&lt;/p&gt;
+
+&lt;h3 id=&quot;git-push&quot;&gt;git push&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git push -u {name} master&lt;/code&gt;
+name 저장소에 추가된 내용을 master에 저장&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="command" /><summary type="html">git 명령어</summary></entry><entry><title type="html">Welcome to 2ssue Blog!</title><link href="http://localhost:4000/tmi/welcome-to-2ssue-Blog!/" rel="alternate" type="text/html" title="Welcome to 2ssue Blog!" /><published>2019-02-24T02:48:24+09:00</published><updated>2019-02-24T02:48:24+09:00</updated><id>http://localhost:4000/tmi/welcome-to-2ssue-Blog!</id><content type="html" xml:base="http://localhost:4000/tmi/welcome-to-2ssue-Blog!/">&lt;p&gt;블로그 첫 게시글 :P&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="first" /><summary type="html">블로그 첫 게시글 :P</summary></entry></feed>

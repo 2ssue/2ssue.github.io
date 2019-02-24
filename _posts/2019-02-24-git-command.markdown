@@ -2,22 +2,38 @@
 title:  "Git 명령어"
 date:   2019-02-24 14:12:24 +0900
 categories: git
+tags: command
 ---
 
-git 명령어 참고
+## git 명령어
 
-### git remote add {name}
+### git init
+디렉토리에 git 저장소를 생성
 
-{name} 이름을 가진 remote 저장소를 추가한다.
+### git clone
 
-### git add .
+`git clone {url}` 저장소를 디렉토리에 복사
 
-수정된 전부(.)를 현재 remote에 추가한다.
+### git pull 
 
-### git commit -m "message"
+원격 저장소의 변경 사항을 확인해 현재 브랜치에 불러오기
 
-message를 add된 목록들에 commit 한다.
+### git remote
 
-### git push -u origin master
+`git remote` 프로젝트에 등록된 저장소 확인 <br>
+`git remote -v` 저장소의 이름과 URL 확인 <br>
+`git remote add {name} {url}` {name} 저장소{url} 추가 <br>
+`git remote rm {name}` {name} 저장소 삭제 <br>
 
-origin에 추가된 내용을 master에 push한다.
+### git add
+
+`git add .` 수정된 전부(.)를 현재 remote에 추가
+
+### git commit 
+
+`git commit -m "message"` add된 파일들을 "message"를 붙여 commit
+
+### git push 
+
+`git push -u {name} master`
+name 저장소에 추가된 내용을 master에 저장
