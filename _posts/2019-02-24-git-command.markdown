@@ -2,7 +2,7 @@
 title:  "Git 명령어"
 date:   2019-02-24 14:12:24 +0900
 categories: git
-tags: command
+tags: study
 ---
 
 ## git 명령어
