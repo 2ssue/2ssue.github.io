@@ -1,6 +1,6 @@
 ---
 title:  "01-1 알고리즘이란?"
-date:   2019-02-24 02:48:24 +0900
+date:   2019-02-25 12:55:24 +0900
 categories: Algorithm
 tags: study
 toc: true
