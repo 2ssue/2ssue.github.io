@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko"
@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "2ssue"
   avatar           : "/assets/images/20190102_100308_339.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "갓 졸업한 초보 개발자의 개발기"
+  bio              : "갓 졸업한 초보 개발자의 삽질기"
   location         : "Republic of Korea, Suwon"
   email            : "e2ssue@gmail.com"
   links:
