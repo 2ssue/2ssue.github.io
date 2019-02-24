@@ -12,7 +12,10 @@ tags: command
 
 ### git clone
 
-`git clone {url}` 저장소를 디렉토리에 복사
+```
+git clone {url}
+``` 
+저장소를 디렉토리에 복사
 
 ### git pull 
 
@@ -20,20 +23,29 @@ tags: command
 
 ### git remote
 
-`git remote` 프로젝트에 등록된 저장소 확인 <br>
-`git remote -v` 저장소의 이름과 URL 확인 <br>
-`git remote add {name} {url}` {name} 저장소{url} 추가 <br>
-`git remote rm {name}` {name} 저장소 삭제 <br>
-
+```
+git remote 프로젝트에 등록된 저장소 확인
+git remote -v 저장소의 이름과 URL 확인 
+git remote add {name} {url} {name} 저장소{url} 추가 
+git remote rm {name} {name} 저장소 삭제 
+```
 ### git add
 
-`git add .` 수정된 전부(.)를 현재 remote에 추가
+```
+git add .
+``` 
+수정된 전부(.)를 현재 remote에 추가
 
 ### git commit 
 
-`git commit -m "message"` add된 파일들을 "message"를 붙여 commit
+```
+git commit -m "message"
+``` 
+add된 파일들을 "message"를 붙여 commit
 
 ### git push 
 
-`git push -u {name} master`
+```
+git push -u {name} master
+```
 name 저장소에 추가된 내용을 master에 저장
