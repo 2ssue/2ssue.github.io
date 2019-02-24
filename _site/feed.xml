@@ -1,52 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-24T18:50:04+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">잔디밭 만들기 프로젝트</title><subtitle>This is a practice version blog!</subtitle><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><entry><title type="html">마크다운(Markdown) 작성법</title><link href="http://localhost:4000/markdown/markdown_drawup/" rel="alternate" type="text/html" title="마크다운(Markdown) 작성법" /><published>2019-02-24T17:29:24+09:00</published><updated>2019-02-24T17:29:24+09:00</updated><id>http://localhost:4000/markdown/markdown_drawup</id><content type="html" xml:base="http://localhost:4000/markdown/markdown_drawup/">&lt;h1 id=&quot;markdown&quot;&gt;Markdown&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-24T20:51:37+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">잔디밭 만들기 프로젝트</title><subtitle>This is a practice version blog!</subtitle><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><entry><title type="html">마크다운(Markdown) 작성법</title><link href="http://localhost:4000/markdown/markdown_drawup/" rel="alternate" type="text/html" title="마크다운(Markdown) 작성법" /><published>2019-02-24T17:29:24+09:00</published><updated>2019-02-24T17:29:24+09:00</updated><id>http://localhost:4000/markdown/markdown_drawup</id><content type="html" xml:base="http://localhost:4000/markdown/markdown_drawup/">&lt;h1 id=&quot;markdown&quot;&gt;Markdown&lt;/h1&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4&quot;&gt;마크다운(Markdown)&lt;/a&gt;은 일반 텍스트 문서의 양식을 편집하는 문법으로, 흔히 git repo의 README.md 파일을 통해 자주 볼 수 있다. 주로 온라인 문서, 일반 텍스트 편집기로 문서를 편집할 때 사용한다. 마크다운을 이용해 작성된 문서는 쉽게 HTML과 같은 문서 형태로 변환이 가능하다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;제목태그&quot;&gt;제목태그&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Example)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;제목header&quot;&gt;제목(Header)&lt;/h2&gt;
 
-&lt;pre&gt;# H1 Header 
-## H2 Header
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# H1 Header 
 ### H3 Header 
-#### H4 Header
 ##### H5 Header
-###### H6 Header
-&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Result)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;h1 id=&quot;h1-header&quot;&gt;H1 Header&lt;/h1&gt;
-&lt;h2 id=&quot;h2-header&quot;&gt;H2 Header&lt;/h2&gt;
 &lt;h3 id=&quot;h3-header&quot;&gt;H3 Header&lt;/h3&gt;
-&lt;h4 id=&quot;h4-header&quot;&gt;H4 Header&lt;/h4&gt;
 &lt;h5 id=&quot;h5-header&quot;&gt;H5 Header&lt;/h5&gt;
-&lt;h6 id=&quot;h6-header&quot;&gt;H6 Header&lt;/h6&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;인용문구&quot;&gt;인용문구&lt;/h2&gt;
 
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Example)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;pre&gt;
-	&amp;gt; 이것은 인용표시다!
-&lt;/pre&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; 이것은 인용표시다!
+&amp;gt;&amp;gt; 이것은 이중인용이다!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;위와 같이 입력할 경우 아래와 같이 좌측 바와 들여쓰기가 추가되어 출력된다.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Result)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;이것은 인용표시다!&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;이것은 이중 인용이다!&lt;/p&gt;
+  &lt;/blockquote&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;순차제목&quot;&gt;순차제목&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Example)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;리스트&quot;&gt;리스트&lt;/h2&gt;
 
-&lt;pre&gt;1. 일
+&lt;h3 id=&quot;순서가-있는-리스트&quot;&gt;순서가 있는 리스트&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 일
 1. 이
 1. 삼	
-&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Result)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ol&gt;
   &lt;li&gt;일&lt;/li&gt;
@@ -54,44 +46,32 @@
   &lt;li&gt;삼&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Example)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;pre&gt;* 일
-	* 이
-		* 삼
-- 일
-	- 이
-		- 삼
-+ 일
-	+ 이
-		+ 삼
-&lt;/pre&gt;
+&lt;h3 id=&quot;순서가-없는-리스트&quot;&gt;순서가 없는 리스트&lt;/h3&gt;
 
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Result)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* first
+	* second
+		* third
+
+- first
+	- second
+		- third
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;일
+  &lt;li&gt;first
     &lt;ul&gt;
-      &lt;li&gt;이
+      &lt;li&gt;second
         &lt;ul&gt;
-          &lt;li&gt;삼&lt;/li&gt;
+          &lt;li&gt;third&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;일
+  &lt;li&gt;first
     &lt;ul&gt;
-      &lt;li&gt;이
+      &lt;li&gt;second
         &lt;ul&gt;
-          &lt;li&gt;삼&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;일
-    &lt;ul&gt;
-      &lt;li&gt;이
-        &lt;ul&gt;
-          &lt;li&gt;삼&lt;/li&gt;
+          &lt;li&gt;third&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
@@ -100,21 +80,8 @@
 
 &lt;h2 id=&quot;코드-블록&quot;&gt;코드 블록&lt;/h2&gt;
 
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Example)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;pre&gt; ```python
-	def print_hi(name):
-		print(&quot;hello&quot;, name)
-		print_hi('Tom')
-```&lt;/pre&gt;
-
-&lt;pre&gt; ```java
-	public static void main(String[] args){
-		System.out.println(&quot;hello&quot;);
-	}
-```&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Result)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```python {code...} ```&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;위와 같은 형태로 입력하면 아래와 같은 코드 블록을 만들 수 있다.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
 		&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hello&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -131,57 +98,42 @@
   &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bash(bash)&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;C#(cs)&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;C++(cpp)&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Diff(diff)&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;HTML, XML(html)&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;HTTP(http)&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Ini(ini)&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;JSON(json)&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Java(java)&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript(javascript)&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;PHP(php)&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Perl(perl)&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Ruby(ruby)&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;SQL(sql)&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;글꼴-모양-변경&quot;&gt;글꼴 모양 변경&lt;/h2&gt;
+&lt;h2 id=&quot;글-모양-변경&quot;&gt;글 모양 변경&lt;/h2&gt;
 
 &lt;h4 id=&quot;글꼴-굵게-bold&quot;&gt;글꼴 굵게 &lt;strong&gt;(Bold)&lt;/strong&gt;&lt;/h4&gt;
 
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Example)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;pre&gt;**굵게** 변한 글씨&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Result)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;**굵게** 변한 글씨
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;굵게&lt;/strong&gt; 변한 글씨&lt;/p&gt;
 
 &lt;h4 id=&quot;글꼴-기울이기-italic&quot;&gt;글꼴 기울이기 &lt;em&gt;(Italic)&lt;/em&gt;&lt;/h4&gt;
 
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Example)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;pre&gt;_기울이게_ 변한 글씨&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Result)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;_기울이게_ 변한 글씨
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;기울이게&lt;/em&gt; 변한 글씨&lt;/p&gt;
 
 &lt;h4 id=&quot;글꼴-취소선&quot;&gt;글꼴 취소선&lt;/h4&gt;
 
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Example)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;pre&gt;~~취소선~~ 글씨&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Result)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~~취소선~~글씨
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;del&gt;취소선&lt;/del&gt; 글씨&lt;/p&gt;
 
 &lt;h2 id=&quot;링크-넣기&quot;&gt;링크 넣기&lt;/h2&gt;
 
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Example)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;pre&gt;[2ssue 깃 블로그](https://2ssue.github.io)&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Result)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[2ssue 깃 블로그](https://2ssue.github.io)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://2ssue.github.io&quot;&gt;2ssue 깃 블로그&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;이미지-넣기&quot;&gt;이미지 넣기&lt;/h2&gt;
 
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Example)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![facebook 이미지](https://image.freepik.com/free-vector/card-christmas-hat-ribbon_1057-2801.jpg){: .align-center}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;pre&gt;![facebook 이미지](https://image.freepik.com/free-vector/card-christmas-hat-ribbon_1057-2801.jpg)&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Result)&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://image.freepik.com/free-vector/card-christmas-hat-ribbon_1057-2801.jpg&quot; alt=&quot;facebook 이미지&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://image.freepik.com/free-vector/card-christmas-hat-ribbon_1057-2801.jpg&quot; alt=&quot;facebook 이미지&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;줄바꿈&quot;&gt;줄바꿈&lt;/h2&gt;
 
@@ -190,8 +142,43 @@
 
 &lt;h2 id=&quot;수평선&quot;&gt;수평선&lt;/h2&gt;
 
-&lt;p&gt;언더바를 세번 입력 &lt;code class=&quot;highlighter-rouge&quot;&gt;___&lt;/code&gt; 하면 아래와 같은 수평선이 생긴다.
-___&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><summary type="html">Markdown</summary></entry><entry><title type="html">Git 명령어</title><link href="http://localhost:4000/git/git-command/" rel="alternate" type="text/html" title="Git 명령어" /><published>2019-02-24T14:12:24+09:00</published><updated>2019-02-24T14:12:24+09:00</updated><id>http://localhost:4000/git/git-command</id><content type="html" xml:base="http://localhost:4000/git/git-command/">&lt;h2 id=&quot;git-명령어&quot;&gt;git 명령어&lt;/h2&gt;
+&lt;p&gt;언더바를 세번 입력 &lt;code class=&quot;highlighter-rouge&quot;&gt;___&lt;/code&gt; 하면 아래와 같은 수평선이 생긴다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;정렬&quot;&gt;정렬&lt;/h2&gt;
+
+&lt;h3 id=&quot;글자-정렬&quot;&gt;글자 정렬&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;왼쪽 정렬
+{: .text-left}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p class=&quot;text-left&quot;&gt;왼쪽 정렬&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;가운데 정렬
+{: .text-center}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p class=&quot;text-center&quot;&gt;가운데 정렬&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;오른쪽 정렬
+{: .text-right}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p class=&quot;text-right&quot;&gt;오른쪽 정렬&lt;/p&gt;
+
+&lt;h3 id=&quot;이미지-정렬&quot;&gt;이미지 정렬&lt;/h3&gt;
+
+&lt;p&gt;이미지 정렬도 글자 정렬과 비슷하다. 이미지 링크 옆에 아래와 같이 작성한다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;왼쪽 정렬{: .align-left}
+가운데 정렬{: .align-center}
+오른쪽 정렬{: .align-right}
+좌우로 꽉차게
+{: .full}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;참고&quot;&gt;참고&lt;/h2&gt;
+
+&lt;p&gt;추가로 필요한 정보는 &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/docs/utility-classes/&quot;&gt;여기&lt;/a&gt;를 참고하면 된다.&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><summary type="html">Markdown</summary></entry><entry><title type="html">Git 명령어</title><link href="http://localhost:4000/git/git-command/" rel="alternate" type="text/html" title="Git 명령어" /><published>2019-02-24T14:12:24+09:00</published><updated>2019-02-24T14:12:24+09:00</updated><id>http://localhost:4000/git/git-command</id><content type="html" xml:base="http://localhost:4000/git/git-command/">&lt;h2 id=&quot;git-명령어&quot;&gt;git 명령어&lt;/h2&gt;
 
 &lt;h3 id=&quot;git-init&quot;&gt;git init&lt;/h3&gt;
 &lt;p&gt;디렉토리에 git 저장소를 생성&lt;/p&gt;
