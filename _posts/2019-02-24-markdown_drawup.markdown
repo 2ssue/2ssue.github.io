@@ -4,6 +4,9 @@ date:   2019-02-24 17:29:24 +0900
 categories: markdown
 classes: wide
 ---  
+<br>
+<br>
+
 # Markdown
 
 > [마크다운(Markdown)](https://ko.wikipedia.org/wiki/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4)은 일반 텍스트 문서의 양식을 편집하는 문법으로, 흔히 git repo의 README.md 파일을 통해 자주 볼 수 있다. 주로 온라인 문서, 일반 텍스트 편집기로 문서를 편집할 때 사용한다. 마크다운을 이용해 작성된 문서는 쉽게 HTML과 같은 문서 형태로 변환이 가능하다.
@@ -88,7 +91,7 @@ _**이외 가능 언어**_
 > `bash(bash)` `C#(cs)` `C++(cpp)` `Diff(diff)` `HTML, XML(html)` `HTTP(http)` `Ini(ini)` `JSON(json)` `Java(java)` `JavaScript(javascript)` `PHP(php)` `Perl(perl)` `Ruby(ruby)` `SQL(sql)`
 
 
-## 글 모양 변경
+## 글꼴 강조
 
 #### 글꼴 굵게 **(Bold)**
 
