@@ -1,7 +1,7 @@
 ---
 title:  "01-2 반복"
 date:   2019-02-25 20:40:24 +0900
-categories: Algorithm
+categories: doit_Algorithm
 tags: study
 toc: true
 ---
@@ -303,6 +303,9 @@ public static void spira(int n){
 	}
 }
 ```
+
+> 문제를 풀 때 바보같은 생각을 했다. 단에서 공백을 처리할 때 앞 공백만 출력하면
+같은 모양이 나오는데 뒷 공백도 출력시켜야 한다고 생각해서 어떻게 해야할 지 오래 고민했다. 
 
 #### 13. n단의 숫자 피라미드를 출력하는 메서드
 
