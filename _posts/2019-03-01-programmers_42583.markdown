@@ -1,0 +1,84 @@
+---
+title:  "프로그래머스 고득점 Kit - 다리를 지나는 트럭"
+date:   2019-03-01 11:56:24 +0900
+categories: study
+tags: programmers_Algorithm
+published: false
+---
+
+[프로그래머스 코딩테스트 연습_스택/큐_다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583?language=java)
+
+먼저 들어오는 트럭이 먼저 나가고 있기 때문에 선입 선출 구조인 Queue를 사용했다.  
+
+> ### 변수 선언
+
+```
+int[] delay; //Queue에 머물러 있는 시간을 계산하기 위한 배열
+int front; //Queue에 들어가있는 맨 앞 원소의 배열 인덱스
+int rear; //Queue에 들어가있는 맨 마지막 원소의 배열 인덱스
+int second; //시간을 계산할 변수
+```
+
+> ### 반복문 
+
+_0번째 배열은 무조건 들어갈 수 있기 때문에 반복문 전에 미리 Queue에 넣는다._  
+`front` 부터 `rear` 까지 `delay[i]`값을 증가시키면서 `delay[i]`가 `bridge_length`보다 큰지 확인한다.  
+만약 `bridge_length`보다 커지면, Queue에서 빼고 그 원소가 빠졌음을 알기 위해 `front`값을 증가시킨다.  
+  
+그 다음으로는 트럭이 더 들어갈 수 있는지 확인한다.  
+  
+Queue에 들어가있는 원소의 합과 다음 원소가 `weight`이하인지 확인한다.  
+만약 `weight`이하라면 그 원소를 Queue에 넣고, `rear`값과 `delay[rear]`를 증가시킨다.
+  
+Queue가 비면 반복문을 종료한다.
+  
+```java
+import java.util.Queue;
+import java.util.LinkedList;
+
+class Solution {
+    public int sum(int[] arr, int idx1, int idx2){
+        int sum = 0;
+        
+        for(int i = idx1; i <= idx2; i++){
+            sum += arr[i];    
+        }
+        
+        return sum;
+    }
+    
+    public int solution(int bridge_length, int weight, int[] truck_weights) {
+        int answer = 0;
+        int second = 0;
+        
+        Queue que = new LinkedList();
+        int[] delay = new int[truck_weights.length];
+        int front = 0;
+        int rear = 0;
+        
+        que.offer(truck_weights[0]);
+        second++;
+        delay[0]++;
+        
+        while((!que.isEmpty())){
+            second++;
+            for(int i = front; i <= rear; i++){
+                delay[i]++;
+                if(delay[i] > bridge_length){
+                    que.poll();
+                    front++;
+                }
+            }
+            if (!(rear + 1 == truck_weights.length)){
+                if((sum(truck_weights, front, rear) + truck_weights[rear + 1]) <= weight){
+                    que.offer(truck_weights[++rear]);
+                    delay[rear]++;
+                }
+            }
+        }
+        answer = second;
+        
+        return answer;
+    }
+}
+```
