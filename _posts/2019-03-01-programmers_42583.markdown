@@ -12,7 +12,7 @@ classes: wide
 
 > ### 변수 선언
 
-```
+```java
 int[] delay; //Queue에 머물러 있는 시간을 계산하기 위한 배열
 int front; //Queue에 들어가있는 맨 앞 원소의 배열 인덱스
 int rear; //Queue에 들어가있는 맨 마지막 원소의 배열 인덱스
