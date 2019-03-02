@@ -3,6 +3,7 @@ title:  "Jekyll Git 블로그 만들기"
 date:   2019-03-01 00:33:24 +0900
 categories:  jekyll
 tags: first
+classes: wide
 ---
 
 ### 블로그를 만들자!

@@ -3,6 +3,7 @@ title:  "프로그래머스 고득점 Kit - 쇠막대기"
 date:   2019-02-27 12:45:24 +0900
 categories: study
 tags: programmers_Algorithm
+classes: wide
 ---
 
 [프로그래머스 코딩테스트 연습_스택/큐_쇠막대기](https://programmers.co.kr/learn/courses/30/lessons/42585)

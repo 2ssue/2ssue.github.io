@@ -3,6 +3,7 @@ title:  "정적 웹페이지와 동적 웹페이지"
 date:   2019-03-02 13:49:24 +0900
 categories: study jekyll
 tags: Web
+classes: wide
 ---
 
 jekyll과 같은 방식의 페이지를 정적 웹페이지라고 한다.  
