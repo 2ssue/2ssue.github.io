@@ -1,8 +1,8 @@
 ---
 title:  "[이것이 자바다] 01 자바 시작하기"
 date:   2019-03-04 15:02:24 +0900
-categories: study
-tags: java
+categories: java
+tags: basic
 ---
 
 > ### JDK와 JRE의 차이점 중 틀린 것은?
