@@ -1,8 +1,8 @@
 ---
 title:  "소수 찾기 알고리즘"
 date:   2019-02-28 20:22:24 +0900
-categories: study
-tags: doit_Algorithm
+categories: algorithm
+tags: doit
 toc: true
 ---
 

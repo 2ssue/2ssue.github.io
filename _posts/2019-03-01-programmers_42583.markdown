@@ -1,8 +1,8 @@
 ---
-title:  "프로그래머스 고득점 Kit - 다리를 지나는 트럭"
+title:  "[프로그래머스] 다리를 지나는 트럭"
 date:   2019-03-01 11:56:24 +0900
-categories: study
-tags: programmers_Algorithm
+categories: algorithm
+tags: programmers
 classes: wide
 ---
 

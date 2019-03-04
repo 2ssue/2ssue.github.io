@@ -1,5 +1,5 @@
 ---
-title:  "삼성 SDS 멘토링에 다녀왔다"
+title:  "삼성 SDS 멘토링 후기"
 date:   2019-02-28 10:24:24 +0900
 categories: TMI
 tags: first

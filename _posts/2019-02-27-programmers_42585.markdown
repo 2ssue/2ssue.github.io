@@ -1,8 +1,8 @@
 ---
-title:  "프로그래머스 고득점 Kit - 쇠막대기"
+title:  "[프로그래머스] 쇠막대기"
 date:   2019-02-27 12:45:24 +0900
-categories: study
-tags: programmers_Algorithm
+categories: algorithm
+tags: programmers
 classes: wide
 ---
 
