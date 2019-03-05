@@ -4,9 +4,11 @@ date:   2019-03-04 15:02:24 +0900
 categories: Web
 tags: HTML
 toc: true
-publised: false
 ---
 
+~~이건 원래 다 공부하기 전까진 published false 상태로 두려고 했는데..  
+태그에 오타를 내서 올라가 버렸다ㅎㅎ 그냥 공부하면서 틈틈히 추가하겠다.~~
+  
 > ### 제목 태그
 
 문서에서 제목을 표시할 때 사용하는 태그  
