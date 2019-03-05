@@ -1,5 +1,5 @@
 ---
-title:  "시간 복잡도"
+title:  "시간 복잡도(Time Complexity)"
 date:   2019-03-05 15:10:24 +0900
 categories: algorithm
 tags: doit
@@ -36,13 +36,12 @@ toc: true
 /*5*/		i++;
 /* */	}
 /*6*/	return -1;
-/* */}
+/* */ }
 ```
 
 각 단계 별 시간 복잡도는 아래와 같다.
 
 |단계|실행 횟수|복잡도|
-|||
 |1|1|O(1)|
 |2|n/2|O(n)|
 |3|n/2|O(n)|
@@ -67,7 +66,7 @@ ___
 #### 이진 검색의 시간 복잡도
   
 ```java
-/*  */static int binSearch(int[] a, int n, int key){
+/*  */ static int binSearch(int[] a, int n, int key){
 /* 1*/	int front = 0;
 /* 2*/	int rear = n - 1;
 /*  */
@@ -82,13 +81,12 @@ ___
 /* 9*/	}while(front <= rear);
 /*  */
 /*10*/	return -1;
-}
+/*  */ }
 ```
 
 각 단계 별 시간 복잡도는 아래와 같다.
   
 |단계|실행 횟수|복잡도|
-|||
 |1|1|O(1)|
 |2|1|O(1)|
 |3|log n|O(log n)|
