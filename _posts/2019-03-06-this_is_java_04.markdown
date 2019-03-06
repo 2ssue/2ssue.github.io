@@ -1,0 +1,154 @@
+---
+title:  "[이것이 자바다] 04 조건문과 반복문"
+date:   2019-03-06 14:16:24 +0900
+categories: java
+tags: java
+---
+
+### break문
+
+오늘도 새로운 사실을 알았다. 기본서를 보다보니까 수업에서 놓친 이야기가 많은 것 같다.  
+break문은 가장 가까운 반복문을 빠져나오는 데 주로 사용되는데, 중첩 반복문 일 때 바깥  
+반복문을 빠져나오는 방법이 있다는 것을 알았다.  
+  
+break 문에 다음과 같이 label을 달면 된다.  
+
+```java
+Outter: for(char upper='A'; upper <= 'Z'; upper++){
+	for(char lower = 'a'; lower <= 'z'; lower++){
+		System.out.println(upper + "-" + lower);
+		if(lower=='g'){
+			break Outter;
+		}
+	}
+}
+```
+
+> ### 확인문제
+
+#### 조건문과 반복문의 종류를 괄호 () 속에 넣어보세요.
+
+- 조건문: (if), (switch)
+- 반복문: (while), (for), (do-while)
+
+#### 조건문과 반복문을 설명한 것 중 틀린 것은?
+
+1. if문은 조건식의 결과에 따라 실행 흐름을 달리할 수 있다.
+2. **_switch문에서 사용할 수 있는 변수의 타입은 int, double이 될 수 있다._**
+3. for문은 카운터 변수로 지정한 횟수만큼 반복시킬 때 사용할 수 있다.
+4. break문은 switch문, for문, while문을 종료할 때 사용할 수 있다.
+
+switch문에서 사용할 수 있는 변수의 타입은 정수형(byte, char, short, int, long)과 String이 될 수 있다.
+  
+#### for문을 이용해서 1부터 100까지 정수 중 3의 배수의 총합을 구하는 코드
+
+```java
+public class Exercise03{
+	public static void main(String[] args){
+		int sum = 0;
+		for(int i = 1; i <= 100; i++){
+			if(i%3 != 0) continue;
+			sum += i;
+		}
+		System.out.println("3의 배수의 총 합: " + sum);
+	}
+}
+```
+
+#### 다음 코드를 작성하시오
+
+while문과 Math.random() 메소드를 이용해 두 개의 주사위를 던졌을 때 나오는 눈을 (눈1, 눈2) 형태로 출력  
+눈의 합이 5가 아니면 계속 주사위를 던지고, 눈의 합이 5이면 실행을 멈추는 코드 작성
+
+```java
+public class Exercise04{
+	public static void main(String[] args){
+		int marvel01;
+		int marvel02;
+
+		while(true){
+			marvel01 = Math.random()*6 + 1;;
+			marvel02 = Math.random()*6 + 1;;
+			
+			if (marvel01 + marvel02 == 5){
+				System.out.println("("+marvel01+","+marvel02+")");
+			}else break;
+		}
+	}
+}
+```
+
+#### 다음 코드를 작성하시오
+
+중첩 for문을 이용해 방정식 4x + 5y = 60의 모든 해를 구해 (x,y)형태로 출력  
+단 x,y는 10이하의 자연수
+
+```java
+public class Exercise05{
+	public static void main(String[] args){
+		for(int i = 0; i <= 10; i++){
+			for(int j = 0; j <= 10; j++){
+				if(4*i + 5*j == 60){
+					System.out.println("("+i+","+j+")");
+				}
+			}
+		}
+	}
+}
+```
+
+#### for문을 이용해 삼각형을 출력하는 코드 작성
+
+```java
+public class Exercise06{
+	public static void main(String[] args){
+		for(int i = 0; i < 5; i++){
+			for(int j = 0; j <= i; j++){
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}
+```
+
+#### 다음 코드를 작성하시오
+
+while문과 Scanner를 이용해 키보드로부터 입력된 데이터로 예금, 출금, 조회, 종료 기능을 제공하는 코드  
+
+```java
+import java.util.Scanner;
+
+public class Exercise07{
+	public static void main(String[] args){
+		boolean run = true;
+
+		int balance = 0;
+		int select = 0;
+
+		Scanner scan = new Scanner(System.in);
+
+		while(run){
+			System.out.println("---------------------");
+			System.out.println("1.예금|2.출금|3.잔고|4.종료");
+			System.out.println("---------------------");
+			System.out.print("선택> ");
+
+			select = scan.nextInt();
+
+			if(select == 1){	
+				System.out.println("예금액> ");
+				balance += scan.nextInt();
+			}else if(select == 2){
+				System.out.println("출금액> ");
+				balance -= scan.nextInt();
+			}else if(select == 3){
+				System.out.println("잔고> " + balance);
+			}else{
+				run = false;
+			}
+		}
+		System.out.println("프로그램 종료");
+	}
+}
+```
