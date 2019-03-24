@@ -54,7 +54,7 @@ public class Exercise03{
 }
 
 //Console
-나
+가
 ```
 
 #### (#1) 과 (#2) 에 들어갈 알맞은 코드는?
@@ -114,7 +114,7 @@ public class Exercise06{
 }
 ```
 
-- #1: `(double)lengthTop * lengthBottom * height`
+- #1: `(double)(lengthTop + lengthBottom) * height / 2`
 
 #### 다음 코드의 결과는?
 
