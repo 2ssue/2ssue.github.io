@@ -1,5 +1,5 @@
 ---
-title:  "[이것이 자바다] 05 참조 타입"
+title:  "[이것이 자바다] 05 참조 타입 확인문제"
 date:   2019-03-08 16:16:24 +0900
 categories: java
 tags: java
