@@ -107,9 +107,9 @@ analytics:
 # Site Author
 author:
   name             : "2ssue"
-  avatar           : "/assets/images/20190102_100308_339.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "갓 졸업한 초보 개발자의 개발기"
-  location         : "Suwon, Republic of Korea"
+  avatar           : "https://avatars3.githubusercontent.com/u/42017052?s=460&v=4" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "갓 졸업한 초보 개발자의 분투기"
+  location         : "Republic of Korea"
   email            : "e2ssue@gmail.com"
   links:
     - label: "Email"
