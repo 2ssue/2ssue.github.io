@@ -4,7 +4,6 @@ date:   2019-03-27 00:51:24 +0900
 categories: Interview
 tags: daily
 classes: wide
-toc: true
 ---
 
 오늘의 질문은 자바와 관련된 질문이다 :)  
