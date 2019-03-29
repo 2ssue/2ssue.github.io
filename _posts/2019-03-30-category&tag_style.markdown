@@ -7,8 +7,6 @@ tags: jekyll
 
 감격.. 드디어 원하던 스타일의 일부를 변경하는 데 성공했다!  
 카테고리와 태그 메뉴에서 메뉴들이 우측에 떴으면 좋겠다고 생각했는데, 1시간의 사투 끝에 바꿀 수 있었다.  
-
-![변경된 카테고리 메뉴](/assets/images/category_style.PNG)
   
 > ### 개발자모드로 학습하기
   
@@ -40,6 +38,8 @@ Style-display옵션이 grid인 것을 풀어봤더니 드디어 일자 모양이
 여기저기 뒤적거리다가 _sass 폴더에서 _page.scss 파일을 뒤적거린 결과 taxonomy__index 스타일을 정의한 곳을 발견했다.  
   
 display옵션을 지우고.. 드디어 원하던 스타일로 변경 성공 ㅠㅠㅠㅠ 감격의 순간이다.  
+
+![변경된 카테고리 메뉴](/assets/images/category_style.PNG)
 
 ___
 다음엔 이제 post style에서 제목과 본문을 좀 떨어트려놓는 시도를 해볼 예정이다.  
