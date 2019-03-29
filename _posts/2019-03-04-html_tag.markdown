@@ -47,7 +47,7 @@ HTML은 마크다운처럼 공백과 개행을 무시한다.
 ```
 
 실행 결과는 우측과 같다.
-![html_tag](/assets/images/html_tag.png){: .align-right}
+![html_tag](/assets/images/html_tag.PNG){: .align-right}
 
 > ### 글꼴 강조
 

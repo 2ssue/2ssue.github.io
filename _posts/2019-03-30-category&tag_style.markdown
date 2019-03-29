@@ -8,7 +8,7 @@ tags: jekyll
 감격.. 드디어 원하던 스타일의 일부를 변경하는 데 성공했다!  
 카테고리와 태그 메뉴에서 메뉴들이 우측에 떴으면 좋겠다고 생각했는데, 1시간의 사투 끝에 바꿀 수 있었다.  
 
-![변경된 카테고리 메뉴](/assets/images/category_style.png)
+![변경된 카테고리 메뉴](/assets/images/category_style.PNG)
   
 > ### 개발자모드로 학습하기
   
