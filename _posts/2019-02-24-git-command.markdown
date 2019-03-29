@@ -1,8 +1,8 @@
 ---
 title:  "Git 명령어"
 date:   2019-02-24 14:12:24 +0900
-categories: git
-tags: basic
+categories: VCS
+tags: git
 ---
 
 ## git 명령어
