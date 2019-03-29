@@ -1,0 +1,35 @@
+---
+title: "190329_PPI"
+date:   2019-03-29 23:51:24 +0900
+categories: Interview
+tags: daily
+classes: wide
+---
+
+오늘은 네트워크와 관련된 질문이다 :)  
+  
+#### OSI 7 Layer를 1계층부터 7계층까지 순서대로 말하시오
+
+|Application Layer|
+|Presentation Layer|
+|Session Layer|
+|Transport Layer|
+|Network Layer|
+|DataLink Layer|
+|Physical Layer|
+
+#### TCP와 UDP의 차이점에 대해 말하시오
+
+TCP는 연결형 서비스이고, 수신 여부를 확인해 신뢰성이 높은 대신 속도가 느리다.  
+UDP는 비연결형 서비스이고, 수신 여부를 확인하지 않아 신뢰성이 낮은 대신 속도가 빠르다.  
+
+TCP와 UDP의 차이를 표로 정리해보면 아래와 같다.  
+  
+||TCP|UDP|
+|연결 방식|연결형|비연결형|
+|패킷 교환 방식|가상회선|데이터그램|
+|전송 순서|전송순서보장|전송순서보장X|
+|수신 여부 확인|확인함|확인하지 않음|
+|통신 방식|1:1|1:1/1:N/N:N|
+|신뢰성|높음|낮음|
+|속도|느림|빠름|
