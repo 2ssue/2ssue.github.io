@@ -1,6 +1,6 @@
 ---
 title: "IT 기술 면접 질문 대비"
-date:   2019-03-27 00:51:24 +0900
+date:   2019-03-27 00:50:24 +0900
 categories: Interview
 tags: collect
 classes: wide
