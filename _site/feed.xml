@@ -1,4 +1,196 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-02T20:41:45+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">잔디밭 만들기 프로젝트</title><subtitle>This is a practice version blog!</subtitle><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><entry><title type="html">190401_PPI</title><link href="http://localhost:4000/interview/190401_PPI/" rel="alternate" type="text/html" title="190401_PPI" /><published>2019-04-01T21:46:24+09:00</published><updated>2019-04-01T21:46:24+09:00</updated><id>http://localhost:4000/interview/190401_PPI</id><content type="html" xml:base="http://localhost:4000/interview/190401_PPI/">&lt;p&gt;오늘도 네트워크와 관련된 문제이다 :)&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-03T02:39:24+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">잔디밭 만들기 프로젝트</title><subtitle>This is a practice version blog!</subtitle><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><entry><title type="html">190402_DailyNote</title><link href="http://localhost:4000/dn/190402_DN/" rel="alternate" type="text/html" title="190402_DailyNote" /><published>2019-04-02T22:58:24+09:00</published><updated>2019-04-02T22:58:24+09:00</updated><id>http://localhost:4000/dn/190402_DN</id><content type="html" xml:base="http://localhost:4000/dn/190402_DN/">&lt;h4 id=&quot;my-trivial-today&quot;&gt;&lt;em&gt;My Trivial Today&lt;/em&gt;&lt;/h4&gt;
+
+&lt;p&gt;오늘도 뿌듯한 하루였다.&lt;br /&gt;
+블로그 고치는거 너무 재밌어!!!!&lt;/p&gt;
+
+&lt;p&gt;내일부턴 진짜로 알고리즘 풀겠습니다..&lt;br /&gt;
+이제 고칠 것도 거의 없다 ㅎㅎㅎ!&lt;/p&gt;
+
+&lt;p&gt;블로그 고치는건 Refresh로 쉬는 날에만 하도록 하자 :) !&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;today-i-did&quot;&gt;&lt;em&gt;Today I Did&lt;/em&gt;&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;영어 회화 공부하기&lt;/li&gt;
+  &lt;li&gt;Git 강의 듣기&lt;/li&gt;
+  &lt;li&gt;데이터베이스 공부하기&lt;/li&gt;
+  &lt;li&gt;블로그 테마 바꾸기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;someday-i-will&quot;&gt;&lt;em&gt;Someday I Will&lt;/em&gt;&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;블로그 테마 바꾸기&lt;br /&gt;
+다음 미션은 홈 화면 바꾸기이다.&lt;br /&gt;
+최근 포스트 화면은 너무 심심해!&lt;/li&gt;
+  &lt;li&gt;알고리즘 하루에 2개씩은 풀기&lt;/li&gt;
+  &lt;li&gt;프로젝트 정리하기&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">My Trivial Today</summary></entry><entry><title type="html">190402_Prepare_Job_Interview</title><link href="http://localhost:4000/interview/190402_PJI/" rel="alternate" type="text/html" title="190402_Prepare_Job_Interview" /><published>2019-04-02T22:38:24+09:00</published><updated>2019-04-02T22:38:24+09:00</updated><id>http://localhost:4000/interview/190402_PJI</id><content type="html" xml:base="http://localhost:4000/interview/190402_PJI/">&lt;p&gt;오늘은 데이터베이스와 관련된 문제다 :)&lt;/p&gt;
+
+&lt;h4 id=&quot;정규화의-목적에-대해서-말하시오&quot;&gt;정규화의 목적에 대해서 말하시오&lt;/h4&gt;
+
+&lt;p&gt;관계형 데이터베이스에서 데이터의 중복을 최소화하기 위해 데이터를 구조화하는 작업이다.&lt;/p&gt;
+
+&lt;p&gt;함수적 종속성을 판단해 릴레이션을 좀 더 작게 분해한다.&lt;br /&gt;
+이러한 과정을 정규화 과정이라고 하는데, 아래와 같이 6개의 단계로 나뉜다.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;제 1 정규형&lt;/td&gt;
+      &lt;td&gt;도메인을 원자값이 되도록 분해&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;제 2 정규형&lt;/td&gt;
+      &lt;td&gt;부분 함수 종속 제거&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;제 3 정규형&lt;/td&gt;
+      &lt;td&gt;이행적 함수 종속 제거&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;BCNF&lt;/td&gt;
+      &lt;td&gt;후보자가 아닌 결정자 관계 제거&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;제 4 정규형&lt;/td&gt;
+      &lt;td&gt;다치 종속 관계 제거&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;제 5 정규형&lt;/td&gt;
+      &lt;td&gt;후보키를 통하지 않은 JOIN 종속 관계 제거&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;이를 통해 Anomaly 현상을 제거할 수 있고, 구조 확장 시 일부만 변경해도 된다는 등의 장점이 있다.&lt;br /&gt;
+그러나 릴레이션의 분해로 JOIN 연산이 많아져 질의 응답시간이 오래 걸린다는 단점이 있다.&lt;br /&gt;
+이를 해결하기 위해 역정규화(De-normalization)를 하기도 한다.&lt;/p&gt;
+
+&lt;h4 id=&quot;트랜잭션에-대해-설명하시오&quot;&gt;트랜잭션에 대해 설명하시오&lt;/h4&gt;
+
+&lt;p&gt;하나의 작업을 수행하기 위해 필요한 데이터베이스 연산의 집합이다.&lt;br /&gt;
+데이터베이스에서 논리적인 작업의 단위가 되어 장애가 발생했을 시에 주로 사용된다.&lt;br /&gt;
+작업 집합을 원상태로 복구 했을 때 작업의 일부만 적용되지 않도록 한다.&lt;/p&gt;
+
+&lt;p&gt;즉 논리적 작업 집합이 100% 적용되거나, 아무것도 적용되지 않는 것을 보장하는 것이다.&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">오늘은 데이터베이스와 관련된 문제다 :)</summary></entry><entry><title type="html">jekyll 블로그 포스트 스타일과 글꼴 바꾸기!</title><link href="http://localhost:4000/blog/font&post_style_update/" rel="alternate" type="text/html" title="jekyll 블로그 포스트 스타일과 글꼴 바꾸기!" /><published>2019-04-02T22:00:24+09:00</published><updated>2019-04-02T22:00:24+09:00</updated><id>http://localhost:4000/blog/font&amp;post_style_update</id><content type="html" xml:base="http://localhost:4000/blog/font&amp;post_style_update/">&lt;p&gt;제목이랑 본문을 떨어트려 놓는다는걸 완전히 바꾸어버렸다.&lt;/p&gt;
+
+&lt;p&gt;기존이 어땠는지 보기 위해서 이전 사진을 좀 찍어놓을걸 그랬다!&lt;br /&gt;
+&lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/post/post-future-date/&quot;&gt;Minimal Mistakes의 기본 포스트&lt;/a&gt;와 같으니 궁금하면 참고..!&lt;/p&gt;
+
+&lt;p&gt;이번엔 원하는 대로 싹 바꾼다고 엄청난 사투를 벌였다.&lt;br /&gt;
+오늘도 초짜는 개발자 모드로 뒤적거리느라 3-4시간 정도 걸린 것 같다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;오늘도-개발자-모드&quot;&gt;오늘도, 개발자 모드!&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;지난 기억을 되살려, 개발자모드&lt;code class=&quot;highlighter-rouge&quot;&gt;F12&lt;/code&gt;로 뒤적거리면서 변경하고 싶은 부분을 클릭했다.&lt;br /&gt;
+원래 바꾸려던 것은 제목인 Header였으니 이 부분을 클릭!&lt;/p&gt;
+
+&lt;p&gt;CSS를 변경해가면서 원하는 스타일을 찾아보았다.&lt;br /&gt;
+애초에 원하던건 본문과 제목을 떨어트리는 것이었는데,&lt;br /&gt;
+이 부분은 &lt;code class=&quot;highlighter-rouge&quot;&gt;\_sass\_page.scss&lt;/code&gt;에서 &lt;strong&gt;page__title&lt;/strong&gt;의 line-height 속성 값을 올려주면 됐다.&lt;/p&gt;
+
+&lt;p&gt;근데 뭔가 이걸 떼는 것 만으로는 만족스러운 스타일이 되지 못했다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;다른-사람들은-어떻게-했을까&quot;&gt;다른 사람들은 어떻게 했을까?&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;다른 사람들의 블로그들은 어떻게 생겼는지, 한번 참고해봤다.&lt;br /&gt;
+내가 마음에 드는 포스트 스타일들은 제목이 다들 가운데에 있길래 한번 옮겨보았다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/before_design.PNG&quot; alt=&quot;제목 align만 옮긴 상태&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;뭔가 이상하다.. 내가 원하는 스타일이 아니었다.&lt;br /&gt;
+본문과 제목이 따로 노는 것 같다고 해야하나? 암튼 별로였다.&lt;/p&gt;
+
+&lt;p&gt;그래서 하단에 있던 게시 날짜, 태그, 카테고리를 상단으로 옮겨보기로 했다.&lt;br /&gt;
+문제의 3-4시간은 여기서 발생했다!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;아래에-있던걸-위로-옮기는건데-글자-지우기&quot;&gt;아래에 있던걸 위로 옮기는건데… 글자 지우기&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;옮겨보려고 하니, 그 스타일 그대로 옮기는건 좀 아니었다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/footer_style.PNG&quot; alt=&quot;footer style&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이런 모양인데.. 위로 그대로 옮기면 또 매우 이상했음 ㅠ_ㅠ&lt;br /&gt;
+그래서 픽토그램 옆에 Categories, Updated 글자를 없애보기로 했다.&lt;br /&gt;
+박스 모양도… 너무 두껍게 생겼어!&lt;/p&gt;
+
+&lt;p&gt;개발자 모드에서 클릭클릭 하다보면, 해당 메뉴가 &lt;strong&gt;.page__taxonomy-item&lt;/strong&gt; 인걸 확인 할 수 있었다.&lt;br /&gt;
+이것도 CSS에서 바꾸겠거니.. 하고 또 이리저리 고쳐봤다.&lt;/p&gt;
+
+&lt;p&gt;border 속성을 조정하니 박스 테두리는 없앨 수 있었다.&lt;/p&gt;
+
+&lt;p&gt;근데 글자는 CSS가 아니다.. 그럼 HTML이겠지..? 하고 또 뒤적거리기 시작했다.&lt;br /&gt;
+저번에 삽질을 하도 많이해서 이제 어느정도 파일보는 법은 익혀진 것 같다!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;page__taxnomy&lt;/strong&gt; class 였으니 그 파일이 있겠지, 하고 파일을 찾아봤다.&lt;br /&gt;
+HTML파일들은 지난번에 &lt;code class=&quot;highlighter-rouge&quot;&gt;_include&lt;/code&gt; 폴더에서 찾을 수 있었던 걸 기억해서 찾아냈다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/page__taxonomy.png&quot; alt=&quot;taxonomy&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;category-list.html과 tag-list.html을 포함하고 있다는 것 같으니까 그 파일을 찾아봤다.&lt;/p&gt;
+
+&lt;p&gt;텍스트 값이 ui-text로 지정해주는 부분이 있는 것을 보고 주석처리 해줬다.&lt;br /&gt;
+드디어 픽토그램 옆 이름을 지울 수 있었다! 야후!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;글자를-지웠더니-가로로-배열하는-난관이&quot;&gt;글자를 지웠더니 가로로 배열하는 난관이..&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;세로로 쭉 있던 모양을 가로 모양으로 바꿔주고 싶었다.&lt;br /&gt;
+그래야 뭔가 더 있어보이는 모양새!!!!&lt;/p&gt;
+
+&lt;p&gt;그래서 이리저리 아무 스타일을 해보다가, 몇 번(엄청난)의 시행착오를 거쳤지만&lt;br /&gt;
+레이아웃 크기를 조절해 줄 수 있는 &lt;strong&gt;flex라는 display 옵션&lt;/strong&gt;을 찾았다.&lt;/p&gt;
+
+&lt;p&gt;드디어 가로배열에 성공하고, 구글링을 거치면서 개별 스타일로 flex값을 조정해주면&lt;br /&gt;
+내가 원하는 스타일로 변경이 가능하다는 것을 알게 됐다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; 태그 어디다 쓰는 걸까 배울 땐 되게 궁금했는데 역시 경험인가 보다..&lt;br /&gt;
+태그 별로 스타일 지정을 해줄 수 있어서 쓸모있는 좋은 태그였다. 쓸모없는 건 줄 알았는데ㅎㅎ..&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;드디어-끝&quot;&gt;드디어 끝!&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;드디어 카테고리와 날짜를 옮기고, 약간의 경계선이 필요하다고 느꼈다.&lt;br /&gt;
+그게 지금의 블로그 최종본인데, 저자 이름이랑 수평선&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;br&amp;gt;&lt;/code&gt;을 넣어줬다.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;del&gt;저자를 어떻게 기본으로 적어줘야 할 지 모르겠어서 일단 HTML에 때려박은건 비밀이다ㅎㅎㅎ&lt;/del&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;끝인-줄-알았지만-폰트-변경이-남았다&quot;&gt;끝인 줄 알았지만 폰트 변경이 남았다.&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;바꾸는 김에 영어 폰트가 마음에 안들어서 여기까지 바꿔보기로 했다.&lt;br /&gt;
+검색해보니 웹 폰트로 구글 폰트를 쓰는 경우가 많은 것 같아서 나도 구글 웹폰트로!&lt;/p&gt;
+
+&lt;p&gt;폰트는 대체 어디 정의 되어 있는 걸까 또 뒤적거리다가 &lt;del&gt;이쯤되면 뒤적 마스터&lt;/del&gt;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;\_sass\minimal-mistakes\_variables.scss\&lt;/code&gt;에 정의 되어있는 것을 찾았다.&lt;/p&gt;
+
+&lt;p&gt;기존에 있던 맘에 안들던 폰트는 다 지워버리고! 내가 마음에 들었던 Lora를 추가했다.&lt;/p&gt;
+
+&lt;p&gt;CSS 파일 상단에 임포트 해준 다음, 적어주기만 하면 되서 편했다.&lt;br /&gt;
+이렇게 폰트 변경까지 끝! 신난다! XD!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/font_update.png&quot; alt=&quot;font&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;오늘도 뿌듯한 작업이었다.&lt;br /&gt;
+다음엔 홈화면을 바꿔보기로 해야지!&lt;/p&gt;
+
+&lt;p&gt;삽질하면서 그래도 HTML, CSS, JS 보는 법을 익혀가는 것 같아서 기분이 좋다 :)&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="jekyll" /><summary type="html">제목이랑 본문을 떨어트려 놓는다는걸 완전히 바꾸어버렸다. 기존이 어땠는지 보기 위해서 이전 사진을 좀 찍어놓을걸 그랬다! Minimal Mistakes의 기본 포스트와 같으니 궁금하면 참고..! 이번엔 원하는 대로 싹 바꾼다고 엄청난 사투를 벌였다. 오늘도 초짜는 개발자 모드로 뒤적거리느라 3-4시간 정도 걸린 것 같다. 오늘도, 개발자 모드!</summary></entry><entry><title type="html">190401_Prepare_Job_Interview</title><link href="http://localhost:4000/interview/190401_PJI/" rel="alternate" type="text/html" title="190401_Prepare_Job_Interview" /><published>2019-04-01T21:46:24+09:00</published><updated>2019-04-01T21:46:24+09:00</updated><id>http://localhost:4000/interview/190401_PJI</id><content type="html" xml:base="http://localhost:4000/interview/190401_PJI/">&lt;p&gt;오늘도 네트워크와 관련된 문제이다 :)&lt;/p&gt;
 
 &lt;h4 id=&quot;http에서-get과-post의-차이는&quot;&gt;HTTP에서 GET과 POST의 차이는?&lt;/h4&gt;
 
@@ -24,11 +216,7 @@ url에 데이터를 담아서 전송하기 때문에 전송할 수 있는 데이
 이 때 사설 IP를 공인 IP로 바꿔주는 데 사용하는 것이 IP주소 변환기인 &lt;code class=&quot;highlighter-rouge&quot;&gt;NAT(Network Address Translation)&lt;/code&gt;이다.&lt;br /&gt;
 외부에서 들어오는 공인 IP 주소 또한 들어올 때 사설 IP 주소로 변환한다.&lt;br /&gt;
 이렇게 주소 변환과정이 반드시 필요하기 때문에, 보안성이 좋다는 Side Effect가 있다.&lt;br /&gt;
-NAT는 공인 IP 주소와 사설 IP 주소를 분리함으로써, IPv4의 주소 고갈 문제를 연장시켰다.&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">오늘도 네트워크와 관련된 문제이다 :) HTTP에서 GET과 POST의 차이는?</summary></entry><entry><title type="html">190401_DN</title><link href="http://localhost:4000/dn/190401_DN/" rel="alternate" type="text/html" title="190401_DN" /><published>2019-04-01T21:43:24+09:00</published><updated>2019-04-01T21:43:24+09:00</updated><id>http://localhost:4000/dn/190401_DN</id><content type="html" xml:base="http://localhost:4000/dn/190401_DN/">&lt;p&gt;&lt;em&gt;190401 Daily Note&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h3 id=&quot;mtt&quot;&gt;MTT&lt;/h3&gt;
-&lt;h6 id=&quot;my-trivial-today&quot;&gt;&lt;em&gt;My Trivial Today&lt;/em&gt;&lt;/h6&gt;
+NAT는 공인 IP 주소와 사설 IP 주소를 분리함으로써, IPv4의 주소 고갈 문제를 연장시켰다.&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">오늘도 네트워크와 관련된 문제이다 :) HTTP에서 GET과 POST의 차이는?</summary></entry><entry><title type="html">190401_DailyNote</title><link href="http://localhost:4000/dn/190401_DN/" rel="alternate" type="text/html" title="190401_DailyNote" /><published>2019-04-01T21:43:24+09:00</published><updated>2019-04-01T21:43:24+09:00</updated><id>http://localhost:4000/dn/190401_DN</id><content type="html" xml:base="http://localhost:4000/dn/190401_DN/">&lt;h4 id=&quot;my-trivial-today&quot;&gt;&lt;em&gt;My Trivial Today&lt;/em&gt;&lt;/h4&gt;
 
 &lt;p&gt;주말부터 오늘까지는 Refresh의 의미로 쉬었다.&lt;br /&gt;
 뭔가 딱히 한건 없지만 괜히 몸이 피곤한 것 같아서&lt;br /&gt;
@@ -38,8 +226,7 @@ NAT는 공인 IP 주소와 사설 IP 주소를 분리함으로써, IPv4의 주�
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;tid&quot;&gt;TID&lt;/h3&gt;
-&lt;h6 id=&quot;today-i-did&quot;&gt;&lt;em&gt;Today I Did&lt;/em&gt;&lt;/h6&gt;
+&lt;h4 id=&quot;today-i-did&quot;&gt;&lt;em&gt;Today I Did&lt;/em&gt;&lt;/h4&gt;
 
 &lt;ol&gt;
   &lt;li&gt;영어 회화 공부하기&lt;/li&gt;
@@ -49,8 +236,7 @@ Git 강의가 은근히 재밌다. 이고잉님 강의 재미써..&lt;/li&gt;
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;siw&quot;&gt;SIW&lt;/h3&gt;
-&lt;h6 id=&quot;someday-i-will&quot;&gt;&lt;em&gt;Someday I Will&lt;/em&gt;&lt;/h6&gt;
+&lt;h4 id=&quot;someday-i-will&quot;&gt;&lt;em&gt;Someday I Will&lt;/em&gt;&lt;/h4&gt;
 
 &lt;ol&gt;
   &lt;li&gt;블로그 테마 바꾸기&lt;br /&gt;
@@ -58,7 +244,7 @@ Git 강의가 은근히 재밌다. 이고잉님 강의 재미써..&lt;/li&gt;
 포스트 제목 밑에 여백 넣는 건 좀 더 빨리 성공하길 바란다.&lt;/li&gt;
   &lt;li&gt;알고리즘 하루에 2개씩은 풀기&lt;/li&gt;
   &lt;li&gt;프로젝트 정리하기&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">190401 Daily Note</summary></entry><entry><title type="html">jekyll 블로그 카테고리 스타일 바꾸기!</title><link href="http://localhost:4000/blog/category&tag_style/" rel="alternate" type="text/html" title="jekyll 블로그 카테고리 스타일 바꾸기!" /><published>2019-03-30T02:10:24+09:00</published><updated>2019-03-30T02:10:24+09:00</updated><id>http://localhost:4000/blog/category&amp;tag_style</id><content type="html" xml:base="http://localhost:4000/blog/category&amp;tag_style/">&lt;p&gt;감격.. 드디어 원하던 스타일의 일부를 변경하는 데 성공했다!&lt;br /&gt;
+&lt;/ol&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">My Trivial Today</summary></entry><entry><title type="html">jekyll 블로그 카테고리 스타일 바꾸기!</title><link href="http://localhost:4000/blog/category&tag_style/" rel="alternate" type="text/html" title="jekyll 블로그 카테고리 스타일 바꾸기!" /><published>2019-03-30T02:10:24+09:00</published><updated>2019-03-30T02:10:24+09:00</updated><id>http://localhost:4000/blog/category&amp;tag_style</id><content type="html" xml:base="http://localhost:4000/blog/category&amp;tag_style/">&lt;p&gt;감격.. 드디어 원하던 스타일의 일부를 변경하는 데 성공했다!&lt;br /&gt;
 카테고리와 태그 메뉴에서 메뉴들이 우측에 떴으면 좋겠다고 생각했는데, 1시간의 사투 끝에 바꿀 수 있었다.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -103,11 +289,7 @@ Style-display옵션이 grid인 것을 풀어봤더니 드디어 일자 모양이
 &lt;hr /&gt;
 &lt;p&gt;다음엔 이제 post style에서 제목과 본문을 좀 떨어트려놓는 시도를 해볼 예정이다.&lt;/p&gt;
 
-&lt;p&gt;신난다!&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="jekyll" /><summary type="html">감격.. 드디어 원하던 스타일의 일부를 변경하는 데 성공했다! 카테고리와 태그 메뉴에서 메뉴들이 우측에 떴으면 좋겠다고 생각했는데, 1시간의 사투 끝에 바꿀 수 있었다. 개발자모드로 학습하기 개발자 모드로 뒤적거리다가 html을 변경해줘야 한다는 걸 알게됐다. html 초짜라서 태그도 못알아보지만 일단 배껴보기로 결심.. 오랜만에 jekyll server를 가동시켰다.</summary></entry><entry><title type="html">190329_DN</title><link href="http://localhost:4000/dn/190329_DN/" rel="alternate" type="text/html" title="190329_DN" /><published>2019-03-30T00:52:24+09:00</published><updated>2019-03-30T00:52:24+09:00</updated><id>http://localhost:4000/dn/190329_DN</id><content type="html" xml:base="http://localhost:4000/dn/190329_DN/">&lt;p&gt;&lt;em&gt;190329 Daily Note&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h3 id=&quot;mtt&quot;&gt;MTT&lt;/h3&gt;
-&lt;h6 id=&quot;my-trivial-today&quot;&gt;&lt;em&gt;My Trivial Today&lt;/em&gt;&lt;/h6&gt;
+&lt;p&gt;신난다!&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="jekyll" /><summary type="html">감격.. 드디어 원하던 스타일의 일부를 변경하는 데 성공했다! 카테고리와 태그 메뉴에서 메뉴들이 우측에 떴으면 좋겠다고 생각했는데, 1시간의 사투 끝에 바꿀 수 있었다. 개발자모드로 학습하기 개발자 모드로 뒤적거리다가 html을 변경해줘야 한다는 걸 알게됐다. html 초짜라서 태그도 못알아보지만 일단 배껴보기로 결심.. 오랜만에 jekyll server를 가동시켰다.</summary></entry><entry><title type="html">190329_DailyNote</title><link href="http://localhost:4000/dn/190329_DN/" rel="alternate" type="text/html" title="190329_DailyNote" /><published>2019-03-30T00:52:24+09:00</published><updated>2019-03-30T00:52:24+09:00</updated><id>http://localhost:4000/dn/190329_DN</id><content type="html" xml:base="http://localhost:4000/dn/190329_DN/">&lt;h4 id=&quot;my-trivial-today&quot;&gt;&lt;em&gt;My Trivial Today&lt;/em&gt;&lt;/h4&gt;
 
 &lt;p&gt;어제는 저녁 약속이 있어서 DN은 빼먹었다 ;)&lt;br /&gt;
 대신 PPI는 새벽에 올려놔서 잔디 씨앗은 심었다..!&lt;br /&gt;
@@ -124,8 +306,7 @@ Style-display옵션이 grid인 것을 풀어봤더니 드디어 일자 모양이
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;tid&quot;&gt;TID&lt;/h3&gt;
-&lt;h6 id=&quot;today-i-did&quot;&gt;&lt;em&gt;Today I Did&lt;/em&gt;&lt;/h6&gt;
+&lt;h4 id=&quot;today-i-did&quot;&gt;&lt;em&gt;Today I Did&lt;/em&gt;&lt;/h4&gt;
 
 &lt;ol&gt;
   &lt;li&gt;데이터베이스 개념 읽기&lt;/li&gt;
@@ -138,8 +319,7 @@ Style-display옵션이 grid인 것을 풀어봤더니 드디어 일자 모양이
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;siw&quot;&gt;SIW&lt;/h3&gt;
-&lt;h6 id=&quot;someday-i-will&quot;&gt;&lt;em&gt;Someday I Will&lt;/em&gt;&lt;/h6&gt;
+&lt;h4 id=&quot;someday-i-will&quot;&gt;&lt;em&gt;Someday I Will&lt;/em&gt;&lt;/h4&gt;
 
 &lt;ol&gt;
   &lt;li&gt;블로그 테마 바꾸기&lt;br /&gt;
@@ -147,7 +327,7 @@ Style-display옵션이 grid인 것을 풀어봤더니 드디어 일자 모양이
 그리고 카테고리/태그 콜렉터는 우측에서 볼 수 있었으면 좋겠어… 빨리 바꾸고 싶다…&lt;/li&gt;
   &lt;li&gt;알고리즘 하루에 2개씩은 풀기&lt;/li&gt;
   &lt;li&gt;프로젝트 정리하기&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">190329 Daily Note</summary></entry><entry><title type="html">190329_PPI</title><link href="http://localhost:4000/interview/190329_PPI/" rel="alternate" type="text/html" title="190329_PPI" /><published>2019-03-29T23:51:24+09:00</published><updated>2019-03-29T23:51:24+09:00</updated><id>http://localhost:4000/interview/190329_PPI</id><content type="html" xml:base="http://localhost:4000/interview/190329_PPI/">&lt;p&gt;오늘은 네트워크와 관련된 질문이다 :)&lt;/p&gt;
+&lt;/ol&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">My Trivial Today</summary></entry><entry><title type="html">190329_Prepare_Job_Interview</title><link href="http://localhost:4000/interview/190329_PJI/" rel="alternate" type="text/html" title="190329_Prepare_Job_Interview" /><published>2019-03-29T23:51:24+09:00</published><updated>2019-03-29T23:51:24+09:00</updated><id>http://localhost:4000/interview/190329_PJI</id><content type="html" xml:base="http://localhost:4000/interview/190329_PJI/">&lt;p&gt;오늘은 네트워크와 관련된 질문이다 :)&lt;/p&gt;
 
 &lt;h4 id=&quot;osi-7-layer를-1계층부터-7계층까지-순서대로-말하시오&quot;&gt;OSI 7 Layer를 1계층부터 7계층까지 순서대로 말하시오&lt;/h4&gt;
 
@@ -245,7 +425,7 @@ reset과 revert는 모두 &lt;strong&gt;이전 버전 id로 돌아간다는 특�
 &lt;p&gt;직접 써보면 log에 남냐, 안남냐 차이가 보이긴 하지만&lt;br /&gt;
 그 차이를 잘 설명해놓은 만화를 발견해서 블로그에 올려본다 :)&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.popit.kr/%EA%B0%9C%EB%B0%9C%EB%B0%94%EB%B3%B4%EB%93%A4-git-back-to-the-future/&quot;&gt;http://www.popit.kr/&lt;/a&gt;&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="git" /><summary type="html">오늘 본 git 강의 중에 git revert와 git reset이 있었다.</summary></entry><entry><title type="html">190328_PPI</title><link href="http://localhost:4000/interview/190328_PPI/" rel="alternate" type="text/html" title="190328_PPI" /><published>2019-03-28T00:51:24+09:00</published><updated>2019-03-28T00:51:24+09:00</updated><id>http://localhost:4000/interview/190328_PPI</id><content type="html" xml:base="http://localhost:4000/interview/190328_PPI/">&lt;p&gt;오늘은 보안과 관련된 질문이다 :)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.popit.kr/%EA%B0%9C%EB%B0%9C%EB%B0%94%EB%B3%B4%EB%93%A4-git-back-to-the-future/&quot;&gt;http://www.popit.kr/&lt;/a&gt;&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="git" /><summary type="html">오늘 본 git 강의 중에 git revert와 git reset이 있었다.</summary></entry><entry><title type="html">190328_Prepare_Job_Interview</title><link href="http://localhost:4000/interview/190328_PJI/" rel="alternate" type="text/html" title="190328_Prepare_Job_Interview" /><published>2019-03-28T00:51:24+09:00</published><updated>2019-03-28T00:51:24+09:00</updated><id>http://localhost:4000/interview/190328_PJI</id><content type="html" xml:base="http://localhost:4000/interview/190328_PJI/">&lt;p&gt;오늘은 보안과 관련된 질문이다 :)&lt;/p&gt;
 
 &lt;h4 id=&quot;dns-공격에는-어떤-것이-있는지-설명하시오&quot;&gt;DNS 공격에는 어떤 것이 있는지 설명하시오&lt;/h4&gt;
 
@@ -279,66 +459,4 @@ DNS를 무력화시켜 연동된 다른 웹사이트를 마비시키는 공격�
   &lt;p&gt;사용자 컴퓨터에 등록된 DNS의 IP주소가 이미 변경되어 있을 경우이다.&lt;br /&gt;
 이 경우 사용자가 제대로 질의를 보냈더라도 공격자가 지정한 서버로 질의하기 때문에&lt;br /&gt;
 의도하지 않은 곳으로 접속될 수 있다.&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">오늘은 보안과 관련된 질문이다 :) DNS 공격에는 어떤 것이 있는지 설명하시오</summary></entry><entry><title type="html">190327_DN</title><link href="http://localhost:4000/dn/190327_DN/" rel="alternate" type="text/html" title="190327_DN" /><published>2019-03-27T23:23:24+09:00</published><updated>2019-03-27T23:23:24+09:00</updated><id>http://localhost:4000/dn/190327_DN</id><content type="html" xml:base="http://localhost:4000/dn/190327_DN/">&lt;p&gt;&lt;em&gt;190327 Daily Note&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h3 id=&quot;mtt&quot;&gt;MTT&lt;/h3&gt;
-&lt;h6 id=&quot;my-trivial-today&quot;&gt;&lt;em&gt;My Trivial Today&lt;/em&gt;&lt;/h6&gt;
-
-&lt;p&gt;오늘의 씨앗도 무사히 심기~~&lt;/p&gt;
-
-&lt;p&gt;경험정리 할 때는 하나도 안졸리더니 공부하려니까 졸려서 결국 한시간 졸았다.&lt;br /&gt;
-안졸리는 날이 없어..&lt;/p&gt;
-
-&lt;p&gt;오늘 카페에 가려고 했는데 뭔가 또 핑계거리가 있어서 안갔다.&lt;br /&gt;
-내일도 알고리즘 강의 듣느라 안 갈 예정 XD!&lt;br /&gt;
-대신 친구랑 카페에서 잠깐 알고리즘 풀기로 했다..&lt;/p&gt;
-
-&lt;p&gt;내일 저녁 약속도 있어서 따로 공부는 못하겠어요 ;(&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;tid&quot;&gt;TID&lt;/h3&gt;
-&lt;h6 id=&quot;today-i-did&quot;&gt;&lt;em&gt;Today I Did&lt;/em&gt;&lt;/h6&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;데이터베이스 개념 읽기&lt;br /&gt;
-오늘은 그래도 좀 더 읽었다. 뭐라도 한 나 자신.. 잘했어..&lt;/li&gt;
-  &lt;li&gt;경험 정리하기&lt;/li&gt;
-  &lt;li&gt;영어 회화 공부하기&lt;/li&gt;
-  &lt;li&gt;Git 강의 듣기&lt;br /&gt;
-그냥 맨날 add, commit, push만 하다가 어떻게 동작하는 지 알아야 할 것 같아서.. 오늘부터 시작이다!&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;siw&quot;&gt;SIW&lt;/h3&gt;
-&lt;h6 id=&quot;someday-i-will&quot;&gt;&lt;em&gt;Someday I Will&lt;/em&gt;&lt;/h6&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;블로그 테마 바꾸기&lt;/li&gt;
-  &lt;li&gt;알고리즘 하루에 2개씩은 풀기&lt;/li&gt;
-  &lt;li&gt;프로젝트 정리하기&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">190327 Daily Note</summary></entry><entry><title type="html">IT 기술 면접 질문 대비</title><link href="http://localhost:4000/interview/PPI_Collector/" rel="alternate" type="text/html" title="IT 기술 면접 질문 대비" /><published>2019-03-27T00:51:24+09:00</published><updated>2019-03-27T00:51:24+09:00</updated><id>http://localhost:4000/interview/PPI_Collector</id><content type="html" xml:base="http://localhost:4000/interview/PPI_Collector/">&lt;p&gt;하루에 한 두개씩 면접 대비로 질문에 대해 생각하는 걸 해보려고 한다.&lt;br /&gt;
-질문 중엔 그 동안 받았던 질문도, 개인적으로 생각해본 질문도 있을 듯!&lt;/p&gt;
-
-&lt;p&gt;앞으로 여기에 질문들의 링크를 추가해볼 예정이다.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://2ssue.github.io/interview/190327_PPI/&quot;&gt;JVM의 역할/자바의 특징&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://2ssue.github.io/interview/190328_PPI/&quot;&gt;DNS 공격/DNS Spoofing&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://2ssue.github.io/interview/190329_PPI/&quot;&gt;OSI 7 Layer/TCP와 UDP의 차이&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://2ssue.github.io/interview/190401_PPI/&quot;&gt;GET과 POST의 차이/NAT란?&lt;/a&gt;&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="collect" /><summary type="html">하루에 한 두개씩 면접 대비로 질문에 대해 생각하는 걸 해보려고 한다. 질문 중엔 그 동안 받았던 질문도, 개인적으로 생각해본 질문도 있을 듯! 앞으로 여기에 질문들의 링크를 추가해볼 예정이다.</summary></entry><entry><title type="html">190327_PPI</title><link href="http://localhost:4000/interview/190327_PPI/" rel="alternate" type="text/html" title="190327_PPI" /><published>2019-03-27T00:51:24+09:00</published><updated>2019-03-27T00:51:24+09:00</updated><id>http://localhost:4000/interview/190327_PPI</id><content type="html" xml:base="http://localhost:4000/interview/190327_PPI/">&lt;p&gt;오늘의 질문은 자바와 관련된 질문이다 :)&lt;/p&gt;
-
-&lt;h4 id=&quot;자바의-jvm의-역할에-대해-설명하시오&quot;&gt;자바의 JVM의 역할에 대해 설명하시오&lt;/h4&gt;
-
-&lt;p&gt;자바 프로그램은 기계어가 아닌 바이트 코드로 이뤄져있다.&lt;br /&gt;
-따라서 이를 해석하고 실행할 수 있는 가상 운영체제가 필요한데, 이것이 JVM(Java Virtual Machine)이다.&lt;/p&gt;
-
-&lt;p&gt;즉 JVM은 자바 프로그램을 기계어로 번역해 각 운영체제에서 실행될 수 있도록 하는 역할을 한다.&lt;/p&gt;
-
-&lt;h4 id=&quot;자바의-특징에-대해-설명하시오&quot;&gt;자바의 특징에 대해 설명하시오&lt;/h4&gt;
-
-&lt;p&gt;객체 지향 프로그래밍(Object Oriented Programming, OOP)언어이다.&lt;br /&gt;
-JRE를 통해 모든 운영 체제에서 실행이 가능하다.&lt;br /&gt;
-Garbage Collector를 통해 메모리를 자동으로 관리한다.&lt;br /&gt;
-컴파일 한번으로 기계어가 만들어지지 않기 때문에 C, C++ 언어에 비해 느리다.&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">오늘의 질문은 자바와 관련된 질문이다 :) 자바의 JVM의 역할에 대해 설명하시오</summary></entry></feed>
+&lt;/blockquote&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">오늘은 보안과 관련된 질문이다 :) DNS 공격에는 어떤 것이 있는지 설명하시오</summary></entry></feed>

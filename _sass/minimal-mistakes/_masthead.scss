@@ -4,7 +4,6 @@
 
 .masthead {
   position: relative;
-  border-bottom: 1px solid $border-color;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
@@ -59,6 +58,7 @@
   margin-right: 0;
   width: 100%;
   clear: both;
+  border-bottom: 2px solid #40514e;
 
   .site-nav {
     margin-left: 0;

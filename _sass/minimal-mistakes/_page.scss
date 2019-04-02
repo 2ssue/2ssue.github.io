@@ -59,6 +59,7 @@
   color: darkslategray;
   text-align: center;
   font-size: xx-large;
+  border-bottom: 1px solid darkgray;
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -277,6 +278,7 @@
    ========================================================================== */
 
 .page__taxonomy {
+  flex:auto;
   .sep {
     display: none;
   }

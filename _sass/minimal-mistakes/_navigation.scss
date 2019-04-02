@@ -90,7 +90,7 @@
       &.current,
       &.current.disabled {
         color: #fff;
-        background: $primary-color;
+        background: cadetblue;
       }
 
       &.disabled {
@@ -508,7 +508,7 @@
   .nav__title {
     color: #fff;
     font-size: $type-size-6;
-    background: $primary-color;
+    background: cadetblue;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }

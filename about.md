@@ -5,17 +5,12 @@ title: 2ssue
 permalink: /about/
 ---
 
-> _갓 졸업한 초보 프로그래머의 개발기_
+<p style="font-size: small;font-style: italic">갓 졸업한 초보 개발자의 분투기록</p>
 
-###  Program Language
-`Delphi`
-`Java`
-`C/C++`
-`HTML/CSS`
-`Javascript`
+> ###  Program Language
 
-### Career
-**Ajou university** 학사 <br>
-_2014.03 ~ 2019.02_ <br> <br>
-**Wins** 인턴 <br>
-_2018.07 ~ 2018.12_
+Delphi  
+Java  
+C/C++  
+HTML/CSS  
+JavaScript  
