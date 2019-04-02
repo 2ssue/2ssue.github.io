@@ -11,7 +11,8 @@ classes: wide
   
 앞으로 여기에 질문들의 링크를 추가해볼 예정이다.  
 
-[JVM의 역할/자바의 특징](https://2ssue.github.io/interview/190327_PPI/)  
-[DNS 공격/DNS Spoofing](https://2ssue.github.io/interview/190328_PPI/)  
-[OSI 7 Layer/TCP와 UDP의 차이](https://2ssue.github.io/interview/190329_PPI/)  
-[GET과 POST의 차이/NAT란?](https://2ssue.github.io/interview/190401_PPI/)  
+[JVM의 역할____자바의 특징](https://2ssue.github.io/interview/190327_PJI/)  
+[DNS 공격____DNS Spoofing](https://2ssue.github.io/interview/190328_PJI/)  
+[OSI 7 Layer____TCP와 UDP의 차이](https://2ssue.github.io/interview/190329_PJI/)  
+[GET과 POST의 차이____NAT란?](https://2ssue.github.io/interview/190401_PJI/)  
+[정규화의 목적____트랜잭션이란?](https://2ssue.github.io/interview/190402_PJI/)  

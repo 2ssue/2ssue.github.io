@@ -1,6 +1,6 @@
 ---
 title: "jekyll 블로그 포스트 스타일과 글꼴 바꾸기!"
-date:   2019-04-02 00:51:24 +0900
+date:   2019-04-02 22:00:24 +0900
 categories: blog
 tags: jekyll
 classes: wide
@@ -25,7 +25,7 @@ CSS를 변경해가면서 원하는 스타일을 찾아보았다.
   
 근데 뭔가 이걸 떼는 것 만으로는 만족스러운 스타일이 되지 못했다.  
   
-> #### 다른 사람들은 어떻게 했을까?
+> ### 다른 사람들은 어떻게 했을까?
 
 다른 사람들의 블로그들은 어떻게 생겼는지, 한번 참고해봤다.  
 내가 마음에 드는 포스트 스타일들은 제목이 다들 가운데에 있길래 한번 옮겨보았다.  
@@ -38,10 +38,10 @@ CSS를 변경해가면서 원하는 스타일을 찾아보았다.
 그래서 하단에 있던 게시 날짜, 태그, 카테고리를 상단으로 옮겨보기로 했다.  
 문제의 3-4시간은 여기서 발생했다!  
   
-> #### 아래에 있던걸 위로 옮기는건데... 글자 지우기
+> ### 아래에 있던걸 위로 옮기는건데... 글자 지우기
 
 옮겨보려고 하니, 그 스타일 그대로 옮기는건 좀 아니었다.  
-![footer style](/assets/images/footer_style.PNG){: .align-right}
+![footer style](/assets/images/footer_style.PNG){: .align-left}
   
 이런 모양인데.. 위로 그대로 옮기면 또 매우 이상했음 ㅠ_ㅠ  
 그래서 픽토그램 옆에 Category, Updated 글자를 없애보기로 했다.  
@@ -57,13 +57,13 @@ border 속성을 조정하니 박스 테두리는 없앨 수 있었다.
   
 page__taxnomy class 였으니 그 파일이 있겠지, 하고 파일을 찾아봤다.  
 HTML파일들은 지난번에 `_include` 폴더에서 찾을 수 있었던 걸 기억해서 찾아냈다.  
-![taxonomy](/assets/images/page__taxonomy.png){: .align-right}
+![taxonomy](/assets/images/page__taxonomy.png)
 category-list.html과 tag-list.html을 포함하고 있다는 것 같으니까 그 파일을 찾아봤다.  
   
 텍스트 값이 ui-text로 지정해주는 부분이 있는 것을 보고 주석처리 해줬다.  
 드디어 픽토그램 옆 이름을 지울 수 있었다! 야후!  
   
-> #### 글자를 지웠더니 가로로 배열하는 난관이..
+> ### 글자를 지웠더니 가로로 배열하는 난관이..
 
 세로로 쭉 있던 모양을 가로 모양으로 바꿔주고 싶었다.  
 그래야 뭔가 더 있어보이는 모양새!!!!  
@@ -96,6 +96,7 @@ category-list.html과 tag-list.html을 포함하고 있다는 것 같으니까 �
   
 CSS 파일 상단에 임포트 해준 다음, 적어주기만 하면 되서 편했다.  
 이렇게 폰트 변경까지 끝! 신난다! XD!  
+  
 ![font](/assets/images/font_update.png)
 
 ___

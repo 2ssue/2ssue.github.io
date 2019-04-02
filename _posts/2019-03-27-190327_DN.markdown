@@ -5,8 +5,7 @@ categories: DN
 tags: daily
 classes: wide
 ---
-### MTT
-###### _My Trivial Today_
+#### _My Trivial Today_
 
 오늘의 씨앗도 무사히 심기~~  
   
@@ -21,8 +20,7 @@ classes: wide
 
 ___
 
-### TID 
-###### _Today I Did_
+#### _Today I Did_
   
 1. 데이터베이스 개념 읽기  
 오늘은 그래도 좀 더 읽었다. 뭐라도 한 나 자신.. 잘했어.. 
@@ -33,8 +31,7 @@ ___
 
 ___
 
-### SIW 
-###### _Someday I Will_ 
+#### _Someday I Will_ 
  
 1. 블로그 테마 바꾸기  
 2. 알고리즘 하루에 2개씩은 풀기  

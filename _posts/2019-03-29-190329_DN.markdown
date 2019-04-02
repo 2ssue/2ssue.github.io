@@ -5,8 +5,7 @@ categories: DN
 tags: daily
 classes: wide
 ---
-### MTT
-###### _My Trivial Today_
+#### _My Trivial Today_
 
 어제는 저녁 약속이 있어서 DN은 빼먹었다 ;)  
 대신 PPI는 새벽에 올려놔서 잔디 씨앗은 심었다..!  
@@ -22,9 +21,8 @@ DFS/BFS, Brute Force가 주로 역테에 나온다고 하셨으니까
 빨리 코딩테스트 문제를 잘 풀게 될 수 있었으면 좋겠다!!!!  
 
 ___
-
-### TID 
-###### _Today I Did_
+ 
+#### _Today I Did_
   
 1. 데이터베이스 개념 읽기  
 2. 경험 정리하기
@@ -35,8 +33,7 @@ ___
   
 ___
 
-### SIW 
-###### _Someday I Will_ 
+#### _Someday I Will_ 
  
 1. 블로그 테마 바꾸기  
 포스트 제목 밑에 여백을 좀 더 넣고 싶다.  

@@ -5,8 +5,7 @@ categories: DN
 tags: daily
 classes: wide
 ---
-### MTT
-###### _My Trivial Today_
+#### _My Trivial Today_
 
 주말부터 오늘까지는 Refresh의 의미로 쉬었다.  
 뭔가 딱히 한건 없지만 괜히 몸이 피곤한 것 같아서  
@@ -16,8 +15,7 @@ classes: wide
 
 ___
 
-### TID 
-###### _Today I Did_
+#### _Today I Did_
   
 1. 영어 회화 공부하기  
 2. Git 강의 듣기  
@@ -25,8 +23,7 @@ Git 강의가 은근히 재밌다. 이고잉님 강의 재미써..
     
 ___
 
-### SIW 
-###### _Someday I Will_ 
+#### _Someday I Will_ 
  
 1. 블로그 테마 바꾸기  
 카테고리 우측에 메뉴 만든 것 넘나리 뿌듯!  
