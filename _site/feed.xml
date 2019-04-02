@@ -1,4 +1,109 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-30T02:02:54+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">잔디밭 만들기 프로젝트</title><subtitle>This is a practice version blog!</subtitle><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><entry><title type="html">190329_DN</title><link href="http://localhost:4000/dn/190329_DN/" rel="alternate" type="text/html" title="190329_DN" /><published>2019-03-30T00:52:24+09:00</published><updated>2019-03-30T00:52:24+09:00</updated><id>http://localhost:4000/dn/190329_DN</id><content type="html" xml:base="http://localhost:4000/dn/190329_DN/">&lt;p&gt;&lt;em&gt;190329 Daily Note&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-02T20:41:45+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">잔디밭 만들기 프로젝트</title><subtitle>This is a practice version blog!</subtitle><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><entry><title type="html">190401_PPI</title><link href="http://localhost:4000/interview/190401_PPI/" rel="alternate" type="text/html" title="190401_PPI" /><published>2019-04-01T21:46:24+09:00</published><updated>2019-04-01T21:46:24+09:00</updated><id>http://localhost:4000/interview/190401_PPI</id><content type="html" xml:base="http://localhost:4000/interview/190401_PPI/">&lt;p&gt;오늘도 네트워크와 관련된 문제이다 :)&lt;/p&gt;
+
+&lt;h4 id=&quot;http에서-get과-post의-차이는&quot;&gt;HTTP에서 GET과 POST의 차이는?&lt;/h4&gt;
+
+&lt;p&gt;두 방식 모두 HTTP 프로토콜을 이용해 서버에 요청을 할 때 사용한다.&lt;br /&gt;
+하지만 둘의 특징을 이해하고 기술 목적에 맞게 사용해야 한다.&lt;/p&gt;
+
+&lt;h5 id=&quot;get&quot;&gt;GET&lt;/h5&gt;
+
+&lt;p&gt;요청하는 데이터를 &lt;code class=&quot;highlighter-rouge&quot;&gt;HTTP Request Message&lt;/code&gt;의 Header url에 담아 전송한다.&lt;br /&gt;
+url에 데이터를 담아서 전송하기 때문에 전송할 수 있는 데이터의 크기가 제한적이며,&lt;br /&gt;
+민감한 데이터에 대해 요청할 경우 url에 요청 정보가 노출되므로 &lt;code class=&quot;highlighter-rouge&quot;&gt;GET&lt;/code&gt; 방식은 부적절하다.&lt;/p&gt;
+
+&lt;h5 id=&quot;post&quot;&gt;POST&lt;/h5&gt;
+
+&lt;p&gt;요청하는 데이터를 &lt;code class=&quot;highlighter-rouge&quot;&gt;HTTP Message의 Body&lt;/code&gt;에 담아 전송한다.&lt;br /&gt;
+데이터를 body에 담아 보내기 때문에 GET 방식보다 안전하고 더 많은 데이터를 요청할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET&lt;/code&gt;방식은 데이터를 가져오기만 하지만 &lt;code class=&quot;highlighter-rouge&quot;&gt;POST&lt;/code&gt;는 서버의 상태를 변경하기 위해서도 사용한다.&lt;/p&gt;
+
+&lt;h4 id=&quot;nat란-무엇인가&quot;&gt;NAT란 무엇인가?&lt;/h4&gt;
+
+&lt;p&gt;사설 IP가 외부 인터넷에 접속하기 위해서는 공인 IP주소를 가져야 하는데,&lt;br /&gt;
+이 때 사설 IP를 공인 IP로 바꿔주는 데 사용하는 것이 IP주소 변환기인 &lt;code class=&quot;highlighter-rouge&quot;&gt;NAT(Network Address Translation)&lt;/code&gt;이다.&lt;br /&gt;
+외부에서 들어오는 공인 IP 주소 또한 들어올 때 사설 IP 주소로 변환한다.&lt;br /&gt;
+이렇게 주소 변환과정이 반드시 필요하기 때문에, 보안성이 좋다는 Side Effect가 있다.&lt;br /&gt;
+NAT는 공인 IP 주소와 사설 IP 주소를 분리함으로써, IPv4의 주소 고갈 문제를 연장시켰다.&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">오늘도 네트워크와 관련된 문제이다 :) HTTP에서 GET과 POST의 차이는?</summary></entry><entry><title type="html">190401_DN</title><link href="http://localhost:4000/dn/190401_DN/" rel="alternate" type="text/html" title="190401_DN" /><published>2019-04-01T21:43:24+09:00</published><updated>2019-04-01T21:43:24+09:00</updated><id>http://localhost:4000/dn/190401_DN</id><content type="html" xml:base="http://localhost:4000/dn/190401_DN/">&lt;p&gt;&lt;em&gt;190401 Daily Note&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;mtt&quot;&gt;MTT&lt;/h3&gt;
+&lt;h6 id=&quot;my-trivial-today&quot;&gt;&lt;em&gt;My Trivial Today&lt;/em&gt;&lt;/h6&gt;
+
+&lt;p&gt;주말부터 오늘까지는 Refresh의 의미로 쉬었다.&lt;br /&gt;
+뭔가 딱히 한건 없지만 괜히 몸이 피곤한 것 같아서&lt;br /&gt;
+쉬어보기로 했당.&lt;/p&gt;
+
+&lt;p&gt;내일부턴 다시 힘내서 해야지!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;tid&quot;&gt;TID&lt;/h3&gt;
+&lt;h6 id=&quot;today-i-did&quot;&gt;&lt;em&gt;Today I Did&lt;/em&gt;&lt;/h6&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;영어 회화 공부하기&lt;/li&gt;
+  &lt;li&gt;Git 강의 듣기&lt;br /&gt;
+Git 강의가 은근히 재밌다. 이고잉님 강의 재미써..&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;siw&quot;&gt;SIW&lt;/h3&gt;
+&lt;h6 id=&quot;someday-i-will&quot;&gt;&lt;em&gt;Someday I Will&lt;/em&gt;&lt;/h6&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;블로그 테마 바꾸기&lt;br /&gt;
+카테고리 우측에 메뉴 만든 것 넘나리 뿌듯!&lt;br /&gt;
+포스트 제목 밑에 여백 넣는 건 좀 더 빨리 성공하길 바란다.&lt;/li&gt;
+  &lt;li&gt;알고리즘 하루에 2개씩은 풀기&lt;/li&gt;
+  &lt;li&gt;프로젝트 정리하기&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">190401 Daily Note</summary></entry><entry><title type="html">jekyll 블로그 카테고리 스타일 바꾸기!</title><link href="http://localhost:4000/blog/category&tag_style/" rel="alternate" type="text/html" title="jekyll 블로그 카테고리 스타일 바꾸기!" /><published>2019-03-30T02:10:24+09:00</published><updated>2019-03-30T02:10:24+09:00</updated><id>http://localhost:4000/blog/category&amp;tag_style</id><content type="html" xml:base="http://localhost:4000/blog/category&amp;tag_style/">&lt;p&gt;감격.. 드디어 원하던 스타일의 일부를 변경하는 데 성공했다!&lt;br /&gt;
+카테고리와 태그 메뉴에서 메뉴들이 우측에 떴으면 좋겠다고 생각했는데, 1시간의 사투 끝에 바꿀 수 있었다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;개발자모드로-학습하기&quot;&gt;개발자모드로 학습하기&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;개발자 모드로 뒤적거리다가 html을 변경해줘야 한다는 걸 알게됐다.&lt;br /&gt;
+html 초짜라서 태그도 못알아보지만 일단 배껴보기로 결심..&lt;br /&gt;
+오랜만에 jekyll server를 가동시켰다.&lt;/p&gt;
+
+&lt;p&gt;사투 끝에 layout 폴더에서 categories.html파일과 tags.html 파일을 변경해봤다.&lt;br /&gt;
+개발자 모드로 toc이 위치한 곳을 확인했더니 aside sidebar__right스타일로 감싸져있는 것을 볼 수 있었다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;우측으로-옮기기-성공&quot;&gt;우측으로 옮기기 성공!&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;그래서 여기서도 같은 스타일로 감싸봤는데, archive 타입에선 이렇게 해도 패딩값 때문에 보이질 않았다.&lt;br /&gt;
+후.. 또 한숨을 쉬었다가 html 상단의 layout을 single로 바꿔보았다.&lt;/p&gt;
+
+&lt;p&gt;그런데 single 타입으로 바꾸니까 딱! 드디어 우측으로 메뉴가 변경된 것이다 ㅠ_ㅠ!!!&lt;/p&gt;
+
+&lt;p&gt;모바일에서 가독성은 조금 떨어질 지 모르겠지만 대만족 XD!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;내가-원하는건-grid-스타일이-아니야&quot;&gt;내가 원하는건 grid 스타일이 아니야!&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;그런데 taxonomy display옵션이 grid라서 우측에 떠도 내가 원하던 일자 모양이 아니었다.&lt;br /&gt;
+또 개발자 모드를 켜서 확인에 들어갔다. 그저 빛.. 개발자 모드는 짱이다..&lt;br /&gt;
+Style-display옵션이 grid인 것을 풀어봤더니 드디어 일자 모양이 되었다.&lt;/p&gt;
+
+&lt;p&gt;그런데 문제는 그게 어디서 정의되었는지를 모른다는 것…&lt;br /&gt;
+또 입술을 괴롭히면서 폴더를 뒤적거리기 시작했다. 어딘가엔 있을거야!!!&lt;/p&gt;
+
+&lt;p&gt;여기저기 뒤적거리다가 _sass 폴더에서 _page.scss 파일을 뒤적거린 결과 taxonomy__index 스타일을 정의한 곳을 발견했다.&lt;/p&gt;
+
+&lt;p&gt;display옵션을 지우고.. 드디어 원하던 스타일로 변경 성공 ㅠㅠㅠㅠ 감격의 순간이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/category_style.PNG&quot; alt=&quot;변경된 카테고리 메뉴&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;다음엔 이제 post style에서 제목과 본문을 좀 떨어트려놓는 시도를 해볼 예정이다.&lt;/p&gt;
+
+&lt;p&gt;신난다!&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="jekyll" /><summary type="html">감격.. 드디어 원하던 스타일의 일부를 변경하는 데 성공했다! 카테고리와 태그 메뉴에서 메뉴들이 우측에 떴으면 좋겠다고 생각했는데, 1시간의 사투 끝에 바꿀 수 있었다. 개발자모드로 학습하기 개발자 모드로 뒤적거리다가 html을 변경해줘야 한다는 걸 알게됐다. html 초짜라서 태그도 못알아보지만 일단 배껴보기로 결심.. 오랜만에 jekyll server를 가동시켰다.</summary></entry><entry><title type="html">190329_DN</title><link href="http://localhost:4000/dn/190329_DN/" rel="alternate" type="text/html" title="190329_DN" /><published>2019-03-30T00:52:24+09:00</published><updated>2019-03-30T00:52:24+09:00</updated><id>http://localhost:4000/dn/190329_DN</id><content type="html" xml:base="http://localhost:4000/dn/190329_DN/">&lt;p&gt;&lt;em&gt;190329 Daily Note&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;h3 id=&quot;mtt&quot;&gt;MTT&lt;/h3&gt;
@@ -74,17 +179,22 @@
 
 &lt;h4 id=&quot;tcp와-udp의-차이점에-대해-말하시오&quot;&gt;TCP와 UDP의 차이점에 대해 말하시오&lt;/h4&gt;
 
-&lt;p&gt;TCP는 연결형 서비스이고, 수신 여부를 확인해 신뢰성이 높은 대신 속도가 느리다.&lt;br /&gt;
-UDP는 비연결형 서비스이고, 수신 여부를 확인하지 않아 신뢰성이 낮은 대신 속도가 빠르다.&lt;/p&gt;
+&lt;h5 id=&quot;tcp&quot;&gt;TCP&lt;/h5&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;TCP(Transmission Control Protocol, 전송제어 프로토콜)&lt;/code&gt;는 &lt;strong&gt;연결형 프로토콜&lt;/strong&gt;이다.&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;3-way-handshake&lt;/code&gt;를 통해 수신 여부를 확인해 신뢰성이 높은 대신 속도가 느리다.&lt;br /&gt;
+멀티 캐스팅이나 브로드캐스팅을 지원하지 않는다.&lt;/p&gt;
+
+&lt;h5 id=&quot;udp&quot;&gt;UDP&lt;/h5&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;UDP(User Datagram Protocol, 사용자 데이터그램 프로토콜)&lt;/code&gt;는 &lt;strong&gt;비연결형 프로토콜&lt;/strong&gt;이다.  수신 여부를 확인하지 않아 신뢰성이 낮은 대신 속도가 빠르다.&lt;/p&gt;
 
 &lt;p&gt;TCP와 UDP의 차이를 표로 정리해보면 아래와 같다.&lt;/p&gt;
 
 &lt;table&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt; &lt;/td&gt;
       &lt;td&gt;TCP&lt;/td&gt;
       &lt;td&gt;UDP&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;연결 방식&lt;/td&gt;
@@ -209,7 +319,15 @@ DNS를 무력화시켜 연동된 다른 웹사이트를 마비시키는 공격�
   &lt;li&gt;블로그 테마 바꾸기&lt;/li&gt;
   &lt;li&gt;알고리즘 하루에 2개씩은 풀기&lt;/li&gt;
   &lt;li&gt;프로젝트 정리하기&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">190327 Daily Note</summary></entry><entry><title type="html">190327_PPI</title><link href="http://localhost:4000/interview/190327_PPI/" rel="alternate" type="text/html" title="190327_PPI" /><published>2019-03-27T00:51:24+09:00</published><updated>2019-03-27T00:51:24+09:00</updated><id>http://localhost:4000/interview/190327_PPI</id><content type="html" xml:base="http://localhost:4000/interview/190327_PPI/">&lt;p&gt;오늘의 질문은 자바와 관련된 질문이다 :)&lt;/p&gt;
+&lt;/ol&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">190327 Daily Note</summary></entry><entry><title type="html">IT 기술 면접 질문 대비</title><link href="http://localhost:4000/interview/PPI_Collector/" rel="alternate" type="text/html" title="IT 기술 면접 질문 대비" /><published>2019-03-27T00:51:24+09:00</published><updated>2019-03-27T00:51:24+09:00</updated><id>http://localhost:4000/interview/PPI_Collector</id><content type="html" xml:base="http://localhost:4000/interview/PPI_Collector/">&lt;p&gt;하루에 한 두개씩 면접 대비로 질문에 대해 생각하는 걸 해보려고 한다.&lt;br /&gt;
+질문 중엔 그 동안 받았던 질문도, 개인적으로 생각해본 질문도 있을 듯!&lt;/p&gt;
+
+&lt;p&gt;앞으로 여기에 질문들의 링크를 추가해볼 예정이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://2ssue.github.io/interview/190327_PPI/&quot;&gt;JVM의 역할/자바의 특징&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://2ssue.github.io/interview/190328_PPI/&quot;&gt;DNS 공격/DNS Spoofing&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://2ssue.github.io/interview/190329_PPI/&quot;&gt;OSI 7 Layer/TCP와 UDP의 차이&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://2ssue.github.io/interview/190401_PPI/&quot;&gt;GET과 POST의 차이/NAT란?&lt;/a&gt;&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="collect" /><summary type="html">하루에 한 두개씩 면접 대비로 질문에 대해 생각하는 걸 해보려고 한다. 질문 중엔 그 동안 받았던 질문도, 개인적으로 생각해본 질문도 있을 듯! 앞으로 여기에 질문들의 링크를 추가해볼 예정이다.</summary></entry><entry><title type="html">190327_PPI</title><link href="http://localhost:4000/interview/190327_PPI/" rel="alternate" type="text/html" title="190327_PPI" /><published>2019-03-27T00:51:24+09:00</published><updated>2019-03-27T00:51:24+09:00</updated><id>http://localhost:4000/interview/190327_PPI</id><content type="html" xml:base="http://localhost:4000/interview/190327_PPI/">&lt;p&gt;오늘의 질문은 자바와 관련된 질문이다 :)&lt;/p&gt;
 
 &lt;h4 id=&quot;자바의-jvm의-역할에-대해-설명하시오&quot;&gt;자바의 JVM의 역할에 대해 설명하시오&lt;/h4&gt;
 
@@ -223,493 +341,4 @@ DNS를 무력화시켜 연동된 다른 웹사이트를 마비시키는 공격�
 &lt;p&gt;객체 지향 프로그래밍(Object Oriented Programming, OOP)언어이다.&lt;br /&gt;
 JRE를 통해 모든 운영 체제에서 실행이 가능하다.&lt;br /&gt;
 Garbage Collector를 통해 메모리를 자동으로 관리한다.&lt;br /&gt;
-컴파일 한번으로 기계어가 만들어지지 않기 때문에 C, C++ 언어에 비해 느리다.&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">오늘의 질문은 자바와 관련된 질문이다 :) 자바의 JVM의 역할에 대해 설명하시오</summary></entry><entry><title type="html">IT 기술 면접 질문 대비</title><link href="http://localhost:4000/interview/PPI_Collector/" rel="alternate" type="text/html" title="IT 기술 면접 질문 대비" /><published>2019-03-27T00:51:24+09:00</published><updated>2019-03-27T00:51:24+09:00</updated><id>http://localhost:4000/interview/PPI_Collector</id><content type="html" xml:base="http://localhost:4000/interview/PPI_Collector/">&lt;p&gt;하루에 한 두개씩 면접 대비로 질문에 대해 생각하는 걸 해보려고 한다.&lt;br /&gt;
-질문 중엔 그 동안 받았던 질문도, 개인적으로 생각해본 질문도 있을 듯!&lt;/p&gt;
-
-&lt;p&gt;앞으로 여기에 질문들의 링크를 추가해볼 예정이다.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://2ssue.github.io/interview/190327_PPI/&quot;&gt;JVM의 역할/자바의 특징&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://2ssue.github.io/interview/190328_PPI/&quot;&gt;DNS 공격/DNS Spoofing&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://2ssue.github.io/interview/190329_PPI/&quot;&gt;OSI 7 Layer/TCP와 UDP의 차이&lt;/a&gt;&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="collect" /><summary type="html">하루에 한 두개씩 면접 대비로 질문에 대해 생각하는 걸 해보려고 한다. 질문 중엔 그 동안 받았던 질문도, 개인적으로 생각해본 질문도 있을 듯! 앞으로 여기에 질문들의 링크를 추가해볼 예정이다.</summary></entry><entry><title type="html">190326_DN</title><link href="http://localhost:4000/dn/190326_DN/" rel="alternate" type="text/html" title="190326_DN" /><published>2019-03-26T22:23:24+09:00</published><updated>2019-03-26T22:23:24+09:00</updated><id>http://localhost:4000/dn/190326_DN</id><content type="html" xml:base="http://localhost:4000/dn/190326_DN/">&lt;p&gt;&lt;em&gt;190326 Daily Note&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h3 id=&quot;mtt&quot;&gt;MTT&lt;/h3&gt;
-&lt;h6 id=&quot;my-trivial-today&quot;&gt;&lt;em&gt;My Trivial Today&lt;/em&gt;&lt;/h6&gt;
-
-&lt;p&gt;요즘 계속 무기력한 것 같아서 사소한 잔디 씨앗 겸, 일기 겸 가끔씩 내 생각을 적으려고 한다.&lt;/p&gt;
-
-&lt;p&gt;정말로 매우 사소한 하루!&lt;br /&gt;
-사소한 하루가 모여서 좀 더 나은 하루를 만들 수 있길 기대하면서 적어야지 :)&lt;/p&gt;
-
-&lt;p&gt;오늘 하루도 별 일 안하고 넘어갔다. 한거라곤 정보처리기사 데이터베이스 조금 읽은 것..?  &lt;br /&gt;
-취업 준비한다고 욕심만 과하다. 덕분에 스트레스만 뿜뿜 XP&lt;/p&gt;
-
-&lt;p&gt;내일부턴 카페형 독서실 같은 데라도 가볼 참이다. 집에선 침대가 보이니 공부가 안돼…&lt;br /&gt;
-백준님 제대로 보려면 목요일까지 알고리즘도 생각해봐야하고.&lt;/p&gt;
-
-&lt;p&gt;하고 싶은 건 많은 데 핑계만 늘어가고 혼자하면 의지박약이라 큰일이다 :(&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;tid&quot;&gt;TID&lt;/h3&gt;
-&lt;h6 id=&quot;today-i-did&quot;&gt;&lt;em&gt;Today I Did&lt;/em&gt;&lt;/h6&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;데이터베이스 개념 읽기&lt;br /&gt;
-아무래도 책읽는 일이 안맞나… 컴퓨터 화면에 너무 익숙해져있다.&lt;/li&gt;
-  &lt;li&gt;경험 정리하기&lt;/li&gt;
-  &lt;li&gt;영어 회화 공부하기&lt;br /&gt;
-Cake앱 아직 일주일 정도밖에 안써봤지만 하루 습관 만들기는 좋은 것 같다.&lt;br /&gt;
-혼자 있을 때 하면 시간가는 줄 모르고 보면서 하고 있다ㅋㅋㅋㅋㅋ&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;siw&quot;&gt;SIW&lt;/h3&gt;
-&lt;h6 id=&quot;someday-i-will&quot;&gt;&lt;em&gt;Someday I Will&lt;/em&gt;&lt;/h6&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;블로그 테마 바꾸기&lt;br /&gt;
-아주 먼 미래형이다. 맘에 안드는 부분 투성인데 아직 스타일 구성하는 법을 잘 모르겠다.&lt;/li&gt;
-  &lt;li&gt;알고리즘 하루에 2개씩은 풀기&lt;br /&gt;
-레포지토리 생성해서 기록해두는 게 좋을 것 같다. 블로그도 좋긴 하지만.. 깃이 뭔가 더 멋있어..&lt;/li&gt;
-  &lt;li&gt;프로젝트 정리하기&lt;/li&gt;
-  &lt;li&gt;정보처리기사 다시 공부하기&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">190326 Daily Note</summary></entry><entry><title type="html">[이것이 자바다] 06 클래스 확인문제</title><link href="http://localhost:4000/programming/language/this_is_java_06/" rel="alternate" type="text/html" title="[이것이 자바다] 06 클래스 확인문제" /><published>2019-03-25T17:05:24+09:00</published><updated>2019-03-25T17:05:24+09:00</updated><id>http://localhost:4000/programming/language/this_is_java_06</id><content type="html" xml:base="http://localhost:4000/programming/language/this_is_java_06/">&lt;h3 id=&quot;클래스의-구성-멤버&quot;&gt;클래스의 구성 멤버&lt;/h3&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ClassName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;c1&quot;&gt;//Field&lt;/span&gt;
-	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fieldName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;//Constructor&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;ClassName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){...}&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;//Method&lt;/span&gt;
-	&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;methodName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){...}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;필드field&quot;&gt;필드(Field)&lt;/h4&gt;
-
-&lt;p&gt;객체의 고유 데이터, 부품 객체, 상태 정보를 저장하는 곳&lt;br /&gt;
-변수와 비슷하지만 객체가 소멸되지 않는 한 계속 사용이 가능하다.&lt;/p&gt;
-
-&lt;h4 id=&quot;생성자constructor&quot;&gt;생성자(Constructor)&lt;/h4&gt;
-
-&lt;p&gt;객체 생성 시 초기화를 담당&lt;br /&gt;
-필드를 초기화하거나, 메소드를 호출해 객체를 사용할 준비를 한다.&lt;br /&gt;
-메소드와 비슷하지만 리턴타입이 없다는 특징이 있다.&lt;br /&gt;
-클래스 이름과 생성자의 이름은 같아야 한다.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h5 id=&quot;기본-생성자&quot;&gt;기본 생성자&lt;/h5&gt;
-  &lt;p&gt;생성자를 선언하지 않았을 때는 컴파일러가 기본 생성자를 바이트 코드에 추가한다.&lt;/p&gt;
-
-  &lt;h5 id=&quot;생성자-선언&quot;&gt;생성자 선언&lt;/h5&gt;
-  &lt;p&gt;일반적으로 필드에 초기 값을 저장하거나 객체를 사용하기 전 준비하는데 사용한다.&lt;br /&gt;
-생성자는 오버로딩하여 사용할 수 있다.&lt;br /&gt;
-오버로딩을 할 때는 매개 변수의 타입, 개수, 순서 중 하나가 달라야 한다.&lt;/p&gt;
-  &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//Declare&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Car&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;//Field&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maxSpeed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  
-  &lt;span class=&quot;c1&quot;&gt;//Constructor&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;Car&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maxSpeed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;maxSpeed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maxSpeed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;//Use&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myCar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Car&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;그랜저&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;검정&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;메소드method&quot;&gt;메소드(Method)&lt;/h4&gt;
-
-&lt;p&gt;매개값을 받아 다른 값을 리턴하는 동작 등 다양한 역할을 한다.&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h3 id=&quot;singleton&quot;&gt;Singleton&lt;/h3&gt;
-
-&lt;p&gt;단 하나만 생성되는 객체. 클래스 외부에서 생성자를 호출할 수 없도록 해야한다.&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SingletonExample&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;//static Field&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SingletonExample&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;singleton&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SingletonExample&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;//Constructor&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;SingletonExample&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){}&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;//static Method&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SingletonExample&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getInstance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;singleton&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//Can't Use (Compile Error)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;SingletonExample&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;object1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SingletonExample&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;  
-&lt;span class=&quot;c1&quot;&gt;//Use&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;SingletonExample&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;object1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SingletonExample&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInstance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;annotation&quot;&gt;Annotation&lt;/h3&gt;
-&lt;p&gt;어노테이션은 메타데이터(metadata)라고 볼 수 있다.&lt;br /&gt;
-메타데이터란 앱이 처리해야할 데이터가 아니라, 컴파일 과정과 실행 과정에서 코드를 어떻게 컴파일하고 처리할 것인지 알려주는 정보이다.&lt;br /&gt;
-아래와 같이 작성한다.&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@AnnotationName&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;컴파일러에게 코드 문법 에러를 체크하도록 정보 제공&lt;/li&gt;
-  &lt;li&gt;소프트웨어 개발 툴이 빌드나 배치 시 코드를 자동으로 생성할 수 있도록 정보 제공&lt;/li&gt;
-  &lt;li&gt;실행 시(런타임 시)특정 기능을 실행하도록 정보 제공&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;대표적인 예로는 @Override가 있다.&lt;br /&gt;
-메소드가 오버라이드된 것을 컴파일러에게 알려주고 컴파일러가 오버라이드 검사를 하도록 한다.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h3 id=&quot;확인문제&quot;&gt;확인문제&lt;/h3&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;객체와-클래스에-대한-설명으로-틀린-것은&quot;&gt;객체와 클래스에 대한 설명으로 틀린 것은?&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;클래스는 객체를 생성하기 위한 설계도(청사진)와 같은 것이다.&lt;/li&gt;
-  &lt;li&gt;new 연산자로 클래스의 생성자를 호출함으로써 객체가 생성된다.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;하나의 클래스로 하나의 객체만 생성할 수 있다.&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;객체는 클래스의 인스턴스이다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;하나의 클래스로 여러개의 객체를 생성 가능하다.&lt;/p&gt;
-
-&lt;h4 id=&quot;클래스의-구성-멤버가-아닌-것은&quot;&gt;클래스의 구성 멤버가 아닌 것은?&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;필드(Field)&lt;/li&gt;
-  &lt;li&gt;생성자(Constructor)&lt;/li&gt;
-  &lt;li&gt;메소드(Method)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;로컬 변수(local variable)&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;로컬 변수는 메소드의 구성 멤버라고 볼 수 있을 것 같다.&lt;/p&gt;
-
-&lt;h4 id=&quot;필드-생성자-메소드에-대한-설명으로-틀린-것은&quot;&gt;필드, 생성자, 메소드에 대한 설명으로 틀린 것은?&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;필드는 객체의 데이터를 저장한다.&lt;/li&gt;
-  &lt;li&gt;생성자는 객체의 초기화를 담당한다.&lt;/li&gt;
-  &lt;li&gt;메소드는 객체의 동작 부분으로, 실행 코드를 가지고 있는 블록이다.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;클래스는 반드시 필드와 메소드를 가져야 한다.&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;클래스는 반드시 필드와 메소드를 가질 필요는 없다.&lt;/p&gt;
-
-&lt;h4 id=&quot;필드에-대한-설명으로-틀린-것은&quot;&gt;필드에 대한 설명으로 틀린 것은?&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;필드는 메소드에서 사용할 수 있다.&lt;/li&gt;
-  &lt;li&gt;인스턴스 필드 초기화는 생성자에서 할 수 있다.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;필드는 반드시 생성자 선언 전에 선언되어야 한다.&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;필드는 초기값을 주지 않더라도 기본값으로 자동 초기화된다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;필드는 클래스 내부 어디에서나 선언 가능하지만, 메소드와 생성자 안에서는 불가능하다.&lt;/p&gt;
-
-&lt;h4 id=&quot;생성자에-대한-설명으로-틀린-것은&quot;&gt;생성자에 대한 설명으로 틀린 것은?&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;객체를 생성하려면 생성자 호출이 반드시 필요한 것은 아니다.&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;생성자는 다른 생성자를 호출하기 위해 this()를 사용할 수 있다.&lt;/li&gt;
-  &lt;li&gt;생성자가 선언되지 않으면 컴파일러가 기본 생성자를 추가한다.&lt;/li&gt;
-  &lt;li&gt;외부에서 객체를 생성할 수 없도록 생성자에 private 접근 제한자를 붙일 수 있다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;객체를 생성하려면 반드시 생성자를 호출해야 한다.&lt;/p&gt;
-
-&lt;h4 id=&quot;메소드에-대한-설명으로-틀린-것은&quot;&gt;메소드에 대한 설명으로 틀린 것은?&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;리턴값이 없는 메소드는 리턴 타입을 void로 해야 한다.&lt;/li&gt;
-  &lt;li&gt;리턴 타입이 있는 메소드는 리턴값을 지정하기 위해 반드시 return문이 있어야 한다.&lt;/li&gt;
-  &lt;li&gt;매개값의 수를 모를 경우 “…“를 이용해서 매개 변수를 선언할 수 있다.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;메소드의 이름은 중복해서 선언할 수 없다.&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;메소드의 이름은 중복해서 선언 가능하다. 이를 오버로딩이라고 한다.&lt;br /&gt;
-대신 메소드의 매개변수의 개수, 타입, 순서 중 하나가 달라야 오버로딩이 가능하다.&lt;/p&gt;
-
-&lt;h4 id=&quot;메소드-오버로딩에-대한-설명으로-틀린-것은&quot;&gt;메소드 오버로딩에 대한 설명으로 틀린 것은?&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;동일한 이름의 메소드를 여러 개 선언하는 것을 말한다.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;반드시 리턴 타입이 달라야 한다.&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;매개 변수의 타입, 수, 순서를 다르게 선언해야 한다.&lt;/li&gt;
-  &lt;li&gt;매개값의 타입 및 수에 따라 호출될 메소드가 선택된다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;반드시 리턴 타입이 다를 필요는 없다.&lt;/p&gt;
-
-&lt;h4 id=&quot;인스턴스-멤버와-정적-멤버에-대한-설명으로-틀린-것은&quot;&gt;인스턴스 멤버와 정적 멤버에 대한 설명으로 틀린 것은?&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;정적 멤버는 static으로 선언된 필드와 메소드를 말한다.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;인스턴스 필드는 생성자 및 정적 블록에서 초기화될 수 있다.&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;정적 필드와 정적 메소드는 객체 생성 없이 클래스를 통해 접근할 수 있다.&lt;/li&gt;
-  &lt;li&gt;인스턴스 필드와 메소드는 객체를 생성하고 사용해야 한다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;인스턴스 필드는 생성자에서는 초기화될 수 있지만 정적 블록에서 초기화 될 수는 없다.&lt;br /&gt;
-인스턴스 필드를 정적 블록에서 초기화하고 싶다면 객체를 생성하고 참조변수로 접근해야 한다.&lt;/p&gt;
-
-&lt;h4 id=&quot;final-필드와-상수static-final에-대한-설명으로-틀린-것은&quot;&gt;final 필드와 상수(static final)에 대한 설명으로 틀린 것은?&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;final 필드와 상수는 초기값이 저장되면 값을 변경할 수 없다.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;final 필드와 상수는 생성자에서 초기화될 수 있다.&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;상수의 이름은 대문자로 작성하는 것이 관례이다.&lt;/li&gt;
-  &lt;li&gt;상수는 객체 생성 없이 클래스를 통해 사용할 수 있다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;final 필드는 생성자에서 초기화할 수 있지만 상수는 초기화할 수 없다.&lt;br /&gt;
-상수를 초기화하려면 정적 블록을 활용해야 한다.&lt;/p&gt;
-
-&lt;h4 id=&quot;패키지에-대한-설명으로-틀린-것은&quot;&gt;패키지에 대한 설명으로 틀린 것은?&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;패키지는 클래스들을 그룹화시키는 기능을 한다.&lt;/li&gt;
-  &lt;li&gt;클래스가 패키지에 소속되려면 패키지 선언을 반드시 해야 한다.&lt;/li&gt;
-  &lt;li&gt;import문은 다른 패키지의 클래스를 사용할 때 필요하다.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;mycompany 패키지에 소속된 클래스는 yourcompany에 옮겨 놓아도 동작한다.&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;mycompany 패키지에 소속된 클래스를 yourcompany에 파일만 옮긴다고 동작하지는 않는다.
-패키지 라인명을 수정해야 한다.&lt;/p&gt;
-
-&lt;h4 id=&quot;접근-제한에-대한-설명으로-틀린-것은&quot;&gt;접근 제한에 대한 설명으로 틀린 것은?&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;접근 제한자는 클래스, 필드, 생성자, 메소드의 사용을 제한한다.&lt;/li&gt;
-  &lt;li&gt;public 접근 제한은 아무런 제한 없이 해당 요소를 사용할 수 있게 한다.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;default 접근 제한은 해당 클래스 내부에서만 사용을 허가한다.&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;외부에서 접근하지 못하도록 하려면 private 접근을 해야 한다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;default 접근 제한은 해당 패키지 내부에서의 사용을 허가한다.&lt;/p&gt;
-
-&lt;h4 id=&quot;다음-클래스에서-해당-멤버가-필드-생성자-메소드-중-어떤-것인지-적으시오&quot;&gt;다음 클래스에서 해당 멤버가 필드, 생성자, 메소드 중 어떤 것인지 적으시오&lt;/h4&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Field&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Constructor&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Method&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;아래-데이터를-가지는-member-클래스를-선언해보시오&quot;&gt;아래 데이터를 가지는 Member 클래스를 선언해보시오&lt;/h4&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;데이터 이름&lt;/td&gt;
-      &lt;td&gt;필드 이름&lt;/td&gt;
-      &lt;td&gt;타입&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;이름&lt;/td&gt;
-      &lt;td&gt;name&lt;/td&gt;
-      &lt;td&gt;문자열&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;아이디&lt;/td&gt;
-      &lt;td&gt;id&lt;/td&gt;
-      &lt;td&gt;문자열&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;패스워드&lt;/td&gt;
-      &lt;td&gt;password&lt;/td&gt;
-      &lt;td&gt;문자열&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;나이&lt;/td&gt;
-      &lt;td&gt;age&lt;/td&gt;
-      &lt;td&gt;정수&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;password&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;위-클래스에-name필드와-id-필드를-외부에서-받은-값으로-초기화-하는-생성자를-작성하시오&quot;&gt;위 클래스에 name필드와 id 필드를 외부에서 받은 값으로 초기화 하는 생성자를 작성하시오&lt;/h4&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;password&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;n&quot;&gt;Member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;memberservice-클래스에-아래-조건을-만족하도록-메소드를-작성하시오&quot;&gt;MemberService 클래스에 아래 조건을 만족하도록 메소드를 작성하시오&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;login() 메소드는 매개값으로 id, password를 제공&lt;/li&gt;
-  &lt;li&gt;logout() 메소드는 id만 매개값으로 제공&lt;/li&gt;
-  &lt;li&gt;login() 메소드는 id “hong”, password “12345”일 경우만 true, 그 외 false&lt;/li&gt;
-  &lt;li&gt;logout() 메소드는 “로그아웃 되었습니다.”가 출력&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MemberService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;password&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;login&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;password&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hong&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;password&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;12345&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;logout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;로그아웃 되었습니다.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;printer-클래스에서-아래-조건을-만족하는-메소드를-작성하시오&quot;&gt;Printer 클래스에서 아래 조건을 만족하는 메소드를 작성하시오&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;println() 메소드는 매개값으로 int, boolean, double, String을 줄 수 있다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Printer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;위-printer-객체를-생성하지-않고-다른-클래스에서-호출할-수-있도록-작성하시오&quot;&gt;위 Printer 객체를 생성하지 않고 다른 클래스에서 호출할 수 있도록 작성하시오&lt;/h4&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Printer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;shopservice-객체를-싱글톤으로-작성하시오&quot;&gt;ShopService 객체를 싱글톤으로 작성하시오&lt;/h4&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ShopService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ShopService&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shop&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ShopService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-    
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ShopService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){}&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ShopService&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getInstance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;아래-조건을-만족하는-account-클래스를-작성하시오&quot;&gt;아래 조건을 만족하는 Account 클래스를 작성하시오&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;balance는 0 &amp;lt;= balance &amp;lt;= 1000000 범위만 가능하다.&lt;/li&gt;
-  &lt;li&gt;외부에서 balance 필드를 마음대로 변경할 수 없다.&lt;/li&gt;
-  &lt;li&gt;Setter, Getter를 이용한다.&lt;/li&gt;
-  &lt;li&gt;0과 1000000은 MIN_BALANCE와 MAX_BALANCE 상수로 선언한다.&lt;/li&gt;
-  &lt;li&gt;Setter의 매개값이 음수이거나 백만원을 초과하면 현재 balance를 유지한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Account&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;balance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MIN_BALANCE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MAX_BALANCE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setBalance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;balance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;balance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MAX_BALANCE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;balance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MIN_BALANCE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;balance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;balance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getBalance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;balance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;책의-실행-결과를-보고-알맞게-bankapplication-클래스-메소드를-작성하시오&quot;&gt;책의 실행 결과를 보고 알맞게 BankApplication 클래스 메소드를 작성하시오&lt;/h4&gt;
-
-&lt;p&gt;보류..&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BankApplication&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;//... 생략&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;//계좌 생성&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;createAccount&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;//계좌 목록보기&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;accountList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;//예금하기&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;deposit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;//출금하기&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;withdraw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;//Account 배열에서 ano와 동일한 Account 객체 찾기&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Account&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;findAccount&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ano&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="java" /><summary type="html">클래스의 구성 멤버</summary></entry><entry><title type="html">[리뷰] 누구나 자료 구조와 알고리즘</title><link href="http://localhost:4000/book/data_structures&algorithm/" rel="alternate" type="text/html" title="[리뷰] 누구나 자료 구조와 알고리즘" /><published>2019-03-24T22:55:24+09:00</published><updated>2019-03-24T22:55:24+09:00</updated><id>http://localhost:4000/book/data_structures&amp;algorithm</id><content type="html" xml:base="http://localhost:4000/book/data_structures&amp;algorithm/">&lt;p&gt;&lt;img src=&quot;https://misc.ridibooks.com/cover/754024038/xxlarge&quot; alt=&quot;누구나 자료 구조와 알고리즘&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;내용 중 컴퓨터는 눈이 없기 때문에 차례대로 배열을 찾는다는 말이 너무 웃겼다.&lt;/p&gt;
-
-&lt;p&gt;가볍게 읽기 좋은 책이다.&lt;br /&gt;
-자료 구조에 대해서 전체적으로 훑어볼 필요가 있을 것 같아서 읽어본 책인데,&lt;br /&gt;
-진짜 딱 전체적으로 가볍게 훑기 위한 용으로 사용하는 게 좋을 것 같다.&lt;/p&gt;
-
-&lt;p&gt;루비나 파이썬으로 대부분의 예제를 설명하기 때문에&lt;br /&gt;
-프로그래밍을 아예 모르는 사람은 읽기 어려울 수도 있을 것 같다.&lt;/p&gt;
-
-&lt;p&gt;자료 구조를 좀 더 깊게 알려고 한다면 이 책보다는 다른 걸 활용하는 게 좋을 듯!&lt;br /&gt;
-딱 이런게 자료 구조구나? 하는 느낌 정도를 주는 책이다.&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="review" /><summary type="html"></summary></entry></feed>
+컴파일 한번으로 기계어가 만들어지지 않기 때문에 C, C++ 언어에 비해 느리다.&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">오늘의 질문은 자바와 관련된 질문이다 :) 자바의 JVM의 역할에 대해 설명하시오</summary></entry></feed>

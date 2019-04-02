@@ -3,6 +3,7 @@ title:  "jekyll 블로그 카테고리 스타일 바꾸기!"
 date:   2019-03-30 02:10:24 +0900
 categories: blog
 tags: jekyll
+classes: wide
 ---
 
 감격.. 드디어 원하던 스타일의 일부를 변경하는 데 성공했다!  

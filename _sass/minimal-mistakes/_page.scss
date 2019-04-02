@@ -55,6 +55,9 @@
 .page__title {
   margin-top: 0;
   line-height: 1;
+  font-weight: bold;
+  color: darkslategray;
+  text-align: center;
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -76,6 +79,7 @@
   li,
   dl {
     font-size: 0.75em;
+    padding: 7px;
   } //일반 폰트 크기
 
   /* paragraph indents */
@@ -246,7 +250,8 @@
    ========================================================================== */
 
 .page__meta {
-  margin-top: 2em;
+  display: flex;
+  margin-bottom: 2em;
   color: $muted-text-color;
   font-family: $sans-serif;
   font-size: $type-size-6;
@@ -282,12 +287,12 @@
 
 .page__taxonomy-item {
   display: inline-block;
-  margin-right: 5px;
-  margin-bottom: 8px;
-  padding: 5px 10px;
+  //margin-right: 5px;
+  margin-bottom: 5px;
+  //padding: 5px 10px;
   text-decoration: none;
-  border: 1px solid mix(#000, $border-color, 25%);
-  border-radius: $border-radius;
+  //border: 1px solid mix(#000, $border-color, 25%);
+  //border-radius: $border-radius;
 
   &:hover {
     text-decoration: none;
