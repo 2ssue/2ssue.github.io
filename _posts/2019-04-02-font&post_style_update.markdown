@@ -42,7 +42,6 @@ CSS를 변경해가면서 원하는 스타일을 찾아보았다.
 
 옮겨보려고 하니, 그 스타일 그대로 옮기는건 좀 아니었다.  
 ![footer style](/assets/images/footer_style.PNG){: .align-left}
-  
 이런 모양인데.. 위로 그대로 옮기면 또 매우 이상했음 ㅠ_ㅠ  
 그래서 픽토그램 옆에 Category, Updated 글자를 없애보기로 했다.  
 이상한 박스 모양도... 너무 두껍게 생겼어!  
@@ -57,7 +56,9 @@ border 속성을 조정하니 박스 테두리는 없앨 수 있었다.
   
 page__taxnomy class 였으니 그 파일이 있겠지, 하고 파일을 찾아봤다.  
 HTML파일들은 지난번에 `_include` 폴더에서 찾을 수 있었던 걸 기억해서 찾아냈다.  
+  
 ![taxonomy](/assets/images/page__taxonomy.png)
+
 category-list.html과 tag-list.html을 포함하고 있다는 것 같으니까 그 파일을 찾아봤다.  
   
 텍스트 값이 ui-text로 지정해주는 부분이 있는 것을 보고 주석처리 해줬다.  
