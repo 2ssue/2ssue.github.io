@@ -1,13 +1,10 @@
 ---
-title: "190326_DN"
+title: "190326_DailyNote"
 date:   2019-03-26 22:23:24 +0900
 categories: DN
 tags: daily
 classes: wide
 ---
-_190326 Daily Note_
-
-___
 ### MTT
 ###### _My Trivial Today_
 
