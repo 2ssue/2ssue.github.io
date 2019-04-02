@@ -11,8 +11,18 @@ classes: wide
   
 앞으로 여기에 질문들의 링크를 추가해볼 예정이다.  
 
-[JVM의 역할__자바의 특징](https://2ssue.github.io/interview/190327_PJI/)  
-[DNS 공격__DNS Spoofing](https://2ssue.github.io/interview/190328_PJI/)  
-[OSI 7 Layer__TCP와 UDP의 차이](https://2ssue.github.io/interview/190329_PJI/)  
-[GET과 POST의 차이__NAT란?](https://2ssue.github.io/interview/190401_PJI/)  
-[정규화의 목적__트랜잭션이란?](https://2ssue.github.io/interview/190402_PJI/)  
+**_190327_** 
+[JVM의 역할](https://2ssue.github.io/interview/190327_PJI/), 
+[자바의 특징](https://2ssue.github.io/interview/190327_PJI/)  
+**_190328_** 
+[DNS 공격](https://2ssue.github.io/interview/190328_PJI/), 
+[DNS Spoofing](https://2ssue.github.io/interview/190328_PJI/)  
+**_190329_** 
+[OSI 7 Layer](https://2ssue.github.io/interview/190329_PJI/), 
+[TCP와 UDP의 차이](https://2ssue.github.io/interview/190329_PJI/)  
+**_190401_** 
+[GET과 POST의 차이](https://2ssue.github.io/interview/190401_PJI/), 
+[NAT란?](https://2ssue.github.io/interview/190401_PJI/)  
+**_190402_** 
+[정규화의 목적](https://2ssue.github.io/interview/190402_PJI/), 
+[트랜잭션이란?](https://2ssue.github.io/interview/190402_PJI/)  
