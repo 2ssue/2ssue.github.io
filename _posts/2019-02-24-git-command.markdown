@@ -3,6 +3,7 @@ title:  "Git 명령어"
 date:   2019-02-24 14:12:24 +0900
 categories: VCS
 tags: git
+classes: wide
 ---
 
 ## git 명령어

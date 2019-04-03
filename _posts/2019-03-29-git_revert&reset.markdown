@@ -3,6 +3,7 @@ title:  "git revert와 reset의 차이"
 date:   2019-03-29 20:58:24 +0900
 categories: VCS
 tags: git
+classes: wide
 ---
 
 오늘 본 git 강의 중에 git revert와 git reset이 있었다.  

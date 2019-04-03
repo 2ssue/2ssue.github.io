@@ -9,7 +9,7 @@ toc: true
 ~~이건 원래 다 공부하기 전까진 published false 상태로 두려고 했는데..  
 태그에 오타를 내서 올라가 버렸다ㅎㅎ 그냥 공부하면서 틈틈히 추가하겠다.~~
   
-> ### 제목 태그
+> ### Header Tag
 
 문서에서 제목을 표시할 때 사용하는 태그  
 제목 레벨에 따라 `<h1>` ~ `<h6>` 까지 사용한다.  
@@ -19,7 +19,7 @@ toc: true
 <h2>제목 2</h2>
 ```
 
-> ### 단락 태그
+> ### Paragraph Tag
 
 본문에 해당하는 내용을 표시할 때 사용하는 태그 `<p>` `</p>`
 
@@ -31,7 +31,7 @@ toc: true
 </p>
 ```
 
-> ### 개행
+> ### Line Break Tag
 
 HTML은 마크다운처럼 공백과 개행을 무시한다.  
 따라서 코드에서 `Enter`를 입력했다고 해서 개행되지 않는데,  
@@ -49,7 +49,7 @@ HTML은 마크다운처럼 공백과 개행을 무시한다.
 실행 결과는 우측과 같다.
 ![html_tag](/assets/images/html_tag.PNG){: .align-right}
 
-> ### 글꼴 강조
+> ### Text Highlight Tag
 
 더 많은 텍스트 관련 태그는 [여기](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Inline_text_semantics)
 
@@ -58,7 +58,7 @@ HTML은 마크다운처럼 공백과 개행을 무시한다.
 - `<u>` `</u>`: UnderLine, 밑줄 긋기
 - `<s>` `</s>`: ~~Strike~~, 취소선 긋기
 
-> ### 링크
+> ### Link Tag
 
 `<a>` `</a>` 태그는 앵커, 링크 등으로 불리며 링크를 만드는데 사용되는 태그이다.  
 
@@ -66,23 +66,23 @@ HTML은 마크다운처럼 공백과 개행을 무시한다.
 <a href="http://www.naver.com/" target="_blank">네이버</a>
 ```
 
-#### href 속성
+#### href 
 
 링크를 만들기 위해서는 href(hypertext reference) 속성을 가지고 있어야 한다.  
 href 속성 값은 링크의 목적지인 URL이다.  
 
-#### target 속성
+#### target 
 
 target 속성은 링크된 리소스를 어디에 표시할지 나타내는 속성이다.  
 - `_self`: 현재 화면에 표시, Default 값
 - `_blank`: 새로운 창에 표시
 - `_parent` `top`
 
-#### 기타 속성
+#### Others
 
 이 외에도 많은 속성이 있으니 [여기](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a)를 참고한다.
 
-#### 내부 링크
+#### Internal Link
 
 `<a>` `</a>`를 통해 만들어진 링크는 꼭 외부 페이지로만 이동하진 않는다.  
 페이지 내부의 특정 요소로 이동할 수 있는데 이를 '내부 링크'라고 한다.
@@ -95,11 +95,11 @@ target 속성은 링크된 리소스를 어디에 표시할지 나타내는 속�
 <h1 id="some-element-id">소개</h1>
 ```
 
-> ### 의미 없이 요소를 묶는 태그(Container)
+> ### Container
 
 태그에 아무 의미가 없고, 요소를 묶기 위해 사용하는 태그  
 
-#### `<div>` 태그와 `<span>` 태그
+#### `<div>` & `<span>`
 
 - `<div>` `</div>`: 블록 레벨 태그 (블록 단위로 사용)  
 - `<span>` `</span>`: 인라인 레벨 태그 (한 줄안에서 사용)  

@@ -3,7 +3,7 @@ title:  "[Do it! 알고리즘] 02-1 배열"
 date:   2019-02-28 15:50:24 +0900
 categories: algorithm
 tags: doit
-toc: true
+classes: wide
 ---
 
 > 이 글은 Do it! 자료구조와 함께 배우는 알고리즘 입문 책에 대한 풀이이다.

@@ -1,4 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-03T18:15:15+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">잔디밭 만들기 프로젝트</title><subtitle>This is a practice version blog!</subtitle><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><entry><title type="html">190402_DailyNote</title><link href="http://localhost:4000/dn/190402_DN/" rel="alternate" type="text/html" title="190402_DailyNote" /><published>2019-04-02T22:58:24+09:00</published><updated>2019-04-02T22:58:24+09:00</updated><id>http://localhost:4000/dn/190402_DN</id><content type="html" xml:base="http://localhost:4000/dn/190402_DN/">&lt;h4 id=&quot;my-trivial-today&quot;&gt;&lt;em&gt;My Trivial Today&lt;/em&gt;&lt;/h4&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>잔디밭 만들기 프로젝트</title>
+    <description>This is a practice version blog!</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 03 Apr 2019 22:22:45 +0900</pubDate>
+    <lastBuildDate>Wed, 03 Apr 2019 22:22:45 +0900</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>190403_DailyNote</title>
+        <description>&lt;h4 id=&quot;my-trivial-today&quot;&gt;&lt;em&gt;My Trivial Today&lt;/em&gt;&lt;/h4&gt;
+
+&lt;p&gt;오늘은 뜻밖의 서류 합격 소식을 받아서 기분 좋아진 날이다 :)&lt;br /&gt;
+그러나 코딩 테스트를 하나도 준비를 안해서 광탈할 것 같아 마음이 아프다.&lt;br /&gt;
+지금부터라도 진짜로 열심히 해야한다 ㅠ_ㅠ&lt;br /&gt;
+마음에 든 회사 중 하나여서 꼭 면접까지 갔으면 좋겠다!!!&lt;/p&gt;
+
+&lt;p&gt;오늘도 블로그 테마를 또 살짝 손봤다.&lt;br /&gt;
+처음하느라 색상 변경을 중구난방으로 해놨는데, 글로벌 변수로 통합 변경될 수 있도록 싹 바꿨다.&lt;br /&gt;
+일일히 바꾸느라 힘들었는데 글로벌 변수를 찾아서 정말 다행이다…&lt;/p&gt;
+
+&lt;p&gt;&lt;del&gt;역시 사람은 고생을 해야 실력이 느는게 맞는것..&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;이제 당분간은 잠시 커스터마이징에 손을 놓을 예정이다.&lt;br /&gt;
+다른 할 일이 많은데 자꾸 여기에만 정신팔리고 있어서 안되겠어 :(&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;today-i-did&quot;&gt;&lt;em&gt;Today I Did&lt;/em&gt;&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;영어 회화 공부하기&lt;/li&gt;
+  &lt;li&gt;Git 강의 듣기&lt;/li&gt;
+  &lt;li&gt;데이터베이스 공부하기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;someday-i-will&quot;&gt;&lt;em&gt;Someday I Will&lt;/em&gt;&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;블로그 테마 바꾸기&lt;br /&gt;
+사이드바 부분 모바일 화면에서처럼 바꾸기&lt;br /&gt;
+홈화면 바꾸기&lt;/li&gt;
+  &lt;li&gt;알고리즘 하루에 2개씩 풀기&lt;/li&gt;
+  &lt;li&gt;프로젝트 정리하기&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Wed, 03 Apr 2019 21:58:24 +0900</pubDate>
+        <link>http://localhost:4000/tmi/190403_DN/</link>
+        <guid isPermaLink="true">http://localhost:4000/tmi/190403_DN/</guid>
+        
+        <category>daily</category>
+        
+        
+        <category>TMI</category>
+        
+      </item>
+    
+      <item>
+        <title>190403_Prepare_Job_Interview</title>
+        <description>&lt;p&gt;오늘도 데이터 베이스 :)&lt;/p&gt;
+
+&lt;h4 id=&quot;인덱스란-무엇인가&quot;&gt;인덱스란 무엇인가?&lt;/h4&gt;
+
+&lt;p&gt;전체 데이터베이스를 검색하기엔 시간이 많이 걸리기 때문에 만들어 두는 값이다.&lt;br /&gt;
+칼럼의 값과 해당 레코드가 저장된 주소를 키값쌍 처럼 저장한다.&lt;/p&gt;
+
+&lt;p&gt;인덱스를 관리하기 위해서 저장 방식에는 다양한 방식이 존재한다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;B+- Tree 인덱스 방식&lt;/li&gt;
+  &lt;li&gt;Hash 인덱스 방식&lt;/li&gt;
+  &lt;li&gt;Cluster 방식&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;인덱스의-장점과-단점은&quot;&gt;인덱스의 장점과 단점은?&lt;/h4&gt;
+
+&lt;p&gt;DBMS의 인덱스는 항상 정렬된 상태를 유지하기 때문에 검색은 빠르다는 장점이 있다.&lt;br /&gt;
+하지만 새로운 값을 추가/삭제/수정하는 경우는 쿼리문의 실행 속도가 느려진다.&lt;br /&gt;
+&lt;em&gt;(ex.INSERT의 경우 추가할 때마다 인덱스에도 데이터를 추가해줘야 함)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;데이터의 읽기 속도는 빠르지만 데이터의 저장 성능은 감소한다는 Trade Off가 있다.&lt;br /&gt;
+따라서 성능을 고려하여 인덱스를 만들어야할 필요가 있다.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 03 Apr 2019 21:43:24 +0900</pubDate>
+        <link>http://localhost:4000/interview/190403_PJI/</link>
+        <guid isPermaLink="true">http://localhost:4000/interview/190403_PJI/</guid>
+        
+        <category>daily</category>
+        
+        
+        <category>Interview</category>
+        
+      </item>
+    
+      <item>
+        <title>190402_DailyNote</title>
+        <description>&lt;h4 id=&quot;my-trivial-today&quot;&gt;&lt;em&gt;My Trivial Today&lt;/em&gt;&lt;/h4&gt;
 
 &lt;p&gt;오늘도 뿌듯한 하루였다.&lt;br /&gt;
 블로그 고치는거 너무 재밌어!!!!&lt;/p&gt;
@@ -29,7 +129,22 @@
 최근 포스트 화면은 너무 심심해!&lt;/li&gt;
   &lt;li&gt;알고리즘 하루에 2개씩은 풀기&lt;/li&gt;
   &lt;li&gt;프로젝트 정리하기&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">My Trivial Today</summary></entry><entry><title type="html">190402_Prepare_Job_Interview</title><link href="http://localhost:4000/interview/190402_PJI/" rel="alternate" type="text/html" title="190402_Prepare_Job_Interview" /><published>2019-04-02T22:38:24+09:00</published><updated>2019-04-02T22:38:24+09:00</updated><id>http://localhost:4000/interview/190402_PJI</id><content type="html" xml:base="http://localhost:4000/interview/190402_PJI/">&lt;p&gt;오늘은 데이터베이스와 관련된 문제다 :)&lt;/p&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Tue, 02 Apr 2019 22:58:24 +0900</pubDate>
+        <link>http://localhost:4000/tmi/190402_DN/</link>
+        <guid isPermaLink="true">http://localhost:4000/tmi/190402_DN/</guid>
+        
+        <category>daily</category>
+        
+        
+        <category>TMI</category>
+        
+      </item>
+    
+      <item>
+        <title>190402_Prepare_Job_Interview</title>
+        <description>&lt;p&gt;오늘은 데이터베이스와 관련된 문제다 :)&lt;/p&gt;
 
 &lt;h4 id=&quot;정규화의-목적에-대해서-말하시오&quot;&gt;정규화의 목적에 대해서 말하시오&lt;/h4&gt;
 
@@ -77,7 +192,22 @@
 데이터베이스에서 논리적인 작업의 단위가 되어 장애가 발생했을 시에 주로 사용된다.&lt;br /&gt;
 작업 집합을 원상태로 복구 했을 때 작업의 일부만 적용되지 않도록 한다.&lt;/p&gt;
 
-&lt;p&gt;즉 논리적 작업 집합이 100% 적용되거나, 아무것도 적용되지 않는 것을 보장하는 것이다.&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">오늘은 데이터베이스와 관련된 문제다 :)</summary></entry><entry><title type="html">jekyll 블로그 포스트 스타일과 글꼴 바꾸기!</title><link href="http://localhost:4000/blog/font&post_style_update/" rel="alternate" type="text/html" title="jekyll 블로그 포스트 스타일과 글꼴 바꾸기!" /><published>2019-04-02T22:00:24+09:00</published><updated>2019-04-02T22:00:24+09:00</updated><id>http://localhost:4000/blog/font&amp;post_style_update</id><content type="html" xml:base="http://localhost:4000/blog/font&amp;post_style_update/">&lt;p&gt;제목이랑 본문을 떨어트려 놓는다는걸 완전히 바꾸어버렸다.&lt;/p&gt;
+&lt;p&gt;즉 논리적 작업 집합이 100% 적용되거나, 아무것도 적용되지 않는 것을 보장하는 것이다.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 02 Apr 2019 22:38:24 +0900</pubDate>
+        <link>http://localhost:4000/interview/190402_PJI/</link>
+        <guid isPermaLink="true">http://localhost:4000/interview/190402_PJI/</guid>
+        
+        <category>daily</category>
+        
+        
+        <category>Interview</category>
+        
+      </item>
+    
+      <item>
+        <title>jekyll 블로그 커스터마이징하기(2)</title>
+        <description>&lt;p&gt;제목이랑 본문을 떨어트려 놓는다는걸 완전히 바꾸어버렸다.&lt;/p&gt;
 
 &lt;p&gt;기존이 어땠는지 보기 위해서 이전 사진을 좀 찍어놓을걸 그랬다!&lt;br /&gt;
 &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/post/post-future-date/&quot;&gt;Minimal Mistakes의 기본 포스트&lt;/a&gt;와 같으니 궁금하면 참고..!&lt;/p&gt;
@@ -190,7 +320,22 @@ HTML파일들은 지난번에 &lt;code class=&quot;highlighter-rouge&quot;&gt;_i
 &lt;p&gt;오늘도 뿌듯한 작업이었다.&lt;br /&gt;
 다음엔 홈화면을 바꿔보기로 해야지!&lt;/p&gt;
 
-&lt;p&gt;삽질하면서 그래도 HTML, CSS, JS 보는 법을 익혀가는 것 같아서 기분이 좋다 :)&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="jekyll" /><summary type="html">제목이랑 본문을 떨어트려 놓는다는걸 완전히 바꾸어버렸다. 기존이 어땠는지 보기 위해서 이전 사진을 좀 찍어놓을걸 그랬다! Minimal Mistakes의 기본 포스트와 같으니 궁금하면 참고..! 이번엔 원하는 대로 싹 바꾼다고 엄청난 사투를 벌였다. 오늘도 초짜는 개발자 모드로 뒤적거리느라 3-4시간 정도 걸린 것 같다. 오늘도, 개발자 모드!</summary></entry><entry><title type="html">190401_Prepare_Job_Interview</title><link href="http://localhost:4000/interview/190401_PJI/" rel="alternate" type="text/html" title="190401_Prepare_Job_Interview" /><published>2019-04-01T21:46:24+09:00</published><updated>2019-04-01T21:46:24+09:00</updated><id>http://localhost:4000/interview/190401_PJI</id><content type="html" xml:base="http://localhost:4000/interview/190401_PJI/">&lt;p&gt;오늘도 네트워크와 관련된 문제이다 :)&lt;/p&gt;
+&lt;p&gt;삽질하면서 그래도 HTML, CSS, JS 보는 법을 익혀가는 것 같아서 기분이 좋다 :)&lt;/p&gt;
+</description>
+        <pubDate>Tue, 02 Apr 2019 22:00:24 +0900</pubDate>
+        <link>http://localhost:4000/blog/font&post_style_update/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/font&post_style_update/</guid>
+        
+        <category>jekyll</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>190401_Prepare_Job_Interview</title>
+        <description>&lt;p&gt;오늘도 네트워크와 관련된 문제이다 :)&lt;/p&gt;
 
 &lt;h4 id=&quot;http에서-get과-post의-차이는&quot;&gt;HTTP에서 GET과 POST의 차이는?&lt;/h4&gt;
 
@@ -216,7 +361,22 @@ url에 데이터를 담아서 전송하기 때문에 전송할 수 있는 데이
 이 때 사설 IP를 공인 IP로 바꿔주는 데 사용하는 것이 IP주소 변환기인 &lt;code class=&quot;highlighter-rouge&quot;&gt;NAT(Network Address Translation)&lt;/code&gt;이다.&lt;br /&gt;
 외부에서 들어오는 공인 IP 주소 또한 들어올 때 사설 IP 주소로 변환한다.&lt;br /&gt;
 이렇게 주소 변환과정이 반드시 필요하기 때문에, 보안성이 좋다는 Side Effect가 있다.&lt;br /&gt;
-NAT는 공인 IP 주소와 사설 IP 주소를 분리함으로써, IPv4의 주소 고갈 문제를 연장시켰다.&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">오늘도 네트워크와 관련된 문제이다 :) HTTP에서 GET과 POST의 차이는?</summary></entry><entry><title type="html">190401_DailyNote</title><link href="http://localhost:4000/dn/190401_DN/" rel="alternate" type="text/html" title="190401_DailyNote" /><published>2019-04-01T21:43:24+09:00</published><updated>2019-04-01T21:43:24+09:00</updated><id>http://localhost:4000/dn/190401_DN</id><content type="html" xml:base="http://localhost:4000/dn/190401_DN/">&lt;h4 id=&quot;my-trivial-today&quot;&gt;&lt;em&gt;My Trivial Today&lt;/em&gt;&lt;/h4&gt;
+NAT는 공인 IP 주소와 사설 IP 주소를 분리함으로써, IPv4의 주소 고갈 문제를 연장시켰다.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Apr 2019 21:46:24 +0900</pubDate>
+        <link>http://localhost:4000/interview/190401_PJI/</link>
+        <guid isPermaLink="true">http://localhost:4000/interview/190401_PJI/</guid>
+        
+        <category>daily</category>
+        
+        
+        <category>Interview</category>
+        
+      </item>
+    
+      <item>
+        <title>190401_DailyNote</title>
+        <description>&lt;h4 id=&quot;my-trivial-today&quot;&gt;&lt;em&gt;My Trivial Today&lt;/em&gt;&lt;/h4&gt;
 
 &lt;p&gt;주말부터 오늘까지는 Refresh의 의미로 쉬었다.&lt;br /&gt;
 뭔가 딱히 한건 없지만 괜히 몸이 피곤한 것 같아서&lt;br /&gt;
@@ -244,7 +404,22 @@ Git 강의가 은근히 재밌다. 이고잉님 강의 재미써..&lt;/li&gt;
 포스트 제목 밑에 여백 넣는 건 좀 더 빨리 성공하길 바란다.&lt;/li&gt;
   &lt;li&gt;알고리즘 하루에 2개씩은 풀기&lt;/li&gt;
   &lt;li&gt;프로젝트 정리하기&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">My Trivial Today</summary></entry><entry><title type="html">jekyll 블로그 카테고리 스타일 바꾸기!</title><link href="http://localhost:4000/blog/category&tag_style/" rel="alternate" type="text/html" title="jekyll 블로그 카테고리 스타일 바꾸기!" /><published>2019-03-30T02:10:24+09:00</published><updated>2019-03-30T02:10:24+09:00</updated><id>http://localhost:4000/blog/category&amp;tag_style</id><content type="html" xml:base="http://localhost:4000/blog/category&amp;tag_style/">&lt;p&gt;감격.. 드디어 원하던 스타일의 일부를 변경하는 데 성공했다!&lt;br /&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Mon, 01 Apr 2019 21:43:24 +0900</pubDate>
+        <link>http://localhost:4000/tmi/190401_DN/</link>
+        <guid isPermaLink="true">http://localhost:4000/tmi/190401_DN/</guid>
+        
+        <category>daily</category>
+        
+        
+        <category>TMI</category>
+        
+      </item>
+    
+      <item>
+        <title>jekyll 블로그 커스터마이징하기(1)</title>
+        <description>&lt;p&gt;감격.. 드디어 원하던 스타일의 일부를 변경하는 데 성공했다!&lt;br /&gt;
 카테고리와 태그 메뉴에서 메뉴들이 우측에 떴으면 좋겠다고 생각했는데, 1시간의 사투 끝에 바꿀 수 있었다.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -289,7 +464,22 @@ Style-display옵션이 grid인 것을 풀어봤더니 드디어 일자 모양이
 &lt;hr /&gt;
 &lt;p&gt;다음엔 이제 post style에서 제목과 본문을 좀 떨어트려놓는 시도를 해볼 예정이다.&lt;/p&gt;
 
-&lt;p&gt;신난다!&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="jekyll" /><summary type="html">감격.. 드디어 원하던 스타일의 일부를 변경하는 데 성공했다! 카테고리와 태그 메뉴에서 메뉴들이 우측에 떴으면 좋겠다고 생각했는데, 1시간의 사투 끝에 바꿀 수 있었다. 개발자모드로 학습하기 개발자 모드로 뒤적거리다가 html을 변경해줘야 한다는 걸 알게됐다. html 초짜라서 태그도 못알아보지만 일단 배껴보기로 결심.. 오랜만에 jekyll server를 가동시켰다.</summary></entry><entry><title type="html">190329_DailyNote</title><link href="http://localhost:4000/dn/190329_DN/" rel="alternate" type="text/html" title="190329_DailyNote" /><published>2019-03-30T00:52:24+09:00</published><updated>2019-03-30T00:52:24+09:00</updated><id>http://localhost:4000/dn/190329_DN</id><content type="html" xml:base="http://localhost:4000/dn/190329_DN/">&lt;h4 id=&quot;my-trivial-today&quot;&gt;&lt;em&gt;My Trivial Today&lt;/em&gt;&lt;/h4&gt;
+&lt;p&gt;신난다!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 30 Mar 2019 02:10:24 +0900</pubDate>
+        <link>http://localhost:4000/blog/category&tag_style/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/category&tag_style/</guid>
+        
+        <category>jekyll</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>190329_DailyNote</title>
+        <description>&lt;h4 id=&quot;my-trivial-today&quot;&gt;&lt;em&gt;My Trivial Today&lt;/em&gt;&lt;/h4&gt;
 
 &lt;p&gt;어제는 저녁 약속이 있어서 DN은 빼먹었다 ;)&lt;br /&gt;
 대신 PPI는 새벽에 올려놔서 잔디 씨앗은 심었다..!&lt;br /&gt;
@@ -327,7 +517,22 @@ Style-display옵션이 grid인 것을 풀어봤더니 드디어 일자 모양이
 그리고 카테고리/태그 콜렉터는 우측에서 볼 수 있었으면 좋겠어… 빨리 바꾸고 싶다…&lt;/li&gt;
   &lt;li&gt;알고리즘 하루에 2개씩은 풀기&lt;/li&gt;
   &lt;li&gt;프로젝트 정리하기&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">My Trivial Today</summary></entry><entry><title type="html">190329_Prepare_Job_Interview</title><link href="http://localhost:4000/interview/190329_PJI/" rel="alternate" type="text/html" title="190329_Prepare_Job_Interview" /><published>2019-03-29T23:51:24+09:00</published><updated>2019-03-29T23:51:24+09:00</updated><id>http://localhost:4000/interview/190329_PJI</id><content type="html" xml:base="http://localhost:4000/interview/190329_PJI/">&lt;p&gt;오늘은 네트워크와 관련된 질문이다 :)&lt;/p&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Sat, 30 Mar 2019 00:52:24 +0900</pubDate>
+        <link>http://localhost:4000/tmi/190329_DN/</link>
+        <guid isPermaLink="true">http://localhost:4000/tmi/190329_DN/</guid>
+        
+        <category>daily</category>
+        
+        
+        <category>TMI</category>
+        
+      </item>
+    
+      <item>
+        <title>190329_Prepare_Job_Interview</title>
+        <description>&lt;p&gt;오늘은 네트워크와 관련된 질문이다 :)&lt;/p&gt;
 
 &lt;h4 id=&quot;osi-7-layer를-1계층부터-7계층까지-순서대로-말하시오&quot;&gt;OSI 7 Layer를 1계층부터 7계층까지 순서대로 말하시오&lt;/h4&gt;
 
@@ -412,51 +617,18 @@ Style-display옵션이 grid인 것을 풀어봤더니 드디어 일자 모양이
       &lt;td&gt;빠름&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">오늘은 네트워크와 관련된 질문이다 :) OSI 7 Layer를 1계층부터 7계층까지 순서대로 말하시오</summary></entry><entry><title type="html">git revert와 reset의 차이</title><link href="http://localhost:4000/vcs/git_revert&reset/" rel="alternate" type="text/html" title="git revert와 reset의 차이" /><published>2019-03-29T20:58:24+09:00</published><updated>2019-03-29T20:58:24+09:00</updated><id>http://localhost:4000/vcs/git_revert&amp;reset</id><content type="html" xml:base="http://localhost:4000/vcs/git_revert&amp;reset/">&lt;p&gt;오늘 본 git 강의 중에 git revert와 git reset이 있었다.&lt;/p&gt;
-
-&lt;p&gt;옛날에 인턴 하면서 push를 잘못한 기억이 있어서 그 때 기억이 살아나는 아픈 강의..&lt;br /&gt;
-맨날 GUI로 commit하다보니 revert하는 법을 몰라서&lt;br /&gt;
-주임님께 여쭤보고 한참을 쩔쩔 맨 기억이 있다. ;(&lt;/p&gt;
-
-&lt;p&gt;revert로 인해 더러워진 git log를 보면서 눈물을 감추지 못했다..&lt;br /&gt;
-팀 git log에 길이길이 남을 나의 흔적 XD.. 암튼,&lt;br /&gt;
-reset과 revert는 모두 &lt;strong&gt;이전 버전 id로 돌아간다는 특징&lt;/strong&gt;을 가지고 있다.&lt;/p&gt;
-
-&lt;p&gt;직접 써보면 log에 남냐, 안남냐 차이가 보이긴 하지만&lt;br /&gt;
-그 차이를 잘 설명해놓은 만화를 발견해서 블로그에 올려본다 :)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.popit.kr/%EA%B0%9C%EB%B0%9C%EB%B0%94%EB%B3%B4%EB%93%A4-git-back-to-the-future/&quot;&gt;http://www.popit.kr/&lt;/a&gt;&lt;/p&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="git" /><summary type="html">오늘 본 git 강의 중에 git revert와 git reset이 있었다.</summary></entry><entry><title type="html">190328_Prepare_Job_Interview</title><link href="http://localhost:4000/interview/190328_PJI/" rel="alternate" type="text/html" title="190328_Prepare_Job_Interview" /><published>2019-03-28T00:51:24+09:00</published><updated>2019-03-28T00:51:24+09:00</updated><id>http://localhost:4000/interview/190328_PJI</id><content type="html" xml:base="http://localhost:4000/interview/190328_PJI/">&lt;p&gt;오늘은 보안과 관련된 질문이다 :)&lt;/p&gt;
-
-&lt;h4 id=&quot;dns-공격에는-어떤-것이-있는지-설명하시오&quot;&gt;DNS 공격에는 어떤 것이 있는지 설명하시오&lt;/h4&gt;
-
-&lt;p&gt;먼저 DNS(Domain Name Server)는 IP 주소를 도메인명으로 전환하는 역할을 한다.&lt;br /&gt;
-DNS 공격의 종류로는 아래 3가지가 있다.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;DoS 공격&lt;br /&gt;
-DNS를 무력화시켜 연동된 다른 웹사이트를 마비시키는 공격이다.&lt;/li&gt;
-  &lt;li&gt;DNS 하이재킹&lt;br /&gt;
-특정 도메인을 특정 DNS 서버로 우회시키는 공격이다.&lt;/li&gt;
-  &lt;li&gt;DNS Spoofing&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;dns-spoofing은-무엇인지-설명하시오&quot;&gt;DNS Spoofing은 무엇인지 설명하시오&lt;/h4&gt;
-
-&lt;p&gt;DNS Spoofing은 DNS에서 전달되는 IP 주소를 변조하거나 DNS 서버를 장악해&lt;br /&gt;
-사용자가 의도하지 않은 주소로 접속하게 만드는 공격 방법이다.&lt;/p&gt;
-
-&lt;p&gt;보통 사용자는 IP주소 대신 URL 주소를 사용한다.&lt;br /&gt;
-컴퓨터는 URL을 바로 인식할 수 없기 때문에, URL을 입력 받으면 DNS 주소로 UDP 프로토콜을 이용해 질의한다.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h5 id=&quot;중간자-공격&quot;&gt;중간자 공격&lt;/h5&gt;
-
-  &lt;p&gt;중간자 공격일 경우 컴퓨터가 보내는 질의 내용을 수정하여 DNS에 전송한다.&lt;br /&gt;
-이렇게 되면 질의가 변경되었기 때문에 의도하지 않은 곳으로 접속될 수 있다.&lt;/p&gt;
-
-  &lt;h5 id=&quot;dns주소-변조-공격&quot;&gt;DNS주소 변조 공격&lt;/h5&gt;
-
-  &lt;p&gt;사용자 컴퓨터에 등록된 DNS의 IP주소가 이미 변경되어 있을 경우이다.&lt;br /&gt;
-이 경우 사용자가 제대로 질의를 보냈더라도 공격자가 지정한 서버로 질의하기 때문에&lt;br /&gt;
-의도하지 않은 곳으로 접속될 수 있다.&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>2ssue</name><email>e2ssue@gmail.com</email></author><category term="daily" /><summary type="html">오늘은 보안과 관련된 질문이다 :) DNS 공격에는 어떤 것이 있는지 설명하시오</summary></entry></feed>
+&lt;/table&gt;
+</description>
+        <pubDate>Fri, 29 Mar 2019 23:51:24 +0900</pubDate>
+        <link>http://localhost:4000/interview/190329_PJI/</link>
+        <guid isPermaLink="true">http://localhost:4000/interview/190329_PJI/</guid>
+        
+        <category>daily</category>
+        
+        
+        <category>Interview</category>
+        
+      </item>
+    
+  </channel>
+</rss>

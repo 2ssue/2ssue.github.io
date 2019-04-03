@@ -1,5 +1,5 @@
 ---
-title: "jekyll 블로그 포스트 스타일과 글꼴 바꾸기!"
+title: "jekyll 블로그 커스터마이징하기(2)"
 date:   2019-04-02 22:00:24 +0900
 categories: blog
 tags: jekyll

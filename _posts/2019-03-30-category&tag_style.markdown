@@ -1,5 +1,5 @@
 ---
-title:  "jekyll 블로그 카테고리 스타일 바꾸기!"
+title:  "jekyll 블로그 커스터마이징하기(1)"
 date:   2019-03-30 02:10:24 +0900
 categories: blog
 tags: jekyll

@@ -19,14 +19,14 @@ toc: true
 </html>
 ```
 
-## 문서 타입 정의
+## Doctype define
 
 > <!DOCTYPE html>
 
 문서 타입 정의는 보통 DTD(DocType)라고 부른다.
 문서가 어떤 버전으로 작성되었는지 브라우저에게 알려주는 선언문으로, 반드시 최상단에 있어야 한다.
 
-## HTML 요소
+## HTML elements
 
 ```
 <html lang="ko">
