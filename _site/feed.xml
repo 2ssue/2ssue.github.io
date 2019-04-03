@@ -5,9 +5,35 @@
     <description>This is a practice version blog!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 03 Apr 2019 22:22:45 +0900</pubDate>
-    <lastBuildDate>Wed, 03 Apr 2019 22:22:45 +0900</lastBuildDate>
+    <pubDate>Wed, 03 Apr 2019 22:40:28 +0900</pubDate>
+    <lastBuildDate>Wed, 03 Apr 2019 22:40:28 +0900</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>sitemap.xml EntityRef: expecfing ';' 에러</title>
+        <description>&lt;p&gt;Google Search Console을 보는데 자꾸 사이트 맵 제출이 제대로 안되는 것 같았다.&lt;br /&gt;
+그래서 블로그 url에 sitemap.xml을 쳐서 확인해보니 아래와 같은 상황이 펼쳐졌다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/image/sitemap_error.PNG&quot; alt=&quot;사이트맵 에러&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;왜! 나는 아무짓도 안했는데!! 갑자리 에러라니…&lt;/p&gt;
+
+&lt;p&gt;이리저리 검색을 하다가 이유를 찾았다.&lt;br /&gt;
+잘 살펴보니 포스트 이름 중에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt;가 들어간 것이 있었던 것이다.&lt;/p&gt;
+
+&lt;p&gt;앞으론 주의해야겠다.. 굳이 넣고싶으면 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;amp;&lt;/code&gt;로 넣어야 한다고 한다.&lt;br /&gt;
+바꿔야하는 모양은 &lt;a href=&quot;http://mrrena.blogspot.com/2009/07/entityref-expecting-at-line-1.html&quot;&gt;여기&lt;/a&gt;를 참고하자.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 03 Apr 2019 22:35:24 +0900</pubDate>
+        <link>http://localhost:4000/blog/sitemap_error/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/sitemap_error/</guid>
+        
+        <category>jekyll</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>190403_DailyNote</title>
@@ -323,8 +349,8 @@ HTML파일들은 지난번에 &lt;code class=&quot;highlighter-rouge&quot;&gt;_i
 &lt;p&gt;삽질하면서 그래도 HTML, CSS, JS 보는 법을 익혀가는 것 같아서 기분이 좋다 :)&lt;/p&gt;
 </description>
         <pubDate>Tue, 02 Apr 2019 22:00:24 +0900</pubDate>
-        <link>http://localhost:4000/blog/font&post_style_update/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/font&post_style_update/</guid>
+        <link>http://localhost:4000/blog/font_post_style_update/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/font_post_style_update/</guid>
         
         <category>jekyll</category>
         
@@ -467,8 +493,8 @@ Style-display옵션이 grid인 것을 풀어봤더니 드디어 일자 모양이
 &lt;p&gt;신난다!&lt;/p&gt;
 </description>
         <pubDate>Sat, 30 Mar 2019 02:10:24 +0900</pubDate>
-        <link>http://localhost:4000/blog/category&tag_style/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/category&tag_style/</guid>
+        <link>http://localhost:4000/blog/category@tag_style/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/category@tag_style/</guid>
         
         <category>jekyll</category>
         
@@ -527,106 +553,6 @@ Style-display옵션이 grid인 것을 풀어봤더니 드디어 일자 모양이
         
         
         <category>TMI</category>
-        
-      </item>
-    
-      <item>
-        <title>190329_Prepare_Job_Interview</title>
-        <description>&lt;p&gt;오늘은 네트워크와 관련된 질문이다 :)&lt;/p&gt;
-
-&lt;h4 id=&quot;osi-7-layer를-1계층부터-7계층까지-순서대로-말하시오&quot;&gt;OSI 7 Layer를 1계층부터 7계층까지 순서대로 말하시오&lt;/h4&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Application Layer&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Presentation Layer&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Session Layer&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Transport Layer&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Network Layer&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;DataLink Layer&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Physical Layer&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h4 id=&quot;tcp와-udp의-차이점에-대해-말하시오&quot;&gt;TCP와 UDP의 차이점에 대해 말하시오&lt;/h4&gt;
-
-&lt;h5 id=&quot;tcp&quot;&gt;TCP&lt;/h5&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;TCP(Transmission Control Protocol, 전송제어 프로토콜)&lt;/code&gt;는 &lt;strong&gt;연결형 프로토콜&lt;/strong&gt;이다.&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;3-way-handshake&lt;/code&gt;를 통해 수신 여부를 확인해 신뢰성이 높은 대신 속도가 느리다.&lt;br /&gt;
-멀티 캐스팅이나 브로드캐스팅을 지원하지 않는다.&lt;/p&gt;
-
-&lt;h5 id=&quot;udp&quot;&gt;UDP&lt;/h5&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;UDP(User Datagram Protocol, 사용자 데이터그램 프로토콜)&lt;/code&gt;는 &lt;strong&gt;비연결형 프로토콜&lt;/strong&gt;이다.  수신 여부를 확인하지 않아 신뢰성이 낮은 대신 속도가 빠르다.&lt;/p&gt;
-
-&lt;p&gt;TCP와 UDP의 차이를 표로 정리해보면 아래와 같다.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;TCP&lt;/td&gt;
-      &lt;td&gt;UDP&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;연결 방식&lt;/td&gt;
-      &lt;td&gt;연결형&lt;/td&gt;
-      &lt;td&gt;비연결형&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;패킷 교환 방식&lt;/td&gt;
-      &lt;td&gt;가상회선&lt;/td&gt;
-      &lt;td&gt;데이터그램&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;전송 순서&lt;/td&gt;
-      &lt;td&gt;전송순서보장&lt;/td&gt;
-      &lt;td&gt;전송순서보장X&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;수신 여부 확인&lt;/td&gt;
-      &lt;td&gt;확인함&lt;/td&gt;
-      &lt;td&gt;확인하지 않음&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;통신 방식&lt;/td&gt;
-      &lt;td&gt;1:1&lt;/td&gt;
-      &lt;td&gt;1:1/1:N/N:N&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;신뢰성&lt;/td&gt;
-      &lt;td&gt;높음&lt;/td&gt;
-      &lt;td&gt;낮음&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;속도&lt;/td&gt;
-      &lt;td&gt;느림&lt;/td&gt;
-      &lt;td&gt;빠름&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-        <pubDate>Fri, 29 Mar 2019 23:51:24 +0900</pubDate>
-        <link>http://localhost:4000/interview/190329_PJI/</link>
-        <guid isPermaLink="true">http://localhost:4000/interview/190329_PJI/</guid>
-        
-        <category>daily</category>
-        
-        
-        <category>Interview</category>
         
       </item>
     
