@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-
+<div class="page__hero--overlay" style="background-image: url('https://images.unsplash.com/photo-1508550536558-5e8d33eb9a82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1488&q=80');">
+  <div class="wrapper">
+    <h1 id="page-title" class="page__title" itemprop="headline" style="border-bottom: none;text-align:left;font-style:italic">
+      Better late than never
+    </h1>
+    <br>
+    <p class="page__meta" style="font-style: italic">
+    Weed Making Project</p>
+  </div>
+</div>
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
 {% elsif page.header.video.id and page.header.video.provider %}
@@ -16,7 +25,12 @@ layout: default
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%B %d, %Y" }}">{% endif %}
 
     <section class="page__content" itemprop="text">
-      {{ content }}
+      {% for post in paginator.posts %}
+        {% include archive-single.html %}
+      {% endfor %}
+
+      {% include paginator.html %}
     </section>
   </article>
 </div>
+

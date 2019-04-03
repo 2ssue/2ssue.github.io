@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>잔디밭 만들기 프로젝트</title>
+    <title>안하는 것 보단 낫다</title>
     <description>This is a practice version blog!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 03 Apr 2019 22:40:28 +0900</pubDate>
-    <lastBuildDate>Wed, 03 Apr 2019 22:40:28 +0900</lastBuildDate>
+    <pubDate>Thu, 04 Apr 2019 02:45:32 +0900</pubDate>
+    <lastBuildDate>Thu, 04 Apr 2019 02:45:32 +0900</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -14,15 +14,16 @@
         <description>&lt;p&gt;Google Search Console을 보는데 자꾸 사이트 맵 제출이 제대로 안되는 것 같았다.&lt;br /&gt;
 그래서 블로그 url에 sitemap.xml을 쳐서 확인해보니 아래와 같은 상황이 펼쳐졌다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/image/sitemap_error.PNG&quot; alt=&quot;사이트맵 에러&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/sitemap_error.PNG&quot; alt=&quot;사이트맵 에러&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;왜! 나는 아무짓도 안했는데!! 갑자리 에러라니…&lt;/p&gt;
 
 &lt;p&gt;이리저리 검색을 하다가 이유를 찾았다.&lt;br /&gt;
-잘 살펴보니 포스트 이름 중에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt;가 들어간 것이 있었던 것이다.&lt;/p&gt;
+잘 살펴보니 포스트 이름 중에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt;가 들어간 것이 있었다.&lt;br /&gt;
+이거 하나때문에 한참을 검색했다니 ㅠ_ㅠ&lt;/p&gt;
 
-&lt;p&gt;앞으론 주의해야겠다.. 굳이 넣고싶으면 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;amp;&lt;/code&gt;로 넣어야 한다고 한다.&lt;br /&gt;
-바꿔야하는 모양은 &lt;a href=&quot;http://mrrena.blogspot.com/2009/07/entityref-expecting-at-line-1.html&quot;&gt;여기&lt;/a&gt;를 참고하자.&lt;/p&gt;
+&lt;p&gt;앞으론 주의해야겠다. 굳이 넣고싶으면 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;amp;&lt;/code&gt;로 넣어야 한다고 한다.&lt;br /&gt;
+바꿔야하는 모양은 &lt;a href=&quot;http://mrrena.blogspot.com/2009/07/entityref-expecting-at-line-1.html&quot;&gt;여기&lt;/a&gt;를 참고하자!&lt;/p&gt;
 </description>
         <pubDate>Wed, 03 Apr 2019 22:35:24 +0900</pubDate>
         <link>http://localhost:4000/blog/sitemap_error/</link>
