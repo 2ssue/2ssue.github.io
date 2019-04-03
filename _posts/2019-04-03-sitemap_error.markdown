@@ -9,7 +9,7 @@ classes: wide
 Google Search Console을 보는데 자꾸 사이트 맵 제출이 제대로 안되는 것 같았다.  
 그래서 블로그 url에 sitemap.xml을 쳐서 확인해보니 아래와 같은 상황이 펼쳐졌다.  
   
-![사이트맵 에러](/assets/image/sitemap_error.PNG)
+![사이트맵 에러](/assets/images/sitemap_error.PNG)
 
 왜! 나는 아무짓도 안했는데!! 갑자리 에러라니...  
   
