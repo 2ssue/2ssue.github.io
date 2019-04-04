@@ -1,5 +1,5 @@
 ---
-title: "190327_Prepare_Job_Interview"
+title: "190327_Prepare Job Interview"
 date:   2019-03-27 00:51:24 +0900
 categories: Interview
 tags: daily
