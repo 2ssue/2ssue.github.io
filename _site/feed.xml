@@ -1,13 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>안하는 것 보단 낫다</title>
-    <description>This is a practice version blog!</description>
+    <title>안하는 것 보단 늦는게 낫다</title>
+    <description>Programming study records</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 Apr 2019 02:45:32 +0900</pubDate>
-    <lastBuildDate>Thu, 04 Apr 2019 02:45:32 +0900</lastBuildDate>
+    <pubDate>Thu, 04 Apr 2019 15:57:25 +0900</pubDate>
+    <lastBuildDate>Thu, 04 Apr 2019 15:57:25 +0900</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>jekyll 블로그 커스터마이징하기(3)</title>
+        <description>&lt;p&gt;Daily Note를 쓰면서 당분간 테마에 손 안대겠단 말이 무색하게 또 손대버렸다.&lt;/p&gt;
+
+&lt;p&gt;홈화면에 나도 멋지게 사진이 떴으면 해서 계속 바꿔보고 싶었다.&lt;br /&gt;
+이번에도 새벽까지 뚝딱뚝딱 하다가 결국 완성!&lt;/p&gt;
+
+&lt;p&gt;홈화면을 바꾸다가 포스트 형식도 더 맘에 드는 방식을 찾아서 또 바꿔버렸다.&lt;/p&gt;
+
+&lt;p&gt;아무래도 밤에 일하는게 적성에 맞는 것이 분명해…&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;개발자-모드가-짱이야&quot;&gt;개발자 모드가 짱이야!&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;오늘도 도움을 준 개발자 모드에게 이 모든 영광을 돌립니다..&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;홈-레이아웃-바꾸기&quot;&gt;홈 레이아웃 바꾸기&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;먼저 홈화면을 구성하는 레이아웃은 &lt;code class=&quot;highlighter-rouge&quot;&gt;\_layouts\home&lt;/code&gt; 에 작성되어 있다.&lt;br /&gt;
+조만간 jekyll 폴더 구성이 어떻게 되어있는지 정리해놔야겠다. 계속 하는데도 헷갈리는 중..&lt;/p&gt;
+
+&lt;p&gt;암튼, &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/&quot;&gt;Minimal Mistakes 홈화면&lt;/a&gt;을 참고해보면, 큼지막한 그림이 page__hero 클래스를 쓴 걸 확인할 수 있었다.&lt;br /&gt;
+홈화면엔 넣는 방법을 잘 모르겠어서 다른 레이아웃 구성을 살피다가 &lt;strong&gt;splash.html&lt;/strong&gt; 구성이 마음에 들었다.&lt;/p&gt;
+
+&lt;p&gt;사실 지금 와서 생각해보면 그냥 home.html에 구성해도 됐는데 뭔가 꽂혔나보다…&lt;/p&gt;
+
+&lt;p&gt;그래서 &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;에서 첫 레이아웃을 splash로 바꿨고, 옆에 붙어있던 내 소개도 없앴다.&lt;br /&gt;
+이번이야말로 그냥 야매로 구성했는데 아래 if문 조건을 어떻게 만족하는지 모르겠어서 그냥 html로 다 넣어줘버렸다.&lt;/p&gt;
+
+&lt;p&gt;아래는 html 형식이라그런지 감싸도 코드가 안보여서 &lt;code class=&quot;highlighter-rouge&quot;&gt;%&lt;/code&gt;를 떼줬다.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{ if page.header.overlay_color or page.header.overlay_image or page.header.image }
+  { include page__hero.html }
+{ elsif page.header.video.id and page.header.video.provider }
+  { include page__hero_video.html }
+{ endif }  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;html공부를 아무래도 좀 더 해야할 것 같다..&lt;br /&gt;
+돌아돌아 엄청 오래걸렸긴 하지만 코드만 보면 너무 짧아서 엄청 쉽게 만들었다.&lt;br /&gt;
+page__hero 클래스를 사용해서 이미지를 넣고 home에 있던 최근 게시물 include문을 가져와서 원하는 형태는 금방 만들 수 있었다.&lt;br /&gt;
+page__hero class는 &lt;code class=&quot;highlighter-rouge&quot;&gt;\_include&lt;/code&gt; 폴더에 있으니 혹시 바꿔보려면 참고!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;포스트-여백-바꾸기&quot;&gt;포스트 여백 바꾸기&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;내 소개를 포스트 형식에서도 없애면서 왼쪽에 남는 여백이 너무 거슬렸다.&lt;br /&gt;
+왼쪽으로 옮길 수 있는 방법이 없을까 CSS 스타일을 바꿔보다가 float를 왼쪽으로 바꿔주니 왼쪽 여백은 없앨 수 있었다.&lt;/p&gt;
+
+&lt;p&gt;그런데 여전히 오른쪽에 여백이 남아서 뭔가 이상했다.&lt;br /&gt;
+또 이리저리 스타일을 바꿔보다가, width값을 100%로 주면 꽉차는 형태로 바뀌는 것을 확인했다.&lt;/p&gt;
+
+&lt;p&gt;CSS 파일을 확인해보니 sidebar로 인한 공간을 남겨두는 것 같았다.&lt;br /&gt;
+과감하게 그 값을 지우고 100%로 출력되게 바꿨고, 지금의 형태로 완성!&lt;/p&gt;
+
+&lt;p&gt;좀 큼직큼직한 면이 있지만 매우 마음에 든다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;_configyml로-제목-메뉴-설정해주기&quot;&gt;_config.yml로 제목 메뉴 설정해주기&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;이 기능은 &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/&quot;&gt;Minimal Mistakes에서 커스터마이징 방법&lt;/a&gt;을 보다가 발견했다.&lt;br /&gt;
+breadcrumbs 속성을 true로 바꾸면 되는데, 그러면 상단에 아래와 같이 메뉴가 생긴다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/breadcrumbs.PNG&quot; alt=&quot;breadcrumbs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;그래서 포스트에 달린 카테고리에 있는 글을 모아보거나, 홈으로 되돌아갈 수 있다.&lt;/p&gt;
+
+&lt;p&gt;뭔가 더 블로그스러워진 것 같아서 기분이 좋다 :)&lt;/p&gt;
+</description>
+        <pubDate>Thu, 04 Apr 2019 15:27:24 +0900</pubDate>
+        <link>http://localhost:4000/blog/home_layout_update/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/home_layout_update/</guid>
+        
+        <category>jekyll</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>sitemap.xml EntityRef: expecfing ';' 에러</title>
@@ -88,7 +172,7 @@
       </item>
     
       <item>
-        <title>190403_Prepare_Job_Interview</title>
+        <title>190403_Prepare Job Interview</title>
         <description>&lt;p&gt;오늘도 데이터 베이스 :)&lt;/p&gt;
 
 &lt;h4 id=&quot;인덱스란-무엇인가&quot;&gt;인덱스란 무엇인가?&lt;/h4&gt;
@@ -170,7 +254,7 @@
       </item>
     
       <item>
-        <title>190402_Prepare_Job_Interview</title>
+        <title>190402_Prepare Job Interview</title>
         <description>&lt;p&gt;오늘은 데이터베이스와 관련된 문제다 :)&lt;/p&gt;
 
 &lt;h4 id=&quot;정규화의-목적에-대해서-말하시오&quot;&gt;정규화의 목적에 대해서 말하시오&lt;/h4&gt;
@@ -361,7 +445,7 @@ HTML파일들은 지난번에 &lt;code class=&quot;highlighter-rouge&quot;&gt;_i
       </item>
     
       <item>
-        <title>190401_Prepare_Job_Interview</title>
+        <title>190401_Prepare Job Interview</title>
         <description>&lt;p&gt;오늘도 네트워크와 관련된 문제이다 :)&lt;/p&gt;
 
 &lt;h4 id=&quot;http에서-get과-post의-차이는&quot;&gt;HTTP에서 GET과 POST의 차이는?&lt;/h4&gt;
@@ -501,59 +585,6 @@ Style-display옵션이 grid인 것을 풀어봤더니 드디어 일자 모양이
         
         
         <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>190329_DailyNote</title>
-        <description>&lt;h4 id=&quot;my-trivial-today&quot;&gt;&lt;em&gt;My Trivial Today&lt;/em&gt;&lt;/h4&gt;
-
-&lt;p&gt;어제는 저녁 약속이 있어서 DN은 빼먹었다 ;)&lt;br /&gt;
-대신 PPI는 새벽에 올려놔서 잔디 씨앗은 심었다..!&lt;br /&gt;
-무사히 한 줄을 다시 채울 수 있어서 기쁨 크크&lt;/p&gt;
-
-&lt;p&gt;어제는 백준님의 알고리즘 역량 테스트 강의를 들었다.&lt;br /&gt;
-강의를 듣는데 핵심이 너무 훅 지나가버려서 거의 이해 못했다..&lt;br /&gt;
-원래 강의 요약을 블로그에 올리려고 했는데 이해를 못해서 올릴 수가 ㅠ_ㅠ&lt;/p&gt;
-
-&lt;p&gt;DFS/BFS, Brute Force가 주로 역테에 나온다고 하셨으니까&lt;br /&gt;
-앞으로 그 위주로 공부하면서 강의에 정리해 놓은 내용을 이해해볼 셈이다.&lt;/p&gt;
-
-&lt;p&gt;빨리 코딩테스트 문제를 잘 풀게 될 수 있었으면 좋겠다!!!!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;today-i-did&quot;&gt;&lt;em&gt;Today I Did&lt;/em&gt;&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;데이터베이스 개념 읽기&lt;/li&gt;
-  &lt;li&gt;경험 정리하기&lt;/li&gt;
-  &lt;li&gt;영어 회화 공부하기&lt;/li&gt;
-  &lt;li&gt;Git 강의 듣기&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;매일 똑같은 일의 반복이군…하하&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;someday-i-will&quot;&gt;&lt;em&gt;Someday I Will&lt;/em&gt;&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;블로그 테마 바꾸기&lt;br /&gt;
-포스트 제목 밑에 여백을 좀 더 넣고 싶다.&lt;br /&gt;
-그리고 카테고리/태그 콜렉터는 우측에서 볼 수 있었으면 좋겠어… 빨리 바꾸고 싶다…&lt;/li&gt;
-  &lt;li&gt;알고리즘 하루에 2개씩은 풀기&lt;/li&gt;
-  &lt;li&gt;프로젝트 정리하기&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Sat, 30 Mar 2019 00:52:24 +0900</pubDate>
-        <link>http://localhost:4000/tmi/190329_DN/</link>
-        <guid isPermaLink="true">http://localhost:4000/tmi/190329_DN/</guid>
-        
-        <category>daily</category>
-        
-        
-        <category>TMI</category>
         
       </item>
     

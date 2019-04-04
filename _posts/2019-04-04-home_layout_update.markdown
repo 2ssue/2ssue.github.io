@@ -32,14 +32,13 @@ Daily Note를 쓰면서 당분간 테마에 손 안대겠단 말이 무색하게
 그래서 `index.html`에서 첫 레이아웃을 splash로 바꿨고, 옆에 붙어있던 내 소개도 없앴다.  
 이번이야말로 그냥 야매로 구성했는데 아래 if문 조건을 어떻게 만족하는지 모르겠어서 그냥 html로 다 넣어줘버렸다.  
   
-```html
-<!-- html 형식이라 보이질 않아서 주석처리 했다.  
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% elsif page.header.video.id and page.header.video.provider %}
-  {% include page__hero_video.html %}
-{% endif %}  
--->
+아래는 html 형식이라그런지 감싸도 코드가 안보여서 `%`를 떼줬다.  
+```
+{ if page.header.overlay_color or page.header.overlay_image or page.header.image }
+  { include page__hero.html }
+{ elsif page.header.video.id and page.header.video.provider }
+  { include page__hero_video.html }
+{ endif }  
 ```
 
 html공부를 아무래도 좀 더 해야할 것 같다..  
