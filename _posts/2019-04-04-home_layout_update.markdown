@@ -33,11 +33,13 @@ Daily Note를 쓰면서 당분간 테마에 손 안대겠단 말이 무색하게
 이번이야말로 그냥 야매로 구성했는데 아래 if문 조건을 어떻게 만족하는지 모르겠어서 그냥 html로 다 넣어줘버렸다.  
   
 ```html
+<!-- html 형식이라 보이질 않아서 주석처리 했다.  
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
 {% elsif page.header.video.id and page.header.video.provider %}
   {% include page__hero_video.html %}
-{% endif %}
+{% endif %}  
+-->
 ```
 
 html공부를 아무래도 좀 더 해야할 것 같다..  
