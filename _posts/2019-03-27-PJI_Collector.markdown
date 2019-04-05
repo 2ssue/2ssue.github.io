@@ -33,5 +33,11 @@ toc: true
 
 [정규화의 목적](https://2ssue.github.io/interview/190402_PJI/)   
 [트랜잭션이란?](https://2ssue.github.io/interview/190402_PJI/)  
-[인덱스란?](https://2ssue.github.io/interview/190403_PJI/) 
-[인덱스의 장점/단점](https://2ssue.github.io/interview/190403_PJI/) 
+[인덱스란?](https://2ssue.github.io/interview/190403_PJI/)  
+[인덱스의 장점/단점](https://2ssue.github.io/interview/190403_PJI/)  
+
+> ### Operating System, OS
+
+[윈도우와 리눅스의 차이](https://2ssue.github.io/interview/190405_PJI/)  
+[프로세스와 스레드의 차이](https://2ssue.github.io/interview/190405_PJI/)  
+[멀티 스레딩이란?](https://2ssue.github.io/interview/190405_PJI/)  
