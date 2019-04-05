@@ -17,13 +17,17 @@ permalink: /about/
 
 > ### Project
 
-#### Windows Application  
+#### Windows Application 
+<p style="font-size: 16px"> 
 개인 프로젝트  
 사내 응용 프로그램  
+</p>
 `Delphi`, `SQLite`
 #### Android Application
+<p style="font-size: 16px"> 
 팀 프로젝트
 가상 계좌 어플리케이션  
-`Java`, `PHP` 활용 암호화 담당  
-`Android` UI 일부 담당  
+활용 암호화 담당  
+UI 일부 담당  
+</p>
 `Java`, `MySQL`, `PHP`, `Android`
