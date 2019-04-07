@@ -1,0 +1,16 @@
+---
+title: "190407_Prepare Job Interview"
+date:   2019-04-07 17:03:24 +0900
+categories: Interview
+tags: daily
+classes: wide
+published: false
+---
+
+오늘도 보안 :)  
+  
+#### XSS란 무엇인가?
+
+`XSS(Cross-Site Scripting)` 웹 페이지에 악성 스크립트를 삽입하는 
+
+#### CSRF란 무엇인가?
