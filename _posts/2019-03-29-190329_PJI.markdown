@@ -8,7 +8,7 @@ classes: wide
 
 오늘은 네트워크와 관련된 질문이다 :)  
   
-#### OSI 7 Layer를 1계층부터 7계층까지 순서대로 말하시오
+> #### OSI 7 Layer를 1계층부터 7계층까지 순서대로 말하시오
 
 |Application Layer|
 |Presentation Layer|
@@ -18,7 +18,7 @@ classes: wide
 |DataLink Layer|
 |Physical Layer|
 
-#### TCP와 UDP의 차이점에 대해 말하시오
+> #### TCP와 UDP의 차이점에 대해 말하시오
 
 ##### TCP
 `TCP(Transmission Control Protocol, 전송제어 프로토콜)`는 **연결형 프로토콜**이다.  
