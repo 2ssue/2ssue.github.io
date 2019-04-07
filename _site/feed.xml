@@ -5,9 +5,196 @@
     <description>Programming study records</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 Apr 2019 15:57:25 +0900</pubDate>
-    <lastBuildDate>Thu, 04 Apr 2019 15:57:25 +0900</lastBuildDate>
+    <pubDate>Mon, 08 Apr 2019 02:19:17 +0900</pubDate>
+    <lastBuildDate>Mon, 08 Apr 2019 02:19:17 +0900</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>jekyll 블로그 커스터마이징하기(4)</title>
+        <description>&lt;p&gt;벌써 4탄이다 됐다..&lt;/p&gt;
+
+&lt;p&gt;홈화면에 최근 포스트가 스크롤 없이 보였으면 해서,&lt;br /&gt;
+리스트 형태에서 Grid 형태로 바꾸어보았다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;이번에도-하드캐리한-개발자모드&quot;&gt;이번에도 하드캐리한 개발자모드&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Grid형태는 포스트의 참고 부분에서 이미 사용되고 있어서 어떤 태그로 감싸져있나 확인해봤다.&lt;br /&gt;
+&lt;strong&gt;grid__item&lt;/strong&gt; 형태였다. 지금 archive는 &lt;strong&gt;list__item&lt;/strong&gt;으로 되어있어서 grid__item으로 조정해봤다.&lt;br /&gt;
+다행히 바로 Grid 형태로 바뀌는 것을 볼 수 있었고, html 파일에서 list대신 grid를 사용하도록 했다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;posts-category-tag-메뉴도-같은-스타일을-사용하고-있었다니&quot;&gt;Posts, Category, Tag 메뉴도 같은 스타일을 사용하고 있었다니..&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;공통 파일 스타일을 바꿨더니 위 메뉴까지 전부다 Grid로 바뀌어서 쪼끔 이상해졌다.&lt;br /&gt;
+그래서 html파일을 복사해 홈화면에서만 사용할 archive-single_gridstyle.html을 만들었다.&lt;br /&gt;
+그리고 layout 파일에서 include 파일값만 변경하면 완성!&lt;/p&gt;
+
+&lt;p&gt;간단하게 Grid 형태로 변경했고, 포스트가 5개 일 땐 하나가 아래로 내려가버려서 &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;파일에서 pagination 개수를 4개로 바꿨당 =)&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;이전-홈화면&quot;&gt;이전 홈화면&lt;/h3&gt;
+  &lt;p&gt;스크롤을 내려야 게시글들을 확인 가능했다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/before_home.png&quot; alt=&quot;이전 홈화면&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;바뀐-홈화면&quot;&gt;바뀐 홈화면&lt;/h3&gt;
+  &lt;p&gt;스크롤을 내리지 않아도 게시글을 확인 가능하다!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/after_home.PNG&quot; alt=&quot;바뀐 홈화면&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이렇게 오늘의 커스터마이징도 성공 :) !&lt;/p&gt;
+</description>
+        <pubDate>Mon, 08 Apr 2019 01:57:24 +0900</pubDate>
+        <link>http://localhost:4000/blog/home_layout_update_2/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/home_layout_update_2/</guid>
+        
+        <category>jekyll</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>190407_Prepare Job Interview</title>
+        <description>&lt;p&gt;오늘도 보안 :)&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;xss란-무엇인가&quot;&gt;XSS란 무엇인가?&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;XSS(Cross-Site Scripting)&lt;/code&gt;는 웹 페이지에 &lt;strong&gt;악성 스크립트를 삽입하는 공격&lt;/strong&gt;이다.&lt;br /&gt;
+주로 여러명의 사용자가 보게 되는 게시판에 악성 스크립트를 담은 글을 올리는 형태로 공격한다.&lt;br /&gt;
+이를 통해 사용자의 쿠키나 세션을 탈취하거나, 자동으로 비정상적 기능을 수행하게 하는 등의 공격이 가능해진다.&lt;/p&gt;
+
+&lt;p&gt;이를 대비하기 위해서는 사용자로부터 입력받은 값을 검사해 공격할 수 없도록 해야한다.&lt;br /&gt;
+html 태그가 그대로 동작하지 않도록 &lt;code class=&quot;highlighter-rouge&quot;&gt;striptag&lt;/code&gt;나 &lt;code class=&quot;highlighter-rouge&quot;&gt;replace&lt;/code&gt;등의 함수로 출력 내용을 감싸는 등의 방법이 있다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;csrf란-무엇인가&quot;&gt;CSRF란 무엇인가?&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;CSRF(Cross-Site Request Forgery)&lt;/code&gt;는 악성 스크립트를 이용해 &lt;strong&gt;사용자가 의도하지 않은 행위를 하도록 하는 공격&lt;/strong&gt;이다.&lt;/p&gt;
+
+&lt;p&gt;예를 들어, 게시판에 관리자가 글을 클릭하면 관리자 권한을 가진 글로 바뀌게 하는 악성 스크립트를 담은 글을 올린다.&lt;br /&gt;
+관리자가 공격자가 올린 링크를 누르게 되면, 브라우저는 악성 스크립트를 해석한다.&lt;br /&gt;
+이를 통해 사용자의 의도와는 다른 글이 올라오는 등의 공격이 완성된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;공격자 게시글&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;제목: [시급] 관리자님 사이트가 이상해요
+작성자: attacker(~@~.com)
+본문: (악성 스크립트)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;공격 성공으로 올라온 게시글&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;제목: [공지] 필독 바람
+작성자: 관리자(~@~.com)
+본문: 후원 계좌가 변경되었음 (공격자 계좌)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;XSS&lt;/code&gt;와 &lt;code class=&quot;highlighter-rouge&quot;&gt;CSRF&lt;/code&gt; 모두 악성 스크립트를 이용해 공격한다는 공통점이 있다.&lt;/p&gt;
+
+&lt;p&gt;하지만 &lt;code class=&quot;highlighter-rouge&quot;&gt;XSS&lt;/code&gt;는 악성 스크립트를 통해 사용자(Client)를 공격했다면,&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;CSRF&lt;/code&gt;는 악성 스크립트를 통해 웹 페이지(Server)를 공격한다는 차이점이 있다.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 07 Apr 2019 17:03:24 +0900</pubDate>
+        <link>http://localhost:4000/interview/190407_PJI/</link>
+        <guid isPermaLink="true">http://localhost:4000/interview/190407_PJI/</guid>
+        
+        <category>daily</category>
+        
+        
+        <category>Interview</category>
+        
+      </item>
+    
+      <item>
+        <title>190406_Prepare Job Interview</title>
+        <description>&lt;p&gt;오늘은 보안:)&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;buffer-overflow란-무엇이고-대비책은-무엇인가&quot;&gt;Buffer Overflow란 무엇이고 대비책은 무엇인가?&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Buffer Overflow&lt;/code&gt;란 제한되어 있는 메모리의 양보다 많은 값을 입력해 지정된 메모리 이외 공간에 저장되게 하는 공격이다.&lt;br /&gt;
+지정 메모리 이외 공간에 다른 값이 덮어쓰여지게 되면, 다른 데이터가 손상될 수 있다는 위험이 있다.&lt;/p&gt;
+
+&lt;p&gt;이를 대비하기 위해서는 지정된 메모리 이상의 데이터를 받지 않도록 저장시에 입력량을 확인해야 한다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;sql-injection-공격이란-무엇이고-대비책은-무엇인가&quot;&gt;SQL Injection 공격이란 무엇이고 대비책은 무엇인가?&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SQL Injection&lt;/code&gt;이란 SQL문을 서버로 전송해 데이터베이스를 비정상적으로 조작하는 코드 인젝션 공격 방법이다.&lt;br /&gt;
+이를 통해 데이터베이스를 삭제하거나, 변경하고 추출하는 등의 행위가 가능하다.&lt;/p&gt;
+
+&lt;p&gt;이를 대비하기 위해서는 유저에게 받은 값을 필터링해 데이터베이스를 조작하는 입력은 제한해야 한다.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 06 Apr 2019 21:43:24 +0900</pubDate>
+        <link>http://localhost:4000/interview/190406_PJI/</link>
+        <guid isPermaLink="true">http://localhost:4000/interview/190406_PJI/</guid>
+        
+        <category>daily</category>
+        
+        
+        <category>Interview</category>
+        
+      </item>
+    
+      <item>
+        <title>190405_Prepare Job Interview</title>
+        <description>&lt;p&gt;오늘은 운영체제 :)&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;윈도우와-리눅스의-차이점은&quot;&gt;윈도우와 리눅스의 차이점은?&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;윈도우는 GUI(Graphical User Interface)기반으로, 인터페이스를 클릭하는 방식이다.&lt;br /&gt;
+반면 리눅스는 명령어 기반으로 이뤄진다는 사용성의 특징이 있다.&lt;/p&gt;
+
+&lt;p&gt;리눅스는 오픈소스이기 때문에 누구나 버그 수정이 가능하지만 윈도우의 소스는 비공개로 회사의 업데이트를 기다려야 한다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;프로세스와-스레드의-차이점은&quot;&gt;프로세스와 스레드의 차이점은?&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;프로세스&lt;/strong&gt;는 운영체제로부터 자원을 할당받는 작업의 단위이다.&lt;br /&gt;
+실행될 때 운영체제로부터 프로세서, 필요한 주소공간, 메모리 등의 자원을 할당 받는다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;스레드&lt;/strong&gt;는 프로세스가 할당받은 자원을 이용하는 실행의 단위이다.&lt;br /&gt;
+&lt;strong&gt;&lt;em&gt;한 프로세스 내에서 동작되는 여러 실행의 흐름&lt;/em&gt;&lt;/strong&gt;으로, 프로세스 내의 주소 공간과 자원들을 같은 프로세스 내에서 스레드끼리 공유할 수 있다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;멀티-스레딩이란&quot;&gt;멀티 스레딩이란?&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;하나의 프로세스를 다수 실행 단위로 구분해 자원을 공유하고, 자원의 생성/관리 중복성을 최소화해 수행 능력을 향상시키는 것을 말한다.&lt;br /&gt;
+이 때 각각의 스레드는 독립 작업을 수행해야 하기 때문에 각자의 스택과 PC 레지스터 값을 갖고 있다.&lt;/p&gt;
+
+&lt;p&gt;멀티 프로세스로 실행되는 작업을 멀티 스레딩으로 실행할 경우,&lt;br /&gt;
+프로세스를 생성해 자원을 할당하는 시스템 콜이 줄어 자원을 효율적으로 관리할 수 있다.&lt;br /&gt;
+프로세스 간의 통신보다 스레드 간의 통신 비용이 적어 작업 간의 통신 부담이 줄어든다.&lt;/p&gt;
+
+&lt;p&gt;효율은 좋지만 스레드 간 자원 공유는 전역 변수를 이용해 동기화 문제에 신경써야 한다는 단점이 있다.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 05 Apr 2019 21:43:24 +0900</pubDate>
+        <link>http://localhost:4000/interview/190405_PJI/</link>
+        <guid isPermaLink="true">http://localhost:4000/interview/190405_PJI/</guid>
+        
+        <category>daily</category>
+        
+        
+        <category>Interview</category>
+        
+      </item>
     
       <item>
         <title>jekyll 블로그 커스터마이징하기(3)</title>
@@ -175,7 +362,9 @@ breadcrumbs 속성을 true로 바꾸면 되는데, 그러면 상단에 아래와
         <title>190403_Prepare Job Interview</title>
         <description>&lt;p&gt;오늘도 데이터 베이스 :)&lt;/p&gt;
 
-&lt;h4 id=&quot;인덱스란-무엇인가&quot;&gt;인덱스란 무엇인가?&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;인덱스란-무엇인가&quot;&gt;인덱스란 무엇인가?&lt;/h4&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;전체 데이터베이스를 검색하기엔 시간이 많이 걸리기 때문에 만들어 두는 값이다.&lt;br /&gt;
 칼럼의 값과 해당 레코드가 저장된 주소를 키값쌍 처럼 저장한다.&lt;/p&gt;
@@ -187,7 +376,9 @@ breadcrumbs 속성을 true로 바꾸면 되는데, 그러면 상단에 아래와
   &lt;li&gt;Cluster 방식&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;인덱스의-장점과-단점은&quot;&gt;인덱스의 장점과 단점은?&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;인덱스의-장점과-단점은&quot;&gt;인덱스의 장점과 단점은?&lt;/h4&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;DBMS의 인덱스는 항상 정렬된 상태를 유지하기 때문에 검색은 빠르다는 장점이 있다.&lt;br /&gt;
 하지만 새로운 값을 추가/삭제/수정하는 경우는 쿼리문의 실행 속도가 느려진다.&lt;br /&gt;
@@ -257,7 +448,9 @@ breadcrumbs 속성을 true로 바꾸면 되는데, 그러면 상단에 아래와
         <title>190402_Prepare Job Interview</title>
         <description>&lt;p&gt;오늘은 데이터베이스와 관련된 문제다 :)&lt;/p&gt;
 
-&lt;h4 id=&quot;정규화의-목적에-대해서-말하시오&quot;&gt;정규화의 목적에 대해서 말하시오&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;정규화의-목적에-대해서-말하시오&quot;&gt;정규화의 목적에 대해서 말하시오&lt;/h4&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;관계형 데이터베이스에서 데이터의 중복을 최소화하기 위해 데이터를 구조화하는 작업이다.&lt;/p&gt;
 
@@ -297,7 +490,9 @@ breadcrumbs 속성을 true로 바꾸면 되는데, 그러면 상단에 아래와
 그러나 릴레이션의 분해로 JOIN 연산이 많아져 질의 응답시간이 오래 걸린다는 단점이 있다.&lt;br /&gt;
 이를 해결하기 위해 역정규화(De-normalization)를 하기도 한다.&lt;/p&gt;
 
-&lt;h4 id=&quot;트랜잭션에-대해-설명하시오&quot;&gt;트랜잭션에 대해 설명하시오&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;트랜잭션에-대해-설명하시오&quot;&gt;트랜잭션에 대해 설명하시오&lt;/h4&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;하나의 작업을 수행하기 위해 필요한 데이터베이스 연산의 집합이다.&lt;br /&gt;
 데이터베이스에서 논리적인 작업의 단위가 되어 장애가 발생했을 시에 주로 사용된다.&lt;br /&gt;
@@ -313,278 +508,6 @@ breadcrumbs 속성을 true로 바꾸면 되는데, 그러면 상단에 아래와
         
         
         <category>Interview</category>
-        
-      </item>
-    
-      <item>
-        <title>jekyll 블로그 커스터마이징하기(2)</title>
-        <description>&lt;p&gt;제목이랑 본문을 떨어트려 놓는다는걸 완전히 바꾸어버렸다.&lt;/p&gt;
-
-&lt;p&gt;기존이 어땠는지 보기 위해서 이전 사진을 좀 찍어놓을걸 그랬다!&lt;br /&gt;
-&lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/post/post-future-date/&quot;&gt;Minimal Mistakes의 기본 포스트&lt;/a&gt;와 같으니 궁금하면 참고..!&lt;/p&gt;
-
-&lt;p&gt;이번엔 원하는 대로 싹 바꾼다고 엄청난 사투를 벌였다.&lt;br /&gt;
-오늘도 초짜는 개발자 모드로 뒤적거리느라 3-4시간 정도 걸린 것 같다.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h3 id=&quot;오늘도-개발자-모드&quot;&gt;오늘도, 개발자 모드!&lt;/h3&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;지난 기억을 되살려, 개발자모드&lt;code class=&quot;highlighter-rouge&quot;&gt;F12&lt;/code&gt;로 뒤적거리면서 변경하고 싶은 부분을 클릭했다.&lt;br /&gt;
-원래 바꾸려던 것은 제목인 Header였으니 이 부분을 클릭!&lt;/p&gt;
-
-&lt;p&gt;CSS를 변경해가면서 원하는 스타일을 찾아보았다.&lt;br /&gt;
-애초에 원하던건 본문과 제목을 떨어트리는 것이었는데,&lt;br /&gt;
-이 부분은 &lt;code class=&quot;highlighter-rouge&quot;&gt;\_sass\_page.scss&lt;/code&gt;에서 &lt;strong&gt;page__title&lt;/strong&gt;의 line-height 속성 값을 올려주면 됐다.&lt;/p&gt;
-
-&lt;p&gt;근데 뭔가 이걸 떼는 것 만으로는 만족스러운 스타일이 되지 못했다.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h3 id=&quot;다른-사람들은-어떻게-했을까&quot;&gt;다른 사람들은 어떻게 했을까?&lt;/h3&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;다른 사람들의 블로그들은 어떻게 생겼는지, 한번 참고해봤다.&lt;br /&gt;
-내가 마음에 드는 포스트 스타일들은 제목이 다들 가운데에 있길래 한번 옮겨보았다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/before_design.PNG&quot; alt=&quot;제목 align만 옮긴 상태&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;뭔가 이상하다.. 내가 원하는 스타일이 아니었다.&lt;br /&gt;
-본문과 제목이 따로 노는 것 같다고 해야하나? 암튼 별로였다.&lt;/p&gt;
-
-&lt;p&gt;그래서 하단에 있던 게시 날짜, 태그, 카테고리를 상단으로 옮겨보기로 했다.&lt;br /&gt;
-문제의 3-4시간은 여기서 발생했다!&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h3 id=&quot;아래에-있던걸-위로-옮기는건데-글자-지우기&quot;&gt;아래에 있던걸 위로 옮기는건데… 글자 지우기&lt;/h3&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;옮겨보려고 하니, 그 스타일 그대로 옮기는건 좀 아니었다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/footer_style.PNG&quot; alt=&quot;footer style&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;이런 모양인데.. 위로 그대로 옮기면 또 매우 이상했음 ㅠ_ㅠ&lt;br /&gt;
-그래서 픽토그램 옆에 Categories, Updated 글자를 없애보기로 했다.&lt;br /&gt;
-박스 모양도… 너무 두껍게 생겼어!&lt;/p&gt;
-
-&lt;p&gt;개발자 모드에서 클릭클릭 하다보면, 해당 메뉴가 &lt;strong&gt;.page__taxonomy-item&lt;/strong&gt; 인걸 확인 할 수 있었다.&lt;br /&gt;
-이것도 CSS에서 바꾸겠거니.. 하고 또 이리저리 고쳐봤다.&lt;/p&gt;
-
-&lt;p&gt;border 속성을 조정하니 박스 테두리는 없앨 수 있었다.&lt;/p&gt;
-
-&lt;p&gt;근데 글자는 CSS가 아니다.. 그럼 HTML이겠지..? 하고 또 뒤적거리기 시작했다.&lt;br /&gt;
-저번에 삽질을 하도 많이해서 이제 어느정도 파일보는 법은 익혀진 것 같다!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;page__taxnomy&lt;/strong&gt; class 였으니 그 파일이 있겠지, 하고 파일을 찾아봤다.&lt;br /&gt;
-HTML파일들은 지난번에 &lt;code class=&quot;highlighter-rouge&quot;&gt;_include&lt;/code&gt; 폴더에서 찾을 수 있었던 걸 기억해서 찾아냈다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/page__taxonomy.png&quot; alt=&quot;taxonomy&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;category-list.html과 tag-list.html을 포함하고 있다는 것 같으니까 그 파일을 찾아봤다.&lt;/p&gt;
-
-&lt;p&gt;텍스트 값이 ui-text로 지정해주는 부분이 있는 것을 보고 주석처리 해줬다.&lt;br /&gt;
-드디어 픽토그램 옆 이름을 지울 수 있었다! 야후!&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h3 id=&quot;글자를-지웠더니-가로로-배열하는-난관이&quot;&gt;글자를 지웠더니 가로로 배열하는 난관이..&lt;/h3&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;세로로 쭉 있던 모양을 가로 모양으로 바꿔주고 싶었다.&lt;br /&gt;
-그래야 뭔가 더 있어보이는 모양새!!!!&lt;/p&gt;
-
-&lt;p&gt;그래서 이리저리 아무 스타일을 해보다가, 몇 번(엄청난)의 시행착오를 거쳤지만&lt;br /&gt;
-레이아웃 크기를 조절해 줄 수 있는 &lt;strong&gt;flex라는 display 옵션&lt;/strong&gt;을 찾았다.&lt;/p&gt;
-
-&lt;p&gt;드디어 가로배열에 성공하고, 구글링을 거치면서 개별 스타일로 flex값을 조정해주면&lt;br /&gt;
-내가 원하는 스타일로 변경이 가능하다는 것을 알게 됐다.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; 태그 어디다 쓰는 걸까 배울 땐 되게 궁금했는데 역시 경험인가 보다..&lt;br /&gt;
-태그 별로 스타일 지정을 해줄 수 있어서 쓸모있는 좋은 태그였다. 쓸모없는 건 줄 알았는데ㅎㅎ..&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h3 id=&quot;드디어-끝&quot;&gt;드디어 끝!&lt;/h3&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;드디어 카테고리와 날짜를 옮기고, 약간의 경계선이 필요하다고 느꼈다.&lt;br /&gt;
-그게 지금의 블로그 최종본인데, 저자 이름이랑 수평선&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;br&amp;gt;&lt;/code&gt;을 넣어줬다.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;del&gt;저자를 어떻게 기본으로 적어줘야 할 지 모르겠어서 일단 HTML에 때려박은건 비밀이다ㅎㅎㅎ&lt;/del&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h3 id=&quot;끝인-줄-알았지만-폰트-변경이-남았다&quot;&gt;끝인 줄 알았지만 폰트 변경이 남았다.&lt;/h3&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;바꾸는 김에 영어 폰트가 마음에 안들어서 여기까지 바꿔보기로 했다.&lt;br /&gt;
-검색해보니 웹 폰트로 구글 폰트를 쓰는 경우가 많은 것 같아서 나도 구글 웹폰트로!&lt;/p&gt;
-
-&lt;p&gt;폰트는 대체 어디 정의 되어 있는 걸까 또 뒤적거리다가 &lt;del&gt;이쯤되면 뒤적 마스터&lt;/del&gt;&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;\_sass\minimal-mistakes\_variables.scss\&lt;/code&gt;에 정의 되어있는 것을 찾았다.&lt;/p&gt;
-
-&lt;p&gt;기존에 있던 맘에 안들던 폰트는 다 지워버리고! 내가 마음에 들었던 Lora를 추가했다.&lt;/p&gt;
-
-&lt;p&gt;CSS 파일 상단에 임포트 해준 다음, 적어주기만 하면 되서 편했다.&lt;br /&gt;
-이렇게 폰트 변경까지 끝! 신난다! XD!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/font_update.png&quot; alt=&quot;font&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;오늘도 뿌듯한 작업이었다.&lt;br /&gt;
-다음엔 홈화면을 바꿔보기로 해야지!&lt;/p&gt;
-
-&lt;p&gt;삽질하면서 그래도 HTML, CSS, JS 보는 법을 익혀가는 것 같아서 기분이 좋다 :)&lt;/p&gt;
-</description>
-        <pubDate>Tue, 02 Apr 2019 22:00:24 +0900</pubDate>
-        <link>http://localhost:4000/blog/font_post_style_update/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/font_post_style_update/</guid>
-        
-        <category>jekyll</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>190401_Prepare Job Interview</title>
-        <description>&lt;p&gt;오늘도 네트워크와 관련된 문제이다 :)&lt;/p&gt;
-
-&lt;h4 id=&quot;http에서-get과-post의-차이는&quot;&gt;HTTP에서 GET과 POST의 차이는?&lt;/h4&gt;
-
-&lt;p&gt;두 방식 모두 HTTP 프로토콜을 이용해 서버에 요청을 할 때 사용한다.&lt;br /&gt;
-하지만 둘의 특징을 이해하고 기술 목적에 맞게 사용해야 한다.&lt;/p&gt;
-
-&lt;h5 id=&quot;get&quot;&gt;GET&lt;/h5&gt;
-
-&lt;p&gt;요청하는 데이터를 &lt;code class=&quot;highlighter-rouge&quot;&gt;HTTP Request Message&lt;/code&gt;의 Header url에 담아 전송한다.&lt;br /&gt;
-url에 데이터를 담아서 전송하기 때문에 전송할 수 있는 데이터의 크기가 제한적이며,&lt;br /&gt;
-민감한 데이터에 대해 요청할 경우 url에 요청 정보가 노출되므로 &lt;code class=&quot;highlighter-rouge&quot;&gt;GET&lt;/code&gt; 방식은 부적절하다.&lt;/p&gt;
-
-&lt;h5 id=&quot;post&quot;&gt;POST&lt;/h5&gt;
-
-&lt;p&gt;요청하는 데이터를 &lt;code class=&quot;highlighter-rouge&quot;&gt;HTTP Message의 Body&lt;/code&gt;에 담아 전송한다.&lt;br /&gt;
-데이터를 body에 담아 보내기 때문에 GET 방식보다 안전하고 더 많은 데이터를 요청할 수 있다.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET&lt;/code&gt;방식은 데이터를 가져오기만 하지만 &lt;code class=&quot;highlighter-rouge&quot;&gt;POST&lt;/code&gt;는 서버의 상태를 변경하기 위해서도 사용한다.&lt;/p&gt;
-
-&lt;h4 id=&quot;nat란-무엇인가&quot;&gt;NAT란 무엇인가?&lt;/h4&gt;
-
-&lt;p&gt;사설 IP가 외부 인터넷에 접속하기 위해서는 공인 IP주소를 가져야 하는데,&lt;br /&gt;
-이 때 사설 IP를 공인 IP로 바꿔주는 데 사용하는 것이 IP주소 변환기인 &lt;code class=&quot;highlighter-rouge&quot;&gt;NAT(Network Address Translation)&lt;/code&gt;이다.&lt;br /&gt;
-외부에서 들어오는 공인 IP 주소 또한 들어올 때 사설 IP 주소로 변환한다.&lt;br /&gt;
-이렇게 주소 변환과정이 반드시 필요하기 때문에, 보안성이 좋다는 Side Effect가 있다.&lt;br /&gt;
-NAT는 공인 IP 주소와 사설 IP 주소를 분리함으로써, IPv4의 주소 고갈 문제를 연장시켰다.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 01 Apr 2019 21:46:24 +0900</pubDate>
-        <link>http://localhost:4000/interview/190401_PJI/</link>
-        <guid isPermaLink="true">http://localhost:4000/interview/190401_PJI/</guid>
-        
-        <category>daily</category>
-        
-        
-        <category>Interview</category>
-        
-      </item>
-    
-      <item>
-        <title>190401_DailyNote</title>
-        <description>&lt;h4 id=&quot;my-trivial-today&quot;&gt;&lt;em&gt;My Trivial Today&lt;/em&gt;&lt;/h4&gt;
-
-&lt;p&gt;주말부터 오늘까지는 Refresh의 의미로 쉬었다.&lt;br /&gt;
-뭔가 딱히 한건 없지만 괜히 몸이 피곤한 것 같아서&lt;br /&gt;
-쉬어보기로 했당.&lt;/p&gt;
-
-&lt;p&gt;내일부턴 다시 힘내서 해야지!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;today-i-did&quot;&gt;&lt;em&gt;Today I Did&lt;/em&gt;&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;영어 회화 공부하기&lt;/li&gt;
-  &lt;li&gt;Git 강의 듣기&lt;br /&gt;
-Git 강의가 은근히 재밌다. 이고잉님 강의 재미써..&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;someday-i-will&quot;&gt;&lt;em&gt;Someday I Will&lt;/em&gt;&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;블로그 테마 바꾸기&lt;br /&gt;
-카테고리 우측에 메뉴 만든 것 넘나리 뿌듯!&lt;br /&gt;
-포스트 제목 밑에 여백 넣는 건 좀 더 빨리 성공하길 바란다.&lt;/li&gt;
-  &lt;li&gt;알고리즘 하루에 2개씩은 풀기&lt;/li&gt;
-  &lt;li&gt;프로젝트 정리하기&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Mon, 01 Apr 2019 21:43:24 +0900</pubDate>
-        <link>http://localhost:4000/tmi/190401_DN/</link>
-        <guid isPermaLink="true">http://localhost:4000/tmi/190401_DN/</guid>
-        
-        <category>daily</category>
-        
-        
-        <category>TMI</category>
-        
-      </item>
-    
-      <item>
-        <title>jekyll 블로그 커스터마이징하기(1)</title>
-        <description>&lt;p&gt;감격.. 드디어 원하던 스타일의 일부를 변경하는 데 성공했다!&lt;br /&gt;
-카테고리와 태그 메뉴에서 메뉴들이 우측에 떴으면 좋겠다고 생각했는데, 1시간의 사투 끝에 바꿀 수 있었다.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h3 id=&quot;개발자모드로-학습하기&quot;&gt;개발자모드로 학습하기&lt;/h3&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;개발자 모드로 뒤적거리다가 html을 변경해줘야 한다는 걸 알게됐다.&lt;br /&gt;
-html 초짜라서 태그도 못알아보지만 일단 배껴보기로 결심..&lt;br /&gt;
-오랜만에 jekyll server를 가동시켰다.&lt;/p&gt;
-
-&lt;p&gt;사투 끝에 layout 폴더에서 categories.html파일과 tags.html 파일을 변경해봤다.&lt;br /&gt;
-개발자 모드로 toc이 위치한 곳을 확인했더니 aside sidebar__right스타일로 감싸져있는 것을 볼 수 있었다.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h3 id=&quot;우측으로-옮기기-성공&quot;&gt;우측으로 옮기기 성공!&lt;/h3&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;그래서 여기서도 같은 스타일로 감싸봤는데, archive 타입에선 이렇게 해도 패딩값 때문에 보이질 않았다.&lt;br /&gt;
-후.. 또 한숨을 쉬었다가 html 상단의 layout을 single로 바꿔보았다.&lt;/p&gt;
-
-&lt;p&gt;그런데 single 타입으로 바꾸니까 딱! 드디어 우측으로 메뉴가 변경된 것이다 ㅠ_ㅠ!!!&lt;/p&gt;
-
-&lt;p&gt;모바일에서 가독성은 조금 떨어질 지 모르겠지만 대만족 XD!&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h3 id=&quot;내가-원하는건-grid-스타일이-아니야&quot;&gt;내가 원하는건 grid 스타일이 아니야!&lt;/h3&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;그런데 taxonomy display옵션이 grid라서 우측에 떠도 내가 원하던 일자 모양이 아니었다.&lt;br /&gt;
-또 개발자 모드를 켜서 확인에 들어갔다. 그저 빛.. 개발자 모드는 짱이다..&lt;br /&gt;
-Style-display옵션이 grid인 것을 풀어봤더니 드디어 일자 모양이 되었다.&lt;/p&gt;
-
-&lt;p&gt;그런데 문제는 그게 어디서 정의되었는지를 모른다는 것…&lt;br /&gt;
-또 입술을 괴롭히면서 폴더를 뒤적거리기 시작했다. 어딘가엔 있을거야!!!&lt;/p&gt;
-
-&lt;p&gt;여기저기 뒤적거리다가 _sass 폴더에서 _page.scss 파일을 뒤적거린 결과 taxonomy__index 스타일을 정의한 곳을 발견했다.&lt;/p&gt;
-
-&lt;p&gt;display옵션을 지우고.. 드디어 원하던 스타일로 변경 성공 ㅠㅠㅠㅠ 감격의 순간이다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/category_style.PNG&quot; alt=&quot;변경된 카테고리 메뉴&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;다음엔 이제 post style에서 제목과 본문을 좀 떨어트려놓는 시도를 해볼 예정이다.&lt;/p&gt;
-
-&lt;p&gt;신난다!&lt;/p&gt;
-</description>
-        <pubDate>Sat, 30 Mar 2019 02:10:24 +0900</pubDate>
-        <link>http://localhost:4000/blog/category@tag_style/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/category@tag_style/</guid>
-        
-        <category>jekyll</category>
-        
-        
-        <category>blog</category>
         
       </item>
     

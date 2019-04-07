@@ -52,12 +52,13 @@
 
 .pagination {
   @include clearfix();
-  float: left;
+  //float: left;
   margin-top: 1em;
-  padding-top: 1em;
+  //padding-top: 1em;
   width: 100%;
 
   ul {
+    float: right;
     margin: 0;
     padding: 0;
     list-style-type: none;
