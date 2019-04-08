@@ -45,3 +45,8 @@ toc: true
 [윈도우와 리눅스의 차이](https://2ssue.github.io/interview/190405_PJI/)  
 [프로세스와 스레드의 차이](https://2ssue.github.io/interview/190405_PJI/)  
 [멀티 스레딩이란?](https://2ssue.github.io/interview/190405_PJI/)  
+
+> ### Data Structure
+
+[스택이란?](https://2ssue.github.io/interview/190408_PJI/)  
+[큐란?](https://2ssue.github.io/interview/190408_PJI/)  
