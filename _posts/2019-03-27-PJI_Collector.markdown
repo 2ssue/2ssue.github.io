@@ -50,3 +50,7 @@ toc: true
 
 [스택이란?](https://2ssue.github.io/interview/190408_PJI/)  
 [큐란?](https://2ssue.github.io/interview/190408_PJI/)  
+
+> ### Development Common Sense
+
+[객체지향과 절차지향의 차이](https://2ssue.github.io/interview/190409_PJI)  
