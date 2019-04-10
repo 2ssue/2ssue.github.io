@@ -27,7 +27,7 @@ layout: default
 
     <section class="grid__wrapper">
       {% for post in paginator.posts %}
-        {% include archive-single_gridstyle.html %}
+        {% include archive-single.html type="grid" %}
       {% endfor %}
       {% include paginator.html %}
     </section>

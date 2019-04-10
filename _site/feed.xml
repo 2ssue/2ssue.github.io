@@ -5,9 +5,216 @@
     <description>Programming study records</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 08 Apr 2019 02:19:17 +0900</pubDate>
-    <lastBuildDate>Mon, 08 Apr 2019 02:19:17 +0900</lastBuildDate>
+    <pubDate>Wed, 10 Apr 2019 18:00:45 +0900</pubDate>
+    <lastBuildDate>Wed, 10 Apr 2019 18:00:45 +0900</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>객체 지향 프로그래밍과 절차 지향 프로그래밍의 차이</title>
+        <description>&lt;p&gt;0409_PJI는 이걸로 대체한다.&lt;/p&gt;
+
+&lt;p&gt;흔히 객체 지향 프로그래밍과 절차 지향 프로그래밍을 말할 때 Java와 C를 말한다.&lt;br /&gt;
+그래서 절차지향과 객체지향은 처음에는 작성 순서의 차이라고 생각했는데,&lt;br /&gt;
+생각해보니 함수 선언부가 있으면 C언어도 작성 순서는 다르게 짤 수 있다.&lt;/p&gt;
+
+&lt;p&gt;그래서 항상 절차 지향과 객체 지향을 설명하라고 하면 잘 이해가 가지 않았다.&lt;br /&gt;
+이번 기회에 한번 정리해보기로 했다 :)&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;객체-지향-프로그래밍과-절차-지향-프로그래밍의-차이는&quot;&gt;객체 지향 프로그래밍과 절차 지향 프로그래밍의 차이는?&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;절차 지향은 데이터를 중심으로 코드를 구현하고, 객체 지향은 기능을 중심으로 구현한다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;절차-지향-프로그래밍&quot;&gt;절차 지향 프로그래밍&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;someServiceCheck&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;after&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getExpirationDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())){&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//TO-DO SOMETHING...&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//Member Class의 일부&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Date&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expirationDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Date&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getExpirationDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expirationDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setExpirationDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Date&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;expirationDate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이 코드는 회원 만료 여부를 확인하기 위해서 &lt;code class=&quot;highlighter-rouge&quot;&gt;member.getExpirationDate()&lt;/code&gt;를 통해 만료일을 구한다.&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;someServiceCheck()&lt;/code&gt; 메서드가 &lt;code class=&quot;highlighter-rouge&quot;&gt;member&lt;/code&gt;의 &lt;code class=&quot;highlighter-rouge&quot;&gt;expirationDate&lt;/code&gt; 데이터를 사용하는 것이다.&lt;br /&gt;
+이 시점에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;Member&lt;/code&gt;의 &lt;code class=&quot;highlighter-rouge&quot;&gt;expirationDate&lt;/code&gt;는 &lt;code class=&quot;highlighter-rouge&quot;&gt;someServiceCheck()&lt;/code&gt;가 공유하고 있다.&lt;/p&gt;
+
+&lt;p&gt;만약 여기서 회원의 만료일을 1년 늘려주는 코드를 작성한다고 하자. 그럼 아래와 같다.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;renewContract&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Date&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getExpirationDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Date&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;renewedDate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setExpirationDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;renewedDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;그럼 이제 &lt;code class=&quot;highlighter-rouge&quot;&gt;Member&lt;/code&gt;의 &lt;code class=&quot;highlighter-rouge&quot;&gt;expirationDate&lt;/code&gt;는 &lt;code class=&quot;highlighter-rouge&quot;&gt;someServiceCheck()&lt;/code&gt;와 &lt;code class=&quot;highlighter-rouge&quot;&gt;renewContract()&lt;/code&gt;가 공유하고 있다.&lt;/p&gt;
+
+&lt;p&gt;이런 식으로 코드를 작성했다면, Member는 Object라고 할 수 있을까?&lt;br /&gt;
+그렇지 않다.&lt;/p&gt;
+
+&lt;p&gt;정확히 보자면 Member는 Object라기보다는 데이터를 담는 구조체에 가깝다.&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;someServiceCheck()&lt;/code&gt;와 &lt;code class=&quot;highlighter-rouge&quot;&gt;renewContract()&lt;/code&gt;가 데이터를 공유하고, 이것을 기준으로 구현하는 것이 전형적인 절차지향 방식이라고 할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;someServiceCheck()&lt;/code&gt;와 &lt;code class=&quot;highlighter-rouge&quot;&gt;renewContract()&lt;/code&gt;와 같은 프로시저가 기능을 구현하지만, 기능의 완성은 &lt;code class=&quot;highlighter-rouge&quot;&gt;Member&lt;/code&gt;의 &lt;code class=&quot;highlighter-rouge&quot;&gt;expirationDate&lt;/code&gt; 데이터 공유에 있다.&lt;/p&gt;
+
+&lt;p&gt;하지만 데이터를 공유해 사용하게 되면 다른 프로시저에서 데이터를 변경하면서 따르는 SideEffect가 있을 수 있다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;객체-지향-프로그래밍&quot;&gt;객체 지향 프로그래밍&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;위에서 설명한 절차 지향 코드를 객체 지향적으로 바꿔보면 아래와 같다.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Date&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expirationDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;isExpired&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;after&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expirationDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getRestDay&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//TO-DO SOMETHING...&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;renewContract&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//TO-DO SOMETHING...&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이제 만료 여부를 확인하기 위해서 &lt;code class=&quot;highlighter-rouge&quot;&gt;expirationDate&lt;/code&gt;를 사용하지 않는다.&lt;br /&gt;
+대신 &lt;code class=&quot;highlighter-rouge&quot;&gt;Member&lt;/code&gt;에서 제공하는 &lt;code class=&quot;highlighter-rouge&quot;&gt;isExpired()&lt;/code&gt; 메소드를 통해 확인할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;객체지향에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;someServiceCheck()&lt;/code&gt;를 구현해보자면 아래와 같다.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;someServiceCheck&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isExpired&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()){&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//TO-DO SOMETHING...&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;앞선 절차 지향적 프로그래밍에서 데이터를 변경하는 프로시저였던 &lt;code class=&quot;highlighter-rouge&quot;&gt;renewContract()&lt;/code&gt;는&lt;br /&gt;
+객체 지향에서는 &lt;code class=&quot;highlighter-rouge&quot;&gt;Member&lt;/code&gt;의 안으로 들어갔다. 데이터와 밀접하게 연결된 데이터이기 때문이다.&lt;/p&gt;
+
+&lt;p&gt;이렇게 함으로써 객체의 내부 구현(데이터)를 외부에 노출하지 않을 수 있다.&lt;br /&gt;
+이것이 바로 &lt;strong&gt;캡슐화&lt;/strong&gt;이다.&lt;/p&gt;
+
+&lt;p&gt;기능 구현을 캡슐화하면 내부 구현 변경을 조금 더 쉽게 할 수 있다.&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Member&lt;/code&gt;객체를 사용함으로써 만료 여부 로직을 변경한다고해서 다른 코드가 영향을 받지는 않게 된다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;이 글은 &lt;a href=&quot;https://javacan.tistory.com/entry/%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5%EA%B3%BC-%EC%A0%88%EC%B0%A8-%EC%A7%80%ED%96%A5%EC%97%90-%EB%8C%80%ED%95%9C-%EC%A7%88%EB%AC%B8-%EB%8B%B5%EB%B3%80&quot;&gt;객체지향과 절차지향에 대한 질문 답변&lt;/a&gt;을 참고하여 내가 이해한 방식으로 다시 작성해보았다.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 09 Apr 2019 23:03:24 +0900</pubDate>
+        <link>http://localhost:4000/interview/190409_PJI/</link>
+        <guid isPermaLink="true">http://localhost:4000/interview/190409_PJI/</guid>
+        
+        <category>daily</category>
+        
+        
+        <category>Interview</category>
+        
+      </item>
+    
+      <item>
+        <title>190408_Prepare Job Interview</title>
+        <description>&lt;p&gt;오늘은 자료구조 :)&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;stack이란-무엇인가&quot;&gt;Stack이란 무엇인가?&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Last In First Out(LIFO)&lt;/code&gt; 구조의 선형 자료구조로, 나중에 들어간 원소가 먼저 나온다. (후입선출)&lt;br /&gt;
+따라서 &lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;-&lt;code class=&quot;highlighter-rouge&quot;&gt;b&lt;/code&gt;-&lt;code class=&quot;highlighter-rouge&quot;&gt;c&lt;/code&gt;-&lt;code class=&quot;highlighter-rouge&quot;&gt;d&lt;/code&gt;-&lt;code class=&quot;highlighter-rouge&quot;&gt;e&lt;/code&gt; 순서로 스택에 넣었다면, 아래와 같이 쌓여서 &lt;code class=&quot;highlighter-rouge&quot;&gt;e&lt;/code&gt;-&lt;code class=&quot;highlighter-rouge&quot;&gt;d&lt;/code&gt;-&lt;code class=&quot;highlighter-rouge&quot;&gt;c&lt;/code&gt;-&lt;code class=&quot;highlighter-rouge&quot;&gt;b&lt;/code&gt;-&lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt; 순으로 출력된다.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;e&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;d&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;c&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;b&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;a&lt;/td&gt;
+      &lt;td&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Stack&lt;/td&gt;
+      &lt;td&gt;출력순서&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;queue란-무엇인가&quot;&gt;Queue란 무엇인가?&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;First In First Out(FIFO&lt;/code&gt; 구조의 선형 자료구조로, 먼저 들어간 원소가 먼저 나온다. (선입선출)&lt;br /&gt;
+따라서 &lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;-&lt;code class=&quot;highlighter-rouge&quot;&gt;b&lt;/code&gt;-&lt;code class=&quot;highlighter-rouge&quot;&gt;c&lt;/code&gt;-&lt;code class=&quot;highlighter-rouge&quot;&gt;d&lt;/code&gt;-&lt;code class=&quot;highlighter-rouge&quot;&gt;e&lt;/code&gt; 순으로 큐에 넣었다면, &lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;-&lt;code class=&quot;highlighter-rouge&quot;&gt;b&lt;/code&gt;-&lt;code class=&quot;highlighter-rouge&quot;&gt;c&lt;/code&gt;-&lt;code class=&quot;highlighter-rouge&quot;&gt;d&lt;/code&gt;-&lt;code class=&quot;highlighter-rouge&quot;&gt;e&lt;/code&gt; 순으로 출력된다.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Queue&lt;/td&gt;
+      &lt;td&gt;출력순서&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;e&lt;/td&gt;
+      &lt;td&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;d&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;c&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;b&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;a&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Mon, 08 Apr 2019 23:03:24 +0900</pubDate>
+        <link>http://localhost:4000/interview/190408_PJI/</link>
+        <guid isPermaLink="true">http://localhost:4000/interview/190408_PJI/</guid>
+        
+        <category>daily</category>
+        
+        
+        <category>Interview</category>
+        
+      </item>
     
       <item>
         <title>jekyll 블로그 커스터마이징하기(4)</title>
@@ -390,119 +597,6 @@ breadcrumbs 속성을 true로 바꾸면 되는데, 그러면 상단에 아래와
         <pubDate>Wed, 03 Apr 2019 21:43:24 +0900</pubDate>
         <link>http://localhost:4000/interview/190403_PJI/</link>
         <guid isPermaLink="true">http://localhost:4000/interview/190403_PJI/</guid>
-        
-        <category>daily</category>
-        
-        
-        <category>Interview</category>
-        
-      </item>
-    
-      <item>
-        <title>190402_DailyNote</title>
-        <description>&lt;h4 id=&quot;my-trivial-today&quot;&gt;&lt;em&gt;My Trivial Today&lt;/em&gt;&lt;/h4&gt;
-
-&lt;p&gt;오늘도 뿌듯한 하루였다.&lt;br /&gt;
-블로그 고치는거 너무 재밌어!!!!&lt;/p&gt;
-
-&lt;p&gt;내일부턴 진짜로 알고리즘 풀겠습니다..&lt;br /&gt;
-이제 고칠 것도 거의 없다 ㅎㅎㅎ!&lt;/p&gt;
-
-&lt;p&gt;블로그 고치는건 Refresh로 쉬는 날에만 하도록 하자 :) !&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;today-i-did&quot;&gt;&lt;em&gt;Today I Did&lt;/em&gt;&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;영어 회화 공부하기&lt;/li&gt;
-  &lt;li&gt;Git 강의 듣기&lt;/li&gt;
-  &lt;li&gt;데이터베이스 공부하기&lt;/li&gt;
-  &lt;li&gt;블로그 테마 바꾸기&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&quot;someday-i-will&quot;&gt;&lt;em&gt;Someday I Will&lt;/em&gt;&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;블로그 테마 바꾸기&lt;br /&gt;
-다음 미션은 홈 화면 바꾸기이다.&lt;br /&gt;
-최근 포스트 화면은 너무 심심해!&lt;/li&gt;
-  &lt;li&gt;알고리즘 하루에 2개씩은 풀기&lt;/li&gt;
-  &lt;li&gt;프로젝트 정리하기&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Tue, 02 Apr 2019 22:58:24 +0900</pubDate>
-        <link>http://localhost:4000/tmi/190402_DN/</link>
-        <guid isPermaLink="true">http://localhost:4000/tmi/190402_DN/</guid>
-        
-        <category>daily</category>
-        
-        
-        <category>TMI</category>
-        
-      </item>
-    
-      <item>
-        <title>190402_Prepare Job Interview</title>
-        <description>&lt;p&gt;오늘은 데이터베이스와 관련된 문제다 :)&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h4 id=&quot;정규화의-목적에-대해서-말하시오&quot;&gt;정규화의 목적에 대해서 말하시오&lt;/h4&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;관계형 데이터베이스에서 데이터의 중복을 최소화하기 위해 데이터를 구조화하는 작업이다.&lt;/p&gt;
-
-&lt;p&gt;함수적 종속성을 판단해 릴레이션을 좀 더 작게 분해한다.&lt;br /&gt;
-이러한 과정을 정규화 과정이라고 하는데, 아래와 같이 6개의 단계로 나뉜다.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;제 1 정규형&lt;/td&gt;
-      &lt;td&gt;도메인을 원자값이 되도록 분해&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;제 2 정규형&lt;/td&gt;
-      &lt;td&gt;부분 함수 종속 제거&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;제 3 정규형&lt;/td&gt;
-      &lt;td&gt;이행적 함수 종속 제거&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;BCNF&lt;/td&gt;
-      &lt;td&gt;후보자가 아닌 결정자 관계 제거&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;제 4 정규형&lt;/td&gt;
-      &lt;td&gt;다치 종속 관계 제거&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;제 5 정규형&lt;/td&gt;
-      &lt;td&gt;후보키를 통하지 않은 JOIN 종속 관계 제거&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;이를 통해 Anomaly 현상을 제거할 수 있고, 구조 확장 시 일부만 변경해도 된다는 등의 장점이 있다.&lt;br /&gt;
-그러나 릴레이션의 분해로 JOIN 연산이 많아져 질의 응답시간이 오래 걸린다는 단점이 있다.&lt;br /&gt;
-이를 해결하기 위해 역정규화(De-normalization)를 하기도 한다.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h4 id=&quot;트랜잭션에-대해-설명하시오&quot;&gt;트랜잭션에 대해 설명하시오&lt;/h4&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;하나의 작업을 수행하기 위해 필요한 데이터베이스 연산의 집합이다.&lt;br /&gt;
-데이터베이스에서 논리적인 작업의 단위가 되어 장애가 발생했을 시에 주로 사용된다.&lt;br /&gt;
-작업 집합을 원상태로 복구 했을 때 작업의 일부만 적용되지 않도록 한다.&lt;/p&gt;
-
-&lt;p&gt;즉 논리적 작업 집합이 100% 적용되거나, 아무것도 적용되지 않는 것을 보장하는 것이다.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 02 Apr 2019 22:38:24 +0900</pubDate>
-        <link>http://localhost:4000/interview/190402_PJI/</link>
-        <guid isPermaLink="true">http://localhost:4000/interview/190402_PJI/</guid>
         
         <category>daily</category>
         
