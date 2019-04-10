@@ -5,9 +5,49 @@
     <description>Programming study records</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 10 Apr 2019 18:00:45 +0900</pubDate>
-    <lastBuildDate>Wed, 10 Apr 2019 18:00:45 +0900</lastBuildDate>
+    <pubDate>Wed, 10 Apr 2019 22:42:01 +0900</pubDate>
+    <lastBuildDate>Wed, 10 Apr 2019 22:42:01 +0900</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>190410_Prepare Job Interview</title>
+        <description>&lt;p&gt;오늘은 개발 상식 :)&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;tdd란-무엇인가&quot;&gt;TDD란 무엇인가?&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Test-Driven Development(TDD)&lt;/code&gt;는 짧은 개발 사이클 반복에 의존하는 소프트웨어 개발 프로세스다.&lt;br /&gt;
+먼저 요구되는 새로운 기능에 대한 자동화 테스트 케이스를 작성하고, 테스트를 통과하는 가장 간단한 코드를 작성한다.&lt;br /&gt;
+즉 일단 테스트를 통과하는 코드를 작성 후, 상황에 맞게 리팩토링하는 과정을 거치는 것을 말한다.&lt;/p&gt;
+
+&lt;p&gt;테스트를 작성하기 위해서는 개발자가 해당 기능의 요구사항과 명세를 분명히 이해하고 있어야 한다.&lt;br /&gt;
+Use Case와 User Experience 등이 있으며, 코드를 작성하기 전 요구사항에 보다 집중할 수 있도록 하는 것이 TDD의 장점이다.&lt;br /&gt;
+또한 테스트 코드 작성을 통해 새로운 기능 추가로 인한 기존 기능의 Side Effect가 있는지 쉽게 확인할 수 있다는 장점이 있다.&lt;/p&gt;
+
+&lt;p&gt;하지만 테스트 코드 작성으로 인한 코드량이 늘어나 빠른 생산성이 요구되는 경우에는 TDD가 걸림돌이 될 수 있다.&lt;br /&gt;
+또한 모든 상황에 테스트 코드를 쉽게 적용할 수 있는 것이 아니기 때문에 배보다 배꼽이 더 커지는 경우가 발생할 수 있다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;메모리-누수란-무엇인가-메모리-누수를-해결하기-위한-방법은&quot;&gt;메모리 누수란 무엇인가? 메모리 누수를 해결하기 위한 방법은?&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;메모리 누수(Memory leak)&lt;/code&gt; 현상은 프로그램이 필요하지 않는(더이상 사용하지 않는) 메모리를 점유하고 있는 현상을 말한다.&lt;br /&gt;
+할당한 메모리를 사용한 다음, 반환하지 않는 것이 누적되어 발생하는 현상이다.&lt;/p&gt;
+
+&lt;p&gt;일반적으로 라이브러리를 활용해 디버거 모드를 종료하면 메모리 누수를 확인하도록 할 수 있다.&lt;br /&gt;
+이러한 라이브러리를 통해서 메모리 누수 지점을 확인하고, 해당 메모리를 해제하면 된다.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 10 Apr 2019 22:03:24 +0900</pubDate>
+        <link>http://localhost:4000/interview/190410_PJI/</link>
+        <guid isPermaLink="true">http://localhost:4000/interview/190410_PJI/</guid>
+        
+        <category>daily</category>
+        
+        
+        <category>Interview</category>
+        
+      </item>
     
       <item>
         <title>객체 지향 프로그래밍과 절차 지향 프로그래밍의 차이</title>
@@ -235,9 +275,22 @@
   &lt;h4 id=&quot;posts-category-tag-메뉴도-같은-스타일을-사용하고-있었다니&quot;&gt;Posts, Category, Tag 메뉴도 같은 스타일을 사용하고 있었다니..&lt;/h4&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;공통 파일 스타일을 바꿨더니 위 메뉴까지 전부다 Grid로 바뀌어서 쪼끔 이상해졌다.&lt;br /&gt;
+&lt;p&gt;&lt;del&gt;공통 파일 스타일을 바꿨더니 위 메뉴까지 전부다 Grid로 바뀌어서 쪼끔 이상해졌다.&lt;br /&gt;
 그래서 html파일을 복사해 홈화면에서만 사용할 archive-single_gridstyle.html을 만들었다.&lt;br /&gt;
-그리고 layout 파일에서 include 파일값만 변경하면 완성!&lt;/p&gt;
+그리고 layout 파일에서 include 파일값만 변경하면 완성!&lt;/del&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;04/10 수정&lt;/p&gt;
+
+  &lt;p&gt;아래 다른 게시글에 카테고리가 같은 게시글을 띄우고 싶어서 찾아보다가 이 방법을 쓰지 않아도 된다는 걸 알게됐다.&lt;br /&gt;
+간단하게 html 파일 include에서 type=grid로 설정해주면, list타입에서 grid타입으로 변경이 가능하다.&lt;br /&gt;
+jekyll을 통해 기능 확인을 한 후 gridstyle.html 파일은 삭제하여 업데이트 했다.&lt;br /&gt;
+산넘어 산, 배울 게 너무 많다!&lt;/p&gt;
+
+  &lt;p&gt;알고보니 정체를 알 수 없던 포문의 site.categories도 검색을 하다보니 jekyll의 변수였단 것을 알게 되었다.&lt;br /&gt;
+무턱대고 된다고 하는 게 약간 조금 안 좋은 습관이긴 하지만 그래도 알아나가면서 고치고 있으니까! 
+더 발전시켜나가보자 :)&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;간단하게 Grid 형태로 변경했고, 포스트가 5개 일 땐 하나가 아래로 내려가버려서 &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;파일에서 pagination 개수를 4개로 바꿨당 =)&lt;/p&gt;
 
@@ -562,46 +615,6 @@ breadcrumbs 속성을 true로 바꾸면 되는데, 그러면 상단에 아래와
         
         
         <category>TMI</category>
-        
-      </item>
-    
-      <item>
-        <title>190403_Prepare Job Interview</title>
-        <description>&lt;p&gt;오늘도 데이터 베이스 :)&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h4 id=&quot;인덱스란-무엇인가&quot;&gt;인덱스란 무엇인가?&lt;/h4&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;전체 데이터베이스를 검색하기엔 시간이 많이 걸리기 때문에 만들어 두는 값이다.&lt;br /&gt;
-칼럼의 값과 해당 레코드가 저장된 주소를 키값쌍 처럼 저장한다.&lt;/p&gt;
-
-&lt;p&gt;인덱스를 관리하기 위해서 저장 방식에는 다양한 방식이 존재한다.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;B+- Tree 인덱스 방식&lt;/li&gt;
-  &lt;li&gt;Hash 인덱스 방식&lt;/li&gt;
-  &lt;li&gt;Cluster 방식&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;h4 id=&quot;인덱스의-장점과-단점은&quot;&gt;인덱스의 장점과 단점은?&lt;/h4&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;DBMS의 인덱스는 항상 정렬된 상태를 유지하기 때문에 검색은 빠르다는 장점이 있다.&lt;br /&gt;
-하지만 새로운 값을 추가/삭제/수정하는 경우는 쿼리문의 실행 속도가 느려진다.&lt;br /&gt;
-&lt;em&gt;(ex.INSERT의 경우 추가할 때마다 인덱스에도 데이터를 추가해줘야 함)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;데이터의 읽기 속도는 빠르지만 데이터의 저장 성능은 감소한다는 Trade Off가 있다.&lt;br /&gt;
-따라서 성능을 고려하여 인덱스를 만들어야할 필요가 있다.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 03 Apr 2019 21:43:24 +0900</pubDate>
-        <link>http://localhost:4000/interview/190403_PJI/</link>
-        <guid isPermaLink="true">http://localhost:4000/interview/190403_PJI/</guid>
-        
-        <category>daily</category>
-        
-        
-        <category>Interview</category>
         
       </item>
     
