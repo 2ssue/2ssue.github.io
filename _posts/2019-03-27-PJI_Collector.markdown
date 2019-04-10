@@ -54,3 +54,5 @@ toc: true
 > ### Development Common Sense
 
 [객체지향과 절차지향의 차이](https://2ssue.github.io/interview/190409_PJI)  
+[TDD란?](https://2ssue.github.io/interview/190410_PJI)  
+[메모리 누수란?](https://2ssue.github.io/interview/190410_PJI)  
