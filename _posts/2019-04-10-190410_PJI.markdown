@@ -1,11 +1,13 @@
 ---
-title: "객체 지향 프로그래밍과 절차 지향 프로그래밍의 차이"
+title: "190410_Prepare Job Interview"
 date:   2019-04-10 22:03:24 +0900
 categories: Interview
 tags: daily
 classes: wide
 ---
 
+오늘은 개발 상식 :)  
+  
 > #### TDD란 무엇인가? 
 
 `Test-Driven Development(TDD)`는 짧은 개발 사이클 반복에 의존하는 소프트웨어 개발 프로세스다.  
