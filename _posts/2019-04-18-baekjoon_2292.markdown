@@ -6,7 +6,7 @@ tags: baekjoon
 classes: wide
 ---
 
-[백준_드래곤 커브 문제](https://www.acmicpc.net/problem/2292)  
+[백준_벌집 문제](https://www.acmicpc.net/problem/2292)  
 [풀이 코드](https://github.com/2ssue/Algorithm/blob/master/Baekjoon/2292.java)  
   
 코드는 짧지만 규칙을 찾는게 당황스러웠다.  
