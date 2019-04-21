@@ -23,13 +23,13 @@ classes: wide
   
 `nCustomer`가 `nRow`보다 크다면 방 번호가 옆으로 밀리게 된다.  
 `nCustomer`가 `nRow`만큼 층을 이동하는 횟수, 즉 `nCustomer`를 `nRow`로 나눈 몫만큼 방 번호가 증가한다.  
-따라서 `nCustomer/nRow`값을 `nWindow`에 더해준다.  
-그리고 `nCustomer`값을 `nCustomer % nRow` 로 바꿔준다.  
+따라서 nCustomer/nRow를 `nWindow`에 더해준다.  
+그리고 `nCustomer`값을 nCustomer % nRow로 바꿔준다.  
   
-이 때 `nCustomer % nRow`가 0이 됐을 때는 `nWindow`값을 감소시키는데,  
-몫의 값이 밀리는 방의 값을 의미하기 때문에 방 번호의 초기화 값은 0이 아니라 1이었다.  
+만약 nCustomer % nRow가 0이 됐을 때는 `nWindow`값을 감소시키는데,  
+몫의 값이 밀리는 방의 개수를 의미하기 때문에 방 번호의 초기화 값은 0이 아니라 1이었다.  
   
-그런데 `nCustomer % nRow`가 0인 경우,  
+그런데 nCustomer % nRow가 0인 경우,  
 예를 들어 `nCustomer`가 6이고, `nRow` 도 6일 때 실제로는 방이 밀리지 않고 꼭대기에 있지만 아래 계산에 따르면 방이 밀린 것으로 계산된다.  
 따라서 나머지가 0이 되었을 경우에는 맨 앞 방의 계산 값인 1을 빼주는 것이다.  
   
