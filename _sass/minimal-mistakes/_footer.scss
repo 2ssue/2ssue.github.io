@@ -20,7 +20,11 @@
   animation: $intro-transition;
   -webkit-animation-delay: 0.45s;
   animation-delay: 0.45s;
-  background-color: $footer-background-color;
+  //background-color: $footer-background-color;
+  background-image: url('https://images.unsplash.com/photo-1508550536558-5e8d33eb9a82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1488&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 
   footer {
     @include clearfix;

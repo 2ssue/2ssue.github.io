@@ -1,16 +1,6 @@
 ---
 layout: default
 ---
-<div class="page__hero--overlay" style="background-image: url('https://images.unsplash.com/photo-1508550536558-5e8d33eb9a82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1488&q=80');">
-  <div class="wrapper">
-    <h1 id="page-title" class="page__title" itemprop="headline" style="border-bottom: none;text-align:left;font-style:italic">
-      Better late than never
-    </h1>
-    <br>
-    <p class="page__meta" style="font-style: italic">
-    Programming study records</p>
-  </div>
-</div>
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
@@ -25,12 +15,53 @@ layout: default
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%B %d, %Y" }}">{% endif %}
 
-    <section class="grid__wrapper">
-      {% for post in paginator.posts %}
-        {% include archive-single.html type="grid" %}
-      {% endfor %}
-      {% include paginator.html %}
-    </section>
+  <h3 class="archive__subtitle" style="font-style: italic; text-align: center">Recent Posts</h3>
+  <section class="grid__wrapper">
+    {% for post in paginator.posts %}
+      {% include archive-single.html type="grid" %}
+    {% endfor %}
+    {% include paginator.html %}
+  </section>
+
+{% assign categories_max = 0 %}
+{% for category in site.categories %}
+  {% if category[1].size > categories_max %}
+    {% assign categories_max = category[1].size %}
+  {% endif %}
+{% endfor %}
+
+{% assign tags_max = 0 %}
+{% for tag in site.tags %}
+  {% if tag[1].size > tags_max %}
+    {% assign tags_max = tag[1].size %}
+  {% endif %}
+{% endfor %}
+
+  <h3 class="archive__subtitle" style="font-style: italic; text-align: center">Categories & Tags</h3>
+  <section class="page__content" itemprop="text" style="list-style: none; display: grid; grid-template-columns: repeat(5, 1fr)">
+        {% for i in (1..categories_max) reversed %}
+          {% for category in site.categories %}
+            {% if category[1].size == i %}
+              <li>
+                <a href="categories/#{{ category[0] | slugify }}">
+                  <strong>{{ category[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+
+        {% for i in (1..tags_max) reversed %}
+          {% for tag in site.tags %}
+            {% if tag[1].size == i %}
+              <li>
+                <a href="tags/#{{ tag[0] | slugify }}">
+                  <strong>{{ tag[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+  </section>
   </article>
 </div>
-
