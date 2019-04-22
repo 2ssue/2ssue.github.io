@@ -24,38 +24,38 @@ classes: wide
 #### 최빈값 계산 코드
 
 ```java
-		//최빈값 계산
-		int[] freq = new int[2];//0: idx, 1: 빈도수
-		Stack<Integer> freqIdx = new Stack<>();
-		
-		for(int i = 0; i < nElement; i++) {
-			int nFreq = 0;
-			for(int j = i + 1; j < nElement; j++) {
-				if(arr[i] == arr[j]) nFreq++;
-				else break;
-			}
-			if(nFreq >= freq[1]) {
-				if(nFreq == freq[1]) {
-					freqIdx.push(i);
-				}else {
-					freqIdx.clear();
-					freqIdx.push(i);
-					freq[1] = nFreq;
-					freq[0] = i;
-				}
-			}
-		}
-		
-		//최빈값 출력
-		if(freqIdx.size() > 1) {
-			int nFreqIdx = 0;
-			while(freqIdx.size() != 1) {
-				nFreqIdx = freqIdx.pop();
-			}
-			System.out.println(arr[nFreqIdx]);
+//최빈값 계산
+int[] freq = new int[2];//0: idx, 1: 빈도수
+Stack<Integer> freqIdx = new Stack<>();
+
+for(int i = 0; i < nElement; i++) {
+	int nFreq = 0;
+	for(int j = i + 1; j < nElement; j++) {
+		if(arr[i] == arr[j]) nFreq++;
+		else break;
+	}
+	if(nFreq >= freq[1]) {
+		if(nFreq == freq[1]) {
+			freqIdx.push(i);
 		}else {
-			System.out.println(arr[freq[0]]);
+			freqIdx.clear();
+			freqIdx.push(i);
+			freq[1] = nFreq;
+			freq[0] = i;
 		}
+	}
+}
+
+//최빈값 출력
+if(freqIdx.size() > 1) {
+	int nFreqIdx = 0;
+	while(freqIdx.size() != 1) {
+		nFreqIdx = freqIdx.pop();
+	}
+	System.out.println(arr[nFreqIdx]);
+}else {
+	System.out.println(arr[freq[0]]);
+}
 ```
 
 최빈값 계산에 다양한 변수가 활용되었는데, 빈도를 뜻하는 `Freq`가 너무 많이 들어가서 보기 조금 헷갈릴 것 같다.  
