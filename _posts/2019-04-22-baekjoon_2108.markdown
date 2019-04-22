@@ -1,0 +1,150 @@
+---
+title:  "[백준] 통계학_JAVA"
+date:   2019-04-22 21:37:24 +0900
+categories: algorithm
+tags: baekjoon
+classes: wide
+---
+
+[백준_통계학문제](https://www.acmicpc.net/problem/2108)  
+[풀이 코드](https://github.com/2ssue/Algorithm/blob/master/Baekjoon/2108.java)  
+  
+너무 알아보기 어렵게 작성해서 올리기 부끄럽다..  
+더 좋은 방식이 있을 것 같은데 일단은 생각이 안나서 이렇게 짜봤다.  
+  
+> ### 풀이
+
+일단 모든 계산을 하는 데에 배열이 정렬되어있으면 구하기 쉬운 문제이다.  
+하지만 이 문제는 정렬구현을 요구하는 문제는 아닌 것 같아서 정렬은 sort함수를 활용해 정렬했다.  
+  
+산술평균, 중앙값, 범위 계산은 배열을 정렬했다면 매우 쉽다.  
+어쩌면 최빈값 계산도 다른 사람은 쉬울 지도 모르지만, 내 기준에선 어려웠다.  
+그래서 완성된 조금 지저분한 코드..  
+
+#### 최빈값 계산 코드
+
+```java
+		//최빈값 계산
+		int[] freq = new int[2];//0: idx, 1: 빈도수
+		Stack<Integer> freqIdx = new Stack<>();
+		
+		for(int i = 0; i < nElement; i++) {
+			int nFreq = 0;
+			for(int j = i + 1; j < nElement; j++) {
+				if(arr[i] == arr[j]) nFreq++;
+				else break;
+			}
+			if(nFreq >= freq[1]) {
+				if(nFreq == freq[1]) {
+					freqIdx.push(i);
+				}else {
+					freqIdx.clear();
+					freqIdx.push(i);
+					freq[1] = nFreq;
+					freq[0] = i;
+				}
+			}
+		}
+		
+		//최빈값 출력
+		if(freqIdx.size() > 1) {
+			int nFreqIdx = 0;
+			while(freqIdx.size() != 1) {
+				nFreqIdx = freqIdx.pop();
+			}
+			System.out.println(arr[nFreqIdx]);
+		}else {
+			System.out.println(arr[freq[0]]);
+		}
+```
+
+최빈값 계산에 다양한 변수가 활용되었는데, 빈도를 뜻하는 `Freq`가 너무 많이 들어가서 보기 조금 헷갈릴 것 같다.  
+  
+- `freq[]`  
+빈도수와 그 인덱스를 저장하는 배열이다.  
+0번째에는 인덱스를 저장하고, 1번째에는 빈도수를 저장한다.  
+이 배열은 최빈값이 하나만 존재했을 때 이용되었다.  
+-  `freqIdx`  
+여러 개의 최빈값이 있었을 때를 알기 위해 선언된 스택이다.  
+빈도수가 같은 인덱스가 나왔을 경우, 스택에 그 인덱스를 저장한다.  
+두 번째로 작은 값을 출력하기 위함이다.  
+- `nFreqIdx`  
+최빈값이 여러 개가 있었을 경우, 두번째로 작은 값을 출력하기 위해 Stack에서 pop된 인덱스 값을 저장하는 변수이다.  
+Stack의 size가 1이 된다면 현재 pop된 값이 두 번째로 작은 값이므로 이 인덱스를 출력하도록 한다.  
+  
+더 좋은 방법이 있을 텐데 현재로서는 `freq[]`배열 대신 빈도수만 저장할 배열을 두는 방식, 출력 부분을 좀 더 깔끔하게 바꾸는 방식외에는 잘 떠오르지 않는다.  
+  
+다음에 보면 더 좋은 코드가 떠오르려나 :) ?  
+
+> ### 전체 코드
+
+```java
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Main {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		
+		int nElement = sc.nextInt();
+		int[] arr = new int[nElement];
+		
+		for(int i = 0; i < nElement; i++) {
+			arr[i] = sc.nextInt();
+		}
+		
+		Arrays.sort(arr);
+		
+		int nSum = 0;
+		
+		for(int nCur:arr) {
+			nSum += nCur;
+		}
+		
+		//산술평균
+		System.out.println(Math.round((double)nSum/(double)nElement));
+		//중앙값
+		System.out.println(arr[nElement/2]);
+		
+		//최빈값 계산
+		int[] freq = new int[2];//0: idx, 1: 빈도수
+		Stack<Integer> freqIdx = new Stack<>();
+		
+		for(int i = 0; i < nElement; i++) {
+			int nFreq = 0;
+			for(int j = i + 1; j < nElement; j++) {
+				if(arr[i] == arr[j]) nFreq++;
+				else break;
+			}
+			if(nFreq >= freq[1]) {
+				if(nFreq == freq[1]) {
+					freqIdx.push(i);
+				}else {
+					freqIdx.clear();
+					freqIdx.push(i);
+					freq[1] = nFreq;
+					freq[0] = i;
+				}
+			}
+		}
+		
+		//최빈값 출력
+		if(freqIdx.size() > 1) {
+			int nFreqIdx = 0;
+			while(freqIdx.size() != 1) {
+				nFreqIdx = freqIdx.pop();
+			}
+			System.out.println(arr[nFreqIdx]);
+		}else {
+			System.out.println(arr[freq[0]]);
+		}
+		
+		//범위
+		int nMax = arr[arr.length - 1];
+		int nMin = arr[0];
+
+		System.out.println(nMax-nMin);
+	}
+}
+```
