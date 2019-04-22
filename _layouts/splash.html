@@ -15,7 +15,7 @@ layout: default
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%B %d, %Y" }}">{% endif %}
 
-  <h3 class="archive__subtitle" style="font-style: italic; text-align: center">Recent Posts</h3>
+  <h3 class="archive__subtitle" style="background-color: darkseagreen; text-align: center; padding-bottom: 1px; color: azure">Recent Posts</h3>
   <section class="grid__wrapper">
     {% for post in paginator.posts %}
       {% include archive-single.html type="grid" %}
@@ -37,16 +37,16 @@ layout: default
   {% endif %}
 {% endfor %}
 
-  <h3 class="archive__subtitle" style="font-style: italic; text-align: center">Categories & Tags</h3>
-  <section class="page__content" itemprop="text" style="list-style: none; display: grid; grid-template-columns: repeat(5, 1fr)">
+  <h3 class="archive__subtitle" style="background-color: cadetblue; text-align: center; margin-bottom: 1em; color: azure; padding-bottom: 1px">Categories & Tags</h3>
+  <section class="page__content" itemprop="text" style="list-style: none;">
         {% for i in (1..categories_max) reversed %}
           {% for category in site.categories %}
             {% if category[1].size == i %}
-              <li>
+              <div class="grid__item" style="font-size: smaller; margin-bottom: 10px">
                 <a href="categories/#{{ category[0] | slugify }}">
                   <strong>{{ category[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
                 </a>
-              </li>
+              </div>
             {% endif %}
           {% endfor %}
         {% endfor %}
@@ -54,11 +54,11 @@ layout: default
         {% for i in (1..tags_max) reversed %}
           {% for tag in site.tags %}
             {% if tag[1].size == i %}
-              <li>
+              <div class="grid__item" style="font-size: smaller; margin-bottom: 10px">
                 <a href="tags/#{{ tag[0] | slugify }}">
                   <strong>{{ tag[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
                 </a>
-              </li>
+              </div>
             {% endif %}
           {% endfor %}
         {% endfor %}
