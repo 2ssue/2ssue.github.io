@@ -1,8 +1,8 @@
 ---
 title: "IT 기술 면접 질문 대비"
 date:   2019-03-27 00:50:24 +0900
-categories: Interview
-tags: collect
+categories: Collector
+tags: interview
 toc: true
 ---
 
@@ -16,6 +16,8 @@ toc: true
 
 [JVM의 역할](https://2ssue.github.io/interview/190327_PJI/)  
 [자바의 특징](https://2ssue.github.io/interview/190327_PJI/)  
+[DTO란](https://2ssue.github.io/interview/190423_PJI/)  
+[DAO란](https://2ssue.github.io/interview/190423_PJI/)  
 
 > ### Security
 
