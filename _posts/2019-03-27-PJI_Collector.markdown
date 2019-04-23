@@ -14,47 +14,47 @@ toc: true
 
 > ### Java
 
-[JVM의 역할](https://2ssue.github.io/interview/190327_PJI/)  
-[자바의 특징](https://2ssue.github.io/interview/190327_PJI/)  
-[DTO란](https://2ssue.github.io/interview/190423_PJI/)  
-[DAO란](https://2ssue.github.io/interview/190423_PJI/)  
+[JVM의 역할](https://2ssue.github.io/programming_knowledge/190327_PJI/)  
+[자바의 특징](https://2ssue.github.io/programming_knowledge/190327_PJI/)  
+[DTO란](https://2ssue.github.io/programming_knowledge/190423_PJI/)  
+[DAO란](https://2ssue.github.io/programming_knowledge/190423_PJI/)  
 
 > ### Security
 
-[DNS 공격](https://2ssue.github.io/interview/190328_PJI/)   
-[DNS Spoofing](https://2ssue.github.io/interview/190328_PJI/)  
-[Buffer Overflow](https://2ssue.github.io/interview/190406_PJI/)  
-[SQL Injection](https://2ssue.github.io/interview/190406_PJI/)  
-[XSS](https://2ssue.github.io/interview/190407_PJI/)  
-[CSRF](https://2ssue.github.io/interview/190407_PJI/)  
+[DNS 공격](https://2ssue.github.io/programming_knowledge/190328_PJI/)   
+[DNS Spoofing](https://2ssue.github.io/programming_knowledge/190328_PJI/)  
+[Buffer Overflow](https://2ssue.github.io/programming_knowledge/190406_PJI/)  
+[SQL Injection](https://2ssue.github.io/programming_knowledge/190406_PJI/)  
+[XSS](https://2ssue.github.io/programming_knowledge/190407_PJI/)  
+[CSRF](https://2ssue.github.io/programming_knowledge/190407_PJI/)  
 
 > ### Network
 
-[OSI 7 Layer](https://2ssue.github.io/interview/190329_PJI/)  
-[TCP와 UDP의 차이](https://2ssue.github.io/interview/190329_PJI/)  
-[GET과 POST의 차이](https://2ssue.github.io/interview/190401_PJI/)  
-[NAT란?](https://2ssue.github.io/interview/190401_PJI/)  
+[OSI 7 Layer](https://2ssue.github.io/programming_knowledge/190329_PJI/)  
+[TCP와 UDP의 차이](https://2ssue.github.io/programming_knowledge/190329_PJI/)  
+[GET과 POST의 차이](https://2ssue.github.io/programming_knowledge/190401_PJI/)  
+[NAT란?](https://2ssue.github.io/programming_knowledge/190401_PJI/)  
 
 > ### Database
 
-[정규화의 목적](https://2ssue.github.io/interview/190402_PJI/)   
-[트랜잭션이란?](https://2ssue.github.io/interview/190402_PJI/)  
-[인덱스란?](https://2ssue.github.io/interview/190403_PJI/)  
-[인덱스의 장점/단점](https://2ssue.github.io/interview/190403_PJI/)  
+[정규화의 목적](https://2ssue.github.io/programming_knowledge/190402_PJI/)   
+[트랜잭션이란?](https://2ssue.github.io/programming_knowledge/190402_PJI/)  
+[인덱스란?](https://2ssue.github.io/programming_knowledge/190403_PJI/)  
+[인덱스의 장점/단점](https://2ssue.github.io/programming_knowledge/190403_PJI/)  
 
 > ### Operating System, OS
 
-[윈도우와 리눅스의 차이](https://2ssue.github.io/interview/190405_PJI/)  
-[프로세스와 스레드의 차이](https://2ssue.github.io/interview/190405_PJI/)  
-[멀티 스레딩이란?](https://2ssue.github.io/interview/190405_PJI/)  
+[윈도우와 리눅스의 차이](https://2ssue.github.io/programming_knowledge/190405_PJI/)  
+[프로세스와 스레드의 차이](https://2ssue.github.io/programming_knowledge/190405_PJI/)  
+[멀티 스레딩이란?](https://2ssue.github.io/programming_knowledge/190405_PJI/)  
 
 > ### Data Structure
 
-[스택이란?](https://2ssue.github.io/interview/190408_PJI/)  
-[큐란?](https://2ssue.github.io/interview/190408_PJI/)  
+[스택이란?](https://2ssue.github.io/programming_knowledge/190408_PJI/)  
+[큐란?](https://2ssue.github.io/programming_knowledge/190408_PJI/)  
 
 > ### Development Common Sense
 
-[객체지향과 절차지향의 차이](https://2ssue.github.io/interview/190409_PJI)  
-[TDD란?](https://2ssue.github.io/interview/190410_PJI)  
-[메모리 누수란?](https://2ssue.github.io/interview/190410_PJI)  
+[객체지향과 절차지향의 차이](https://2ssue.github.io/programming_knowledge/190409_PJI)  
+[TDD란?](https://2ssue.github.io/programming_knowledge/190410_PJI)  
+[메모리 누수란?](https://2ssue.github.io/programming_knowledge/190410_PJI)  
