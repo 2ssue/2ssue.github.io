@@ -15,7 +15,8 @@ layout: default
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%B %d, %Y" }}">{% endif %}
 
-  <h3 class="archive__subtitle" style="background-color: darkseagreen; text-align: center; padding-bottom: 1px; color: azure">Recent Posts</h3>
+  <h3 class="archive__subtitle" style="padding-bottom: 1px; margin-bottom: 1em">Recent Posts</h3>
+  <hr>
   <section class="grid__wrapper">
     {% for post in paginator.posts %}
       {% include archive-single.html type="grid" %}
@@ -37,7 +38,8 @@ layout: default
   {% endif %}
 {% endfor %}
 
-  <h3 class="archive__subtitle" style="background-color: cadetblue; text-align: center; margin-bottom: 1em; color: azure; padding-bottom: 1px">Categories & Tags</h3>
+  <h3 class="archive__subtitle" style="padding-bottom: 1px">Categories & Tags</h3>
+  <hr>
   <section class="page__content" itemprop="text" style="list-style: none;">
         {% for i in (1..categories_max) reversed %}
           {% for category in site.categories %}
@@ -50,7 +52,7 @@ layout: default
             {% endif %}
           {% endfor %}
         {% endfor %}
-
+        
         {% for i in (1..tags_max) reversed %}
           {% for tag in site.tags %}
             {% if tag[1].size == i %}

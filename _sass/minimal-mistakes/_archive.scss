@@ -27,7 +27,9 @@
   padding-bottom: 0.5em;
   font-size: $type-size-5;
   color: $muted-text-color;
-  border-bottom: 1px solid $border-color;
+  border-left: 3px solid #b75238;
+  font-style: italic;
+  padding-left: 1em;
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
