@@ -3,6 +3,7 @@ title:  "Pocket Money 프로젝트 UML"
 date:   2019-04-24 21:28:24 +0900
 categories: Project
 tags: java
+classes: wide
 ---
 
 자바에 대해 전반적으로 다시 공부할 겸, 간단한 프로그램을 하나 제작해보려고 한다.  
