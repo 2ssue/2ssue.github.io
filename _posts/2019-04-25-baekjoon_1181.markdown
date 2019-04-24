@@ -53,8 +53,8 @@ _**compare**_
 |0|비교 대상(str2)과 같은 값|
 |양수|비교 대상(str2)보다 큰 값|
   
-여기서 두 문자열의 길이가 같은 경우에는 compareToIgnoreCase를 활용하는데,  
-이 함수는 문자열을 비교해 int형 값을 반환한다. compareTo와 compareToIgnoreCase 두 메소드가 있는데, Ignore의 경우 대소문자 구문을 하지 않고 비교한다.  
+여기서 두 문자열의 길이가 같은 경우에는 compareToIgnoreCase를 활용하는데, 이 함수는 문자열을 비교해 int형 값을 반환한다.  
+compareTo와 compareToIgnoreCase 두 메소드가 있는데, Ignore의 경우 대소문자 구문을 하지 않고 비교한다.  
   
 _**compareTo**_
 
