@@ -74,4 +74,35 @@ class PrimeNumber{
 
 이 방식은 따로 나눗셈을 수행하지 않으며, 소수로 판별된 수의 배수를 모두 없애 이후 계산을 더 줄여나갈 수 있다.
 
-알고리즘은 [여기](https://ko.wikipedia.org/wiki/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98_%EC%B2%B4)를 참고한다.
+알고리즘은 [여기](https://ko.wikipedia.org/wiki/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98_%EC%B2%B4)를 참고한다.  
+  
+아래 코드는 `nStart`부터 `nEnd`까지의 소수를 에라토스테네스의 체 방식으로 구현한 코드이다.  
+  
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+	
+		int nStart = sc.nextInt();
+		int nEnd = sc.nextInt();
+		
+		boolean[] nNum = new boolean[nEnd + 1];
+		
+		nNum[0] = true;
+		nNum[1] = true;
+		
+		for(int i = 2; i*i <= nEnd; i++) {
+			for(int j = i*i; j <= nEnd; j += i)
+				nNum[j] = true;
+		}
+		
+		for(int i = nStart; i <= nEnd; i++) {
+			if(nNum[i] == false) {
+				System.out.println(i);
+			}
+		}
+	}
+}
+```
