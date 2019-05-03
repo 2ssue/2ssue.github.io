@@ -12,7 +12,7 @@ toc: true
   
 앞으로 여기에 작성한 질문 링크를 추가할 것이다!  
 
-> ### Java
+> ### Java/OOP
 
 [JVM의 역할](https://2ssue.github.io/programming_knowledge/190327_PJI/)  
 [자바의 특징](https://2ssue.github.io/programming_knowledge/190327_PJI/)  
@@ -20,6 +20,7 @@ toc: true
 [DAO란](https://2ssue.github.io/programming_knowledge/190423_PJI/)  
 [LIST, SET, MAP](https://2ssue.github.io/programming_knowledge/190424_PJI/)  
 [오버라이딩과 오버로딩](https://2ssue.github.io/programming_knowledge/190428_PJI/)
+[다형성](https://2ssue.github.io.programming_knowledge/190502_PJI/)
 
 > ### Security
 
