@@ -20,8 +20,8 @@ toc: true
 [DAO란](https://2ssue.github.io/programming_knowledge/190423_PJI/)  
 [LIST, SET, MAP](https://2ssue.github.io/programming_knowledge/190424_PJI/)  
 [오버라이딩과 오버로딩](https://2ssue.github.io/programming_knowledge/190428_PJI/)  
-[다형성](https://2ssue.github.io.programming_knowledge/190502_PJI/)  
-[JVM의 메모리 구조](https://2ssue.github.io.programming_knowledge/190509_PJI/)  
+[다형성](https://2ssue.github.io/programming_knowledge/190502_PJI/)  
+[JVM의 메모리 구조](https://2ssue.github.io/programming_knowledge/190509_PJI/)  
 
 > ### Security
 
