@@ -9,8 +9,6 @@ classes: wide
 이 챕터에서 중요한 부분은 다형성, 그리고 추상 클래스와 인터페이스 간의 차이라고 생각한다.  
 다형성 부분은 지난번 포스트 [다형성이란](https://2ssue.github.io/programming_knowledge/190502_PJI/)에 정리한 것을 참고하면 될 것 같다.  
 추상 클래스와 인터페이스 간의 차이는 [Programming_Knowledge](https://2ssue.github.io/categories/#programming-knowledge)카테고리에 따로 정리할 예정이다.  
-
-지난번 상속에서 추상 클래스가 유용하게 쓰일 것이라고 생각했는데 인터페이스가 확장성과 사용성이 좋아 더 용이하게 쓰이겠다는 생각이 들었다.  
   
 이 주제 외에도 JDK8에 들어서 인터페이스에 새로 생긴 기능인 default메소드, static메소드도 알아둘 필요가 있을 것 같다.  
   
