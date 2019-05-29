@@ -57,6 +57,7 @@
   margin-bottom: 5px;
   line-height: 1;
   font-weight: bold;
+  text-align: center;
   border-bottom: 1px solid darkgray;
 
   & + .page__meta {
@@ -70,6 +71,7 @@
 }
 
 .page__content {
+  max-width: 1000px;
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
