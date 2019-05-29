@@ -61,7 +61,6 @@ public class Dog implements Soundable{
 
 #### 다음 코드와 아래 출력을 참고해 DataAccessObject 인터페이스를 참조한 OracleDao, MySqlDao 클래스를 작성하시오
 
-> ```
 > Oracle DB에서 검색
 > Oracle DB에 삽입
 > Oracle DB를 수정
@@ -70,7 +69,6 @@ public class Dog implements Soundable{
 > MySql DB에 삽입
 > MySql DB를 수정
 > MySql DB에서 삭제
-> ```
 
 ```java
 public class DaoExample{
@@ -87,6 +85,8 @@ public class DaoExample{
 	}
 }
 ```
+
+___
 
 ```java
 public class OracleDao implements DataAccessObject{
@@ -128,15 +128,15 @@ public class MySqlDao implements DataAccessObject{
 
 #### Action 인터페이스를 활용한 익명 구현 객체를 만들어 아래와 같은 출력이 나오도록 코드를 작성하시오
 
->```
-복사를 합니다.
-```
+> 복사를 합니다.
 
 ```java
 public interface Action{
 	void work();
 }
 ```
+
+___
 
 ```java
 public class ActionExample{
