@@ -61,14 +61,14 @@ public class Dog implements Soundable{
 
 #### 다음 코드와 아래 출력을 참고해 DataAccessObject 인터페이스를 참조한 OracleDao, MySqlDao 클래스를 작성하시오
 
-> Oracle DB에서 검색
-> Oracle DB에 삽입
-> Oracle DB를 수정
-> Oracle DB에서 삭제
-> MySql DB에서 검색
-> MySql DB에 삽입
-> MySql DB를 수정
-> MySql DB에서 삭제
+> Oracle DB에서 검색  
+> Oracle DB에 삽입  
+> Oracle DB를 수정  
+> Oracle DB에서 삭제  
+> MySql DB에서 검색  
+> MySql DB에 삽입  
+> MySql DB를 수정  
+> MySql DB에서 삭제  
 
 ```java
 public class DaoExample{
