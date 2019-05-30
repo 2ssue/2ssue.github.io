@@ -40,7 +40,7 @@ layout: default
 
   <h3 class="archive__subtitle" style="padding-bottom: 1px">Categories & Tags</h3>
   <hr>
-  <section class="page__content" itemprop="text" style="list-style: none;">
+  <section class="page__content" itemprop="text" style="list-style: none; max-width: none">
         {% for i in (1..categories_max) reversed %}
           {% for category in site.categories %}
             {% if category[1].size == i %}
