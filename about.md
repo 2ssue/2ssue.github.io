@@ -17,25 +17,24 @@ toc: true
 `JavaScript`  
 
 > ### Project
-> >#### Windows Application 
-> ><p style="font-size: 16px"> 
-> >개인 프로젝트<br>
-> >사내 응용 프로그램  
-> >`Delphi`  
-> >`SQLite`  
-> ></p>
-> >
-> >___
-> >
-> >#### Android Application
-> ><p style="font-size: 16px"> 
-> >팀 프로젝트<br>
-> >가상 계좌 어플리케이션<br>
-> >암호화 및 UI 담당 
-> >`Java`  
-> >`MySQL`  
-> >`PHP`  
-> >`Android`  
-> >`AWS EC2`  
-> ></p>
-> >___
+> #### Windows Application 
+> <p style="font-size: 16px"> 
+> 개인 프로젝트<br>
+> 사내 응용 프로그램  
+> </p>
+> `Delphi`  
+> `SQLite`   
+> ___
+> 
+> #### Android Application
+> <p style="font-size: 16px"> 
+> 팀 프로젝트<br>
+> 가상 계좌 어플리케이션<br>
+> 암호화 및 UI 담당 
+> </p>
+> `Java`  
+> `MySQL`  
+> `PHP`  
+> `Android`  
+> `AWS EC2`  
+> ___
