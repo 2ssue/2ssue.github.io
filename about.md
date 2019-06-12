@@ -14,7 +14,7 @@ toc: true
 
 > ## Project
 
-#### Windows Application
+### Windows Application
 
 개인 프로젝트
 사내 응용 프로그램  
@@ -23,7 +23,7 @@ toc: true
 
 ___
  
-#### Android Application
+### Android Application
   
 팀 프로젝트  
 가상 계좌 어플리케이션  
