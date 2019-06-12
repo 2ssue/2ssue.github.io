@@ -6,6 +6,7 @@
    Typography
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap');
 
 $doc-font-size: 16 !default;
 
@@ -14,7 +15,7 @@ $paragraph-indent: false !default; // true, false (default)
 $indent-var: 1.3em !default;
 
 /* system typefaces */
-$serif: Georgia, Times, serif !default;
+$serif: Georgia, Times, 'Noto Serif KR' !default;
 $sans-serif: -apple-system, BlinkMacSystemFont, 'Lora' !default;
 $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
 
