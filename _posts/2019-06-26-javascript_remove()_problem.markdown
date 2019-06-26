@@ -10,7 +10,7 @@ classes: wide
   
 대부분의 문제를 이해하고, 해결할 수 있었는데 이해할 수 없었던 문제가 하나 있었다.  
   
-![TodoList](assets/images/todoList.png)  
+![TodoList](/assets/images/todoList.png)  
   
 이 페이지에서 doing 컬럼의 일을 done으로 옮기면, 버튼이 사라지는 스크립트를 작성해야 했다.  
 그 부분을 나는 `cell.childNode[buttonIdx].remove()`로 구현했는데, 코드리뷰 후 데이터가 남는다는 것을 알게 되었다.  
@@ -22,7 +22,7 @@ classes: wide
 개발자 도구의 Properties를 확인해봐도 어떤 데이터가 남는다는 건지 알아보기 힘들었다.  
 그래서 댓글로 문의를 남기려다가 혹시나 해서 콘솔로 innerHTML을 확인해봤는데, 문제점을 찾을 수 있었다.  
   
-![innerHTML](assets/images/todoList_innerHTML.png)  
+![innerHTML](/assets/images/todoList_innerHTML.png)  
   
 `프로젝트 완성하기`는 최초에 페이지가 열렸을 때 HTML 소스를 통해 출력된 cell이다.  
 그리고 `테스트2`는 script를 통해 `<button>` 태그가 없어지고 다시 출력된 cell이다.  
