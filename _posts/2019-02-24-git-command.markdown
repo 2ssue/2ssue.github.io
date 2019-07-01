@@ -3,7 +3,6 @@ title:  "Git 명령어"
 date:   2019-02-24 14:12:24 +0900
 categories: VCS
 tags: git
-classes: wide
 toc: true
 ---
 
@@ -70,6 +69,6 @@ git checkout {branch_name}
 
 ### git Error
 
-* fatal: The current branch {branch_name} has no upstream branch.
-원격저장소에 브런치가 없을 경우 발생하는 에러
+* fatal: The current branch {branch_name} has no upstream branch.  
+원격저장소에 브런치가 없을 경우 발생하는 에러  
 해결) `git push -u origin {branch_name}`,`git push --set-upstream origin {branch_name}`
