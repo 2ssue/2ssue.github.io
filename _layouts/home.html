@@ -1,16 +1,8 @@
 ---
-layout: single
+layout: archive
 ---
 
 {{ content }}
-
-<div class="page__hero--overlay" style="background-image: url('/assets/images/sitemap_error.PNG');">
-
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% elsif page.header.video.id and page.header.video.provider %}
-  {% include page__hero_video.html %}
-{% endif %}
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 

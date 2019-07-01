@@ -1,22 +1,19 @@
 ---
-layout: single
-author-profile: true
+layout: archive
 ---
 
 {{ content }}
 
-<aside class="sidebar__right">
-  <ul class="taxonomy__index">
-    {% assign postsInYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
-    {% for year in postsInYear %}
-      <li>
-        <a href="#{{ year.name }}">
-          <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</aside>
+<ul class="taxonomy__index">
+  {% assign postsInYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+  {% for year in postsInYear %}
+    <li>
+      <a href="#{{ year.name }}">
+        <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
 
 {% assign postsByYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
 {% for year in postsByYear %}
@@ -30,7 +27,3 @@ author-profile: true
     <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
   </section>
 {% endfor %}
-
-{% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-{% endif %}

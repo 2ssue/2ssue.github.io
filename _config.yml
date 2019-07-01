@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko"
-title                    : "차근차근 하나둘"
+title                    : "세상에 잘못된 경험은 없어"
 title_separator          : "-"
 name                     : "2ssue"
 description              : "Programming study records"
@@ -292,3 +292,15 @@ defaults:
       comments: true
       share: false
       related: true
+  - scope:
+      path: "_posts/project"
+      type: posts
+    values: 
+      layout: single
+      classes: wide
+      author_profile: true
+      comments: true
+      share: false
+      related: true
+      sidebar:
+        title: "프로젝트"
