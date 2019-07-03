@@ -67,6 +67,15 @@ git checkout {branch_name}
 ```
 {branch_name}으로 현재 branch 바꾸기
 
+### git merge (to master)
+
+```
+git checkout master
+git merge {branch_name}
+```
+master branch에 병합하기 위해 master로 branch 전환  
+{branch_name}을 master에 병합  
+  
 ### git Error
 
 * fatal: The current branch {branch_name} has no upstream branch.  
