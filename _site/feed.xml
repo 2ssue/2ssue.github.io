@@ -5,9 +5,47 @@
     <description>Programming study records</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 02 Jul 2019 01:23:36 +0900</pubDate>
-    <lastBuildDate>Tue, 02 Jul 2019 01:23:36 +0900</lastBuildDate>
+    <pubDate>Fri, 05 Jul 2019 23:45:12 +0900</pubDate>
+    <lastBuildDate>Fri, 05 Jul 2019 23:45:12 +0900</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>jekyll 블로그 커스터마이징하기(5)_리뉴얼</title>
+        <description>&lt;h3 id=&quot;일단-부딪혀보기의-끝은&quot;&gt;일단 부딪혀보기의 끝은?&lt;/h3&gt;
+
+&lt;p&gt;블로그 스타일을 바꿔보려다가, 아무것도 모를 때 너무 중구난방으로 바꿔놓았더니 총체적 난국이 되었다. 
+스타일을 다른 레이아웃과 충돌하는 것을 고려하지 않고 바꿨다가 새로 짜는 코드에서 겹쳐서 이상하게 출력되기도 하고, html코드에 css코드가 섞여서 어디에 스타일을 지정한건지 찾기도 어려웠다.. ;(&lt;/p&gt;
+
+&lt;p&gt;이것저것 건드려볼 수 있었던 것은 매우 좋은 기회였지만, 코드 구성 방식을 알게되니 여러모로 고치기 힘든 상황이 되었다.&lt;br /&gt;
+이전부터 고쳐보려고 했는데 엄두가 안나서 미뤄두다가 이번엔 진짜 고쳐보자, 하고 7월의 새로운 마음으로 손대봤는데 이리저리 git history를 확인하는 작업도 여간 힘든 일이 아니었다..&lt;br /&gt;
+커스터마이징에 대한 글은 몇 번 안올렸지만 짜잘하게 많은 작업을 거쳤고, 여기까지 바꾸는데 굉장히 오랜 시간이 걸렸는데..ㅠㅠ 많이 아쉬웠다.&lt;/p&gt;
+
+&lt;h3 id=&quot;190702-엉망진창이-된-레이아웃-파일-고치기-시작&quot;&gt;190702 엉망진창이 된 레이아웃 파일 고치기 시작&lt;/h3&gt;
+
+&lt;p&gt;아예 지워볼까 했다가, 그동안의 기록이 지워지는게 너무 아까워서 그러지않기로했다.&lt;br /&gt;
+5시간 째 고쳐보려고 이리저리 만져보다가 마음만 앞섰던 나를 반성하며 블로그의 테마를 초기화하기로 마음먹었다.&lt;/p&gt;
+
+&lt;p&gt;다른 프로그램을 개발할 때도 설계의 중요성을 항상 느꼈으면서도 웹을 경험하는 데 의의를 두자는 마음으로 너무 막 다뤘다는 생각이 든다 ㅠㅠ&lt;br /&gt;
+웹에 대한 관심을 가지게 해준 것에 감사하며. 지금의 블로그는 스크린샷으로나마 남겨둔다..&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/before_renewal.png&quot; alt=&quot;before1&quot; /&gt;
+&lt;img src=&quot;/assets/images/before_renewal2.png&quot; alt=&quot;before2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;암튼, 이번에는 테마에서 제공하는 기능들을 제대로 활용해서, 블로그를 천천히 리뉴얼 해볼 생각이다.&lt;br /&gt;
+오래걸리고, 긴 작업이 되겠지만 원하는 모습으로 변할 수 있었으면 좋겠다 :)&lt;/p&gt;
+
+&lt;p&gt;새로운 모습으로 다시 만날 수 있길 기대하며 이만 XD!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 02 Jul 2019 01:26:24 +0900</pubDate>
+        <link>http://localhost:4000/blog/blog_renewal/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/blog_renewal/</guid>
+        
+        <category>jekyll</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Spring MySQL 연동 오류</title>
@@ -774,80 +812,6 @@ CSS와 HTML이 뒤죽박죽~&lt;/p&gt;
         
         
         <category>TMI</category>
-        
-      </item>
-    
-      <item>
-        <title>[프로그래머스] 위장_JAVA</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42578&quot;&gt;프로그래머스_위장 문제&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://github.com/2ssue/Algorithm/blob/master/Programmers/42578.java&quot;&gt;풀이 코드&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;처음엔 Map을 &amp;lt;String, String&amp;gt; 형태로 저장했다가, 계산에 필요한 것은 각 종류 옷의 개수이기 때문에 &amp;lt;String, Integer&amp;gt; 형태로 바꾸었다.&lt;/p&gt;
-
-&lt;p&gt;대충 푸는 방식은 알겠었는데, 경우의 수를 구하는 공식을 잘 모르겠어서 푸는 시간이 조금 걸렸다.&lt;/p&gt;
-
-&lt;p&gt;처음에는 모든 가능한 경우의 수를 직접 계산해서 풀려고 했다.&lt;br /&gt;
-예를 들어 얼굴, 상의, 하의가 {3,2,1}의 개수로 주어진다면, 가능한 경우의 수는 아래와 같다.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(3*2*1) + (3*2) + (3*1) + (1*2) + 3 + 2 + 1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;이런 식으로 스택을 이용해서 직접 모두 계산하려고 했다.&lt;br /&gt;
-그런데 코드를 잘못 작성했는지, 일부 숫자에서 다른 값들이 나왔다.&lt;/p&gt;
-
-&lt;p&gt;고등학교 때 공부한거 잘 좀 기억해 놓을 걸, 싶었다. 애증의 확률과 통계!&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h3 id=&quot;풀이&quot;&gt;풀이&lt;/h3&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;경우의 수를 구하는 공식은 4종류의 옷과 그 옷이 {n, m, o, p}의 개수로 있을 때 아래와 같다.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(n + 1) * (m + 1) * (o + 1) * (p + 1) - 1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;각 종류들은 하나를 입거나, 안입거나의 선택지가 있기 때문에 옷의 개수에 안입는 선택지를 하나 추가한다.&lt;br /&gt;
-그리고 옷을 고르는 선택은 동시에 일어나는 일이기 때문에, 각 옷들을 곱해 경우의 수를 계산한다.&lt;br /&gt;
-이 때, 하나도 안입는 선택지는 없으므로 그 경우의 수 하나를 뺀다.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h3 id=&quot;코드&quot;&gt;코드&lt;/h3&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.HashMap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Solution&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[][]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clothes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;answer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
-
-    	&lt;span class=&quot;n&quot;&gt;HashMap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HashMap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;gt;();&lt;/span&gt;
-    	
-    	&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clothes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clothes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    			&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;put&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clothes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    		&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-    			&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;put&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clothes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clothes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    	
-    	&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;keys:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;keySet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    		&lt;span class=&quot;n&quot;&gt;answer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-        
-    	&lt;span class=&quot;n&quot;&gt;answer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;answer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-        <pubDate>Tue, 21 May 2019 09:17:24 +0900</pubDate>
-        <link>http://localhost:4000/algorithm/programmers_42578/</link>
-        <guid isPermaLink="true">http://localhost:4000/algorithm/programmers_42578/</guid>
-        
-        <category>programmers</category>
-        
-        
-        <category>algorithm</category>
         
       </item>
     

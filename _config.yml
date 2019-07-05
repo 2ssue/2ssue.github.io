@@ -219,7 +219,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 4 # amount of posts to show
+paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -288,19 +288,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+      classes: wide
       read_time: false #true
       comments: true
       share: false
       related: true
-  - scope:
-      path: "_posts/project"
-      type: posts
-    values: 
-      layout: single
-      classes: wide
-      author_profile: true
-      comments: true
-      share: false
-      related: true
-      sidebar:
-        title: "프로젝트"

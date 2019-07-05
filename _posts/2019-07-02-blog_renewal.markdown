@@ -1,6 +1,7 @@
 ---
 title: "jekyll 블로그 커스터마이징하기(5)_리뉴얼"
 date: 2019-07-02 01:26:24 +0900
+classes: wide
 categories: blog
 tags: jekyll
 ---
