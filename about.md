@@ -10,8 +10,8 @@ toc: true
 
 > ##  Program Language
 
-`Delphi` `Java` `C/C++` `HTML/CSS` `JavaScript`  
-
+`Java` `HTML/CSS` `JavaScript` `Delphi` `C/C++`  
+  
 > ## Project
 
 ### Windows Application
@@ -19,10 +19,8 @@ toc: true
 개인 프로젝트
 사내 응용 프로그램  
 
-`Delphi` `SQLite`   
-
-___
- 
+`Delphi` `SQLite`  
+  
 ### Android Application
   
 팀 프로젝트  
@@ -30,5 +28,3 @@ ___
 암호화 및 UI 담당  
   
 `Java` `MySQL` `PHP` `Android` `AWS EC2`  
-
-___
