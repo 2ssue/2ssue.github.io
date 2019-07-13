@@ -34,7 +34,7 @@ msi로 설치하라고해서 msi로 설치를 한거긴 했지만, MySQL 홈페�
 
 #### 시스템 변수 새로 만들기
   
-![환경 변수](/assets/images/sv.png)
+![환경 변수](/assets/images/sv.PNG)
   
 경로는 MySQL ZIP 파일을 압축 해제한 경로이다.  
 
