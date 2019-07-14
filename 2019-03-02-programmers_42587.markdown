@@ -1,0 +1,88 @@
+---
+title:  "[프로그래머스] 프린터"
+date:   2019-03-02 18:23:24 +0900
+categories: algorithm
+tags: programmers
+classes: wide
+---
+
+[프로그래머스 코딩테스트 연습_스택/큐_프린터](https://programmers.co.kr/learn/courses/30/lessons/42587)
+
+맨 앞에 있는 문서가 먼저 출력되고 있으므로 문서출력 순서는 Queue를 사용해서 확인했다.  
+또 해당 문서가 출력되야하는 문서가 맞는지 확인하기 위해서 우선순위를 저장한 Stack을 활용했다. 
+
+이번에는 Stack과 Queue를 제외한 다른 변수는 선언하지 않았다.  
+대신 배열을 정렬해줄 sort함수와 배열의 자리를 바꾸는 swap함수를 선언했다.  
+  
+> ### 구현 절차
+
+1. Queue에 문서들을 저장한다.  
+2. 배열을 sorting해서 sorting값을 Stack에 저장한다.  
+3. Stack의 값과 Queue값이 일치하지 않으면 Queue의 문서를 뒤로 미룬다.
+4. 문서의 위치가 바뀌었으므로 문서의 `location`을 감소시킨다.
+5. Stack의 값과 Queue값이 일치하면 `location`값이 0인지 확인한다.
+6. `location`값이 0이 아니면 알아야 할 문서의 순서가 아니므로 Queue와 Stack에서 그 문서를 지운다. 
+6. 문서의 위치가 바뀌었으므로 문서의 `location`을 감소시킨다.
+7. 문서가 출력되었으므로 순서를 저장하는 값인 `answer`를 증가시킨다. 
+8. `location`값이 0이면 알아야 할 문서의 순서이므로 `answer`를 증가시킨다.
+9. `answer`를 리턴한다.
+
+```java
+import java.util.Queue;
+import java.util.LinkedList;
+import java.util.Stack;
+
+class Solution {
+    public void swap(int[] arr, int idx1, int idx2){
+        int temp = arr[idx1];
+        arr[idx1] = arr[idx2];
+        arr[idx2] = temp;
+    }
+    
+    public void sort(int[] arr){
+        for(int i = 0; i < arr.length; i++){
+            for(int j = arr.length - 1; j > i; j--){
+                if(arr[j - 1] > arr[j])
+                    swap(arr, j-1, j);
+            }
+        }
+    }
+    
+    public int solution(int[] priorities, int location) {
+        int answer = 0;
+        
+        Queue que = new LinkedList();
+        Stack<Integer> stack = new Stack<>();
+        
+        for(int i = 0; i < priorities.length; i++){
+            que.offer(priorities[i]);    
+        }
+        
+        sort(priorities);
+        
+        for(int i = 0; i < priorities.length; i++){
+            stack.push(priorities[i]);
+        }
+        
+        while(!(que.isEmpty())){
+            if(!(que.peek().equals(stack.peek()))){
+                que.offer(que.poll());
+                if(location == 0) location = que.size() - 1;
+                else location--;
+            }else{
+                if(location != 0){
+                    que.poll();
+                    stack.pop();
+                    answer++;
+                    location--;
+                }
+                else{
+                    answer++;
+                    break;
+                }
+            }
+        }
+        return answer;
+    }
+}
+```
