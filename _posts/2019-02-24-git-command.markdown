@@ -4,9 +4,8 @@ date:   2019-02-24 14:12:24 +0900
 categories: VCS
 tags: git
 toc: true
+last_modified_at: 2019-07-14 22:37:24 +0900
 ---
-
-## git 명령어
 
 ### git init
 
@@ -18,6 +17,11 @@ toc: true
 git clone {url}
 ```
 저장소를 디렉토리에 복사
+
+```
+git clone {url} -b {branch_name} --single-branch
+```
+저장소에서 해당 브런치만 복사
 
 ### git pull 
 
