@@ -1,7 +1,7 @@
 ---
 title: "자바스크립트 childNode[n].remove()시 데이터가 남는 문제"
 date:   2019-06-26 10:24:24 +0900
-categories: Project
+categories: Error
 tags: web javascript
 classes: wide
 ---
