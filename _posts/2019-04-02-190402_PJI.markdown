@@ -1,8 +1,8 @@
 ---
-title: "190402_Prepare Job Interview"
+title: "정규화, 트랜잭션"
 date:   2019-04-02 22:38:24 +0900
-categories: Programming_Knowledge
-tags: interview
+categories: Database
+tags: define
 classes: wide
 ---
 
