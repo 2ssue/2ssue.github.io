@@ -3,7 +3,7 @@ title:  "git add와 git commit시 Git의 내부 동작"
 date:   2019-07-15 22:33:24 +0900
 categories: VCS
 tags: git
-last_modified_at: 2019-07-15 22:33:24 +0900
+last_modified_at: 2019-07-16 00:05:24 +0900
 ---
 
 *이 포스트는 생활 코딩의 [지옥에서 온 Git](https://opentutorials.org/course/2708) 강의를 참고하였습니다.*
