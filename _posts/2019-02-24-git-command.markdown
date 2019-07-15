@@ -64,7 +64,7 @@ git push -u {name} master
 ```
 name 저장소에 추가된 내용을 master에 저장
 
-### git branchzz
+### git branch
 
 ```
 git branch {name}
