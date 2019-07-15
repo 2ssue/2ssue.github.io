@@ -1,0 +1,52 @@
+---
+title:  "[프로그래머스] 쇠막대기"
+date:   2019-02-27 12:45:24 +0900
+categories: algorithm
+tags: programmers
+classes: wide
+---
+
+[프로그래머스 코딩테스트 연습_스택/큐_쇠막대기](https://programmers.co.kr/learn/courses/30/lessons/42585)
+
+![쇠파이프](https://grepp-programmers.s3.amazonaws.com/files/ybm/dbd166625b/d3ae656b-bb7b-421c-9f74-fa9ea800b860.png){: .align-center}
+
+처음 봤을 때 이게 대체 무슨 소린지 한참을 쳐다봤다.  
+아마 Stack으로 따로 카테고리가 돼있지 않았으면 푸는 데 더 오래걸렸을지도 모른다.  
+
+`()`는 레이저고, `(`는 막대의 시작, `)`는 끝을 의미한다.  
+  
+막대가 시작되고 레이저를 만나면, 시작된 막대 개수만큼의 잘린 막대가 생긴다.  
+이를 바탕으로 Stack을 이용해 보았다.  
+
+1. `(`를 만나면 Stack에 막대를 `push`한다.  
+2. 여기서 `)`를 만나면 이전 막대가 `(`를 확인해서 레이저인지 확인한다.  
+3. 레이저가 맞으면 `push` 되었던 레이저의 `(` `pop`하고 남은 막대의 개수를 결과값에 더한다.  
+4. 만약 레이저가 아닌 `)`를 만나면 막대 하나가 끝났다는 것을 의미하므로, 결과값에 1을 더하고 막대 하나를 `pop`한다.  
+
+> 자바의 util에서는 스택을 기본적으로 제공하기 때문에 Stack을 따로 구현하진 않았다.
+
+```java
+import java.util.Stack;
+
+class Solution {
+    public int solution(String arrangement) {
+        int answer = 0;
+        Stack<String> stack = new Stack<>();
+		String [] arr = arrangement.split("");
+        
+		for(int i = 0; i < arr.length; i++) {
+			if(arr[i].equals("(")) stack.push(arr[i]);
+		    else {
+                if (arr[i-1].equals("(")){
+                    stack.pop();
+                    answer += stack.size();
+                } else{
+                    answer += 1;
+                    stack.pop();
+                }
+            }
+        }
+        return answer;
+    }
+}
+```
