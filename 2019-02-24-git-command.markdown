@@ -4,7 +4,7 @@ date:   2019-02-24 14:12:24 +0900
 categories: VCS
 tags: git
 toc: true
-last_modified_at: 2019-07-14 22:37:24 +0900
+last_modified_at: 2019-07-15 23:50:24 +0900
 ---
 
 ### git init
@@ -22,6 +22,13 @@ git clone {url}
 git clone {url} -b {branch_name} --single-branch
 ```
 저장소에서 해당 브런치만 복사
+
+> **git fork와 Pull Request**  
+다른 사람의 Github repository에서 내가 어떤 부분을 수정하거나 추가적인 기능을 넣고 싶을 때 그 Repository를 나의 Repository로 그대로 복제하는 기능.  
+>  
+> fork한 저장소는 원본인 Repository와 연결되어있다. 따라서 원본 Repository에 변화가 생긴다면 fork한 Repository로 반영할 수 있다. 이 때의 과정이 fetch나 rebase이다.  
+이후 원본 Repository에 내가 변경한 사항을 적용하고 싶다면 원본 저장소에 Pull Request를 날린다. 원본 저장소의 관리자가 이를 보고 승인하면, 내가 변경한 사항이 merge돼 원본 저장소에 반영될 수 있다.  
+이와 같은 사항은 주로 Open Source에 Countribute시에 자주 사용되는 방법이다.  
 
 ### git pull 
 
@@ -41,14 +48,14 @@ git remote rm {name} {name} 저장소 삭제
 ```
 git add .
 ```
-수정된 전부(.)를 현재 remote에 추가
-
+수정된 전부(.)를 현재 remote에 추가  
+  
 ### git commit 
 
 ```
 git commit -m "message"
 ```
-add된 파일들을 "message"를 붙여 commit
+add된 파일들을 "message"를 붙여 commit (add는 저장소에 기록이 남지 않지만, commit을 하면 새로운 버전이 기록된다.)  
 
 ### git push 
 
@@ -57,7 +64,7 @@ git push -u {name} master
 ```
 name 저장소에 추가된 내용을 master에 저장
 
-### git branch
+### git branchzz
 
 ```
 git branch {name}
