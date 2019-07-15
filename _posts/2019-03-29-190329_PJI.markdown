@@ -1,8 +1,8 @@
 ---
-title: "190329_Prepare Job Interview"
+title: "OSI 7계층, TCP와 UDP"
 date:   2019-03-29 23:51:24 +0900
-categories: Programming_Knowledge
-tags: interview
+categories: Network
+tags: define
 classes: wide
 ---
 
