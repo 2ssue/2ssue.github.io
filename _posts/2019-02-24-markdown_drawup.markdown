@@ -1,7 +1,7 @@
 ---
 title:  "마크다운(Markdown) 작성법"
 date:   2019-02-24 17:29:24 +0900
-categories: Programming_Language
+categories: Web
 tags: markdown
 classes: wide
 ---  
