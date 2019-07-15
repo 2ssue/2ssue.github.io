@@ -1,8 +1,8 @@
 ---
-title:  "[프로그래머스] 쇠막대기"
+title:  "[프로그래머스] 쇠막대기_JAVA"
 date:   2019-02-27 12:45:24 +0900
 categories: algorithm
-tags: programmers
+tags: programmers java
 classes: wide
 ---
 
