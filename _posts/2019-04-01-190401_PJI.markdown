@@ -1,8 +1,8 @@
 ---
-title: "190401_Prepare Job Interview"
+title: "GET과 POST의 차이, NAT란?"
 date:   2019-04-01 21:46:24 +0900
-categories: Programming_Knowledge
-tags: interview
+categories: Network
+tags: define
 classes: wide
 ---
 
