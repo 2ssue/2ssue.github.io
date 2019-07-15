@@ -1,0 +1,324 @@
+---
+title:  "[Do it! 알고리즘] 01-2 반복"
+date:   2019-02-25 20:40:24 +0900
+categories: algorithm
+tags: doit
+classes: wide
+---
+
+> 이 글은 Do it! 자료구조와 함께 배우는 알고리즘 입문 책에 대한 풀이이다.
+
+## 연습문제
+
+> 아래 반복문은 실행 전에 반복을 계속할 지 판단하는 구조이다. 
+이런 구조를 '사전 판단 반복 구조' 라고 부른다.
+
+### while문
+
+#### 1. while문이 종료될 때 변수 i값이 출력되도록 변경
+
+```java
+public static void main(String[] args){
+	Scanner scan = new Scanner(System.in);
+
+	System.out.println("1부터 n까지의 합을 구합니다.");
+	System.out.print("n의 값: ");
+	int n = scan.nextInt();
+
+	int sum = 0;
+	int i = 0;
+
+	while (i <= n){
+		sum += i;
+		i++;
+	}
+
+	System.out.println("1부터 "+ n + "까지의 합은 " + sum + "입니다.");
+	System.out.println("반복문은 " + i + "번째에 종료되었습니다.");
+}
+```
+*결과*
+
+```
+1부터 n까지의 합을 구합니다.
+n의 값: 4
+1부터 4까지의 합은 10입니다.
+반복문은 5번째에 종료되었습니다.
+```
+
+### for문
+
+#### 2. n이 7이면 1+2+3+4+5+6+7 = 28로 출력하는 프로그램
+
+```java
+public static void main(String[] args){
+	Scanner scan = new Scanner(System.in);
+
+	int n = 7;
+	int sum = 0;
+
+	for(int i = 1; i <= n; i++){
+		if (i != 1) System.out.print("+");
+		sum += i;
+		System.out.print(i);
+	}
+	System.out.println(" = " + sum);
+}
+```
+
+#### 3. 가우스의 덧셈을 이용해 1부터 n까지의 정수 합을 구하는 프로그램
+
+1부터 10까지의 합은 (1 + 10) * 5와 같이 구할 수 있다.
+=> (1+10) + (2+9) + (3+8) + (4+7) + (5+6) = (1+10) * 5
+
+```java
+public static void main(String[] args){
+	Scanner scan = new Scanner(System.in);
+
+	System.out.println("1부터 n까지의 합을 구합니다.");
+	System.out.print("n의 값: ");
+	int n = scan.nextInt();
+
+	int sum = (n + 1) * (n/2);
+	if(n%2 != 0) sum += (n + 1)/2;
+
+	System.out.println("1부터 " + n + "까지의 합은 " + sum + "입니다.");
+}
+```
+
+#### 4. 정수 a, b를 포함해 그 사이의 모든 정수의 합을 구하여 반환하는 메서드
+
+```java
+public static int sumof(int a, int b){
+	int sum = 0;
+	int temp;
+
+	if (a > b){
+		temp = a;
+		a = b;
+		b = temp;
+	}
+
+	for(int i = a; i <= b; i++){
+		sum += i;
+	}
+
+	return sum;
+}
+```
+
+> 다음은 루프를 한번 실행한 다음 while문의 조건을 판단하는 '사후 판단 반복 구조'이다.
+사전 판단 반복 구조와의 차이점은 제어식이 최초부터 참이 아니라면 사전 판단 구조는 한번도 실행되지 않는 반면, 사후 판단 구조는 반드시 한번은 실행된다는 점이다.
+
+### do while문
+
+#### 5. 두 변수 a, b에 정수를 입력하고 b-a를 출력하는 프로그램
+> 조건: b <= a인 경우 b의 값을 다시 받도록 하기
+
+```java
+public static void main(String[] args){
+	Scanner scan = new Scanner(System.in);
+
+	System.out.println("b-a를 구합니다.");
+	System.out.print("a의 값: ");
+	int a = scan.nextInt();
+	int b;
+
+	do{
+		System.out.print("b의 값: ");
+		b = scan.nextInt();
+	}while(b <= a);
+
+	int rst = b - a;
+	System.out.println("b-a = " + rst);
+}
+```
+
+#### 6. 양의 정수를 입력하고 자릿수를 출력하는 프로그램
+> ex) 135 > 3자리 입니다. 1314 > 4자리 입니다.
+
+```java
+public static void main(String[] args){
+	Scanner scan = new Scanner(System.in);
+
+	System.out.println("자릿수를 출력합니다.");
+	
+	int n;
+	do{
+		System.out.print("원하는 값: ");
+		n = scan.nextInt();
+	} while(n <= 0);
+
+	int cnt = 0;
+	while(n > 0){
+		n /= 10;
+		cnt++;
+	}
+
+	System.out.println(cnt + "자리 입니다.");
+}
+```
+
+#### 7. 아래와 같은 곱셈표를 출력하는 프로그램
+
+```
+  |  1  2  3  4  5  6  7  8  9
+--+---------------------------
+ 1|  1  2  3  4  5  6  7  8  9
+ 2|  2  4  6  8 10 12 14 16 18
+ 3|  3  6  9 12 15 18 21 24 27
+ 4|  4  8 12 16 20 24 28 32 36
+ 5|  5 10 15 20 25 30 35 40 45
+ 6|  6 12 18 24 30 36 42 48 54
+ 7|  7 14 21 28 35 42 49 56 63
+ 8|  8 16 24 32 40 48 56 64 72
+ 9|  9 18 27 36 45 54 63 72 81
+```
+
+```java
+public static void main(String[] args){
+	
+	System.out.print("  |");
+
+	for(int i = 1; i < 10; i++)
+		System.out.printf("%3d", i);
+	System.out.println("\n--+---------------------------");
+	for(int i = 1; i < 10; i++){
+		System.out.printf("%2d|", i);
+		for(int j = 1; j < 10; j++){
+			System.out.printf("%3d", i*j);
+		}
+		System.out.println();
+	}
+}
+```
+
+#### 8. 위와 같은 형태로 덧셈표를 출력하는 프로그램
+
+```java
+public static void main(String[] args){
+
+	System.out.print("  |");
+
+	for(int i = 1; i < 10; i++)
+		System.out.printf("%3d", i);
+	System.out.println("\n--+---------------------------");
+	for(int i = 1; i < 10; i++){
+		System.out.printf("%2d|", i);
+		for(int j = 1; j < 10; j++){
+			System.out.printf("%3d", i+j);
+		}
+		System.out.println();
+	}
+}
+```
+
+#### 9. 입력한 수를 한 변으로 하는 정사각형 출력 프로그램
+> 출력 기호는 * 로 한다. 
+
+```java
+public static void main(String[] args){
+	Scanner scan = new Scanner(System.in);
+
+	System.out.println("사각형을 출력합니다.");
+	System.out.print("단 수: ");
+
+	int n = scan.nextInt();
+
+	for(int i = 0; i < n; i++){
+		for(int j = 0; j < n; j++){
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+}
+```
+
+#### 10. 직각 이등변 삼각형을 출력하는 메서드
+
+```java
+public static void triangleLB(int n){
+	for(int i = 0; i < n; i++){
+		for(int j = 0; j <= i; j++){
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+}
+```
+
+#### 11. 왼쪽 위, 오른쪽 위, 오른쪽 아래가 직각인 이등변 삼각형 출력 메서드
+
+```java
+public static void triangleLU(int n){
+	for(int i = n; i > 0; i--){
+		for(int j = 0; j < i; j++){
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+}
+```
+
+```java
+public static void triangleRU(int n){
+	for(int i = n; i > 0; i--){
+		for(int j = 0; j < n - i; j++){
+			System.out.print(" ");
+		}
+		for(int j = 0; j < i; j++){
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+}
+```
+
+```java
+public static void triangleRB(int n){
+	for(int i = 1; i <= n; i++){
+		for(int j = 0; j < n - i; j++){
+			System.out.print(" ");
+		}
+		for(int j = 0; j < i; j++){
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+}
+```
+
+#### 12. n단의 피라미드를 출력하는 메서드
+
+```java
+public static void spira(int n){
+	for(int i = 0; i < n; i++){
+		for(int j = 1; j < n - i; j++){
+			System.out.print(" ");
+		}
+		for(int j = 0; j < i*2 + 1; j++){
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+}
+```
+
+> 문제를 풀 때 바보같은 생각을 했다. 단에서 공백을 처리할 때 앞 공백만 출력하면
+같은 모양이 나오는데 뒷 공백도 출력시켜야 한다고 생각해서 어떻게 해야할 지 오래 고민했다. 
+
+#### 13. n단의 숫자 피라미드를 출력하는 메서드
+
+```java
+public static void spira(int n){
+	for(int i = 0; i < n; i++){
+		for(int j = 1; j < n - i; j++){
+			System.out.print(" ");
+		}
+		for(int j = 0; j < i*2 + 1; j++){
+			System.out.print(i+1);
+		}
+		System.out.println();
+	}
+}
+```
