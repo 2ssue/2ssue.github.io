@@ -1,14 +1,13 @@
 ---
 layout: archive
 author_profile: true
-title: 2ssue
 permalink: /about/
 toc: true
 ---
 
-*초보 개발자의 분투기록*
+`#BoostCamp2019` `#BoostCamper` `#Ajou University`
 
-> ##  Program Language
+> ##  Programming Language
 
 `Java` `HTML/CSS` `JavaScript` `Delphi` `C/C++`  
   
