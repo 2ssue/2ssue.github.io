@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://2ssue.github.io/sitemap.xml
