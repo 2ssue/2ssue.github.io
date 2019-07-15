@@ -1,0 +1,97 @@
+---
+title:  "[백준] 카잉 달력_JAVA"
+date:   2019-04-22 18:37:24 +0900
+categories: algorithm
+tags: baekjoon
+classes: wide
+---
+
+[백준_카잉 달력문제](https://www.acmicpc.net/problem/6064)  
+[풀이 코드](https://github.com/2ssue/Algorithm/blob/master/Baekjoon/6064.java)  
+  
+첫번째 풀이는 시뮬레이션 처럼 구현해서 시간초과가 났던 문제다.  
+  
+> ### 풀이
+
+햇수를 세는 규칙을 나열해보면 아래와 같다.  
+  
+|햇수|표현|
+|1|1 1|
+|2|2 2|
+|3|3 3|
+|4|4 4|
+|5|5 5|
+|...|...|
+|10|10 10|
+|11|1 11|
+|12|2 12|
+|13|3 1|
+|...|...|
+|60|10 12|
+  
+처음에는 증가하는 햇수 값에서 %M값과 %N값이 그 해 달력이 된다는 규칙을 찾았다.  
+  
+이를 활용해서 X값으로 주어진 값에 M값을 더하고 %M, %N값과 같아지는 지 확인하려고 했는데, X값이 증가하는 한계선을 어디로 지정해줘야 할 지 몰랐다.  
+그래서 일단 순차적으로 증가하고 XY가 마지막 햇수랑 같아질 때로 뒀는데 역시나 시간초과가 발생했다.  
+  
+한계선의 규칙이 뭘까 쭉 생각해보다가 60이 10과 12의 한계선인 것을 보고 최소공배수가 마지막 햇수임을 짐작했다.  
+%M과 %N이 주어진 값과 같아지기 위해서는 최소공배수여야 가능해지기 때문이다.  
+그래서 이번에는 M값만큼 계속해서 증가시키면서, %M %N값과 비교해 한계선이 넘으면 -1을 출력하도록 했다.  
+  
+> ### 코드
+
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		
+		int nTestCase = sc.nextInt();
+		
+		for(int i = 0; i < nTestCase; i++) {
+			int[] input = new int[4];
+			for(int j = 0; j < 4; j++) {
+				input[j] = sc.nextInt();
+			}
+			
+			int nCurrent = input[2];
+			int nMax = lcm(input[0], input[1]);
+			
+			while(true) {
+				int nX = nCurrent % input[0];
+				int nY = nCurrent % input[1];
+				
+				if(nX == 0) nX = input[0];
+				if(nY == 0) nY = input[1];
+				
+				if(nX == input[2] && nY == input[3]) break;
+				
+				nCurrent += input[0];
+				
+				if(nCurrent > nMax) {
+					nCurrent = -1;
+					break;
+				}
+				
+			}
+			
+			System.out.println(nCurrent);
+		}
+	}
+	//최소공배수
+	public static int lcm(int a, int b) {
+		return a * b/gcd(a,b);
+	}
+	//최대공약수
+	public static int gcd(int a, int b) {
+		int mod = a % b;
+		while(mod > 0) {
+			a = b;
+			b = mod;
+			mod = a % b;
+		}
+		return b;
+	}
+}
+```
