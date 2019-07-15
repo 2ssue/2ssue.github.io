@@ -4,7 +4,7 @@ date:   2019-02-24 14:12:24 +0900
 categories: VCS
 tags: git
 toc: true
-last_modified_at: 2019-07-15 17:06:24 +0900
+last_modified_at: 2019-07-15 23:50:24 +0900
 ---
 
 ### git init
@@ -64,7 +64,7 @@ git push -u {name} master
 ```
 name 저장소에 추가된 내용을 master에 저장
 
-### git branch
+### git branchzz
 
 ```
 git branch {name}
