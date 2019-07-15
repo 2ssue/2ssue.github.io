@@ -1,9 +1,9 @@
 ---
 title:  "TIL_190715"
 date:   2019-07-15 18:41:24 +0900
-categories: VCS
-tags: git
-last_modified_at: 2019-07-15 18:41:24 +0900
+categories: TIL
+tags: daily
+last_modified_at: 2019-07-16 01:11:24 +0900
 ---
 
 * fork해서 PR(Pull Request) 보내기  
@@ -12,6 +12,7 @@ last_modified_at: 2019-07-15 18:41:24 +0900
   3. 기능 개발 후 commit 하기
   4. 내 원격 저장소에 push하기
   5. Github Web에서 Pull Request 보내기    
+
   주로 OpenSource에 Contribute할 때 많이 사용  
   [Git 명령어 및 Git 기능 설명, git clone](https://2ssue.github.io/vcs/git-command/) 참고
 
