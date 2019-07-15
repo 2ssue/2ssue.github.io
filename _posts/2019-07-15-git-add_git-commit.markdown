@@ -3,7 +3,7 @@ title:  "git add와 git commit시 Git의 내부 동작"
 date:   2019-07-15 22:33:24 +0900
 categories: VCS
 tags: git
-last_modified_at: 2019-07-16 00:52:24 +0900
+last_modified_at: 2019-07-16 00:56:24 +0900
 ---
 
 *이 포스트는 생활 코딩의 [지옥에서 온 Git](https://opentutorials.org/course/2708) 강의를 참고하였습니다.*
@@ -16,14 +16,15 @@ git add 명령은 git에 현재 commit된 버전과 다르게 변경된 파일�
 여기서 변화가 생기는 파일들은 `objects` 파일과 `index` 파일이다.    
 `objects` 파일은 파일의 내용을 가지고 있고, `index` 파일은 objects 파일 링크의 list(파일 이름 포함)를 가지고 있다.  
   
-만약 `a`라는 내용을 가진 파일 `f1.txt`를 add하면 `a`를 저장하고 있는 `objects` 파일(링크: abcd)이 생성되고, 파일을 뜻하는 수식어 `blob`, objects 링크 `abcd`, 파일 이름 `f1.txt`를 담고 있는 `index` 파일이 생성(정확히는 변경)된다.  
+만약 `a`라는 내용을 가진 파일 `f1.txt`를 add한다고 하자.  
+그러면 'a'를 저장하고 있는 `objects` 파일(링크: abcd)이 생성되고, 파일을 뜻하는 수식어 'blob', objects 링크 'abcd', 파일 이름 'f1.txt'를 담고 있는 `index` 파일이 생성(정확히는 변경)된다.  
   
 이 때의 `index` 파일 내용은 아래와 같다.  
 ``` 
 blob abcd f1.txt
 ```
 
-이후에 `b`라는 내용을 가진 파일 `f2.txt`를 추가로 add하면 `b`를 저장하고 있는 `objects` 파일(링크: efgh)과 위 정보가 `index`파일에 추가된다.  
+이후에 `b`라는 내용을 가진 파일 `f2.txt`를 추가로 add하면 'b'를 저장하고 있는 `objects` 파일(링크: efgh)과 위 정보가 `index`파일에 추가된다.  
   
 이 때 `index` 파일은 아래와 같이 변경된다.  
 ```
@@ -31,7 +32,7 @@ blob efgh f2.txt
 blob abcd f1.txt
 ```
   
-이 이후에 만약 `f2.txt`와 똑같은 `b`라는 내용을 가진 `f3.txt`가 add 되면 조금 다른 동작을 하게 된다. 원래라면 새로운 `objects` 파일이 생성 되어야 하지만, `b`를 저장하고 있는 `objects`가 이미 있기 때문에 새로운 `objects`는 생기지 않는다. 하지만 새로운 파일이 생겼기 때문에 `index` 파일에 이 파일에 대한 정보는 추가된다.  
+이 이후에 만약 `f2.txt`와 똑같은 `b`라는 내용을 가진 `f3.txt`가 add 되면 조금 다른 동작을 하게 된다. 원래라면 새로운 `objects` 파일이 생성 되어야 하지만, 'b'를 저장하고 있는 `objects`가 이미 있기 때문에 새로운 `objects`는 생기지 않는다. 하지만 새로운 파일이 생겼기 때문에 `index` 파일에 이 파일에 대한 정보는 추가된다.  
   
 따라서 새로운 `objects`는 추가되지 않지만 `index` 파일은 아래와 같이 변경된다.  
 ```
