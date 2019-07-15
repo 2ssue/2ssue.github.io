@@ -1,8 +1,8 @@
 ---
 title:  "[이것이 자바다] 시작"
 date:   2019-03-01 13:02:24 +0900
-categories: Programming_Language
-tags: java
+categories: Java
+tags: this_is_java
 classes: wide
 ---
 
