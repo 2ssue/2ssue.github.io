@@ -14,11 +14,11 @@ last_modified_at: 2019-07-16 01:11:24 +0900
   5. Github Web에서 Pull Request 보내기    
 
   주로 OpenSource에 Contribute할 때 많이 사용  
-  [Git 명령어 및 Git 기능 설명, git clone](https://2ssue.github.io/vcs/git-command/) 참고
+  [Git 명령어 및 Git 기능 설명, git clone](https://2ssue.github.io/vcs/git-command/#clone) 참고
 
 * git branch란? 
   * 여러 사람들이 동시에 개발을 하더라도 충돌이 생기지 않도록 하는 기능
-  * [Git 명령어 및 Git 기능 설명, git branch](https://2ssue.github.io/vcs/git-command/) 참고
+  * [Git 명령어 및 Git 기능 설명, git branch](https://2ssue.github.io/vcs/git-command/#branch) 참고
 
 * git workflow란?  
   * [Git을 이용한 협업 워크플로우](https://lhy.kr/git-workflow) 참고  
