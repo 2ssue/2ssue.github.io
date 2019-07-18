@@ -1,0 +1,49 @@
+---
+title:  "TIL_190718"
+date:   2019-07-18 18:47:24 +0900
+categories: TIL
+tags: daily
+last_modified_at: 2019-07-18 18:47:24 +0900
+---
+
+* javascript `module.exports` 기능
+  * 모듈
+    * 관련된 코드를 하나의 코드 단위로 캡슐화 하는 것.
+    * 이를 이용해 외부에서 함수를 사용하도록 할 수 있음.
+  * 아래와 같이 사용
+    ```javascript
+    module.exports = {
+        function1,
+        function2
+    }
+
+    //other file
+    const {
+        function1,
+        function2
+    } = require('{$filename}');
+    ```
+  * 비슷한 기능으로 `exports`를 사용할 수 있다. 이는 아래와 같이 사용하고 위와 같은 효과를 얻는다.
+    ```javascript
+    exports.function1 = function(){...}
+    exports.function2 = function(){...}
+    ```
+
+* javascript 추가 고차원 함수
+  * `every()`
+    * 사용자 설정 함수에서 명시한 조건이 모두 만족하는 지 확인하는 함수
+  * `some()`
+    * 사용자 설정 함수를 통해 배열에서 `true`를 찾을 때까지 순환하는 함수
+
+* 함수형 프로그래밍
+  * 식이나 선언으로 수행되는 선언형 프로그래밍 방식. 순수 함수를 사용해 함수 자체의 목적만 달성할 수 있도록 작성하는 방식이다.
+  * 반대의 개념으로 명령형 프로그래밍이 있다. 
+
+* Prototype
+  * javascript에는 클래스 개념이 없기 때문에 이용하는 방식. 생성한 객체의 모체가 되는 원형이라고 할 수 있다. 
+  * prototype에 저장한 속성(함수, 변수 등)은 생성자를 통해 객체가 생성될 때 그 객체에 연결된다. 
+  * [참고](http://www.nextree.co.kr/p7323/)
+
+___
+
+그 외 컴퓨터 구조의 논리 연산과 관련해 배웠으나 간단하여 따로 정리하지 않는다 :)
