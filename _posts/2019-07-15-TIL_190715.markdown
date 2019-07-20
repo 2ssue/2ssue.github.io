@@ -2,7 +2,7 @@
 title:  "TIL_190715"
 date:   2019-07-15 18:41:24 +0900
 categories: TIL
-tags: daily
+tags: daily boostCamp
 last_modified_at: 2019-07-16 01:11:24 +0900
 ---
 

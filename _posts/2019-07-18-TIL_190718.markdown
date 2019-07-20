@@ -2,7 +2,7 @@
 title:  "TIL_190718"
 date:   2019-07-18 18:47:24 +0900
 categories: TIL
-tags: daily
+tags: daily boostCamp
 last_modified_at: 2019-07-18 18:47:24 +0900
 ---
 
@@ -39,7 +39,7 @@ last_modified_at: 2019-07-18 18:47:24 +0900
   * 식이나 선언으로 수행되는 선언형 프로그래밍 방식. 순수 함수를 사용해 함수 자체의 목적만 달성할 수 있도록 작성하는 방식이다.
   * 반대의 개념으로 명령형 프로그래밍이 있다. 
 
-* Prototype
+* javascript Prototype
   * javascript에는 클래스 개념이 없기 때문에 이용하는 방식. 생성한 객체의 모체가 되는 원형이라고 할 수 있다. 
   * prototype에 저장한 속성(함수, 변수 등)은 생성자를 통해 객체가 생성될 때 그 객체에 연결된다. 
   * [참고](http://www.nextree.co.kr/p7323/)
