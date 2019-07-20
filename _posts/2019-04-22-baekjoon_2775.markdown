@@ -2,7 +2,7 @@
 title:  "[백준] 부녀회장이 될테야_JAVA"
 date:   2019-04-22 16:42:24 +0900
 categories: algorithm
-tags: baekjoon
+tags: baekjoon java
 classes: wide
 ---
 

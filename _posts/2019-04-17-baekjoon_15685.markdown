@@ -2,8 +2,8 @@
 title:  "[백준] 드래곤 커브_JAVA"
 date:   2019-04-17 18:25:24 +0900
 categories: algorithm
-tags: baekjoon
-classes: wide
+tags: baekjoon java
+classes: wide 
 ---
 
 [백준_드래곤 커브 문제](https://www.acmicpc.net/problem/15685)  

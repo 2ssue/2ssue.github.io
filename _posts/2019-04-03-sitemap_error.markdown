@@ -1,8 +1,8 @@
 ---
 title: "sitemap.xml EntityRef: expecfing ';' 에러"
 date:   2019-04-03 22:35:24 +0900
-categories: Error
-tags: jekyll
+categories: Programming
+tags: jekyll Error
 classes: wide
 ---
 

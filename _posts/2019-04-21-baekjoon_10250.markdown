@@ -2,7 +2,7 @@
 title:  "[백준] ACM 호텔_JAVA"
 date:   2019-04-21 21:31:24 +0900
 categories: algorithm
-tags: baekjoon
+tags: baekjoon java
 classes: wide
 ---
 

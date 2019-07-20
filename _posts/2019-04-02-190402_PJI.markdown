@@ -1,8 +1,8 @@
 ---
 title: "정규화, 트랜잭션"
 date:   2019-04-02 22:38:24 +0900
-categories: Database
-tags: define
+categories: Base
+tags: database
 classes: wide
 ---
 

@@ -1,8 +1,8 @@
 ---
 title:  "git revert와 reset의 차이"
 date:   2019-03-29 20:58:24 +0900
-categories: VCS
-tags: git
+categories: Base
+tags: vcs git
 classes: wide
 ---
 

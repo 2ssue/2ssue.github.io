@@ -2,7 +2,7 @@
 title:  "[프로그래머스] 프린터"
 date:   2019-03-02 18:23:24 +0900
 categories: algorithm
-tags: programmers
+tags: programmers java
 classes: wide
 ---
 

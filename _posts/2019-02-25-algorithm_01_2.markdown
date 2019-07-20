@@ -2,7 +2,7 @@
 title:  "[Do it! 알고리즘] 01-2 반복"
 date:   2019-02-25 20:40:24 +0900
 categories: algorithm
-tags: doit
+tags: java doit
 classes: wide
 ---
 

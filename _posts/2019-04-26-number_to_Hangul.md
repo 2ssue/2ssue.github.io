@@ -2,7 +2,7 @@
 title:  "숫자를 문자로 바꾸기_JAVA"
 date:   2019-04-26 21:30:24 +0900
 categories: algorithm
-tags: others
+tags: java
 classes: wide
 ---
 

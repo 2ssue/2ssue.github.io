@@ -1,8 +1,8 @@
 ---
 title: "GET과 POST의 차이, NAT란?"
 date:   2019-04-01 21:46:24 +0900
-categories: Network
-tags: define
+categories: Base
+tags: Network
 classes: wide
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: "190405_Prepare Job Interview"
+title: "윈도우와 리눅스의 차이, 프로스와 스레드의 차이, 멀티 스레딩이란?"
 date:   2019-04-05 21:43:24 +0900
-categories: Programming_Knowledge
-tags: interview
+categories: Base
+tags: os
 classes: wide
 ---
 

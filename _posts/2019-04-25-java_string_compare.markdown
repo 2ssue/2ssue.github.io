@@ -1,7 +1,7 @@
 ---
 title: "[Java] 문자열 비교 함수"
 date:   2019-04-25 01:08:24 +0900
-categories: Programming_Knowledge
+categories: Programming
 tags: java
 classes: wide
 ---

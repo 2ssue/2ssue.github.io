@@ -1,8 +1,8 @@
 ---
 title: "jekyll 블로그 커스터마이징하기(3)"
 date:   2019-04-04 15:27:24 +0900
-categories: blog
-tags: jekyll
+categories: Blog
+tags: jekyll Web
 classes: wide
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "객체 지향 프로그래밍과 절차 지향 프로그래밍의 차이"
 date:   2019-04-09 23:03:24 +0900
-categories: Programming_Knowledge
-tags: interview
+categories: Base
+tags: java programming OOP
 classes: wide
 ---
 

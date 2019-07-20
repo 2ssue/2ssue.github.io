@@ -2,7 +2,7 @@
 title:  "[백준] 방 번호_JAVA"
 date:   2019-04-22 17:42:24 +0900
 categories: algorithm
-tags: baekjoon
+tags: baekjoon java
 classes: wide
 ---
 

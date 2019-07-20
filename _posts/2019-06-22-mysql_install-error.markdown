@@ -1,8 +1,8 @@
 ---
 title: "MySQL msi installer 설치 오류"
 date:   2019-06-22 16:34:24 +0900
-categories: Error
-tags: database
+categories: Programming
+tags: database Error
 classes: wide
 ---
 

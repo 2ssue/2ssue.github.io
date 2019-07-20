@@ -1,8 +1,8 @@
 ---
 title:  "Windows jekyll 블로그 테마 적용하기"
 date:   2019-03-01 00:33:24 +0900
-categories:  blog
-tags: jekyll
+categories:  Blog
+tags: jekyll Web
 classes: wide
 ---
 

@@ -2,7 +2,7 @@
 title:  "[백준] Fly me to the Alpha Centauri_JAVA"
 date:   2019-04-21 19:09:24 +0900
 categories: algorithm
-tags: baekjoon
+tags: baekjoon java
 classes: wide
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "IT 기술 면접 질문 대비"
 date:   2019-03-27 00:50:24 +0900
-categories: Collector
+categories: Others
 tags: interview
 toc: true
 ---

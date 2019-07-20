@@ -1,14 +1,14 @@
 ---
 title:  "마크다운(Markdown) 작성법"
 date:   2019-02-24 17:29:24 +0900
-categories: Web
-tags: markdown
+categories: Base
+tags: git markdown
 classes: wide
 ---  
 
 # Markdown
 
-> [마크다운(Markdown)](https://ko.wikipedia.org/wiki/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4)은 일반 텍스트 문서의 양식을 편집하는 문법으로, 흔히 git repo의 README.md 파일을 통해 자주 볼 수 있다. 주로 온라인 문서, 일반 텍스트 편집기로 문서를 편집할 때 사용한다. 마크다운을 이용해 작성된 문서는 쉽게 HTML과 같은 문서 형태로 변환이 가능하다.
+> [마크다운(Markdown)](https://ko.wikipedia.org/wiki/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4)은 일반 텍스트 문서의 양식을 편집하는 문법으로, 흔히 git repo의 README.md 파일을 통해 자주 볼 수 있다. 주로 온라인 문서, 일반 텍스트 편집기로 문서를 편집할 때 사용한다. 마크다운을 이용해 작성된 문서는 쉽게 HTML과 같은 문서 형태로 변환이 가능하다. git wiki 문서 작성, README 파일 작성 등에 주로 쓰인다.
 
 ## 제목(Header)
 

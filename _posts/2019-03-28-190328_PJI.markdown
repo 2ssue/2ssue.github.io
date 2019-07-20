@@ -1,8 +1,8 @@
 ---
 title: "DNS 공격"
 date:   2019-03-28 00:51:24 +0900
-categories: Security
-tags: define
+categories: Base
+tags: Security
 classes: wide
 ---
   

@@ -1,8 +1,8 @@
 ---
 title: "인덱스란"
 date:   2019-04-03 21:43:24 +0900
-categories: Database
-tags: define
+categories: Base
+tags: database
 classes: wide
 ---
 

@@ -1,8 +1,8 @@
 ---
 title:  "git add와 git commit시 Git의 내부 동작"
 date:   2019-07-15 22:33:24 +0900
-categories: VCS
-tags: git
+categories: Base
+tags: git vcs
 last_modified_at: 2019-07-16 01:00:24 +0900
 ---
 

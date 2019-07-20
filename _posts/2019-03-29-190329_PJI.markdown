@@ -1,8 +1,8 @@
 ---
 title: "OSI 7계층, TCP와 UDP"
 date:   2019-03-29 23:51:24 +0900
-categories: Network
-tags: define
+categories: Base
+tags: Network
 classes: wide
 ---
 
