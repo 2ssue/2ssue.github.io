@@ -5,6 +5,8 @@ categories: Base
 tags: javascript
 ---
 
+이 포스트는 생활코딩의 [javascript 강의](https://opentutorials.org/course/743/6475)를 참고하여 작성하였습니다.
+
 Javascript에는 다른 객체 지향 언어처럼 클래스의 개념이 없다. 대신 그와 비슷한 개념으로 prototype이 있다. prototype은 마치 클래스처럼 사용할 수 있는데, prototype에 값들을 지정해주면 그 값을 마치 다른 언어에서 클래스 안에 있는 값을 사용하는 것처럼 참조하여 사용할 수 있다.  
   
 이 prototype을 이용해서 기본 내장 객체인 `Object` `Function` `Array` 등에 새로운 함수를 정의해 확장시켜서 사용할 수도 있다.  
