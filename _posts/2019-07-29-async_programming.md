@@ -1,5 +1,5 @@
 ---
-title: "Javascript) 비동기 프로그래밍_콜백함수의 동작"
+title: "Javascript) 비동기 프로그래밍_태스크큐와 이벤트루프"
 date:   2019-07-29 11:37:24 +0900
 categories: Base
 tags: javascript 
