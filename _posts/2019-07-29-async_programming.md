@@ -3,7 +3,7 @@ title: "Javascript) 비동기 프로그래밍_태스크큐와 이벤트루프"
 date:   2019-07-29 11:37:24 +0900
 categories: Base
 tags: javascript 
-last-modified: 2019-07-31 18:28:24 +0900
+last-modified-at: 2019-07-31 18:28:24 +0900
 ---
 
 이 글은 JSConf의 [What the heck is the event loop anyway? 영상](https://www.youtube.com/watch?v=8aGhZQkoFbQ)을 참고하여 작성하였습니다.  
