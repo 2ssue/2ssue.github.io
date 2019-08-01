@@ -50,7 +50,7 @@ one(); //three, two, one
 
 이러한 과정을 막기 위해 있는 것이 `Task Queue`와 `Event Loop`이다. 비동기 함수를 실행시켰을 때, CallStack은 이 부분을 바로 실행으로 넘기지 않고 `Web API`와 같은 백그라운드로 작업을 넘겨준다.  
   
-{: .notice--success}예를 들어 SetTimeout을 실행했다면 CallStack은 비동기 함수임을 감지하고 백그라운드로 작업을 넘긴다. 작업을 받은 백그라운드는 setTimeout을 지정된 시간만큼 실행시키고, 그 안에 있던 콜백 함수를 `Task Queue`로 넘겨주는 것이다.   
+<div class="notice--success">예를 들어 SetTimeout을 실행했다면 CallStack은 비동기 함수임을 감지하고 백그라운드로 작업을 넘긴다. 작업을 받은 백그라운드는 setTimeout을 지정된 시간만큼 실행시키고, 그 안에 있던 콜백 함수를 `Task Queue`로 넘겨주는 것이다.<div>
   
 이렇게 백그라운드에서 실행을 마치면 `Task Queue`로 이 과정에 대한 콜백 함수가 넘어가게 되고, `CallStack`이 모두 비게되면 `Task Queue`에 저장되어 있던 콜백 함수가 `CallStack`으로 올라가 실행되게 된다.  
   
