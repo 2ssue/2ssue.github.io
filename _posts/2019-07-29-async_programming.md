@@ -3,7 +3,7 @@ title: "Javascript) 비동기 프로그래밍_태스크큐와 이벤트루프"
 date:   2019-07-29 11:37:24 +0900
 categories: Base
 tags: javascript 
-last-modified: 2019-08-01 17:30:24 +0900
+last_modified_at: 2019-08-01 17:30:24 +0900
 ---
 
 이 글은 JSConf의 [What the heck is the event loop anyway? 영상](https://www.youtube.com/watch?v=8aGhZQkoFbQ)을 참고하여 작성하였습니다.  
@@ -48,15 +48,17 @@ one(); //three, two, one
   
 ### Task Queue(Event Queue), Event Loop 
 
-이러한 과정을 막기 위해 있는 것이 `Task Queue`와 `Event Loop`이다. 비동기 함수를 실행시켰을 때, Call Stack은 이 부분을 바로 실행으로 넘기지 않고 `Web API`와 같은 백그라운드로 작업을 넘겨준다.  
+이러한 과정을 막기 위해 있는 것이 **Task Queue**와 **Event Loop**이다. 비동기 함수를 실행시켰을 때, Call Stack은 이 부분을 바로 실행으로 넘기지 않고 **Web API**와 같은 백그라운드로 작업을 넘겨준다.  
   
-<div class="notice--success">예를 들어 SetTimeout을 실행했다면 Call Stack은 비동기 함수임을 감지하고 백그라운드로 작업을 넘긴다. 작업을 받은 백그라운드는 setTimeout을 지정된 시간만큼 실행시키고, 그 안에 있던 콜백 함수를 `Task Queue`로 넘겨주는 것이다.</div>
+<div class="notice--success">
+예를 들어 `SetTimeout()`을 실행했다면 Call Stack은 비동기 함수임을 감지하고 백그라운드로 작업을 넘긴다. 작업을 받은 백그라운드는 `setTimeout()`을 지정된 시간만큼 실행시키고, 그 안에 있던 콜백 함수를 Task Queue로 넘겨주는 것이다.
+</div>
   
-이렇게 백그라운드에서 실행을 마치면 `Task Queue`로 이 과정에 대한 콜백 함수가 넘어가게 되고, `Call Stack`이 모두 비게되면 `Task Queue`에 저장되어 있던 콜백 함수가 `Call Stack`으로 올라가 실행되게 된다.  
+이렇게 백그라운드에서 실행을 마치면 Task Queue로 이 과정에 대한 콜백 함수가 넘어가게 되고, Call Stack이 모두 비게되면 Task Queue에 저장되어 있던 콜백 함수가 Call Stack으로 올라가 실행되게 된다.  
   
-그런데 `Task Queue`에 있던 작업은 스스로 `Call Stack`이 비었음을 알고 올라가는 것이 아니다. 이 때 활용되는 것이 `Event Loop`인데 `Task Queue`에 작업이 있을 때 대기하고 있다가, `Call Stack`이 빈 것을 확인하면 `Task Queue`의 작업을 하나씩 `Call Stack`으로 올려주는 것이다.  
+그런데 Task Queue에 있던 작업은 스스로 Call Stack이 비었음을 알고 올라가는 것이 아니다. 이 때 활용되는 것이 Event Loop인데 Task Queue에 작업이 있을 때 대기하고 있다가, Call Stack이 빈 것을 확인하면 Task Queue의 작업을 하나씩 Call Stack으로 올려주는 것이다.  
 
-따라서 비동기 함수를 실행시키게 되면 `Call Stack`에서 실행되지 않고 바로 `Task Queue`로 넘어간다. 이후 동작하는 동기 함수는 `Call Stack`을 통해 바로 실행되기 때문에, 이 동기 함수들이 모두 실행된 뒤에 `Task Queue`에 있던 비동기 함수가 `Call Stack`으로 올라오게 되어 동기 함수가 비동기 함수보다 먼저 실행되는 것이다.  
+따라서 비동기 함수를 실행시키게 되면 Call Stack에서 실행되지 않고 바로 Task Queue로 넘어간다. 이후 동작하는 동기 함수는 Call Stack을 통해 바로 실행되기 때문에, 이 동기 함수들이 모두 실행된 뒤에 Task Queue에 있던 비동기 함수가 Call Stack으로 올라오게 되어 동기 함수가 비동기 함수보다 먼저 실행되는 것이다.  
 
 ```javascript
 function foo(){
