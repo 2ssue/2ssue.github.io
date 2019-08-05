@@ -2,7 +2,7 @@
 title: "XSS란, CSRF란"
 date:   2019-04-07 17:03:24 +0900
 categories: Base
-tags: interview Security
+tags: interview security
 classes: wide
 ---
 

@@ -2,7 +2,7 @@
 title:  "HTML의 태그"
 date:   2019-03-04 15:02:24 +0900
 categories: Programming
-tags: HTML Web
+tags: html web
 toc: true
 ---
 

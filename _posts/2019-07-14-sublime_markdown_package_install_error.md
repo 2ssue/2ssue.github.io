@@ -2,7 +2,7 @@
 title:  "[Sublime Text3] Markdown plugin 설치 시 Error"
 date:   2019-07-14 22:37:24 +0900
 categories: TMI
-tags: editor Error
+tags: editor error
 last_modified_at: 2019-07-14 22:37:24 +0900
 ---
 

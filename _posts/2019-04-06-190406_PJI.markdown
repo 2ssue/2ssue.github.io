@@ -2,7 +2,7 @@
 title: "Buffer Overflow, SQL Injection"
 date:   2019-04-06 21:43:24 +0900
 categories: Base
-tags: interview Security
+tags: interview security
 classes: wide
 ---
 

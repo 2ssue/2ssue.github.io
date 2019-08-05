@@ -2,7 +2,7 @@
 title:  "Spring MySQL 연동 오류"
 date:   2019-07-01 16:46:24 +0900
 categories: Programming
-tags: java web database Error
+tags: java web database error
 classes: wide
 ---
 

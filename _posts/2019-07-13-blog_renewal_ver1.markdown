@@ -2,7 +2,7 @@
 title: "jekyll 블로그 커스터마이징하기(6)_1차 리뉴얼!"
 date: 2019-07-13 18:19:24 +0900
 categories: Blog
-tags: jekyll Web
+tags: jekyll web
 toc: true
 ---
 

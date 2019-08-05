@@ -2,7 +2,7 @@
 title:  "HTML 문서의 기본 구조"
 date:   2019-02-26 00:11:24 +0900
 categories: Programming
-tags: HTML Web
+tags: html web
 toc: true
 ---
 

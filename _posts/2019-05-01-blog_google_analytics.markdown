@@ -2,7 +2,7 @@
 title: "jekyll 블로그에 google analytics 적용하기"
 date:   2019-05-01 21:46:24 +0900
 categories: Blog
-tags: jekyll Web
+tags: jekyll web
 classes: wide
 ---
 

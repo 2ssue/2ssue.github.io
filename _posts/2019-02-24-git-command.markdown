@@ -2,7 +2,7 @@
 title:  "Git 명령어 및 Git 기능 설명"
 date:   2019-02-24 14:12:24 +0900
 categories: Base
-tags: VCS git
+tags: vcs git
 toc: true
 last_modified_at: 2019-07-15 23:50:24 +0900
 ---

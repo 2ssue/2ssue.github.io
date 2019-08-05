@@ -2,7 +2,7 @@
 title: "The Servlet name already exists 문제"
 date:   2019-06-18 12:06:24 +0900
 categories: Programming
-tags: Web Error
+tags: web error
 classes: wide
 ---
 
