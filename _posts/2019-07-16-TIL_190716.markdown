@@ -2,76 +2,77 @@
 title:  "TIL_190716"
 date:   2019-07-16 23:13:24 +0900
 categories: TIL
-tags: daily boostCamp
+tags: daily boostCamp git javascript
 last_modified_at: 2019-07-16 23:13:24 +0900
 ---
 
-* git branch 확인의 중요성
-	- git master에 push했다가 큰일날 뻔 했다.
-	- fork된 repository가 아니었다면 최상위 폴더에 내 코드 덮어질뻔..
-	- git branch를 꼭 확인하고 push 하는 습관을 가지자!
+### git branch 확인의 중요성
+- git master에 push했다가 큰일날 뻔 했다.
+- fork된 repository가 아니었다면 최상위 폴더에 내 코드 덮어질뻔..
+- git branch를 꼭 확인하고 push 하는 습관을 가지자!
   
-* git workflow란?  
-  * [Git을 이용한 협업 워크플로우](https://lhy.kr/git-workflow) 참고  
-  * Git Workflow의 종류
-      - Centralized Workflow
-          + 단일 중앙 저장소를 사용해 master 브랜치 하나만 사용하는 방식.
-          + 팀원들은 중앙 저장소를 복제해 로컬 저장소를 만들고, 로컬 저장소에서 변경 내용을 커밋하고 중앙 저장소와 동기화하는 방식
-      - Feature Branch Workflow
-          + 기능별 브랜치를 만들어 작업하는 방식.
-          + master 브랜치는 항상 버그 프리 상태로 유지하고, 병합 시 권한을 가진 사용자가 PR을 날릴 수 있는 방식
-      - Gitflow Workflow
-          + 코드 릴리즈를 중심으로 엄격한 기능별 브랜칭 모델.
-          + Feature Branch Workflow 보다는 복잡하지만, 대형 프로젝트에 적용하기 좋은 방식
-      - Forking Workflow
-          + 하나의 중앙 저장소가 아닌 개개인마다 서로 다른 원격 저장소를 운영하는 방식.
-          + 모든 프로젝트 참여자가 개인 로컬 저장소와 Public 원격 저장소, 두개의 Git 저장소를 가지는 방식이다. 
-  * 왜 이런 방법을 사용하는 것일까?   
-      - 프로젝트를 버전별로 관리할 수 있음
-      - 개발 작업 히스토리를 커밋 로그를 활용해 한눈에 보기 쉬움
-      - 현장에서 버그가 발생했을 때 대응이 쉬움. 개발 중인 기능에 영향을 주지 않고 HotFix 브랜치를 따 긴급 대응이 용이함
-      - PR 권한을 따로 설정해 Git이 망가지는 위험성을 줄일 수 있음
+### git workflow란?  
+[Git을 이용한 협업 워크플로우](https://lhy.kr/git-workflow) 참고  
+#### Git Workflow의 종류
+* Centralized Workflow
+  * 단일 중앙 저장소를 사용해 master 브랜치 하나만 사용하는 방식.
+  * 팀원들은 중앙 저장소를 복제해 로컬 저장소를 만들고, 로컬 저장소에서 변경 내용을 커밋하고 중앙 저장소와 동기화하는 방식
+* Feature Branch Workflow
+  * 기능별 브랜치를 만들어 작업하는 방식.
+  * master 브랜치는 항상 버그 프리 상태로 유지하고, 병합 시 권한을 가진 사용자가 PR을 날릴 수 있는 방식
+* Gitflow Workflow
+  * 코드 릴리즈를 중심으로 엄격한 기능별 브랜칭 모델.
+  * Feature Branch Workflow 보다는 복잡하지만, 대형 프로젝트에 적용하기 좋은 방식
+* Forking Workflow
+  * 하나의 중앙 저장소가 아닌 개개인마다 서로 다른 원격 저장소를 운영하는 방식.
+  * 모든 프로젝트 참여자가 개인 로컬 저장소와 Public 원격 저장소, 두개의 Git 저장소를 가지는 방식이다. 
+    
+#### 왜 이런 방법을 사용하는 것일까?   
+* 프로젝트를 버전별로 관리할 수 있음
+* 개발 작업 히스토리를 커밋 로그를 활용해 한눈에 보기 쉬움
+* 현장에서 버그가 발생했을 때 대응이 쉬움. 개발 중인 기능에 영향을 주지 않고 HotFix 브랜치를 따 긴급 대응이 용이함
+* PR 권한을 따로 설정해 Git이 망가지는 위험성을 줄일 수 있음
   
-* Javascript의 arguments, rest parameter
-    - Java에서는 오버로딩을 통해 함수의 매개변수 인자 개수를 조절할 수 있다면, javascript에서는 arguments와 rest parameter를 통해 인자 개수를 자유롭게 받을 수 있다.
-    - arguments는 인자로 들어온 모든 값을 저장하는 변수이다.
-    - rest parameter는 ES6 문법으로, 매개변수가 지정된 값 이외의 인자가 저장되는 변수이다. 
-        + 예를 들어, function(a,b, ...rest_param)이 있을 때 function(1,2,3,4,5)가 호출되면, rest_param에는 1,2를 제외한 3,4,5가 저장된다. 
+### Javascript의 arguments, rest parameter
+* Java에서는 오버로딩을 통해 함수의 매개변수 인자 개수를 조절할 수 있다면, javascript에서는 arguments와 rest parameter를 통해 인자 개수를 자유롭게 받을 수 있다.
+* arguments는 인자로 들어온 모든 값을 저장하는 변수이다.
+* rest parameter는 ES6 문법으로, 매개변수가 지정된 값 이외의 인자가 저장되는 변수이다. 
+  * 예를 들어, function(a,b, ...rest_param)이 있을 때 function(1,2,3,4,5)가 호출되면, rest_param에는 1,2를 제외한 3,4,5가 저장된다. 
   
-* Javascript의 변수별 scope
-    - javascript에서 변수를 선언할 때는 var만 사용하는 줄 알았는데, 아니었다.
-    - javascript의 변수 선언 방식에는 const, let, var이 있다. 
-    - const
-        + 블럭 단위(대괄호)로 scope를 가진다. 
-        + 재선언과 재할당이 불가능하다.
-    - let
-        + 블럭 단위(대괄호)로 scope를 가진다.
-        + 재선언은 불가능하나 재할당은 가능하다.
-    - var
-        + 전역 공간에 쓸 경우 전역 변수가 되고, 함수 안에 사용할 경우 함수 단위의 변수가 된다.  
-        + 주의: for문에서 var로 for문 변수를 선언할 경우, for문이 끝나도 변수는 사라지지 않는다.
-    - 그 외
-        + 변수 선언에 아무것도 붙이지 않을 경우 전역 변수로 선언된다. 
-    - 변수 선언 전략
-        + const를 우선으로 사용하고, 재할당을 할 경우 let, var의 사용은 되도록이면 지양한다.  
+### Javascript의 변수별 scope
+* javascript에서 변수를 선언할 때는 var만 사용하는 줄 알았는데, 아니었다.
+* javascript의 변수 선언 방식에는 const, let, var이 있다. 
+* const
+  * 블럭 단위(대괄호)로 scope를 가진다. 
+  * 재선언과 재할당이 불가능하다.
+* let
+  * 블럭 단위(대괄호)로 scope를 가진다.
+  * 재선언은 불가능하나 재할당은 가능하다.
+* var
+  * 전역 공간에 쓸 경우 전역 변수가 되고, 함수 안에 사용할 경우 함수 단위의 변수가 된다.  
+  * 주의: for문에서 var로 for문 변수를 선언할 경우, for문이 끝나도 변수는 사라지지 않는다.
+* 그 외
+  * 변수 선언에 아무것도 붙이지 않을 경우 전역 변수로 선언된다. 
+* 변수 선언 전략
+  * const를 우선으로 사용하고, 재할당을 할 경우 let, var의 사용은 되도록이면 지양한다.  
   
-* Javascript에서 변수의 타입을 체크하는 방법
-    - toString.call()
-        + 이 방법이 좀 더 정확함
-    - typeof {variable}
-        + 좀 더 유연한 수준의 타입 체크 방식
-  
-* Javascript 구조분해
-    - var [a,b]와 같이 생겼음
-    - ES6 문법 방식
-    - 구조분해를 이용해 다른 배열을 할당할 경우 유용하게 사용할 수 있음
-    - [MDN 문서](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) 참고
+### Javascript에서 변수의 타입을 체크하는 방법
+* toString.call()
+  * 이 방법이 좀 더 정확함
+* typeof {variable}
+  * 좀 더 유연한 수준의 타입 체크 방식
 
-  ```javascript
+### Javascript 구조분해
+* var [a,b]와 같이 생겼음
+* ES6 문법 방식
+* 구조분해를 이용해 다른 배열을 할당할 경우 유용하게 사용할 수 있음
+* [MDN 문서](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) 참고
+
+```javascript
   var foo = ["one", "two", "three"];
 
   var [one, two, three] = foo;
   console.log(one); //"one"
   console.log(two); //"two"
   console.log(three); //"three"
-  ```
+```

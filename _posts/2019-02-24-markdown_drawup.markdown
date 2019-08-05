@@ -183,3 +183,61 @@ ___
 ## 참고 
 
 추가로 필요한 정보는 [여기](https://mmistakes.github.io/minimal-mistakes/docs/utility-classes/)를 참고하면 된다.
+
+### 글자 강조 처리
+
+마크다운을 좀 더 예쁘게 해줄 문법을 찾았다. 문단 아래에 작성하면 아래와 같은 효과를 얻을 수 있다. 
+
+**글자 강조** 이 문장은 `{: .notice}` class 이다. 연한 회색이다.
+{: .notice}
+
+**글자 강조** 이 문장은 `{: .notice--primary}` class 이다. 진한 회색이다.
+{: .notice--primary}
+
+**글자 강조** 이 문장은 `{: .notice--info}` class 이다. 연한 파란색이다.
+{: .notice--info}
+
+**글자 강조** 이 문장은 `{: .notice--warning}` class 이다. 주황색이다.
+{: .notice--warning}
+
+**글자 강조** 이 문장은 `{: .notice--success}` class 이다. 초록색이다.
+{: .notice--success}
+
+**글자 강조** 이 문장은 `{: .notice--danger}` class 이다. 빨간색이다.
+{: .notice--danger}
+
+```
+statement
+{: .notice}
+```
+
+아래와 같이 입력하면 개행이 있는 문단에도 적용이 가능하다.
+
+{% capture notice-text %}
+You can also add the `.notice` class to a `<div>` element.
+
+* Bullet point 1
+* Bullet point 2
+{% endcapture %}
+
+<div class="notice--info">
+  <h4>Notice Headline:</h4>
+  {{ notice-text | markdownify }}
+</div>
+
+```html
+{.% capture notice-text %.} 
+You can also add the `.notice` class to a `<div>` element.
+
+* Bullet point 1
+* Bullet point 2
+{.% endcapture %.}
+ 
+<div class="notice--info">
+  <h4>Notice Headline:</h4>
+  {.{ notice-text | markdownify }.}
+</div>
+```
+
+이 코드를 이대로 작성하면 작동되지 않고, 각 대괄호`{` `}` 이후에 .을 없애서 작성해야한다.  
+jekyll이 이 문장을 코드로 인식해서 주석처리를 해도 표시가 되지않아서 이렇게 표시했다. 
