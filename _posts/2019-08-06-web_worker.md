@@ -9,7 +9,7 @@ tags: javascript boostCamp daily
   
 이런 상황을 위해서, 자바스크립트에는 `Web Worker`라는 것이 존재한다.  
   
-___
+### Web Worker
 
 Web Worker는 자바 스크립트를 멀티 스레딩처럼 계산할 수 있도록 도와주는데, 새로운 스레드 워커를 생성해 워커가 오래걸리는 작업을 담당하도록 한다.  
   
@@ -64,11 +64,11 @@ Web Worker는 자바 스크립트를 멀티 스레딩처럼 계산할 수 있도
 </script>
 ```
 
-이전 코드처럼 버튼을 누른 후에 메인 스레드에서 직접 계산하도록 하는 것이 아니라, Worker 객체를 생성해 postMessage()로 처리에 필요한 값을 넘겨서 Worker가 계산을 시작하도록 한다.  
+이전 코드처럼 버튼을 누른 후에 메인 스레드에서 직접 계산하는 것이 아니라, Worker 객체를 생성해 postMessage()로 값을 넘겨서 Worker가 계산을 시작하도록 신호를 보내는 것이다.  
   
-여기서 worker에 값을 넘겨주기 전에 `EvnetListener('message', {})`를 등록하는 것은, 이후에 worker에서 값을 보내준 뒤에 메인에서 그에 따른 처리를 하기 위해 추가되는 부분이다. `e.data`를 통해서 Worker의 결과값을 받아올 수 있다. 결과를 메인에 반영한 이후에는, Worker를 종료하는 명령어인 `terminate()`로 스레드를 종료시킬 수 있다.  
+여기서 worker에 값을 넘겨주기 전에 등록한 `EvnetListener('message', {})`는, 이후에 Worker에서 보낸 값에대한 처리를 위해 등록한 리스너이다. Worker에서 보낸 값은 `e.data`를 통해서 사용이 가능하다. Worker 스레드 동작이 끝나면, 스레드를 계속해서 살려두는 것은 낭비이기 때문에 Worker를 종료하는 명령어인 `terminate()`로 스레드를 종료시킨다.  
   
-하지만 위 코드에는 메인 스레드의 동작만 있을 뿐 Worker의 동작은 알 수 없다. Worker는 Worker를 사용하기 전과 비슷한 방식으로 사용하려면, 아래 코드와 같이 구현하여 사용할 수 있다.  
+하지만 위 코드에는 메인 스레드의 동작만 있을 뿐 Worker는 어떻게 동작하는지 알 수 없다. Worker는 어떻게 동작할까? 아래 코드를 살펴보자.  
   
 ```javascript
 function sleep(delay){
@@ -87,9 +87,9 @@ onmessage = function(e){
 Worker도 메인 스레드와 동일하게 `self.addEventListener`를 이용해 사용할 수 있지만, 나의 경우에는 잘 동작하지 않아서 `onmessage`메소드를 사용했다.  
 {: .notice}  
   
-상위 코드가 메인 스레드이고 하위 코드가 Worker 스레드라고 지칭하고 이 두 코드의 흐름을 살펴보면서 Web Worker의 동작을 살펴보자.  
+상위에 구현된 코드를 메인 스레드, 하위에 구현된 코드가 Worker 스레드라고 가정하고 이 두 코드를 통해 Web Worker의 동작을 살펴보자.  
   
-메인 스레드에서 Worker 객체를 생성해 `postMessage()`를 통해서 값을 넘겨주면, Worker 객체의 `onmessage`메소드가 값과 함께 실행된다. 메인 스레드가 값을 넘겨준 이후에는 `postMessage()`이후의 동작을 하다가, Worker 객체의 `onmessage`를 실행한 결과를 Worker 객체에서 `self.postMessage()`를 통해 넘겨주면, 메인 스레드에 등록했던 `addEventListener('message', {})`의 function 부분이 실행되어 그에 대한 처리가 이뤄지는 동작이다.  
+먼저 메인 스레드에서는 Worker 객체를 생성해 `postMessage()`로 Worker에 값을 넘겨준다. 값을 전달받은 Worker 객체는 객체에 등록된 리스너 `onmessage` 메소드를 실행시키게 되고, 전달받은 값을 통해 계산을 시작한다. 이 때 메인 스레드는 값을 넘겨줬던 `postMessage()`이후의 동작을 한다. Worker 객체가 `onmessage`를 계산한 결과를 얻게되면, 이제 그 값을 전달한다. 값은 메인스레드처럼`postMessage()`로 넘겨줄 수 있다. 이 때 Worker에서 self를 이용한 이유는 자기자신의 메소드를 사용하기 위함이다. 메인 스레드가 Worker를 통해 값을 전달받으면, 등록해뒀던 이벤트 리스너가 실행되고, 이 처리가 완료되면 메인 스레드는 그 전에 처리하던 동작으로 돌아가 실행된다.  
   
 처음에는 이 동작의 순서가 어떻게 되는지 잘 이해하지 못해서 미션을 제대로 완수하지 못했다. 시간에 쫓기지 말고 좀 더 찬찬히 이해했어야 되는데 미션이 끝나고 나서보니 가장 아쉬운 부분이다.  
 {: .notice}  
@@ -107,7 +107,7 @@ self.addEventListener('message', function(e){
 여기서 주의해야 할 점은, import 하는 스크립트 파일에는 `self.variable`과 같은 형태로 선언해야 다른 워커에서 불러와서 활용이 가능하다.  
   
 하지만 여기서 또다른 Worker는 새로운 스레드를 생성하는 것이 아니라, Worker 객체이 들어있는 인자를 가져오는 등의 동작에 활용하는 것이다. 새로운 스레드를 생성한다고 생각했던 점이 미션을 오래 걸리게 했던 주범이기도 했다.  
-{: .notice--success}  
+{: .notice}  
   
 ___
 
