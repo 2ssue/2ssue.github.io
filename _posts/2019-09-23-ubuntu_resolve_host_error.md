@@ -16,12 +16,13 @@ sudo: unable to resolve host test
   
 검색을 해보니 처음부터 프로젝트 이름은 test 였는데, 재부팅하면서 이름이 바뀌었는지 `/etc/hostname`과 `/etc/hosts`의 이름이 달라서 발생하는 문제였다.  
   
-- /etc/hostname (normal)
+- /etc/hostname (normal)  
 ```
 test
 ```
   
-- /etc/hosts (abnormal)
+- /etc/hosts (abnormal)  
+  
 ```bash
 127.0.0.1       localhost
 127.0.1.1       ubuntu-16-04 #convert this name to test(same with hostname)
