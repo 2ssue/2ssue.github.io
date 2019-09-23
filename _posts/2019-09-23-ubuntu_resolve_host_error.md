@@ -1,5 +1,5 @@
 ---
-title: "Ubuntu `sudo:unable to resolve host` 에러"
+title: "Ubuntu 'sudo:unable to resolve host' 에러"
 date:   2019-09-23 22:40:24 +0900
 categories: Programming
 tags: error ubuntu
@@ -20,6 +20,7 @@ sudo: unable to resolve host test
 ```
 test
 ```
+
 - /etc/hosts (abnormal)
 ```bash
 127.0.0.1       localhost
