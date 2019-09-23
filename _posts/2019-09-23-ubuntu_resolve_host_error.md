@@ -20,7 +20,7 @@ sudo: unable to resolve host test
 ```
 test
 ```
-
+  
 - /etc/hosts (abnormal)
 ```bash
 127.0.0.1       localhost
