@@ -1,5 +1,5 @@
 ---
-title: "터미널 'tm크립트를 실행할 수 없으므로 ~.ps1 파일을 로드할 수 없습니다' 에러"
+title: "터미널 '스크립트를 실행할 수 없으므로 ~.ps1 파일을 로드할 수 없습니다' 에러"
 date:   2019-09-24 13:54:24 +0900
 categories: Programming
 tags: error terminal
