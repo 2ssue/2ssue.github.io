@@ -6,7 +6,7 @@
    Typography
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap');
 
 $doc-font-size: 16 !default;
@@ -17,7 +17,7 @@ $indent-var: 1.3em !default;
 
 /* system typefaces */
 $serif: Georgia, Times, serif !default;
-$sans-serif: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+$sans-serif: 'Lato', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $monospace: 'Nanum Gothic Coding', Monaco, Consolas, "Lucida Console", monospace !default;
 

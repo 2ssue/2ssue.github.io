@@ -44,8 +44,6 @@ h2 {
 
 h3 {
   font-size: $type-size-5;
-  padding-bottom: 3px;
-  border-bottom: 2px ridge aliceblue;
 }
 
 h4 {
@@ -128,6 +126,8 @@ blockquote {
 /* links */
 
 a {
+  color: inherit;
+  text-decoration-color: $primary-color;
   &:focus {
     @extend %tab-focus;
   }
@@ -170,8 +170,9 @@ td > code {
   margin: 0 0.1em;
   padding: 0.3em 0;
   font-size: 0.8em;
-  background: #2ca4a861;
+  background: #e0e0e0;
   border-radius: $border-radius;
+  border-bottom-style: groove;
 
   &:before,
   &:after {
@@ -186,7 +187,7 @@ hr {
   display: block;
   margin: 1em 0;
   border: 0;
-  border-top: 1px solid $border-color;
+  border-top: 2px dashed $border-color;
 }
 
 /* lists */
