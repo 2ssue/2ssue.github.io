@@ -5,7 +5,6 @@ permalink: /about/
 toc: true
 ---
 
-## Introduce
 [SuJeong Lee](e2ssue@gmail.com)  
 `#Ajou_University` `#BoostCamp2019` `#Web Developer` `#Android`
 
