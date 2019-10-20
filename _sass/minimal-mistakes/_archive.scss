@@ -41,6 +41,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 400;
+  color: $primary-color;
 
   a::before {
     content: '';
