@@ -101,3 +101,6 @@ ___
   
 현업에서도 보통 create-react-app을 사용하긴한다. 하지만 복잡한 설정이 필요할 때는 config 파일을 따로 만들어 관리하는 경우가 거의 무조건 생기기 때문에 React를 잘 익혔다면 webpack과 babel에 도전해보는 것도 좋을 것 같다.  
   
+___
+
+여기까지의 과정은 구글님이 알려주신 [이 포스트](https://www.freecodecamp.org/news/building-an-electron-application-with-create-react-app-97945861647c/)를 참고하였으며, 책의 예제를 토대로 코드를 새로 만들고 있는 [나의 프로젝트 electron-chat](https://github.com/2ssue/electron-chat)에서도 확인할 수 있다.
