@@ -1,5 +1,5 @@
 ---
-title: "TIL_부스트캠프2019 멤버십 WEEK2"
+title: "부스트캠프2019 멤버십 WEEK2"
 date:   2019-09-08 23:57:24 +0900
 categories: TIL
 tags: daily boostCamp

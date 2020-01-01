@@ -1,5 +1,5 @@
 ---
-title: "TIL_부스트캠프2019 WEEK4, 챌린지 후기"
+title: "부스트캠프2019 챌린지 WEEK4, 챌린지 후기"
 date:   2019-08-10 22:37:24 +0900
 categories: TIL
 tags: daily boostCamp review

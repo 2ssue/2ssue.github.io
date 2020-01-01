@@ -1,5 +1,5 @@
 ---
-title: "TIL_WEEK2&3"
+title: "부스트캠프2019 챌린지 WEEK2&3"
 date:   2019-08-01 18:00:24 +0900
 categories: TIL
 tags: daily boostCamp
