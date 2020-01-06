@@ -1,0 +1,100 @@
+.site-logo {
+  width: 32px;
+  margin-right: 5px;
+}
+
+.about-content {
+  text-align: center;
+}
+
+.notice {
+  background-color: #f8f9f9;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 0.8rem;
+}
+
+.notice--warning {
+  background-color: #fbf2e6;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 0.8rem;
+}
+
+.notice--info {
+  background-color: #ebf5f8;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 0.8rem;
+}
+
+.subject {
+  &::before {
+    content: url("/assets/images/quote.png");
+  }
+  border: none;
+  text-align: center;
+}
+
+pre,
+code {
+  background-color: #1f2d20;
+  border: none;
+}
+
+.highlight {
+  background-color: #1f2d20;
+  border: none;
+  .k,
+  .kd,
+  .kc {
+    color: #c792ea;
+  }
+  .p,
+  .nb {
+    color: white;
+  }
+  .o,
+  .nt {
+    color: #89ddff;
+  }
+  .mi,
+  .se {
+    color: #f78c6c;
+  }
+  .s1,
+  .sr {
+    color: #c3e88d;
+  }
+  .na {
+    color: #82aaff;
+  }
+}
+
+.highlighter-rouge {
+  background-color: $default-color;
+  border-radius: 4px;
+  border: none;
+  font-family: "consolas";
+
+  .highlight {
+    background-color: #1f2d20;
+    border: none;
+
+    code {
+      color: #82aaff;
+      font-family: "consolas";
+    }
+  }
+}
+
+.post-link {
+  color: $default-color;
+}
+
+a {
+  &:visited {
+    color: $default-dark-color;
+  }
+  color: $default-dark-color;
+}
