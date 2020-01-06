@@ -13,8 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 🌱세상에 잘못된 경험은 없어
+title: 세상에 잘못된 경험은 없어
 lang: ko
+logo: /assets/images/grass.png
 author: 2ssue
 email: e2ssue@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
