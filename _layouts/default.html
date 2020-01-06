@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <p style="text-align: center; background-color: #fbf2e6; border-radius: 4px">
+            블로그가 🔧리뉴얼🔨 중이에요. 불편하더라도 조금만 기다려주세요🙇
+        </p>
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
