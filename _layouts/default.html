@@ -1,42 +1,23 @@
----
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<!doctype html>
-<!--
-  Minimal Mistakes Jekyll Theme 4.15.1 by Michael Rose
-  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
--->
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
+  {%- include head.html -%}
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+  <body>
 
-    {% include_cached browser-upgrade.html %}
-    {% include_cached masthead.html %}
+    {%- include header.html -%}
 
-    <div class="initial-content">
-      {{ content }}
-    </div>
-
-    {% if site.search == true %}
-      <div class="search-content">
-        {% include_cached search/search_form.html %}
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <p style="text-align: center; background-color: #fbf2e6; border-radius: 4px">
+            블로그가 🔧리뉴얼🔨 중이에요. 불편하더라도 조금만 기다려주세요🙇
+        </p>
+        {{ content }}
       </div>
-    {% endif %}
+    </main>
 
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include_cached footer.html %}
-      </footer>
-    </div>
-
-    {% include scripts.html %}
+    {%- include footer.html -%}
 
   </body>
+
 </html>
