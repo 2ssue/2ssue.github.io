@@ -126,3 +126,9 @@ a {
   }
   color: $default-dark-color;
 }
+
+.footer-col-wrapper {
+  p {
+    word-break: keep-all;
+  }
+}
