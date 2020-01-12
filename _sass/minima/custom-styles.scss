@@ -103,6 +103,19 @@ code {
   }
 }
 
+.post-title {
+  word-break: keep-all;
+  text-align: center;
+}
+
+.post {
+  .post-meta {
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #828282;
+  }
+}
+
 .post-link {
   color: $default-color;
 }
