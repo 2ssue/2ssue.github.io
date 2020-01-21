@@ -8,14 +8,14 @@ layout: default
     <ul>
       {%- for category in site.categories -%} {% capture category_name %}{{
       category | first }}{% endcapture %}
-      <li>
-        <a href="/categories/{{ category_name }}">
-          <h3>{{category_name}}</h3>
+      <a href="/categories/{{ category_name | downcase }}">
+        <li>
+          <h3>{{ category_name }}</h3>
           <span class="post-count">
-            {{site.categories[category_name].size}}
+            {{ site.categories[category_name].size }}
           </span>
-        </a>
-      </li>
+        </li>
+      </a>
       {%- endfor -%}
     </ul>
   </section>
