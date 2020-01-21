@@ -3,24 +3,40 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
-  <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%} {{ content }} {%- if site.posts.size > 0 -%}
-  <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-  <ul class="post-list">
-    {%- for post in site.posts -%}
-    <li>
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
-      -%}
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
-      <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
+  <section class="categories">
+    <h1 class="page-heading">Categories</h1>
+    <ul>
+      {%- for category in site.categories -%} {% capture category_name %}{{
+      category | first }}{% endcapture %}
+      <li>
+        <a href="/categories/{{ category_name }}">
+          <h3>{{category_name}}</h3>
+          <span class="post-count">
+            {{site.categories[category_name].size}}
+          </span>
         </a>
-      </h3>
-      {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
-    </li>
-    {%- endfor -%}
-  </ul>
-  {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+  </section>
+  <br />
+  <section>
+    <h1 class="page-heading">Recent Posts</h1>
+    <ul class="post-list">
+      {% for post in site.posts limit: 5 %}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
+        -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
+      </li>
+      {% endfor %}
+      <a href="/posts">더보기</a>
+    </ul>
+  </section>
 </div>
