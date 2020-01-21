@@ -5,10 +5,10 @@ layout: default
 <nav class="tags">
   {% for tag in site.tags %} {% capture tag_name %}{{ tag | first }}{%
   endcapture %}
-  <a href="/tags/#{{ tag_name | slugize }}" class="highlighter-rouge"
-    >{{ tag_name }}
-    <span class="post-count">{{site.tags[tag_name].size}}</span></a
-  >
+  <a href="/tags#{{ tag_name | slugize }}" class="highlighter-rouge">
+    {{ tag_name }}
+    <span class="post-count">{{site.tags[tag_name].size}}</span>
+  </a>
   {% endfor %}
 </nav>
 <div class="tags-posts">
