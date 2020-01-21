@@ -33,7 +33,35 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
-
+  <nav class="post-pagination">
+    {% if page.previous %}
+    <a
+      href="{{ page.previous.url | relative_url }}"
+      title="{{ page.previous.title | markdownify | strip_html }}"
+    >
+      <p>이전 포스트</p>
+      {{ page.previous.title }}</a
+    >
+    {% else %}
+    <a href="#" class="disabled">
+      <p>이전 포스트</p>
+      이전 글이 없습니다
+    </a>
+    {% endif %} {% if page.next %}
+    <a
+      href="{{ page.next.url | relative_url }}"
+      title="{{ page.next.title | markdownify | strip_html }}"
+    >
+      <p>다음 포스트</p>
+      {{ page.next.title }}
+    </a>
+    {% else %}
+    <a href="#" class="disabled">
+      <p>다음 포스트</p>
+      다음 글이 없습니다
+    </a>
+    {% endif %}
+  </nav>
   {%- if site.disqus.shortname -%} {%- include disqus_comments.html -%} {%-
   endif -%}
 

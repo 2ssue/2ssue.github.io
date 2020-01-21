@@ -46,3 +46,35 @@
   padding: 5px;
   font-size: 0.8rem;
 }
+
+.post-pagination {
+  display: flex;
+  margin-bottom: 1rem;
+  min-height: 3rem;
+  a {
+    border: 1px solid $default-color;
+    border-radius: 4px;
+    flex: 1;
+    margin: 2px;
+    text-align: center;
+    &:hover {
+      background-color: $default-dark-color;
+      color: white;
+    }
+    p {
+      font-size: 0.8rem;
+      margin: 0;
+    }
+  }
+  .disabled {
+    border-color: lightgray;
+    cursor: default;
+    color: gray;
+    &:hover {
+      background-color: unset;
+      color: gray;
+
+      text-decoration: none;
+    }
+  }
+}
