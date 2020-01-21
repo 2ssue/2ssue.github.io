@@ -1,14 +1,14 @@
 .post {
   .post-meta {
-    text-align: center;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #828282;
+    text-align: right;
+    padding: 1rem 0;
+    border-top: 1px solid lightgray;
   }
 }
 
 .post-title {
   word-break: keep-all;
-  text-align: center;
+  text-align: left;
 }
 
 .align-center {

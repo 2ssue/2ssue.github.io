@@ -19,6 +19,7 @@
   position: relative;
   margin-bottom: 1rem;
   img {
+    user-select: none;
     width: 40px;
     border-radius: 50px;
     padding: 1px;

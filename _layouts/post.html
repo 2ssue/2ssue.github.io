@@ -12,6 +12,12 @@ layout: default
       {{ page.title | escape }}
     </h1>
     <p class="post-meta">
+      <a href="/categories/{{ page.categories[0] | downcase }}">
+        📁{{ page.categories | array_to_sentence_string }}
+      </a>
+      {% for tag in page.tags %}
+      <a href="/tags#{{ tag }}">📎{{ tag }}</a>
+      {% endfor %}
       <time
         class="dt-published"
         datetime="{{ page.date | date_to_xmlschema }}"
@@ -26,7 +32,7 @@ layout: default
           >{{ page.author | escape }}</span
         ></span
       >
-      {%- endif -%}
+      > {%- endif -%}
     </p>
   </header>
 
