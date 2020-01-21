@@ -1,7 +1,7 @@
 ---
 title: "[리뷰] 누구나 자료 구조와 알고리즘"
 date:   2019-03-24 22:55:24 +0900
-categories: book
+categories: Book
 tags: review
 classes: wide
 ---
