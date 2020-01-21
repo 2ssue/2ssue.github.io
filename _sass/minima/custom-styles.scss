@@ -124,6 +124,10 @@ a {
   &:visited {
     color: $default-dark-color;
   }
+  &:hover {
+    color: $text-color;
+    text-decoration: underline;
+  }
   color: $default-dark-color;
 }
 
