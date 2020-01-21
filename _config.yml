@@ -17,12 +17,13 @@ title: 세상에 잘못된 경험은 없어
 lang: ko
 logo: /assets/images/grass.png
 author: 2ssue
+avatar: https://avatars3.githubusercontent.com/u/42017052?s=460&v=4
 email: e2ssue@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   웹을 공부하고 있는 개발자 2ssue의 블로그.
   천천히 성장 중 입니다. 앞으로를 기대해주세요 :)
-baseurl: '' # the subpath of your site, e.g. /blog
-url: 'https://2ssue.github.io' # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://2ssue.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username: 2ssue
 disqus:
@@ -47,7 +48,7 @@ plugins:
   - jekyll-feed
 defaults:
   - scope:
-      path: ''
+      path: ""
       type: posts
       comments: true
     values:

@@ -7,6 +7,36 @@
   text-align: center;
 }
 
+.page-content {
+  padding: 1rem 0;
+}
+
+.author {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 5px;
+  color: gray;
+  position: relative;
+  margin-bottom: 1rem;
+  img {
+    width: 40px;
+    border-radius: 50px;
+    padding: 1px;
+    margin-right: 0.5rem;
+    border: 1px solid lightgray;
+  }
+  a {
+    float: right;
+    border: 1px solid lightgray;
+    color: gray;
+    border-radius: 4px;
+    position: absolute;
+    padding: 5px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
+
 .subject {
   &::before {
     content: url("/assets/images/quote.png");

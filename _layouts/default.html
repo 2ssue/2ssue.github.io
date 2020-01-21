@@ -9,9 +9,11 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <p style="text-align: center; background-color: #fbf2e6; border-radius: 4px">
-            블로그가 🔧리뉴얼🔨 중이에요. 불편하더라도 조금만 기다려주세요🙇
-        </p>
+        <section class="author">
+          <img src="{{ site.avatar }}" />
+          {{ site.author }} / {{ site.title }}
+          <a href="https://github.com/2ssue">팔로우</a>
+        </section>
         {{ content }}
       </div>
     </main>
