@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<nav class="tags">
+  {% for tag in site.tags %} {% capture tag_name %}{{ tag | first }}{%
+  endcapture %}
+  <a href="/tags/#{{ tag_name | slugize }}" class="highlighter-rouge"
+    >{{ tag_name }}</a
+  >
+  {% endfor %}
+</nav>
+<div class="tags-posts">
+  {% for tag in site.tags %} {% capture tag_name %}{{ tag | first }}{%
+  endcapture %}
+  <h2 id="{{ tag_name | slugize }}">{{ tag_name }}</h2>
+  <ul>
+    {% for post in site.tags[tag_name] %}
+    <li>
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
+      -%}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+      {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</div>
+
+<!-- <ul class="tags">
+  {% for tag in site.tags %}
+  <li>
+    <a href="#{{ tag[0] }}"> {{ tag[0] }}<span>{{ site.tags[tag] }}</span> </a>
+  </li>
+  {% endfor %}
+</ul> -->
+
+<!-- 
+<nav class="tags">
+  {%- for tag in site.tags -%}
+  <a href="/tags/{{tag[0]}}">{{tag[0]}}</a>
+  {%- endfor -%}
+</nav> -->
