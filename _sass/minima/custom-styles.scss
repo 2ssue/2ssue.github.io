@@ -7,48 +7,12 @@
   text-align: center;
 }
 
-.notice {
-  background-color: #f8f9f9;
-  border-radius: 4px;
-  padding: 5px;
-  font-size: 0.8rem;
-}
-
-.notice--warning {
-  background-color: #fbf2e6;
-  border-radius: 4px;
-  padding: 5px;
-  font-size: 0.8rem;
-}
-
-.notice--info {
-  background-color: #ebf5f8;
-  border-radius: 4px;
-  padding: 5px;
-  font-size: 0.8rem;
-}
-
 .subject {
   &::before {
     content: url("/assets/images/quote.png");
   }
   border: none;
   text-align: center;
-}
-
-.align-center {
-  display: block;
-  margin: auto;
-}
-
-.align-right {
-  float: right;
-  margin-left: 1rem;
-}
-
-.align-left {
-  float: left;
-  margin-right: 1rem;
 }
 
 pre,
@@ -103,19 +67,6 @@ code {
   }
 }
 
-.post-title {
-  word-break: keep-all;
-  text-align: center;
-}
-
-.post {
-  .post-meta {
-    text-align: center;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #828282;
-  }
-}
-
 .post-link {
   color: $default-color;
 }
@@ -137,4 +88,4 @@ a {
   }
 }
 
-@import "custom/tags";
+@import "custom/tags", "custom/post";
