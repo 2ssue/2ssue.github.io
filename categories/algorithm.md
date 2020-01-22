@@ -1,6 +1,6 @@
 ---
 layout: category
-category-name: algorithm
+category-name: Algorithm
 permalink: /categories/algorithm
 ---
 

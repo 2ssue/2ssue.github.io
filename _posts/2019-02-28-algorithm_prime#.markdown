@@ -1,7 +1,7 @@
 ---
 title:  "소수 찾기 알고리즘"
 date:   2019-02-28 20:22:24 +0900
-categories: algorithm
+categories: Algorithm
 tags: doit java
 toc: true
 ---

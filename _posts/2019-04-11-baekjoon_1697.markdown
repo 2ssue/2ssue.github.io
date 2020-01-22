@@ -1,7 +1,7 @@
 ---
-title:  "[백준] 숨바꼭질_JAVA"
+title:  "[백준] 숨바꼭질 JAVA"
 date:   2019-04-11 00:25:24 +0900
-categories: algorithm
+categories: Algorithm
 tags: baekjoon java
 classes: wide
 ---

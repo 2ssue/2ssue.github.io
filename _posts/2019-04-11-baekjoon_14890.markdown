@@ -1,7 +1,7 @@
 ---
-title:  "[백준] 경사로_JAVA"
+title:  "[백준] 경사로 JAVA"
 date:   2019-04-11 23:55:24 +0900
-categories: algorithm
+categories: Algorithm
 tags: baekjoon java
 classes: wide
 ---

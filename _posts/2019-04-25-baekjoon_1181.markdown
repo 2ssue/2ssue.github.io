@@ -1,7 +1,7 @@
 ---
-title:  "[백준] 단어 정렬_JAVA"
+title:  "[백준] 단어 정렬 JAVA"
 date:   2019-04-25 00:45:24 +0900
-categories: algorithm
+categories: Algorithm
 tags: baekjoon java
 classes: wide
 ---
