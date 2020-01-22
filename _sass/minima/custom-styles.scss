@@ -37,6 +37,23 @@
     right: 0;
     transform: translateY(-50%);
   }
+
+  span {
+    width: 200px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media screen and (min-width: 400px) {
+    span {
+      width: 300px;
+    }
+  }
 }
 
 .subject {
