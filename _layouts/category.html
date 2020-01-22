@@ -8,6 +8,7 @@ layout: default
     {{ page.category-name }}_{{ site.categories[page.category-name].size }}개의
     포스트
   </h1>
+  {{ content }}
   <ul class="post-list">
     {%- for post in site.categories[page.category-name] -%}
     <li>
