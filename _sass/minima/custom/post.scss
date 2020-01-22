@@ -91,7 +91,7 @@
   &:focus {
     transition: width 1s;
     opacity: 1;
-    width: 100%;
+    width: calc(100% - 30px);
     border-bottom: 2px solid gray;
   }
 
