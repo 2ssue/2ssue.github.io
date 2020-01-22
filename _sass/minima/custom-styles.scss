@@ -120,4 +120,8 @@ a {
   }
 }
 
+.site-nav {
+  z-index: 1;
+}
+
 @import "custom/tags", "custom/post", "custom/home";
