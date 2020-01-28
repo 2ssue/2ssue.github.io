@@ -11,6 +11,15 @@
   text-align: left;
 }
 
+.post-content {
+  a {
+    border-bottom: 2px solid;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
 .align-center {
   display: block;
   margin: auto;
