@@ -35,25 +35,26 @@
   margin-right: 1rem;
 }
 
-.notice {
-  background-color: #f8f9f9;
+@mixin notice($color) {
+  background-color: $color;
   border-radius: 4px;
   padding: 5px;
   font-size: 0.8rem;
+  * {
+    font-size: 0.8rem;
+  }
+}
+
+.notice {
+  @include notice(#f8f9f9);
 }
 
 .notice--warning {
-  background-color: #fbf2e6;
-  border-radius: 4px;
-  padding: 5px;
-  font-size: 0.8rem;
+  @include notice(#fbf2e6);
 }
 
 .notice--info {
-  background-color: #ebf5f8;
-  border-radius: 4px;
-  padding: 5px;
-  font-size: 0.8rem;
+  @include notice(#ebf5f8);
 }
 
 .post-pagination {
