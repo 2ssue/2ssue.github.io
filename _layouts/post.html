@@ -12,10 +12,11 @@ layout: default
       {{ page.title | escape }}
     </h1>
     <p class="post-meta">
-      <a href="/categories/{{ page.categories[0] | downcase }}">
-        📁{{ page.categories | array_to_sentence_string }}
+      {% for category in page.categories %}
+      <a href="/categories/{{ category | downcase }}">
+        📁{{ category }}
       </a>
-      {% for tag in page.tags %}
+      {% endfor %} {% for tag in page.tags %}
       <a href="/tags#{{ tag }}">📎{{ tag }}</a>
       {% endfor %}
       <time
