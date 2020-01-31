@@ -1,19 +1,26 @@
-.categories {
+.sidebar {
+  position: absolute;
+  top: calc(55.95px + 1rem);
+  left: calc(100% - 1000px - (100% - 1000px) / 2 - 300px);
+  transition: all 1s;
+  transform: translateX(-300px);
+
+  @media screen and (min-width: 1600px) {
+    transform: translateX(0);
+  }
+
+  img {
+    width: 300px;
+  }
+
   ul {
     margin: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
   }
 
   li {
-    display: inline-block;
-    width: 100px;
-    height: 50px;
+    display: block;
     padding: 2px;
-    border-top: 2px solid lightgray;
     margin-bottom: 2px;
-    text-align: center;
 
     &:hover {
       cursor: pointer;
@@ -22,20 +29,16 @@
       a {
         color: black;
       }
-      span {
-        display: inline-block;
-      }
     }
 
     h3 {
       margin: 0;
       font-size: 1rem;
+      display: inline-block;
     }
 
-    @media screen and (min-width: $on-large) {
-      span {
-        display: none;
-      }
+    span {
+      float: right;
     }
   }
 }

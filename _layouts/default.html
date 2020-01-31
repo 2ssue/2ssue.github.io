@@ -7,6 +7,26 @@
 
     {%- include header.html -%}
 
+    {% if page.menu %}
+    <aside class="sidebar">
+      <img src="assets\images\avatar\ZEPETO_-8586212883359078088.png" />
+      <h1 class="page-heading">Categories</h1>
+      <ul>
+        {%- for category in site.categories -%} {% capture category_name %}{{
+        category | first }}{% endcapture %}
+        <a href="/categories/{{ category_name | downcase }}">
+          <li>
+            <h3>{{ category_name }}</h3>
+            <span>
+              {{ site.categories[category_name].size }}
+            </span>
+          </li>
+        </a>
+        {%- endfor -%}
+      </ul>
+    </aside>
+    {% endif %}
+
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
