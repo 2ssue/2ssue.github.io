@@ -40,6 +40,9 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
+
+  {% if page.toc %} {% include toc.html %} {% endif %}
+
   <nav class="post-pagination">
     {% if page.previous %}
     <a

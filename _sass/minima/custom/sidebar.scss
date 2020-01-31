@@ -15,30 +15,60 @@
 
   ul {
     margin: 0;
-  }
+    li {
+      display: block;
+      padding: 2px;
+      margin-bottom: 2px;
 
-  li {
-    display: block;
-    padding: 2px;
-    margin-bottom: 2px;
+      h3 {
+        margin: 0;
+        font-size: 1rem;
+        display: inline-block;
+      }
 
-    &:hover {
-      cursor: pointer;
-      background-color: $default-color;
-      text-decoration: none;
-      a {
-        color: black;
+      span {
+        float: right;
       }
     }
+  }
 
-    h3 {
+  li:hover {
+    cursor: pointer;
+    background-color: $default-color;
+    a {
+      color: black;
+    }
+  }
+}
+
+.toc-container {
+  font-size: 12px;
+  margin: 0;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+
+  li {
+    width: 280px;
+    height: 100%;
+    display: block;
+    padding-left: 5px;
+    border-bottom: 1px solid lightgray;
+    * {
+      padding: 5px 0;
       margin: 0;
-      font-size: 1rem;
-      display: inline-block;
     }
+  }
+}
 
-    span {
-      float: right;
-    }
+.fixed {
+  position: fixed;
+}
+
+.right {
+  right: calc(100% - 1000px - (100% - 1000px) / 2 - 300px);
+  left: auto;
+  transform: translateX(300px);
+  @media screen and (min-width: 1600px) {
+    transform: translateX(0);
   }
 }

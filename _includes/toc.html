@@ -1,0 +1,15 @@
+<aside class="fixed sidebar">
+  <h1 class="page-heading">Contents</h1>
+  <ol class="toc-container"></ol>
+</aside>
+<script type="text/javascript">
+  const container = document.querySelector('.toc-container');
+  document
+    .querySelector('.post-content')
+    .querySelectorAll('h1,h2,h3,h4,h5,h6')
+    .forEach((content) => {
+      const tagName = content.tagName.toLowerCase();
+      const template = `<li><a href="#${content.id}"><${tagName}>${content.textContent}</${tagName}></a></li>`;
+      container.insertAdjacentHTML('beforeend', template);
+    });
+</script>

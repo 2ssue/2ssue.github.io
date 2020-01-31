@@ -7,9 +7,9 @@
 
     {%- include header.html -%}
 
-    {% if page.menu %}
-    <aside class="sidebar">
-      <img src="assets\images\avatar\ZEPETO_-8586212883359078088.png" />
+    {% if page.menu != false %}
+    <aside class="right sidebar">
+      <img src="\assets\images\avatar\ZEPETO_-8586212883359078088.png" />
       <h1 class="page-heading">Categories</h1>
       <ul>
         {%- for category in site.categories -%} {% capture category_name %}{{
