@@ -13,11 +13,7 @@
 }
 
 .author {
-  border-bottom: 1px solid lightgray;
-  padding-bottom: 5px;
-  color: gray;
-  position: relative;
-  margin-bottom: 1rem;
+  display: -webkit-inline-box;
   img {
     user-select: none;
     width: 40px;
@@ -26,39 +22,11 @@
     margin-right: 0.5rem;
     border: 1px solid lightgray;
   }
-  a {
-    float: right;
-    border: 1px solid lightgray;
-    color: gray;
-    border-radius: 4px;
-    position: absolute;
-    padding: 5px;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-  }
-
-  span {
-    width: 200px;
-    display: inline-block;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  @media screen and (min-width: 400px) {
-    span {
-      width: 300px;
-    }
-  }
 }
 
 .subject {
   &::before {
-    content: url("/assets/images/quote.png");
+    content: url('/assets/images/quote.png');
   }
   border: none;
   text-align: center;
@@ -108,7 +76,7 @@ code {
   background-color: $default-color;
   border-radius: 4px;
   border: none;
-  font-family: "consolas";
+  font-family: 'consolas';
 
   .highlight {
     background-color: #1f2d20;
@@ -116,7 +84,7 @@ code {
 
     code {
       color: #82aaff;
-      font-family: "consolas";
+      font-family: 'consolas';
     }
   }
 }
@@ -146,4 +114,4 @@ a {
   z-index: 1;
 }
 
-@import "custom/tags", "custom/post", "custom/home", "custom/goto";
+@import 'custom/tags', 'custom/post', 'custom/home', 'custom/goto';
