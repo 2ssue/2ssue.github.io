@@ -1,16 +1,18 @@
 .sidebar {
   position: absolute;
   top: calc(55.95px + 1rem);
-  left: calc(100% - 1000px - (100% - 1000px) / 2 - 300px);
+  left: calc(
+    100% - #{$content-width} - (100% - #{$content-width}) / 2 - #{$sidebar-width}
+  );
   transition: all 1s;
-  transform: translateX(-300px);
+  transform: translateX(-$sidebar-width);
 
   @media screen and (min-width: 1600px) {
     transform: translateX(0);
   }
 
   img {
-    width: 300px;
+    width: $sidebar-width;
   }
 
   ul {
@@ -65,10 +67,13 @@
 }
 
 .right {
-  right: calc(100% - 1000px - (100% - 1000px) / 2 - 300px);
+  right: calc(
+    100% - #{$content-width} - (100% - #{$content-width}) / 2 - #{$sidebar-width}
+  );
   left: auto;
-  transform: translateX(300px);
+  display: none;
+
   @media screen and (min-width: 1600px) {
-    transform: translateX(0);
+    display: block;
   }
 }
