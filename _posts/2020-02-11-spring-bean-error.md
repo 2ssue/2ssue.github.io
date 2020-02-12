@@ -1,8 +1,8 @@
 ---
 title: "Error createing bean with name ~"
 date: 2020-02-11 10:42:24 +0900
-categories: Error
-tags: web java spring
+categories: Programming
+tags: error web java spring
 toc: true
 ---
 
