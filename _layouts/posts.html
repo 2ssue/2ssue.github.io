@@ -33,17 +33,17 @@ layout: default
 </div>
 {%- include go_to_top.html -%}
 <script>
-  const posts = document.querySelectorAll("li");
+  const posts = document.querySelectorAll(".post-list li");
   const postsHeader = document.querySelector(".post-list-heading");
-  const postsContainer = document.querySelector("ul");
+
   document.querySelector("#search-input").addEventListener("keyup", e => {
     let count = 0;
     posts.forEach(cur => {
       if (!cur.innerText.toUpperCase().includes(e.target.value.toUpperCase()))
-        cur.style = "display: none";
+        cur.classList.add("unshow");
       else {
-        cur.style = "display: block";
         count += 1;
+        cur.classList.remove("unshow");
       }
     });
     postsHeader.innerText = `${count}개의 포스트`;
