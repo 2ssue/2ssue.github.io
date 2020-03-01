@@ -12,13 +12,6 @@ layout: default
       {{ page.title | escape }}
     </h1>
     <p class="post-meta">
-      {% for category in page.categories %}
-      <a href="/categories/{{ category | downcase }}">
-        📁{{ category }}
-      </a>
-      {% endfor %} {% for tag in page.tags %}
-      <a href="/tags#{{ tag }}">📎{{ tag }}</a>
-      {% endfor %}
       <time
         class="dt-published"
         datetime="{{ page.date | date_to_xmlschema }}"
@@ -27,7 +20,13 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
         -%} {{ page.date | date: date_format }}
       </time>
-      {%- if page.author -%} •
+      {% for category in page.categories %}
+      <a href="/categories/{{ category | downcase }}">
+        📁{{ category }}
+      </a>
+      {% endfor %} {% for tag in page.tags %}
+      <a href="/tags#{{ tag }}">📎{{ tag }}</a>
+      {% endfor %} {%- if page.author -%} •
       <span itemprop="author" itemscope itemtype="http://schema.org/Person"
         ><span class="p-author h-card" itemprop="name"
           >{{ page.author | escape }}</span
