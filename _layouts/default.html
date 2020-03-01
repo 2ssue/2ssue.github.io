@@ -9,8 +9,7 @@
 
     {% if page.menu != false %}
     <aside class="sidebar">
-      <img src="\assets\images\avatar\ZEPETO_-8586212883359078088.png" />
-      <h1 class="page-heading">Categories</h1>
+      <h1 class="page-heading sidebar-head">이 블로그의 구성</h1>
       <ul>
         {%- for category in site.categories -%} {% capture category_name %}{{
         category | first }}{% endcapture %}
