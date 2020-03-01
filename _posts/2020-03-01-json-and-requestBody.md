@@ -1,8 +1,8 @@
 ---
 title: "@RequestBody도 잘 작성했는데, json과 객체가 매핑이 안된다면?"
 date: 2020-03-01 18:10:24 +0900
-categories: Error
-tags: web java spring
+categories: Programming
+tags: error web java spring
 toc: true
 ---
 
