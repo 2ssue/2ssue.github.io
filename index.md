@@ -5,4 +5,6 @@
 layout: home
 title: Home
 permalink: /
+pagination:
+  enabled: true
 ---
