@@ -12,6 +12,22 @@
   padding: 1rem 0;
 }
 
+.pagination {
+  margin: auto;
+  text-align: end;
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-top: 1.3rem;
+  color: gray;
+}
+
+span.pagination-selected {
+  display: inline-block;
+  font-size: 1.6rem;
+  text-decoration: underline;
+}
+
 .author {
   display: -webkit-inline-box;
   img {
