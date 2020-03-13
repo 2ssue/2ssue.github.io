@@ -71,8 +71,15 @@ layout: default
     </a>
     {% endif %}
   </nav>
-  {%- if site.disqus.shortname -%} {%- include disqus_comments.html -%} {%-
-  endif -%}
+  <script
+    src="https://utteranc.es/client.js"
+    repo="2ssue/blog_comments"
+    issue-term="title"
+    label="✨💬comments✨"
+    theme="github-light"
+    crossorigin="anonymous"
+    async
+  ></script>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
