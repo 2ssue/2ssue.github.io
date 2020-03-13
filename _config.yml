@@ -43,21 +43,14 @@ kramdown:
   enable_coderay: false
 
 # Pagination settings
-pagination:
-  enabled: true
-  per_page: 5
-  sort_reverse: true
-  title: :title
-  permalink: /page/:num/
-  trail:
-    before: 2
-    after: 2
+paginate: 5
+paginate_path: "/page:num/"
 
 permalink: /:categories/:title/
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-paginate-v2
+  - jekyll-paginate
 defaults:
   - scope:
       path: ""
