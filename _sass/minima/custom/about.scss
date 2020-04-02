@@ -70,7 +70,18 @@
   width: 420px;
   margin-right: 1rem;
   margin-bottom: 1rem;
+
+  img {
+    display: none;
+    width: 100%;
+    height: 180px;
+  }
   p {
     margin: 1rem 0;
+  }
+  &:hover {
+    img {
+      display: block;
+    }
   }
 }
