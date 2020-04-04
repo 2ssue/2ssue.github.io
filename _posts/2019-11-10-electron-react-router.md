@@ -65,7 +65,11 @@ Router로 해당 요청에 대한 페이지 Routing 처리는 완료했는데, �
   
 하지만 기존 BrowserRouter에서 사용하는 것처럼 `window.location = rooms`를 사용하면 제대로 동작하지 않는다. 예상한 것 처럼 `#/rooms`이 되는 것이 아니고, `/rooms`으로 이동해서 역시 파일을 찾을 수 없게 된다.  
   
-이전 버전에서는 history를 넘겨줘서, history객체에 다음 이동 주소를 push 하는 방식으로 사용되었던 것 같은데, 이번에는 history객체가 `react-router-dom`에서 없어져서 한참을 해맸다. 그러다 `window.location.hash`라는 객체를 발견하고 이를 조작해봤는데, 제대로 잘 동작했다. 브라우저에서 테스트했을 때도 뒤로가기와 앞으로가기 모두 정상 동작하는 것을 보면, react-router에서 history를 조작해주는 것 같기도 하다.  
+이전 버전에서는 history를 넘겨줘서, history객체에 다음 이동 주소를 push 하는 방식으로 사용되었던 것 같은데, 이번에는 history객체가 `react-router-dom`에서 없어져서 한참을 해맸다. 그러다 `window.location.hash`라는 객체를 발견하고 이를 조작해봤는데, 제대로 잘 동작했다. 브라우저에서 테스트했을 때도 뒤로가기와 앞으로가기 모두 정상 동작하는 것을 보면, react-router에서 history를 조작해주는 것 같기도 하다. 
+
+**2020.04.04 추가**<br>  
+react-router에서 History를 조작해줬다고 하기보단, 우리가 조작되도록 만들었다고 보는 것이 맞는 표현인 것 같다.<br><br> window.location.hash를 통해 주소를 `~index.html/#/rooms`로 바꾸면 실제로 이 앱에서는 `index.html` 파일로 이동한다. 그리고 index.html에 있는 React-Router가 `#/rooms`를 보고 해당 지점으로 Routing을 해서 그에 맞는 컴포넌트를 보여준다. 이 때 History에 이 라우팅 작업이 등록되어서 뒤로가기, 앞으로가기가 작동되는 것이다.
+{: .notice--info}
   
 ```javascript
 //if login success
