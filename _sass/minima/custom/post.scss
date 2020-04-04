@@ -111,24 +111,3 @@
 .utterances {
   max-width: 100% !important;
 }
-
-.search {
-  cursor: pointer;
-  width: 13rem;
-  border: none;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  outline: none;
-  opacity: 0.7;
-  max-width: calc(1000px - (30px * 2));
-  &:focus {
-    transition: width 1s;
-    opacity: 1;
-    width: calc(100% - 30px);
-    border-bottom: 2px solid gray;
-  }
-
-  &:hover {
-    opacity: 1;
-  }
-}

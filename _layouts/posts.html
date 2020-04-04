@@ -32,20 +32,4 @@ layout: default
   {%- endif -%}
 </div>
 {%- include go_to_top.html -%}
-<script>
-  const posts = document.querySelectorAll(".post-list li");
-  const postsHeader = document.querySelector(".post-list-heading");
-
-  document.querySelector("#search-input").addEventListener("keyup", e => {
-    let count = 0;
-    posts.forEach(cur => {
-      if (!cur.innerText.toUpperCase().includes(e.target.value.toUpperCase()))
-        cur.classList.add("unshow");
-      else {
-        count += 1;
-        cur.classList.remove("unshow");
-      }
-    });
-    postsHeader.innerText = `${count}개의 포스트`;
-  });
-</script>
+<script type="module" src="/js/search.js"></script>

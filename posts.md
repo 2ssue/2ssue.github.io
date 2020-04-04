@@ -1,5 +1,5 @@
 ---
 layout: posts
-title: Search Posts🔍
+title: Posts
 permalink: /posts
 ---
