@@ -56,10 +56,11 @@
 @mixin notice($color) {
   background-color: $color;
   border-radius: 4px;
-  padding: 5px;
-  font-size: 0.8rem;
+  padding: 0.7rem;
+  font-size: 0.9rem;
+  box-shadow: 1px 1px 20px lightgray;
   * {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 
