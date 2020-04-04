@@ -30,12 +30,14 @@
   opacity: 0.5;
   outline: none;
   height: 2rem;
-  width: 7rem;
+  width: 10rem;
   font-size: 1.1rem;
   font-style: italic;
   &:focus {
+    @media screen and (min-width: $on-medium) {
+      width: 20rem;
+    }
     border-bottom: 1px solid gray;
-    width: 11rem;
     opacity: 1;
     transition: width 0.5s;
   }
