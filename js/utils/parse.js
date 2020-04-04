@@ -1,5 +1,4 @@
 export const parseParams = (search) => {
-  console.log(search);
   if (!search) return;
   return search
     .substr(1)
