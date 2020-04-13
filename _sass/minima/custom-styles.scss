@@ -40,7 +40,7 @@ span.pagination-selected {
 
 .subject {
   &::before {
-    content: url("/assets/images/quote.png");
+    content: url('/assets/images/quote.png');
   }
   border: none;
   text-align: center;
@@ -84,13 +84,16 @@ code {
   .na {
     color: #82aaff;
   }
+  .nf {
+    color: lightsalmon;
+  }
 }
 
 .highlighter-rouge {
   background-color: $default-color;
   border-radius: 4px;
   border: none;
-  font-family: "consolas";
+  font-family: 'consolas';
 
   .highlight {
     background-color: #1f2d20;
@@ -98,7 +101,7 @@ code {
 
     code {
       color: #82aaff;
-      font-family: "consolas";
+      font-family: 'consolas';
     }
   }
 }
@@ -128,5 +131,5 @@ a {
   z-index: 1;
 }
 
-@import "custom/tags", "custom/post", "custom/sidebar", "custom/goto",
-  "custom/search", "custom/about";
+@import 'custom/tags', 'custom/post', 'custom/sidebar', 'custom/goto',
+  'custom/search', 'custom/about';
