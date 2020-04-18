@@ -40,7 +40,7 @@ span.pagination-selected {
 
 .subject {
   &::before {
-    content: url('/assets/images/quote.png');
+    content: url("/assets/images/quote.png");
   }
   border: none;
   text-align: center;
@@ -58,7 +58,7 @@ code {
   .k,
   .kd,
   .kc {
-    color: #c792ea;
+    color: #f92672;
   }
   .p,
   .nb {
@@ -78,13 +78,16 @@ code {
   }
   .s1,
   .sr,
-  .nn {
+  .nn,
+  .dl {
     color: #c3e88d;
   }
-  .na {
+  .na,
+  .kc {
     color: #82aaff;
   }
-  .nf {
+  .nf,
+  .nb {
     color: lightsalmon;
   }
 }
@@ -93,15 +96,15 @@ code {
   background-color: $default-color;
   border-radius: 4px;
   border: none;
-  font-family: 'consolas';
+  font-family: "consolas";
 
   .highlight {
     background-color: #1f2d20;
     border: none;
 
     code {
-      color: #82aaff;
-      font-family: 'consolas';
+      color: #f0f0f7;
+      font-family: "consolas";
     }
   }
 }
@@ -131,5 +134,5 @@ a {
   z-index: 1;
 }
 
-@import 'custom/tags', 'custom/post', 'custom/sidebar', 'custom/goto',
-  'custom/search', 'custom/about';
+@import "custom/tags", "custom/post", "custom/sidebar", "custom/goto",
+  "custom/search", "custom/about";
