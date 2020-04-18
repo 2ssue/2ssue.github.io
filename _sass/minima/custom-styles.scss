@@ -58,7 +58,7 @@ code {
   .k,
   .kd,
   .kc {
-    color: #c792ea;
+    color: #f92672;
   }
   .p,
   .nb {
@@ -78,7 +78,8 @@ code {
   }
   .s1,
   .sr,
-  .nn {
+  .nn,
+  dl {
     color: #c3e88d;
   }
   .na {
@@ -100,7 +101,7 @@ code {
     border: none;
 
     code {
-      color: #82aaff;
+      color: #f0f0f7;
       font-family: 'consolas';
     }
   }
