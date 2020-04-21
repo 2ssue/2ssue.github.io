@@ -2,9 +2,7 @@
   position: absolute;
   width: 280px;
   top: calc(55.95px + 1rem);
-  left: calc(
-    100% - #{$content-width} - (100% - #{$content-width}) / 2 - #{$sidebar-width}
-  );
+  left: calc(100% - #{$content-width} - (100% - #{$content-width}) / 2 - #{$sidebar-width});
   transition: all 1s;
   transform: translateX(-$sidebar-width);
 
@@ -86,9 +84,7 @@
 }
 
 .right {
-  right: calc(
-    100% - #{$content-width} - (100% - #{$content-width}) / 2 - #{$sidebar-width}
-  );
+  right: calc(100% - #{$content-width} - (100% - #{$content-width}) / 2 - #{$sidebar-width});
   left: auto;
   display: none;
 

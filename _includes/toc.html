@@ -2,23 +2,21 @@
   <ol class="toc-container"></ol>
 </aside>
 <script type="text/javascript">
-  const container = document.querySelector(".toc-container");
-  const headers = document
-    .querySelector(".post-content")
-    .querySelectorAll("h1,h2, h3, h4, h5");
+  const container = document.querySelector('.toc-container');
+  const headers = document.querySelector('.post-content').querySelectorAll('h1,h2, h3, h4, h5');
 
   if (headers.length) {
     document
-      .querySelector(".sidebar")
+      .querySelector('.sidebar')
       .insertAdjacentHTML(
-        "afterbegin",
-        '<a href="#"><h1 class="page-heading sidebar-head">이 글의 구성</h1></a>'
+        'afterbegin',
+        '<a href="#"><h1 class="page-heading sidebar-head">이 글의 구성</h1></a>',
       );
 
-    headers.forEach(content => {
+    headers.forEach((content) => {
       const tagName = content.tagName.toLowerCase();
       const template = `<li><a href="#${content.id}"><${tagName}>${content.textContent}</${tagName}></a></li>`;
-      container.insertAdjacentHTML("beforeend", template);
+      container.insertAdjacentHTML('beforeend', template);
     });
   }
 </script>

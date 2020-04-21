@@ -2,11 +2,7 @@
 layout: default
 ---
 
-<article
-  class="post h-entry"
-  itemscope
-  itemtype="http://schema.org/BlogPosting"
->
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">
       {{ page.title | escape }}
@@ -17,8 +13,8 @@ layout: default
         datetime="{{ page.date | date_to_xmlschema }}"
         itemprop="datePublished"
       >
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
-        -%} {{ page.date | date: date_format }}
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%} {{ page.date |
+        date: date_format }}
       </time>
       {% for category in page.categories %}
       <a href="/categories/{{ category | downcase }}">
@@ -28,9 +24,7 @@ layout: default
       <a href="/tags#{{ tag }}">📎{{ tag }}</a>
       {% endfor %} {%- if page.author -%} •
       <span itemprop="author" itemscope itemtype="http://schema.org/Person"
-        ><span class="p-author h-card" itemprop="name"
-          >{{ page.author | escape }}</span
-        ></span
+        ><span class="p-author h-card" itemprop="name">{{ page.author | escape }}</span></span
       >
       > {%- endif -%}
     </p>
