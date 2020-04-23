@@ -5,8 +5,7 @@ categories: Book
 tags: review
 classes: wide
 ---
-
-![누구나 자료 구조와 알고리즘](https://misc.ridibooks.com/cover/754024038/xxlarge){: .align-left}
+<img src="https://misc.ridibooks.com/cover/754024038/xxlarge" class="align-left" height="300px">
 
 ### 가볍게 읽기 좋은 책!
 
