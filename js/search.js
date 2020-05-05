@@ -22,8 +22,9 @@ if (params) {
   const { search } = params;
   document.querySelector('#search-input').value = search;
   searchPosts(search);
-} else {
-  document.querySelector('#search-input').addEventListener('keyup', (e) => {
-    searchPosts(e.target.value);
-  });
+}
+
+document.querySelector('#search-input').addEventListener('keyup', (e) => {
+  searchPosts(e.target.value);
+});
 }
