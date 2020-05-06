@@ -1,11 +1,11 @@
 ---
-title:  "React는 어떻게 propTypes이 맞는지 확인할까?"
+title:  "React propTypes는 어떻게 prop이 맞는지 확인할까?"
 date:   2020-05-05 20:58:24 +0900
 categories: Base
 tags: react
 ---
 
-> 이 글은 facebook의 [prop-types](https://github.com/facebook/prop-types)소스코드를 참고해 작성되었습니다.
+> 이 글은 facebook의 [prop-types](https://github.com/facebook/prop-types) 소스코드를 참고해 작성되었습니다.
 
 ### 나는 어쩌다 이게 궁금해졌나..
 
