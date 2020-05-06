@@ -62,7 +62,7 @@ electron을 실행할 파일인 `/src/electron-starter.js`를 만들기 위해, 
   
 이 파일에서 `mainWindow.loadFile()` 부분을 `mainWindow.loadURL('http://localhost:3000')`으로 변경한다.  
   
-이 작업은 webpack의 개발 서버 주소로 electron 로딩을 연결하는 작업으로, 개발 시에 일일히 소스코드를 빌드해 확인할 필요가 없어 용이하다. 하지만 별도의 서버에서 코드를 가져오는 작업이기 때문에 electron에는 화면이 늦게 뜨는 현상이 있으므로 주의한다. 추후 배포 시에는 소스를 빌드한 위치로 변경시켜주는 것이 좋다. 자세한 방법은 [여기](https://github.com/electron/electron-quick-start)를 참조  
+이 작업은 webpack의 개발 서버 주소로 electron 로딩을 연결하는 작업으로, 개발 시에 일일히 소스코드를 빌드해 확인할 필요가 없어 용이하다. 하지만 별도의 서버에서 코드를 가져오는 작업이기 때문에 electron에는 화면이 늦게 뜨는 현상이 있으므로 주의한다. 추후 배포 시에는 소스를 빌드한 위치로 변경시켜주는 것이 좋다. 자세한 방법은 [여기](https://www.freecodecamp.org/news/building-an-electron-application-with-create-react-app-97945861647c/)를 참조  
 {: .notice--info}
   
 `electron-starter.js`의 코드를 변경했다면, 이제 프로젝트 폴더에 있는 `package.json`에서 start 코드를 연결해주고, electron 실행 명령어를 추가해야한다. json 파일에 `"main": "src/electron-starter.js"`를 추가하고, script에 `"electron": "electron ."`을 추가한다.  
