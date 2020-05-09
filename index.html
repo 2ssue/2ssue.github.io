@@ -3,19 +3,33 @@ layout: default
 ---
 
 <div class="home">
+  {% include author.html %}
+  <section>
+    <h1 class="page-heading">Other Articles</h1>
+    <ul class="post-list">
+      <li>
+        <span class="post-meta">Studying JavaScript&Web </span>
+        <a class="post-link" href="https://2ssue.github.io/common_questions_for_Web_Developer">
+          <h3>
+            웹 개발자가 알아두면 좋은 흔한 질문
+          </h3>
+        </a>
+      </li>
+    </ul>
+  </section>
   <section>
     <h1 class="page-heading">Recent Posts</h1>
     <ul class="post-list">
       {% for post in paginator.posts %}
       <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
-        -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.categories }}</span>
+        <h3 class="post-name">
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
         </h3>
+        <span class="post-meta post-date">{{ post.date | date: date_format }}</span>
         {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
       </li>
       {% endfor %} {% include pagination.html %}

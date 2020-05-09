@@ -22,8 +22,8 @@ email: e2ssue@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   웹을 공부하고 있는 개발자 2ssue의 블로그.
   천천히 성장 중 입니다. 앞으로를 기대해주세요 :)
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://2ssue.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'https://2ssue.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username: 2ssue
 disqus:
@@ -43,8 +43,8 @@ kramdown:
   enable_coderay: false
 
 # Pagination settings
-paginate: 5
-paginate_path: "/page:num/"
+paginate: 3
+paginate_path: '/page:num/'
 
 permalink: /:categories/:title/
 theme: minima
@@ -53,7 +53,7 @@ plugins:
   - jekyll-paginate
 defaults:
   - scope:
-      path: ""
+      path: ''
       type: posts
       comments: true
     values:

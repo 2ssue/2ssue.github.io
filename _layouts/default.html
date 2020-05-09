@@ -9,7 +9,7 @@
 
     {% if page.menu != false %}
     <aside class="sidebar">
-      <h1 class="page-heading sidebar-head">이 블로그의 구성</h1>
+      <h1 class="page-heading sidebar-head">Post categories</h1>
       <ul>
         {%- for category in site.categories -%} {% capture category_name %}{{
         category | first }}{% endcapture %}
