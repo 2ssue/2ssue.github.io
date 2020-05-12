@@ -46,6 +46,6 @@ install을 클릭하면 [이 페이지](https://utteranc.es/)로 이동하는데
 
 ![image](https://user-images.githubusercontent.com/42017052/76628633-63096200-6580-11ea-8209-444fcb429161.png){: .align-center}
 
-그리고 이렇게 적용하면 완료! 이제 깃헙 이슈 형태로 댓글을 달 수 있게 된다! 커밋으로 확인하고 싶다면 [`3138b4b`]((https://github.com/2ssue/2ssue.github.io/commit/3138b4b0c04a898ba75f84bfe48063fa84d6ebe0))로 확인할 수 있다 :)
+그리고 이렇게 적용하면 완료! 이제 깃헙 이슈 형태로 댓글을 달 수 있게 된다! 커밋으로 확인하고 싶다면 [`3138b4b`](https://github.com/2ssue/2ssue.github.io/commit/3138b4b0c04a898ba75f84bfe48063fa84d6ebe0)로 확인할 수 있다 :)
 
 이전에 disqus에 달렸던 댓글이 몇 개 있어서 조금 아쉽긴 하지만.. 이 디자인을 꼭 적용해보고 싶었다..ㅠㅠ 그 분들이 다시 달아줄 순 없을테고, 다시 내가 달아야하나...😂
