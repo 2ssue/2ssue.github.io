@@ -1,16 +1,16 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300&display=swap');
 @font-face {
-  font-family: 'GoyangIlsan';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff')
+  font-family: 'Handon3gyeopsal300g';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/Handon3gyeopsal300g.woff')
     format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 // Define defaults for each variable.
-$base-font-family: 'GoyangIlsan', BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Helvetica Neue',
-  'Lucida Grande', Arial, sans-serif !default;
+$base-font-family: 'Handon3gyeopsal300g', 'Noto Sans KR', BlinkMacSystemFont, 'Roboto', 'Segoe UI',
+  'Helvetica Neue', 'Lucida Grande', Arial, sans-serif !default;
 $base-font-size: 18px !default;
 $base-font-weight: 400 !default;
 $small-font-size: $base-font-size * 0.875 !default;
