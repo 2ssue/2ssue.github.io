@@ -94,38 +94,9 @@ marketplace에 올라온 다른 workflow들을 보다가 왜 그런지를 알게
 
 이렇게 여러 번 삽질을 거쳐서 약 3시간의 싸움 끝에 빌드 스크립트를 완성할 수 있었다. 이제 master를 수정하면 자동으로 action의 workflow가 동작해서 build되고, gh-pages 브랜치로 자동으로 배포된다! 🎉🎉
 
-```yml
-name: build & deploy
+이 workflow는 Git Remote 저장소와 연결하기 위해 ACCESS TOKEN이 필요합니다. 혹시 이 소스를 사용하실 분은 ACCESS TOKEN을 Repository에 등록하시기 바랍니다. 등록하는 방법은 [Secrets에 토큰을 저장하는 방법](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets), [ACCESS TOKEN을 생성하는 방법](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)을 참고해주세요 😊
+{: .notice--info}
 
-on:
-  push:
-    branches: [ master ]
-
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: checkout
-      uses: actions/checkout@v2
-
-    - name: Install and Build
-      run: |
-        npm install
-        npm run build
-        
-    - name: Deploy Build Files
-      env:
-        # jekyll이 해석해버려서 괄호를 하나로 바꿨는데, 사실 중괄호 두개로 감싸야 한다. 
-        ACCESS_TOKEN: ${ secrets.ACCESS_TOKEN } 
-      run: |
-        cd .vuepress/dist
-        git config --global user.email "e2ssue@gmail.com"
-        git config --global user.name "2ssue"
-        git init
-        git add -A
-        git commit -m 'deploy with vuepress'
-        git push -f https://${ACCESS_TOKEN}@github.com/${GITHUB_REPOSITORY}.git master:gh-pages
-```
+<script src="https://gist.github.com/2ssue/37919503092dbebc78ca80c513fd1207.js"></script>
 
 ![image](https://user-images.githubusercontent.com/42017052/81532269-146d1e00-939f-11ea-9742-3f61266f6762.png)
