@@ -37,7 +37,7 @@ HashMap을 사용해서 값을 저장한다면 Hash 알고리즘을 사용해서
 
 Hash 알고리즘은 Hash 함수를 이용해서 Hash 테이블에 저장하고, 다시 그것을 검색하는 알고리즘이다. Hash가 너무 많이 등장하긴 하지만 어떤 함수를 거쳐서 나온 값을 활용해 테이블에 저장하고, 그것을 검색에 활용한다는 뜻이다.
 
-![hash 테이블_위키백과](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg/220px-Hash_table_3_1_1_0_1_0_0_SP.svg.png)
+![hash 테이블_위키백과](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg/1024px-Hash_table_3_1_1_0_1_0_0_SP.svg.png)
 
 자바에서 Hash 알고리즘을 이용한 자료구조는 Array와 Linked List로 구현되는데, 저장할 데이터의 키 값을 해시 함수에 넣어서 반환되는 값으로 배열의 인덱스를 구하고 인덱스에 저장된 Linked List에 데이터를 저장해서 검색을 빨리 할 수 있게 된다. 
 
