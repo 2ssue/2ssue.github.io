@@ -49,7 +49,7 @@ workflow가 어떻게 동작하는지 어느정도 파악이 됐기 때문에, �
 만약 vuepress build 스크립트가 뭔지 잘 모르겠다면, [이 튜토리얼](https://vuepress.vuejs.org/guide/deploy.html#github-pages)을 참고하면 좋을 것 같다.
 {: .notice--info}
 
-### 왜 안돼지?
+### 왜 안되지?
 
 요약하자면 이 빌드 환경이 전혀 새로운 공간에서 실행된다는 것을 처음에 제대로 인지하지 못했다. 당연히 내 로컬과 같은 상황(git도 연결돼있고, node module도 설치돼있겠지..?)이라고 생각하고 스크립트를 작성했는데, 정말 바보같은 생각이었다. 
 
