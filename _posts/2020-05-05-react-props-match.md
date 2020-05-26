@@ -73,11 +73,11 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 ```
 
-코드 맨 첫 부분에서 알 수 있듯이, 모든 prop이 정확한지 확인하는 것은 성능상 좋지 않기 떄문에 production 모드일 때는 실행되지 않도록 하는 것을 볼 수 있었다. 알고만 있었던 부분을 실제 코드로 보니 신기했다.
+코드 맨 첫 부분에서 알 수 있듯이, 모든 prop이 정확한지 확인하는 것은 성능상 좋지 않기 때문에 production 모드일 때는 실행되지 않도록 하는 것을 볼 수 있었다. 알고만 있었던 부분을 실제 코드로 보니 신기했다.
 
 이제 propTypes 객체가 정확한지 확인하기 위해, for문을 통해 넘겨받은 type의 Spec을 확인한다. 위 테스트코드를 예로 들어보자면 `typeSpecs`는 `{ foo: undefined }`이고, for문에 들어가게 되면 `typeSpecName`는 객체의 이름인 `foo`가 들어가게 된다.
 
-그 다음에는 [has](https://github.com/facebook/prop-types/blob/master/lib/has.js)를 통해 typeSpecs에 typeSpecName이 있는지 확인하는데 당연히 typeSpecs에서 뽑은 값인데 있는거 아닌가..? 하고 의아할 수 있다. 이 부분은 자바스크립트가 prototype 기반이기 때문에 필요한 검사인데, typeSpecs는 객체라서 Object Prototype을 상속한 객체이기 때문에 그 외의 값들이 검사에 들어올 수 있다. 자세한 내용은 [링크](https://github.com/2ssue/common_questions_for_Web_Developer/blob/master/Javascript/9_search_object_in_javascript.md) 참고.
+그 다음에는 [has](https://github.com/facebook/prop-types/blob/master/lib/has.js)를 통해 typeSpecs에 typeSpecName이 있는지 확인하는데 당연히 typeSpecs에서 뽑은 값인데 있는거 아닌가..? 하고 의아할 수 있다. 이 부분은 자바스크립트가 prototype 기반이기 때문에 필요한 검사인데, typeSpecs는 객체라서 Object Prototype을 상속한 객체이기 때문에 그 외의 값들이 검사에 들어올 수 있다. 자세한 내용은 [링크](https://2ssue.github.io/common_questions_for_Web_Developer/docs/Javascript/9_search_object_in_javascript.html) 참고.
 {: .notice--info}
 
 좀 놀랐던 것은 그 다음 부분이다. typeSpecs 객체들의 값이 함수인지 확인한다. `PropTypes.{type}`은 그냥 값을 나타내는 것이라고만 생각했는데 함수가 아니라면 바로 에러를 던지는 부분을 보니 그 값들은 모두 함수였다는 것을 알 수 있었다. ~~(너무 갖다쓰기만 했네..)~~
