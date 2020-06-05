@@ -40,7 +40,7 @@ HashRouter는 여러 문서들에서 제목을 클릭하면 문서 내의 해당
   
 version4에서는 따로 History를 지정해주는 작업없이 사용하면 되서 사용이 편리해졌다. 먼저 기존에 사용하던 BrowserRouter를 HashRouter로 바꿔주면 Hash 방식으로 주소 사용이 변경된다.  
   
-```javascript
+```react
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 const appRouting = (
