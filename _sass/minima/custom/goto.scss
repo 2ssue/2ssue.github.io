@@ -14,7 +14,7 @@
   }
 
   @media screen and (min-width: 1000px) {
-    right: calc(100% - #{$content-width} - (100% - #{$content-width}) / 2);
+    right: calc(100% - #{$content-width} - (100% - #{$content-width}) / 2 - 100px);
     bottom: 20%;
     &:hover {
       text-decoration: none;
