@@ -5,26 +5,25 @@
   border-radius: 50px;
   padding: 0 1rem;
   font-size: 2rem;
-  background-color: $brand-color-dark;
-  color: white;
-  opacity: 0.7;
+  background-color: rgba(256, 256, 256, 0.5);
+  border: 1px solid black;
+  color: black;
   cursor: pointer;
   span {
     display: none;
   }
 
-  @media screen and (min-width: $on-large) {
+  @media screen and (min-width: 1000px) {
     right: calc(100% - #{$content-width} - (100% - #{$content-width}) / 2);
-    bottom: 50%;
+    bottom: 20%;
     &:hover {
-      opacity: 1;
+      text-decoration: none;
+      span {
+        display: inline-block;
+      }
     }
   }
-  &:hover,
-  &:focus {
-    text-decoration: none;
-    color: white;
-  }
+}
 
   &:hover {
     span {
