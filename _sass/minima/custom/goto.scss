@@ -25,9 +25,15 @@
   }
 }
 
-  &:hover {
-    span {
-      display: inline-block;
-    }
+.go-post-home + div {
+  position: fixed;
+  right: 1rem;
+  bottom: 0;
+  color: lightgray;
+  font-size: 0.1rem;
+  opacity: 0.7;
+  @media screen and (min-width: 1000px) {
+    right: calc(100% - #{$content-width} - (100% - #{$content-width}) / 2 - 100px);
+    bottom: 18%;
   }
 }
