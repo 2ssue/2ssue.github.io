@@ -78,19 +78,23 @@ cd C:\Git\2ssue.github.io
 
 > 만약 repository가 D드라이브에 있다면, cd 명령어 없이 D:만 입력하면 D드라이브로 변경된다.  
 
-폴더로 이동했다면 이제 jekyll을 실행해보자!  
+폴더로 이동했다면 이제 jekyll 테마를 가동시키기 위해 필요한 gem 파일들을 다운받아보자. `bundle install` 명령어를 통해서 테마에 필요한(gemfile에 명시된) gem 파일들을 받을 수 있다. 
+
+TMI이지만 이 글을 처음 썼을 때에는 파일마다 전부 `gem install ~없는 파일`로 gem 파일을 일일히 다운 받았었다. 아래와 같이 남아있는 그 흔적..
+
+> 명령어를 입력했을 때 어떤 파일을 찾을 수 없다는 안내가 나오면, `gem install ~없는 파일~` 을 입력해서 모두 설치해주고 일년 반이나 지난 지금에서야 알게된 부분인데, `bundle gem install` 명령어로 설치하면 해당 테마에 해당하는 gem 파일을 한번에 받을 수 있다. 설치가 완료되면 위 명령어를 다시 입력해서 실행해본다. 테마가 설치하는 모듈이 많을수록 이 작업이 꽤 많이 반복될 수 있다..
+
+> 경고는 주로 `~: Could not find tzinfo-data-1.2019.3 in any of the sources (Bundler::GemNotFound)`와 같은 형태로 나오는데, 여기서 확인해야할 부분은 `tzinfo-data-1.2019.3` 부분이다. 없는 파일은 **tzinfo-data**이고, 뒷부분인 **1.2019.3**은 버전이기 때문에 해당버전으로 설치되지 않는 경우에는 `gem install -r tzinfo-data -v "< 1.2019.4"`와 같이 입력해야 한다. 
+
+자 이제 설치가 끝났다면 jekyll을 실행해보자!  
 
 ```
 jekyll serve
 ```
 
-명령어를 입력했을 때 어떤 파일을 찾을 수 없다는 안내가 나오면, `gem install ~없는 파일~` 을 입력해서 모두 설치해주고 설치가 완료되면 위 명령어를 다시 입력해서 실행해본다. 테마가 설치하는 모듈이 많을수록 이 작업이 꽤 많이 반복될 수 있다..
-
-경고는 주로 `~: Could not find tzinfo-data-1.2019.3 in any of the sources (Bundler::GemNotFound)`와 같은 형태로 나오는데, 여기서 확인해야할 부분은 `tzinfo-data-1.2019.3` 부분이다. 없는 파일은 **tzinfo-data**이고, 뒷부분인 **1.2019.3**은 버전이기 때문에 해당버전으로 설치되지 않는 경우에는 `gem install -r tzinfo-data -v "< 1.2019.4"`와 같이 입력해야 한다. 
-{: .notice--info}
-
 혹시 알 수 없는 에러가 발생한다면 `chcp 65001` 명령어를 입력하고 다시 서버를 실행시켜본다.  
-bundle exec 관련 문구가 보인다면 `bundle exec jekyll serve` 를 입력해보자!
+bundle exec 관련 문구가 보인다면 `bundle exec jekyll serve` 를 입력해보자.  
+(로컬에 스펙과는 다른 버전의 gem 파일이 함께 설치되어있기 때문에, 어떤 걸 사용할지는 gemfile에 명시된 버전을 사용하라는 뜻의 명령어이다)
 {: .notice}
 
 `Server running...`이라는 문구가 나타나면 **성공**!  
