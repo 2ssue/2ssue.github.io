@@ -1,0 +1,35 @@
+{
+  "name": "2ssue-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "2ssue Blog",
+  "author": "2ssue",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "gatsby": "^3.0.1",
+    "gatsby-plugin-emotion": "^6.0.0",
+    "gatsby-plugin-google-analytics": "^3.0.0",
+    "gatsby-plugin-image": "^1.0.1",
+    "gatsby-plugin-manifest": "^3.0.0",
+    "gatsby-plugin-mdx": "^2.0.1",
+    "gatsby-plugin-sharp": "^3.0.1",
+    "gatsby-plugin-sitemap": "^3.0.0",
+    "gatsby-source-filesystem": "^3.0.0",
+    "gatsby-transformer-sharp": "^3.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
