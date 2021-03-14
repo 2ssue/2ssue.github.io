@@ -1,0 +1,152 @@
+---
+title:  "[백준] 로봇청소기 JAVA"
+date:   2019-04-12 23:55:24 +0900
+categories: Algorithm
+tags: baekjoon java
+classes: wide
+---
+
+[백준_로봇청소기 문제](https://www.acmicpc.net/problem/14503)  
+[풀이 코드](https://github.com/2ssue/Algorithm/blob/master/Baekjoon/14503.java)
+  
+다른 것 보단 생각하는 시간이 적게 걸렸다.  
+구현하는 데 좀 애를 먹어서 고치는 시간이 조금 걸렸던 것 같다.  
+  
+처음 생각했던 것 보다 좀 더럽게 짠 것 같아서 아쉽다..  
+  
+> ### 풀이
+
+먼저 네 방향에 이미 청소가 되어있거나, 벽인지 확인했다.  
+그럴 경우에는 원래 방향을 유지한채로 후진해야하기 때문에 방향을 바꾸기 전에 미리 처리했다.  
+  
+한 방향이라도 청소할 공간이 있으면, 일단 먼저 방향먼저 돌려준다.  
+청소할 공간이 있던 없던 일단 방향은 계속해서 돌리기 때문이다.  
+방향은 0>3, 1>0, 2>1, 3>2로 돌고 있으므로 `(nDirection + 3) % 4`로 계산해주었다.  
+  
+방향을 돌린 후에는 전진 방향이 청소되어있는지 확인한다.  
+만약 청소가 되어있지 않으면 전진하고, 전진하면 맵에 청소 완료 표시로 `-1`을 입력하고 `CleaningCnt`를 증가시킨다.  
+만약 청소가 되어있다면 계속해서 방향을 돌려서 청소가 되지 않은 부분으로 이동한다.  
+  
+이렇게 계속해서 돌다가 네 방향이 이미 청소가 되어있고, 후진했을 때 벽이 나오면 프로그램이 정지하도록 했다.  
+  
+아래 그림은 예제 입력 2의 청소기 이동 경로이다.  
+디버깅하면서 에러를 체크하는 데 많은 도움이 됐다. 참고가 되었으면 좋겠다 :)  
+  
+![example2](/assets/images/14503.png)  
+  
+```java
+import java.util.Scanner;
+
+public class Main {
+   static int[][] maps;
+   static int nCleaningCnt = 0;
+   static int[] ny = {+1, -1, 0, 0};
+   static int[] nx = {0, 0, -1, +1};
+   
+	public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      
+      int nRow = sc.nextInt();
+      int nCol = sc.nextInt();
+      
+      maps = new int[nRow][nCol];
+      
+      int[] robotLoc = new int[2];
+      
+      robotLoc[0] = sc.nextInt();
+      robotLoc[1] = sc.nextInt();
+      
+      int nDirection = sc.nextInt();
+      
+      for(int i = 0; i < nRow; i++) {
+    	  for(int j = 0; j < nCol; j++) {
+    		  maps[i][j] = sc.nextInt();
+    	  }
+      }
+      
+      maps[robotLoc[0]][robotLoc[1]] = -1;
+      nCleaningCnt++;
+      
+      cleaning(robotLoc, nDirection);
+      
+      System.out.println(nCleaningCnt);
+   }
+	public static void cleaning(int[] robotLoc, int nDirection) {
+		int nClean = 0; 
+		
+		while(true) {
+			nClean = 0;
+			 
+			for(int i = 0; i < 4; i++) {
+				int y = robotLoc[0] + ny[i];
+				int x = robotLoc[1] + nx[i];
+				
+				if(y >= 0 && y < maps.length && x >= 0 && x < maps[0].length) {
+					if(maps[y][x] == 1 || maps[y][x] == -1)
+						nClean++;
+				}
+			}
+			
+			if(nClean == 4) {
+				//동 <> 서, 북 <> 남 (후진)
+				if(nDirection - 2 < 0) {
+					nDirection += 2;
+				}else nDirection -= 2;
+				
+				robotMoveBack(robotLoc, nDirection);
+				
+				//원래 방향으로 바꿈
+				if(nDirection - 2 < 0) {
+					nDirection += 2;
+				}else nDirection -= 2;
+				
+				if(maps[robotLoc[0]][robotLoc[1]] == 1) break;
+			 }else {
+				 nDirection = (nDirection + 3) % 4;
+				 robotMove(robotLoc, nDirection);
+			 
+				 if (maps[robotLoc[0]][robotLoc[1]] == 0) {
+					 maps[robotLoc[0]][robotLoc[1]] = -1;
+					 nCleaningCnt++;
+				 }
+			 }
+		}
+	}
+	public static void robotMove(int[] robotLoc, int nDirection) {
+		switch(nDirection) {
+		 case 0:
+			 if(maps[robotLoc[0] - 1][robotLoc[1]] != -1 && maps[robotLoc[0] - 1][robotLoc[1]] != 1)
+				 robotLoc[0] -= 1;
+			 break;
+		 case 1:
+			 if(maps[robotLoc[0]][robotLoc[1] + 1] != -1 && maps[robotLoc[0]][robotLoc[1] + 1] != 1)
+				 robotLoc[1] += 1;
+			 break;
+		 case 2:
+			 if(maps[robotLoc[0] + 1][robotLoc[1]] != -1 && maps[robotLoc[0] + 1][robotLoc[1]] != 1)
+				 robotLoc[0] += 1;
+			 break;
+		 case 3:
+			 if(maps[robotLoc[0]][robotLoc[1] - 1] != -1 && maps[robotLoc[0]][robotLoc[1] - 1] != 1)
+				 robotLoc[1] -= 1;
+			 break;
+		 }
+	}
+	public static void robotMoveBack(int[] robotLoc, int nDirection) {
+		switch(nDirection) {
+		 case 0:
+			 robotLoc[0] -= 1;
+			 break;
+		 case 1:
+			 robotLoc[1] += 1;
+			 break;
+		 case 2:
+			 robotLoc[0] += 1;
+			 break;
+		 case 3:
+			 robotLoc[1] -= 1;
+			 break;
+		 }
+	}
+}
+```

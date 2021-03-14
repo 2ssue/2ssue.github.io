@@ -1,0 +1,71 @@
+---
+title:  "[백준] 부녀회장이 될테야 JAVA"
+date:   2019-04-22 16:42:24 +0900
+categories: Algorithm
+tags: baekjoon java
+classes: wide
+---
+
+[백준_부녀회장이 될테야 문제](https://www.acmicpc.net/problem/2775)  
+[풀이 코드](https://github.com/2ssue/Algorithm/blob/master/Baekjoon/2775.java)  
+  
+  
+규칙은 거창한 것이 아니다..  
+찾은 규칙이 있다면 평범하다고 무시하지 말자.  
+  
+> ### 풀이
+
+몇 개 층을 나열해보면 규칙을 찾을 수 있다.  
+  
+|층수|호실별 인원|
+|0|1 2 3 4 5 ...|
+|1|1 3 6 10 15 ...|
+|2|1 4 10 20 35 ...|
+|3|1 5 15 35 70 ...|
+|...|...|
+  
+~~처음엔 세로 줄의 규칙을 찾아봤다가 3호실까지 규칙밖에 못찾아서 포기했다.~~  
+쭉 계산을 하다보면 현재 호실 값이 같은 층 이전 호실과 이전 층 같은 호실의 합이라는 것을 발견할 수 있다.  
+  
+이 규칙을 활용해 처음에는 n층과 m방 값을 받아 그 층과 그 방까지만 계산하려고 했는데, 생각해보니 동일한 값인데 테스트 케이스마다 새로운 값을 넣는 것은 비효율적이라 한번에 전체를 계산하도록 했다.  
+  
+먼저 0층과 1번방을 채워준다.  
+0층은 방 번호와 인원이 동일하고, 1번방들은 모두 1이다.  
+  
+이후 n층의 m번방은 `n-1층 m번방 + n층 m-1번방`이므로 그 값을 넣어준다.  
+  
+각 테스트 케이스에서는 `nFloor` `nRoom-1`번째를 읽어들이면 완성이다!  
+
+> ### 코드
+  
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		
+		int nTestCase = sc.nextInt();
+		int[][] apart = new int[15][15];
+		
+		for(int i = 0; i < 15; i++) {
+			apart[i][0] = 1;
+			apart[0][i] = i + 1;
+		}
+		
+		for(int i = 1; i < 15; i++) {
+			for(int j = 1; j < 15; j++) {
+				apart[i][j] = apart[i-1][j] + apart[i][j-1];
+			}
+		}
+		
+		for(int i = 0; i < nTestCase; i++) {
+			int nFloor = sc.nextInt();
+			int nRoom = sc.nextInt();
+			
+			System.out.println(apart[nFloor][nRoom - 1]);
+		}
+	}
+}
+
+```

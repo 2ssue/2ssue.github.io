@@ -1,0 +1,109 @@
+---
+title:  "[백준] 단어 정렬 JAVA"
+date:   2019-04-25 00:45:24 +0900
+categories: Algorithm
+tags: baekjoon java
+classes: wide
+---
+
+[백준_단어 정렬문제](https://www.acmicpc.net/problem/1181)  
+[풀이 코드](https://github.com/2ssue/Algorithm/blob/master/Baekjoon/1181.java)  
+  
+이번에도 어김없이, 내가 처음 시도한 방법은 시간초과가 발생했다.  
+소팅 방법이 문제였는지, 문자열 길이가 같을 때 비교하는 방법이 문제였는지 잘 모르겠지만 다른 사람들의 코드를 보면서 획기적인 방법을 찾을 수 있었다.  
+  
+덕분에 Set과 List를 모두 써보면서, 속도의 차이도 체감할 수 있었다.  
+[앞선 글](https://2ssue.github.io/programming_knowledge/190424_PJI/)에서와 같이 Set은 중복을 제거하고, List는 중복을 허용하는 집합이었다.  
+  
+List를 써서 코드를 제출했을 때는 3300ms정도의 시간이 걸렸는데, Set을 사용했을 때는 800ms까지 시간이 단축되었다.  
+그 차이를 볼 수 있었던 코드는 아래와 같다. 
+  
+```java
+//List
+List<String> words = new ArrayList<>();
+
+for(int i = 0; i < nWordNum; i++){
+	String word = sc.nextLine();
+	if(!(List.contain(word))) 
+		words.add(word)
+}
+
+//Set
+Set<String> set = new HashSet<String>();
+		
+		for(int i = 0; i < nWordNum; i++) {
+			set.add(sc.nextLine());
+		}
+		
+List<String> words = new ArrayList<String>(set);
+```
+  
+단지 List.contain문구만 사라졌을 뿐인데 이런 차이를 보여서 너무 신기했다.  
+
+> ### 풀이
+
+다른 사람들의 코드를 보면서 sort가 오버라이딩이 가능하다는 것을 처음 알았다.  
+해당 정렬 코드는 Comparator interface를 활용해 메소드를 재정의 해주는 코드이다.  
+compare 함수의 리턴 값에 따른 결과는 아래 표와 같다.  
+  
+_**compare**_
+
+|Return 값|결과|
+|음수|비교 대상(str2)보다 작은 값|
+|0|비교 대상(str2)과 같은 값|
+|양수|비교 대상(str2)보다 큰 값|
+  
+여기서 두 문자열의 길이가 같은 경우에는 compareToIgnoreCase를 활용하는데, 이 함수는 문자열을 비교해 int형 값을 반환한다.  
+compareTo와 compareToIgnoreCase 두 메소드가 있는데, Ignore의 경우 대소문자 구문을 하지 않고 비교한다.  
+  
+_**compareTo**_
+
+|Return 값|결과|
+|음수|str1이 str2보다 사전 순으로 앞에 있음|
+|0|같은 문자열임|
+|양수|str1이 str2보다 사전 순으로 뒤에 있음|
+  
+> ### 코드
+
+```java
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class Main {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		
+		int nWordNum = Integer.parseInt(sc.nextLine());
+		
+		//중복 제거
+		Set<String> set = new HashSet<String>();
+		
+		for(int i = 0; i < nWordNum; i++) {
+			set.add(sc.nextLine());
+		}
+		
+		List<String> words = new ArrayList<String>(set);
+		
+		//정렬
+		Collections.sort(words, new Comparator<String>() {
+			public int compare(String str1, String str2) {
+				if(str1.length() == str2.length()) {
+					return str1.compareToIgnoreCase(str2);
+				}else {
+					return str1.length() - str2.length();
+				}
+			}
+		});
+		
+		//출력
+		for(String out: words) {
+			System.out.println(out);
+		}
+	}
+}
+```

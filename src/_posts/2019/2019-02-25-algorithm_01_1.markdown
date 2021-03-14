@@ -1,0 +1,89 @@
+---
+title:  "[Do it! 알고리즘] 01-1 알고리즘이란?"
+date:   2019-02-25 00:55:24 +0900
+categories: Algorithm
+tags: java
+classes: wide
+---
+
+> 이 글은 Do it! 자료구조와 함께 배우는 알고리즘 입문 책에 대한 풀이이다.
+
+## 연습문제
+
+### 1. 네 값의 최댓값을 구하는 max4 메서드 
+
+```java
+static int max4(int a, int b, int c, int d) {
+	int max;
+	
+	max = a;
+	
+	if (b > max) max = b;
+	if (c > max) max = c;
+	if (d > max) max = d;
+	
+	return max;
+}
+```
+
+### 2. 세 값의 최솟값을 구하는 min3 메서드 
+
+```java
+static int min3(int a, int b, int c) {
+	int min;
+	
+	min = a;
+	
+	if (b < min) min = b;
+	if (c < min) min = c;
+	
+	return min;
+}
+```
+
+### 3. 네 값의 최솟값을 구하는 min4 메서드 
+
+```java
+static int min4(int a, int b, int c, int d) {
+	int min;
+	
+	min = a;
+	
+	if (b < min) min = b;
+	if (c < min) min = c;
+	if (d < min) min = d;
+	
+	return min;
+}
+```
+
+### 4. 세 값의 대소 관계 모든 조합에 대해 중앙값 구하는 메서드
+
+```java
+static int med3(int a, int b, int c) {
+	int med = 0;
+	
+	if (a >= b)
+		if (b >= c) med = b;
+		else if (a >= c) med = c;
+		else med = a;
+	else if (a >= c) med = a;
+	else if (b >= c) med = c;
+	else med = b;
+	
+	return med;
+}
+```
+
+### 5. 아래 중앙값을 구하는 메서드가 효율이 떨어지는 이유는?
+
+```java
+static int med3(int a, int b, int c){
+	if ((b >= a && c <= a) || (b <= a && c >= a))
+		return a;
+	else if ((a > b && c < b) || (a < b && c > b))
+		return b;
+	return c;
+}
+```
+위에 if 문에서 실행했던 비교 (b>=a, c<=a 등)를 아래 else if 문에서 또 비교하고 있으므로 이미 나온 결론을 또 연산하고 있다. 따라서 효율이 떨어진다.

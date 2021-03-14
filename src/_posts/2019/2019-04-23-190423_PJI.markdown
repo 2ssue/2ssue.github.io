@@ -1,0 +1,72 @@
+---
+title: "DAO와 DTO"
+date:   2019-04-23 16:33:24 +0900
+categories: Programming
+tags: java programming oop
+classes: wide
+---
+
+> ### DAO란?
+
+`DAO(Data Access Object)`는 데이터베이스를 사용해 데이터를 조회하거나 조작하는 기능을 전담하는 객체를 말한다.  
+
+데이터베이스에 대한 접근을 DAO만 하게되면 다수의 데이터베이스 호출 문제를 해결할 수 있다는 장점이 있다.  
+  
+말로는 잘 이해가 되지 않으니 코드로 접근해보면 아래와 같다.  
+
+```java
+public class DAO{
+	public void addData(DTO dto){
+		//Connection with DB and add Data
+	}
+	public void deleteData(DTO dto){
+		//Connection with DB and delete Data
+	}
+}
+```
+
+> ### DTO란?
+
+`DTO(Data Transfer Object)`는 계층 간의 데이터 교환을 위한 객체이다.  
+따로 로직을 가지지 않는 순수한 데이터 객체이다. 즉, Getter Setter를 주로 가지고 있다.  
+
+이또한 말로는 이해하기 난해하기 때문에 코드로 접근해보면 아래와 같다.  
+  
+```java
+public class DTO{
+	private String name;
+	private int value;
+	private String data;
+
+	public String getName(){
+		return name;
+	}
+
+	public String setName(String name){
+		this.name = name;
+	}
+
+	...
+}
+```
+
+DTO는 `VO(Value Object)`와 혼동되어 사용되기도 하는데, 비슷한 개념이긴 하지만 변수에 대한 변경이 가능한 DTO와는 달리 VO는 읽기만 가능하다는 차이점이 있다.  
+  
+코드를 통해 VO의 예시를 보면 아래와 같다.  
+
+```java
+public class Color{
+	static int RED = 0x#FF0000;
+
+	public int getRed(){
+		return RED;
+	}
+}
+
+public class Main{
+	public static void main(String args[]){
+		int nRedColorCode = Color.getRed();
+		int nRedColorCod2 = Color.RED;
+	}
+}
+```

@@ -1,0 +1,26 @@
+---
+title: "TIL_190719"
+date:   2019-07-20 23:39:24 +0900
+categories: TIL
+tags: daily boostCamp javascript
+---
+
+### javascript 연산 방법
+- `!(num)`: `Number` 형태를 `boolean`형태로 바꿔준다.
+    + !(3) = true !(0) = false
+- `+(bool)`: `boolean`형태를 `Number`형태로 바꿔준다.
+    + +(true) = 1 +(false) = 0 
+- `**`: 거듭제곱
+    + 2**3 = 8
+
+### javascript `apply()` 함수
+- 이미 존재하는 함수를 호출할 때 다른 `this` 객체를 할당할 수 있도록 하는 함수
+- 라고 팀원들과 얘기할 때는 이해를 했었는데 다시보니까 잘 모르겠다..
+- 추가적인 공부가 필요할듯!
+- [MDN 참고](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
+
+### 새로운 프로젝트를 기획하기
+- 기간안에 완성할 수 있는 양의 프로젝트를 기획하는 것은 어려운 일이었다
+- 기획하는 것은 굉장히 어려운 일이다. 난 기획이랑 살짝 안맞는 것 같단 생각이 들었다..
+- 남들이 내 기획을 이해할 수 있도록 전달하는 것도 어려운 일이었다
+- 기획자를 생각하는 마음을 가질 수 있을 것 같다 X(

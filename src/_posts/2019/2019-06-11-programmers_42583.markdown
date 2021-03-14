@@ -1,0 +1,93 @@
+---
+title:  "[프로그래머스] 다리를 지나는 트럭"
+date:   2020-04-21 22:52:24 +0900
+categories: Algorithm
+tags: programmers java
+---
+
+- [프로그래머스 코딩테스트 연습_스택/큐_다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583?language=java)
+- [백준_트럭](https://www.acmicpc.net/problem/13335)
+
+|업데이트 이력|코드|
+|--|--|
+|20.04.21|[풀이코드_백준_트럭_java](https://github.com/2ssue/Algorithm/blob/master/Baekjoon/13335.java)|
+|19.06.11|[풀이코드_프로그래머스_다리를 지나는 트럭_java](https://github.com/2ssue/Algorithm/commit/74d18bb4ef35ef090fa6e66a721f2437d6926e1f?diff=split)|
+|19.03.01|[풀이코드_프로그래머스_다리를 지나는 트럭_java](https://github.com/2ssue/Algorithm/commit/97a6c443c99d0fbb279c1d49f7eaca98233569c5)|
+
+## 코드 업데이트 (20.04.21)
+
+갑자기 프로그래머스에 있는 문제는 백준에도 있지 않을까, 하고 찾아보면서 몇 가지 문제들을 다시 풀어보는데 프로그래머스보다 백준의 테스트케이스가 좀 더 큰 것 같다. 프로그래머스에서는 성공한 코드가 백준에서는 실패하는 경우가 종종 있었다. 
+
+그러다 이 코드도 다시 짜게 되었는데, 이전보단 더 쓸데없는 작업들이 많이 줄어든 것 같아서 다시 한번 올려보았다.  
+
+## 풀이
+
+풀이 과정은 이전 코드들과 꽤 비슷하다. 
+
+다리에 트럭이 지나가고 있는지 확인하고, 트럭이 있다면 다리에 끝에 도달했는지를 확인한다. 끝에 도달했다는 것은 다리에 트럭이 지나가기 시작한 시간을 저장했기 때문에 `현재 시간 - 그 때의 시간`이 다리의 길이와 같은지 확인하면 된다.  
+
+이후엔 다리에 다음 트럭이 들어가도 되는지 확인하고, 마지막으로 들어간 트럭의 인덱스값을 저장한 뒤 트럭이 다리로 진입한다. 이 때 트럭의 무게와 트럭이 들어갔을 때의 시간을 저장한 `Truck` Class를 만들어서 다리에 저장했다.
+
+이 코드의 반복문에선 마지막으로 들어간 트럭이 나오는 것은 계산되지 않는다. 때문에 이 값을 마지막으로 더해준 뒤 값을 return 한다.
+
+이 코드는 bridge_length가 2이고 weight가 10, truck이 {7,4,5,6} 일 때 아래와 같이 동작한다.  
+  
+|초|다리를 나간 트럭|다리에 있는 트럭|대기 트럭|마지막으로 들어간 트럭 idx|
+|--|--|--|--|--|
+|1||{<7, 1>}|4,5,6|0|
+|2||{<7, 1>}|4,5,6|0|
+|3|{<7, 1>}|{<4, 3>}|5, 6|1|
+|4|{<7, 1>}|{<4, 3>, <5, 4>}|6|2|
+|5|{<7, 1>, <4, 3>}|{<5, 4>}|6|3|
+|6|{<7, 1>, <4, 3>, <5, 4>}|{<6, 6>}||4|
+
+이후 마지막 트럭이 다리를 지나는 시간이 반복문을 통해 계산되지 않았으므로, 이 값을 직접 answer에 더해준다.  
+
+## 코드
+### Java
+```java
+import java.util.Queue;
+import java.util.LinkedList;
+
+public class Main {
+    //main 코드 생략
+    public int solution(int bridgeLength, int weight, int[] truckWeights, int truckNumber) {
+        int time = 0;
+        Queue<Truck> bridge = new LinkedList<>();
+        int lastEnterTruckIndex = 0;
+        int currentBridgeWeight = 0;
+
+        while (lastEnterTruckIndex < truckNumber) {
+            time++;
+
+            if (!bridge.isEmpty()) {
+                Truck frontTruck = bridge.peek();
+                if (time - frontTruck.enterTime == bridgeLength) {
+                    currentBridgeWeight -= bridge.poll().weight;
+                }
+            }
+
+            int compareTruck = truckWeights[lastEnterTruckIndex];
+            if (currentBridgeWeight + compareTruck <= weight) {
+                bridge.offer(new Truck(compareTruck, time));
+                lastEnterTruckIndex++;
+                currentBridgeWeight += compareTruck;
+            }
+        }
+
+        time += bridgeLength;
+
+        return time;
+    }
+}
+
+class Truck {
+    public int weight;
+    public int enterTime;
+
+    public Truck(int weight, int enterTime) {
+        this.weight = weight;
+        this.enterTime = enterTime;
+    }
+}
+```
