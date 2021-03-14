@@ -19,6 +19,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-mdx",
+    "gatsby-transformer-remark",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {

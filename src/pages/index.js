@@ -123,6 +123,14 @@ const links = [
       "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
     color: "#663399",
   },
+  {
+    text: "Posts",
+    url: "./posts",
+    badge: true,
+    description:
+      "Blog Posts!",
+    color: "#665517",
+  },
 ]
 
 // markup
