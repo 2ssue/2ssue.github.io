@@ -1,4 +1,5 @@
 const {createFilePath} = require('gatsby-source-filesystem');
+const {getPostPath, getMainCategory} = require('./src/utils/postPath');
 const path = require('path');
 
 exports.onCreateNode = ({node, getNode, actions}) => {
@@ -30,19 +31,17 @@ exports.createPages = async ({graphql, actions}) => {
             }
         }`);
     
-  result.data.allMarkdownRemark.edges.forEach(({node}) => {
+  const posts = result.data.allMarkdownRemark.edges;
+  posts.forEach(({node}) => {
     const slug = node.fields.slug;
-    const uselessDateLength = 11;
-    // eslint-disable-next-line no-unused-vars
-    const [year, fileName] = slug.slice(1, slug.length - 1).split('/');
-    const postPath = fileName.slice(uselessDateLength);
-    const [postMainCategory] = node.frontmatter.categories.split(' ');
+    const postPath = getPostPath(slug);
+    const postMainCategory = getMainCategory(node.frontmatter.categories);
 
     createPage({
-      path: [postMainCategory.toLowerCase(), postPath].join('/'),
+      path: [postMainCategory, postPath].join('/'),
       component: path.resolve('./src/templates/blog-post.jsx'),
       context: {
-        slug: node.fields.slug,
+        slug,
       }
     });
   });
