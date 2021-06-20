@@ -12,6 +12,10 @@ parserOptions:
   sourceType: "module"
 plugins:
   - react
+  - markdown
+overrides:
+  - files: ['**/*.md', '**/*.markdown']
+    processor: 'markdown/markdown'
 rules:
   indent:
     - error
