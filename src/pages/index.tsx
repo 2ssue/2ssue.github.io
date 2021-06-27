@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 // styles
 const pageStyles = {
@@ -37,7 +37,7 @@ const listItemStyles = {
 
 const linkStyle = {
   color: '#8954A8',
-  fontWeight: 'bold',
+  fontWeight: 700,
   fontSize: 16,
   verticalAlign: '5%',
 };
@@ -67,12 +67,12 @@ const badgeStyle = {
   backgroundColor: '#088413',
   border: '1px solid #088413',
   fontSize: 11,
-  fontWeight: 'bold',
+  fontWeight: 700,
   letterSpacing: 1,
   borderRadius: 4,
   padding: '4px 6px',
   display: 'inline-block',
-  position: 'relative',
+  position: 'relative' as React.CSSProperties['position'],
   top: -2,
   marginLeft: 10,
   lineHeight: 1,
@@ -127,14 +127,13 @@ const links = [
     text: 'Posts',
     url: './posts',
     badge: true,
-    description:
-      'Blog Posts!',
+    description: 'Blog Posts!',
     color: '#665517',
   },
 ];
 
 // markup
-const IndexPage = () => {
+const IndexPage = (): JSX.Element => {
   return (
     <main style={pageStyles}>
       <title>Home Page</title>
@@ -162,7 +161,7 @@ const IndexPage = () => {
             {docLink.text}
           </a>
         </li>
-        {links.map(link => (
+        {links.map((link) => (
           <li key={link.url} style={{...listItemStyles, color: link.color}}>
             <span>
               <a

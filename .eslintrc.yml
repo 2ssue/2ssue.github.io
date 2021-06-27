@@ -2,7 +2,10 @@ env:
   browser: true
   es2021: true
   node: true
+ignorePatterns:
+  - "gatsby-node.js"
 extends:
+  - "plugin:@typescript-eslint/recommended"
   - "eslint:recommended"
   - "plugin:react/recommended"
 parserOptions:
@@ -29,9 +32,12 @@ rules:
   semi:
     - error
     - always
-  react/prop-types:
-    - warn
   object-curly-spacing:
     - error
     - never
     - { objectsInObjects: false }
+  no-undef: 
+    - off
+  max-len:
+    - error
+    - {ignoreUrls: true, ignoreStrings: true, ignoreTemplateLiterals: true}
