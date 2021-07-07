@@ -1,0 +1,43 @@
+env:
+  browser: true
+  es2021: true
+  node: true
+ignorePatterns:
+  - "gatsby-node.js"
+extends:
+  - "plugin:@typescript-eslint/recommended"
+  - "eslint:recommended"
+  - "plugin:react/recommended"
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 12
+  sourceType: "module"
+plugins:
+  - react
+  - markdown
+overrides:
+  - files: ['**/*.md', '**/*.markdown']
+    processor: 'markdown/markdown'
+rules:
+  indent:
+    - error
+    - 2
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - always
+  object-curly-spacing:
+    - error
+    - never
+    - { objectsInObjects: false }
+  no-undef: 
+    - off
+  max-len:
+    - error
+    - {ignoreUrls: true, ignoreStrings: true, ignoreTemplateLiterals: true}
