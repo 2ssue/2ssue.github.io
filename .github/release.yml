@@ -1,0 +1,8 @@
+changelog:
+  categories:
+    - title: Enhancement
+      labels:
+        - 🙋‍♀️ enhancement
+    - title: Others
+      labels:
+        - "*"
